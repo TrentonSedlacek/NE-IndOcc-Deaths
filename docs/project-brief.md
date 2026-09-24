@@ -33,6 +33,15 @@ Derry's concern: NEVDRS staff produced industry/occupation figures (for example 
 - The Massachusetts model: death certificate numerator, usual I/O text coded with NIOCCS to NAICS and SOC, ACS employed workers as denominator, per 100,000 workers with 95% CIs, exclusions for non-workforce, uncodable, and military.
 - CDC precedent for suicide by I/O using NVDRS: Peterson et al., MMWR 2020;69:57-62 (32 states, 2016). Listed on the CDC NVDRS resources page (docs/web-captures/cdc-nvdrs-resources.md).
 
+## What is known about the unpublished NEVDRS I/O work (from Trenton, 2026-09-24)
+
+- Not published; the occupational health team does not have access to it.
+- It is a three-panel comparison: non-workers, construction, and manufacturing. Not all-industry rates.
+- Construction was reported at roughly 70 to 72 deaths per 100,000. Nothing else about the numbers is known (which outcome, which years, which denominator).
+- Derry does not trust the number because it did not come from the occupational health team and the method is unexplained.
+
+Things the three-panel design leaves open: how "non-worker" was defined and what its denominator was (not in labor force, unemployed, or everyone without a coded occupation), why construction and manufacturing were singled out, and whether the 70 to 72 figure is suicide, overdose, or combined.
+
 ## Questions to bring to Can and Mamie
 
 1. Which fields did you use for industry and occupation: the death certificate coded fields, the text fields, or the NVDRS current occupation free text?
@@ -41,7 +50,8 @@ Derry's concern: NEVDRS staff produced industry/occupation figures (for example 
 4. What exclusions were applied (age range, non-workforce, unknown/uncodable, military, non-residents)?
 5. Which case definition: NVDRS manner of death or death certificate ICD-10? For overdose, SUDORS case definition (X40-44, Y10-14 plus literal text) or something else?
 6. Which years, and are the numbers resident or occurrent deaths?
-7. Can we get the case-level extract (or at least the I/O crosstab) so the occupational health team can reproduce the figures?
+7. For the three-panel figure (non-workers, construction, manufacturing): what outcome and years does the 70 to 72 per 100,000 construction figure cover, what is the numerator count, and how was the non-worker group defined?
+8. Can we get the case-level extract (or at least the I/O crosstab) so the occupational health team can reproduce the figures?
 
 ## Repo layout
 
