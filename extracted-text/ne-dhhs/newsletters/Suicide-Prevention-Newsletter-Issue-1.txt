@@ -1,0 +1,256 @@
+===== Page 1 =====
+SUICIDE PREVENTION 
+NEWSLETTER
+Quarterly Newsletter Issue #1
+1st Quarter - 2024
+Who We Are
+    Welcome to the Nebraska Violent Death Reporting Sys -
+tem (NEVDRS) newsletter, where we provide vital updates on 
+our program’s efforts to address suicide as a significant public 
+health concern in Nebraska. With funding from the CDC and 
+collaboration with partners such as law enforcement and cor -
+oners, we diligently compile comprehensive data on violent 
+deaths, including suicide, across all counties in the state. Our 
+aim is to collect over 600 unique data elements for each death, 
+yielding crucial insights that inform prevention and intervention 
+strategies.
+       Emphasizing the importance of collective efforts in creating 
+a safer and healthier Nebraska, our newsletter calls for support 
+from stakeholders in raising awareness and fostering a culture 
+that values mental health and suicide prevention. Through ac -
+tive engagement in projects and the dissemination of accurate 
+data via our newsletter, NEVDRS strives to make a positive im -
+pact on community well-being and contribute to informed public 
+health initiatives. Join us in our mission to prevent suicide and 
+promote mental health awareness in Nebraska.
+Our Mission
+Our mission is to provide precise and 
+trustworthy information on suicide 
+data in Nebraska, emphasizing the ur -
+gency of addressing this public health 
+concern. Through fostering aware -
+ness and collaboration, we aim to 
+contribute to comprehensive suicide 
+prevention strategies. Committed to 
+accuracy, our advanced data analysis 
+identifies key trends, providing stake -
+holders with actionable insights for 
+targeted interventions and mitigating 
+the impact of suicide in Nebraska. Le -
+veraging sophisticated data analysis 
+techniques, we strive to unravel deep -
+er insights that guide evidence-based 
+approaches, ensuring our efforts are 
+both effectual and informed. With a 
+dedication to leveraging data-driven 
+solutions, we navigate the complexi -
+ties of suicide prevention, striving for 
+meaningful impact in our community.
+1/8
+===== Page 2 =====
+Our Team
+Mamie Lush, MA, BSPH
+NeVDRS/SUDORS Program 
+Manager  & Epidemiologist  
+Mamie.Lush@nebraska.gov 
+Can Ceyhan
+NeVDRS/SUDORS Data Analyst  
+Can.Ceyhan@nebraska.gov
+Rishad Ahmed, MBA, PhD
+Injury Prevention Epidemiologist
+Rishad.Ahmed@nebraska.gov 
+Contact
+Website
+https://dhhs.ne.gov/Pages/Vio -
+lent-Death-Reporting.aspx
+Mailing Address
+P.O. Box 95026, Lincoln, Nebraska 
+68509-5026
+The Data
+Below are examples of data elements we collect, and it’s 
+essential to recognize that this list is not exhaustive. We 
+collect over 600 unique data elements for each death from 
+various departments and organizations. This extensive 
+data serves as the foundation for generating data dash -
+boards, factsheets, frameworks, maps, and special top -
+ics reports. These comprehensive resources enable us to 
+provide a detailed and multifaceted understanding of the 
+factors surrounding suicide deaths in Nebraska, empow -
+ering informed strategies for prevention and intervention.
+- Demographic Information
+- Injury/Death Location
+- Cause and Manner of Death
+- Mental Health Conditions and Treatment
+- Mental Health Diagnosis Information
+- Alcohol or Substance Abuse and Treatment
+- Suicidal Ideation and Attempt History
+- Relationship Problems
+- Marital Status
+- Financial Problems
+- School Problems
+- Housing Situation
+- Legal Problems
+- Toxicology Reports
+- Geolocation Data
+List of Projects
+2/8
+In addition to our published factsheets, 
+available on our website, we are active -
+ly involved in various ongoing projects. 
+The following list is not all-inclusive but 
+provides an overview of our current 
+initiatives.
+- Factsheets
+-
+Special Topics Factsheets
+- Annual Frameworks
+- Data Dashboards
+- Suicide Vulnerability Report
+===== Page 3 =====
+Factsheets
+We have released a series of suicide factsheets on our website, offering a broad overview of 
+suicide deaths in Nebraska. Our primary focus has been on three distinct regions and the en -
+tire state of Nebraska. These factsheets aim to provide essential statistics regarding suicide 
+deaths, reserving the more intricate data for our comprehensive framework. The suicide death 
+factsheets we’ve published can be found here. Additionally, we plan to create similar-format 
+factsheets for future years.
+Special Topics Factsheets
+In addition to our regional suicide death factsheets, we have also published special topics 
+factsheets for the years 2020 and 2021. These factsheets delve into specific subjects such as 
+“youth suicide deaths,” “disclosed intention suicide deaths,” “veteran suicide deaths,” “different 
+suicide methods deaths,” and more. While most of these factsheets are available on our web-
+site, a few are still pending publication.
+3/8
+We have compiled comparison factsheets, high -
+lighting three major distinct methods of suicide, 
+allowing our audience to easily compare dif ferent
+ 
+methods on a single sheet. For more details, please 
+refer to the image on the left.
+===== Page 4 =====
+3/8
+Annual Frameworks
+The Annual Frameworks stand as a comprehensive expansion of 
+our factsheets, presenting a trove of additional details while uphold -
+ing strict patient privacy standards. Delving into the annual suicide 
+deaths in Nebraska, our Frameworks offer an exhaustive analysis 
+without compromising individual privacy. This encompasses detailed 
+toxicology reports and profound insights into the broader circum -
+stances surrounding these incidents, ensuring anonymity and con -
+fidentiality. Furthermore, we are diligently finalizing the 2020 and 
+2021 Frameworks, guaranteeing the inclusion of the latest data and 
+insights while maintaining our commitment to safeguarding patient 
+confidentiality. Our efforts are rooted in providing precise and cur -
+rent information while respecting the privacy and dignity of those 
+involved.
+4/8
+Data Dashboards
+We are excited to announce the development of a fully interac tive suicide data dashboard. This 
+robust tool will encapsulate a significant portion of our database, empowering users with ex-
+tensive customization capabilities. Curr ently in the building process, we’ve chosen Power BI  
+as our visualization tool for its effectiveness. Once complete, the data dashboard will 
+seamlessly integrate with the NEVDRS site under DHHS, providing an enhanced and user-
+friendly experience for accessing and analyz ing vital suic ide data. Stay tuned for  updates on 
+this innovative initiative! In line with our commitment to respec ting victims’ privacy, we want to 
+emphasize that any data displayed will not include counts of fewer than 6 deaths, ensur ing 
+the protection of s ensitive information. Stay tuned for  updates on this  innovative initiative.
+
+===== Page 5 =====
+5/8
+Future Plans
+Our current priority  is finalizing the frameworks for s uicide deaths in Nebraska for the years 
+2020 and 2021. Following this, our focus will shift towards developing interactive data dash -
+boards, which will be integrated into the NEVDRS website for public access. As we anticipate 
+the release of 2022 data, we are preparing to generate factsheets  and special topics factsheets 
+to provide comprehensive insights into the latest inform ation.
+Our commitment to transparency and tim ely reporting ensures that the public  and stake-
+holders have access to accurate and meaningful data for a more informed understanding of 
+suicide trends in Nebraska. Thank  you for your ongoing support, and we look forwar d to foster -
+ing greater awarenes s and collaboration in addressing this important public health iss ue. Stay 
+tuned for these upc oming updates!
+===== Page 6 =====
+Suicide Deaths in the 1st Quarter of 2021
+This segment delves into the suicide deaths during the 1st quarter of 2021. As we await the most 
+recent year’s data, our focus is on the latest available information correlated to the newsletter’s 
+issue date. Providing a concise overview, this section offers insights into the demographics and 
+circumstances surrounding the events of the quarter.
+Demographic Information
+Percentage of Deaths
+2021 Nebraska Population 1st Quarter Suicide Deaths
+Sexn = 71
+Male 73.2%
+Female 26.8%
+Age Group
+n = 71
+10-19 12.7%
+20-29 15.5%
+30-39 12.7%
+40-49 23.9%
+50-59 19.7%
+60+ 15.5%
+Racen = 71
+White, NH 85.9%
+Other* 14.1%
+0% 50% 100%
+6/8
+ 
+Education
+n = 70
+Less than
+High School 17.1%
+High School 38.6%
+College or 
+Associate’s 24.3%
+Bachelor’s  
+or Higher 20.0%
+* Includes Hispanic, Black NH, Asian/Pacific Islander NH, Native American/Alaskan 
+Native NH, Two or More Races
+===== Page 7 =====
+Cause of Death
+100%50%0%
+Firearm 60.6%
+Strangulation 21.1%
+Other* 18.3%
+Proportion of 1st Quarter Suicide Deaths
+* Includes Fall, Sharp Instrument, Other Transportation Vehicle, Drowning and Motor Vehicle
+7/8
+In the 1st quarter of 2021, among suicide victims in Nebraska, firearms emerged as the pre -
+dominant method, with the majority of victims opting for this means. The average age for those 
+who died by firearm-related suicide was 46, while strangulation incidents occurred at an aver -
+age age of 35. Notably, females tended to use strangulation or poisoning methods, while the 
+majority of males opted for firearms. 
+Suicide Deaths by Month
+January 42.3%
+February 31.0%
+March 26.8%
+50%25%0%
+Proportion of 1st Quarter Suicide Deaths
+In the first quarter of 2021, around 73.2% of suicide victims in Nebraska were males. Notably, 
+January witnessed the highest number of suicides, accounting for 42.3% of the total incidents. 
+The predominant demographic among those who lost their lives to suicide during this period 
+were white males, averaging 43 years of age and typically holding a high school degree.
+===== Page 8 =====
+Decedent Characteristics and Contributing Circumstances
+ Statistics are based on 65 cases.   Categories are not mutually exclusi
+76.9% of total suicide deaths took place in a residence.
+56.9% of total suicide victims had previous mental health problems.
+44.6% of total suicide victims were diagnosed with depression.
+10.8% of total suicide victims were diagnosed with anxiety disorder.
+24.6% of total suicide victims had history of mental health treatment.
+18.5% of total suicide victims had current mental health treatment.
+61.5%
+8/8
+of total suicide victims were perceived by others to be depressed at the time of death.
+30.8% of total suicide victims had a history of suicidal ideation.
+16.9% of total suicide victims had a history of suicide attempt.
+26.2% of total suicide victims had recently disclosed their suicidal intent.
+12.3% of total suicide victims had disclosed their suicidal intent to their intimate partner.
+29.2% of total suicide victims had a history of alcohol abuse.
+36.9% of total suicide victims left suicide notes. 
+18.5% of total suicide victims had a history of substance abuse other than alcohol.
+21.5% of total suicide victims had a history of physical health problems.
+26.2% of total suicide victims had intimate partner problems.
+9.2% of total suicide victims had family or other relationship problems. 
+15.4% of total suicide victims had known recent argument. 
+43.1% of the suicide deaths were among never married individuals.
+27.7% of the suicide deaths were among married individuals.

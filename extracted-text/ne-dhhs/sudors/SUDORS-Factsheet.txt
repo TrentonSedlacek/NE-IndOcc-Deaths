@@ -1,0 +1,180 @@
+===== Page 1 =====
+State Unintentional Drug Overdose 
+Reporting System (SUDORS)
+The Drug Overdose Epidemic Continues to Worsen in the United States
+Drug overdose deaths continue to impact our nation and remain a leading cause of injury-related death in the United States. 
+The majority of overdose deaths involve opioids. Deaths involving synthetic opioids (largely illicitly made fentanyl) and stimulants 
+(such as cocaine and methamphetamine) have increased in recent years. In addition, overdose deaths have accelerated during 
+the COVID-19 pandemic. As the worsening and expanding drug overdose epidemic in the United States involves potent synthetic 
+opioids, often in combination with other drugs, timely and comprehensive surveillance and evidence-based prevention and response 
+strategies remain essential.
+SUDORS Provides Comprehensive Information on Drug Overdose Deaths
+In 2016, the State Unintentional Drug Overdose Reporting System (SUDORS) began as part of CDC’s Enhanced State Opioid Overdose 
+Surveillance (ESOOS) program, to provide comprehensive data on opioid overdose deaths. In 2019, SUDORS expanded to collect 
+data on all drug overdose deaths in 47 states and the District of Columbia as part of CDC’s Overdose Data to Action (OD2A) program. 
+Each of these 48 funded jurisdictions collects and abstracts data for unintentional and undetermined intent drug overdose deaths 
+from death certificates and medical examiner/coroner reports (including scene findings, autopsy reports, and full postmortem 
+toxicology findings) for entry into 
+a web-based CDC platform that is 
+shared with the National Violent 
+Death Reporting System (NVDRS).
+The overall goals of SUDORS are to: 
+1. Better understand the 
+circumstances that  
+surround overdose deaths.
+2. Improve overdose data  
+timeliness and accuracy.
+3. Identify specific substances 
+causing or contributing to 
+overdose deaths as well as 
+emerging and polysubstance 
+overdose trends to help inform 
+overdose prevention and  
+response efforts.
+NV
+AK ME
+NH VT
+WA MN WI MI RI
+CTPAOHIN IL
+MO KY WV DC MD DE
+VANCTNNM UT
+OK LA GA
+FL
+CA
+MA
+NJ 
+MT ND NY
+IA SDWY ID
+OR CO NE
+SCAR KS
+AZ MS AL
+TXHI
+Funded to collect data 
+in a subset of counties
+Funded to collect data 
+from full jurisdiction
+Not funded for SUDORS
+SUDORS Incorporates Multiple Data Sources
+Jurisdictions abstract data from death certificates, medical examiner/coroner reports, and postmortem toxicology results into 
+SUDORS. Combined, these sources yield more than 600 data elements. Examples of data elements captured from each source are: 
+Death Certificates
+• Demographics
+• County and state where overdose occurred
+• Cause and manner of death
+• Other significant conditions contributing  
+ to death
+• How overdose occurred
+• Place of death (e.g., hospital, home)
+• Date of death
+Medical Examiner/Coroner Reports
+• History of prior overdoses
+• Treatment for substance use disorder
+• Prescription drug misuse or illicit drug  
+use history
+• Routes of drug administration  
+(e.g., injection, smoking)
+• Presence of bystanders
+• Naloxone administration
+Jurisdictions Participating in SUDORS
+Postmortem Toxicology
+• All drugs detected
+• Drugs contributing to death
+• Date specimens were collected
+SUDORS State Unintentional Drug Overdose Reporting System
+===== Page 2 =====
+SUDORS Data Are Unique
+Multiple methods are used to 
+identify drug overdose deaths.
+Jurisdictions can use relevant  ICD-10 
+cause of death codes  (X40–X44 and 
+Y10–Y14), scans of the text-based 
+cause of death information , and 
+reviews of medical examiner/coroner 
+reports to identify unintentional and 
+undetermined intent drug overdose 
+deaths.
+SUDORS includes data on 
+the drugs that caused death 
+as well as additional drugs 
+detected. 
+The comprehensive postmortem 
+toxicology information in SUDORS offers 
+a more thorough picture of what drugs 
+were being used at the time of death, 
+and of polysubstance use , than is 
+available elsewhere.
+ 
+SUDORS data can capture newly 
+emerging drugs. 
+SUDORS captures information on  
+specific drugs rather than just 
+drug classes (for example, 
+methamphetamine rather than 
+psychostimulants with abuse potential). 
+Additionally, the SUDORS system is 
+flexible, allowing for new drugs to be 
+added in real-time as SUDORS staff 
+identify them on toxicology reports. 
+Together, these capabilities mean that 
+SUDORS data can quickly capture newly  
+emerging drugs.
+ 
+Data on circumstances and 
+scene evidence provide the 
+context surrounding the 
+overdose death. 
+SUDORS data go beyond toxicology and 
+demographics to provide a look into 
+the life of the decedent (for example, 
+medical history, substance use disorder 
+treatment history, and criminal justice 
+involvement) and describe how the 
+overdose death occurred .
+SUDORS narratives provide the 
+who, what, where, when, and 
+why of the overdose death. 
+SUDORS staff write a complete 
+description for each overdose death 
+detailing all components  (such as cause 
+of death, circumstances, and toxicology) 
+in one place. These narratives provide 
+additional context for understanding the 
+overdose and supporting information 
+on circumstances captured within 
+the system (for example, indication 
+of “previous drug overdose” in the 
+system, and the narrative provides 
+context about the timing of the 
+previous overdose, drug(s) involved, 
+and any treatment received). These 
+narratives lend themselves to in-depth 
+qualitative analyses of the context and 
+circumstances of overdose deaths, which 
+can inform prevention efforts.
+SUDORS Data Can Be Used for Action
+SUDORS data lend themselves to multiple different types 
+of analyses because of the richness of the data and the 
+different types of information that are collected. 
+For example, analyses might focus on trends in deaths 
+involving specific drugs over time, comparison of 
+circumstances surrounding overdoses  between time 
+periods or across decedent demographics, or qualitative 
+assessments of overdose context using incident narrative 
+text data. As a result, SUDORS data can be used for action 
+in the following ways:
+Educating partners about location-specific circumstances  
+and risk factors.
+Alerting health providers, public health professionals,  
+medical examiner and coroner offices, and other partners  
+of newly emerging drug threats.
+Informing drug overdose prevention and response planning 
+and strategies using toxicology and circumstance data.
+Evaluating  the impact of overdose prevention and  
+response efforts.
+SUDORS State Unintentional Drug Overdose Reporting System
+State and local jurisdictions are increasingly better informed by systems like SUDORS, which presents comprehensive 
+information on the characteristics and circumstances surrounding drug overdose deaths to inform prevention and response 
+efforts. Find CDC-published reports on how SUDORS data have been used for action on the CDC Drug Overdose MMWR 
+Articles Webpage and Journal Articles Webpage.
+Learn more about CDC’s Overdose Data to Action program
+www.cdc.gov/drugoverdose/od2a

@@ -1,0 +1,105 @@
+===== Page 1 =====
+CDC’s National Violent Death Reporting 
+System (NVDRS) & Law Enforcement 
+The Centers for Disease Control and Prevention’s National Violent Death Reporting System (NVDRS) links details 
+of violent deaths – the “who, when, where and how” – and shares insights into “why” they occurred. 
+NVDRS uses information from law enforcement reports, death certificates, and coroner/medical examiner reports 
+(including toxicology) to monitor and characterize violent deaths. NVDRS is the only state-based online 
+reporting system that pools data on violent deaths and their circumstances from multiple sources into 
+one anonymous database. No personally identifiable information is collected in the web-based system.
+We recognize law enforcement’s unique role in the community, and NVDRS allows law enforcement to have a 
+more comprehensive view of violent deaths. By partnering with law enforcement, NVDRS can develop a more 
+thorough picture of the circumstances that contribute to violent deaths, help law enforcement prioritize 
+the use of public safety resources, better understand crime, and in turn help communities implement various 
+prevention and educational strategies. The goal of NVDRS is to help create safer, healthier communities.
+What information is collected? 
+NVDRS includes information from statewide data compiled 
+at the national level for these types of cases:
+• Suicide
+• Homicide
+• Deaths of undetermined intent that may have been 
+due to violence
+• L
+egal intervention (excluding executions)
+• Unintentional firearm-related deaths
+NVDRS collects information on unintentional   
+firearm-r
+elated deaths to:
+• Provide a more complete picture of firearm-related 
+deaths in the country
+• Inf
+orm prevention efforts by improving 
+understanding of the circumstances surr
+ounding   
+these deaths
+Trained abstractors enter de-identified information into the 
+system according to standardized CDC guidelines. Data 
+fields collected in NVDRS include information on:
+• Injury characteristics (e.g., how the victim died)
+• Demogr
+aphics
+• Circumstances that preceded or were related to a 
+victim’
+s death
+• Mental health diagnoses
+• Toxicology (drugs or poisons in the victim’s system)
+• More than 600 other incident characteristics
+• Narratives that provide a brief summary of the 
+incident based on law enforcement and coroner/
+medical examiner reports
+National Center for Injury Prevention and Control 
+Division of Violence Prevention
+
+===== Page 2 =====
+What can NVDRS data do
+for law enforcement?
+• Provide analyses  that can address 
+timely topics and emerging issues
+• Reveal patterns of violent deaths 
+through geographic analysis (mapping of 
+violent death “hot spots”)
+• Guide, inform, and help focus 
+violence prevention efforts
+Leading to…
+• Greater understanding of violent 
+crime
+• More effective deployment  of law 
+enforcement
+• Better use  of public safety resources
+• Stronger, targeted  crime policies
+• Healthier, safer  communities
+Is the information in 
+NVDRS secure? What 
+protections are in place?
+Since NVDRS data collection began 
+in 2003, there have been no reported 
+data breaches; nothing has compromised 
+the confidentiality or security of the system.  
+Participating NVDRS states enter data into an 
+encrypted, web-based system. The VDRS states 
+submit this information to CDC using the most 
+up-to-date security protocols.
+Local laws that protect other types of health 
+department records, such as communicable 
+disease records, also apply to NVDRS files. 
+ 
+How to participate
+Law enforcement officers on the frontlines of violent events can provide detailed reports on the incidents they 
+handle first-hand. When law enforcement provides thorough details, NVDRS can provide more thorough insights into 
+why these violent deaths occurred and how we can work to prevent future violent deaths.
+For more information on NVDRS, visit: https://www.cdc.gov/violenceprevention/nvdrs/index.html
+NVDRS in Action: NVDRS Informs First 
+Responder Suicide Prevention in Colorado
+The Colorado VDRS noticed that suicide victims who were first 
+responders in Colorado were much more likely to have been 
+a veteran than the general population of suicide victims. This 
+makes sense given the high rate at which veterans join police, 
+security, EMS, and fire services; however, it raises questions about 
+what needs veterans may have as they transition from one high-
+stress position to another, and suggests the magnitude of this 
+need is greater than previously suspected.
+As a result of these findings, Colorado has enhanced the 
+ManTherapy.org website to include and promote resources 
+focused on positive mental and physical health for all active 
+military personnel, veterans, and their families.
+

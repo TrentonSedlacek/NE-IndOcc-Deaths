@@ -1,0 +1,240 @@
+===== Page 1 =====
+CharacteristicsDemographics Geography
+Nebraska NEVDRS/SUDORS About the Data
+^Only suicide means and location types reflecting >1% of suicide deaths are visible in each chart.
+^^Substances and circumstances are not mutually exclusive; more than one substance and more than one circumstance can be recorded in each suicide death. Substance and/or circumstance data 
+are not available for all deaths. While a substance may be recorded, it is not necessarily the primary cause of death.
+*Data suppressed due to small numbers (count between 1-5) or if only one category is suppressed the next lowest category is also suppressed.
+Note: Suicide death counts in this dashboard, based on data from the National Violent Death Reporting System (NVDRS), may differ from those in the Vital Statistics Death Dashboards. Please see 
+the "About the Data" tab for more details.
+Source: Nebraska Violent Death Reporting System (NVDRS), Nebraska DHHS
+Number of Deaths by Means^
+Number of Deaths by Location Type^
+Substances Recorded^^ in Suicide Deaths Circumstances Recorded^^ in Suicide Deaths
+Nebraska Suicide Deaths Dashboard
+Incident Characteristics of Suicide Deaths
+Number of Deaths Select Data:
+Filters Used
+0 200 400
+Firearm
+Hanging, strangulation, suffocation
+Poisoning
+Sharp instrument
+Fall
+Motor vehicle including buses, motorcycles
+Other transport vehicle (e.g., trains, planes, boats)
+468
+260
+103
+17
+8
+8
+6
+Firearm
+Hanging, strangulation, suffocation
+Poisoning
+Sharp instrument
+Fall
+Motor vehicle including buses, motorcycles
+Other transport vehicle (e.g., trains, planes, boats)
+468
+260
+103
+17
+8
+8
+6
+0 100 200 300 400 500 600 700
+House, apartment
+Street/road, sidewalk, alley
+Natural area (e.g., field, river, beaches, woods)
+Hotel/motel
+Park, playground, public use area
+Parking lot/public parking garage
+Jail, prison, detention facility
+Farm
+Other commercial establishment (e.g., grocery store, retail outlet, laundromat)
+Bridge
+Railroad tracks (i.e., other than public transportation or station)
+Motor vehicle (excluding school bus and public transportation)
+Cemetery, graveyard, or other burial ground
+Highway, freeway
+635
+39
+32
+25
+25
+22
+20
+19
+11
+10
+9
+8
+6
+6
+House, apartment
+Street/road, sidewalk, alley
+Natural area (e.g., field, river, beaches, woods)
+Hotel/motel
+Park, playground, public use area
+Parking lot/public parking garage
+Jail, prison, detention facility
+Farm
+Other commercial establishment (e.g., grocery store, retail outlet, laundromat)
+Bridge
+Railroad tracks (i.e., other than public transportation or station)
+Motor vehicle (excluding school bus and public transportation)
+Cemetery, graveyard, or other burial ground
+Highway, freeway
+635
+39
+32
+25
+25
+22
+20
+19
+11
+10
+9
+8
+6
+6
+0 50 100 150
+% of Suicide Deaths with Substance Recorded
+Alcohol
+Other Drugs
+Anti Depressant
+Marijuana
+Benzodiazepines
+Opiate
+Amphetamine
+Anticonvulsants
+Muscle Relaxant
+Antipsychotic
+Cocaine
+Carbon Monoxide
+Barbiturates
+158
+117
+104
+70
+69
+67
+59
+55
+20
+17
+17
+11
+7
+Alcohol
+Other Drugs
+Anti Depressant
+Marijuana
+Benzodiazepines
+Opiate
+Amphetamine
+Anticonvulsants
+Muscle Relaxant
+Antipsychotic
+Cocaine
+Carbon Monoxide
+Barbiturates
+158
+117
+104
+70
+69
+67
+59
+55
+20
+17
+17
+11
+7
+Number of Deaths with Substance Recorded
+0 200 400
+% of Suicide Deaths with Circumstance Present
+Reported as Appearing Depressed by Others
+Left Suicide Note
+Had History of Suicidal Ideation
+Had History of Mental Health Treatment
+Intimate Partner Problems Contributed to Death
+Disclosed Suicidal Intent in Past Month
+Had Alcohol Dependence or Problem
+Physical Health Problems Contributed to Death
+Had Current Diagnosed Mental Health Problem
+Other Substance Misuse Problem
+Argument or Conflict Led to Death
+Had History of Attempting Suicide
+Family Relationship Problems Contributed to Death
+Job Problems Contributed to Death
+450
+265
+251
+228
+211
+196
+186
+186
+171
+169
+136
+128
+57
+50
+Reported as Appearing Depressed by Others
+Left Suicide Note
+Had History of Suicidal Ideation
+Had History of Mental Health Treatment
+Intimate Partner Problems Contributed to Death
+Disclosed Suicidal Intent in Past Month
+Had Alcohol Dependence or Problem
+Physical Health Problems Contributed to Death
+Had Current Diagnosed Mental Health Problem
+Other Substance Misuse Problem
+Argument or Conflict Led to Death
+Had History of Attempting Suicide
+Family Relationship Problems Contributed to Death
+Job Problems Contributed to Death
+450
+265
+251
+228
+211
+196
+186
+186
+171
+169
+136
+128
+57
+50
+Number of Deaths with Circumstance Present
+Year:
+Sex:
+Race and Ethnicity:
+Education:
+Age Range:
+2020-2022
+Both Sexes
+All Education Levels
+All Races and Ethnicities
+All Ages
+Year
+All 
+Race and Ethnicity
+All 
+Education
+All 
+Sex
+All 
+Age Range
+All 
+Microsoft Power BI Pages  
+9/24/26, 4:32 PM Microsoft Power BI
+https://app.powerbigov.us/view?r=eyJrIjoiMjg1ZjI5ZmMtOGQxNy00ZTkwLTgwZjctYTExNGNhOTRhN2RjIiwidCI6IjA0MzIwN2RmLWU2ODktNGJmNi0… 1/1

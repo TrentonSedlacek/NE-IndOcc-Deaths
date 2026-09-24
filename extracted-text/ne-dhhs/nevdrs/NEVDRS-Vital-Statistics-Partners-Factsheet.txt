@@ -1,0 +1,104 @@
+===== Page 1 =====
+CDC’s National Violent Death Reporting 
+System & Vital Statistics Partners
+The Centers for Disease Control and Prevention’s (CDC’s) National Violent Death Reporting System (NVDRS) links 
+details of violent deaths—the who, when, where, and how—and shares insights into why they occurred. 
+NVDRS relies on information from source documents, such as death certificates, coroner/medical examiner reports 
+(including toxicology results), and law enforcement reports, to pool anonymized data on violent deaths and their 
+circumstances into one database. Such data pooled together are far more comprehensive than what is available 
+elsewhere, so decision-makers and program planners may use the results to better tailor violence prevention efforts.
+What is the role of vital registrars in NVDRS? 
+The data that vital registrars provide through death certificates are an essential component of NVDRS. Many state 
+violent death reporting systems (VDRS) use death certificates as the first source document to identify cases that meet 
+criteria for inclusion in the national system, and state and national systems rely on death certificates to contain accurate 
+information. Through International Classification of Diseases, Tenth Revision (ICD-10) codes on the death certificate, 
+NVDRS captures most reported violent deaths and deaths of undetermined intent. Death certificates provide 
+important demographic information, as well as manner and cause of death data. Other source documents, such as 
+coroner/medical examiner reports, toxicology results, and law enforcement reports, add to and validate each case.
+Trained abstractors enter anonymized information into a secure database according to standardized CDC 
+guidelines. Reports generated from NVDRS help prevention partners identify important populations affected by 
+different types of violence and target prevention strategies effectively. 
+Which types of death 
+are included in 
+NVDRS?
+NVDRS compiles data for these types of cases: 
+• Suicides
+•
+Homicides
+• Legal intervention, excluding legal
+executions
+• Firearm-related deaths, including
+unintentional firearm deaths
+• Deaths of undetermined intent, including
+undetermined drug overdose deaths
+What types of data  
+are collected? 
+NVDRS collects data for all age groups and includes 
+information on: 
+• I njury characteristics (e.g., manner of death, cause of death)
+• Demographics (e.g., sex, race/ethnicity)
+• Circumstances that preceded or were related to a victim’s
+death (e.g., intimate partner violence, financial problems)
+• Mental health problems, including diagnoses
+• Toxicology
+• Narratives that provide a summary of the incident based on
+law enforcement and coroner/medical examiner reports
+• More than 600 unique data elements
+
+===== Page 2 =====
+Is the information in 
+NVDRS secure? What 
+protections are in place? 
+Since NVDRS data collection began in 
+2003, there have been no reported data 
+breaches. VDRS programs enter data 
+into an encrypted, web-based system. 
+No personally identifiable information 
+is entered into the web-based system. 
+Data are submitted to CDC using the 
+most up-to-date security protocols. 
+Why does NVDRS collect 
+informa
+tion on deaths of 
+undetermined intent?
+NVDRS collects information on deaths 
+of undetermined intent to: 
+• Provide a more complete picture of 
+deaths that may be intentional 
+• Allow public health professionals 
+and data analysts to examine 
+what unique factors result in an 
+undetermined classification 
+• Shed light on drug overdose 
+deaths (the most common type of 
+death of undetermined intent in 
+NVDRS) that could not be classified 
+as suicide or unintentional 
+How can NVDRS data be used? 
+NVDRS data have been used since 2003 to:
+• Uncover timely topics and emerging issues related 
+to violent deaths 
+• Reveal important variations in patterns of violent 
+deaths across locations and populations and over time 
+• Help states and the violence prevention field 
+better understand the circumstances that 
+contribute to violence in the county, state, territory, 
+and country 
+• Guide, inform, and help target and evaluate violence 
+prevention efforts, including suicide prevention 
+Using NVDRS data leads to … 
+• Greater understanding of violent deaths 
+• More effective use of violence prevention resources 
+• Enhanced monitoring of the effectiveness of 
+violence prevention strategies
+• Healthier, safer communities  
+The Reach of NVDRS 
+NVDRS began collecting data on violent 
+deaths from six states in 2002, followed by 
+progressive additions to the system over 
+several years. In 2018, NVDRS was expanded 
+to include data collection from all 50 states, 
+Puerto Rico, and the District of Columbia. 
+This expansion brings NVDRS closer to the 
+goal of providing a complete picture of 
+violent deaths across the nation. PR
