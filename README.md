@@ -11,6 +11,7 @@ Start with docs/project-brief.md for context, the people involved, what the coll
 | docs/project-brief.md | Project context, open questions, meeting prep |
 | docs/web-captures/ | Verbatim saves of NE DHHS, CDC, WISQARS, and Census web pages (one file per page, duplicates removed, source URL and capture date at top) |
 | docs/meetings/ | Meeting transcripts |
+| docs/death-cert-data-notes.md | What the team's death certificate repos (DC-HDD-Surveillance, OHIs, NE-Heat-Excess-Mortality, Mother-Repo) hold: DC pipelines, I/O fields, case-finding patterns, denominators, suppression rules, and the plan for the DC side of the comparison |
 | source-docs/INVENTORY.md | Table of every PDF with description and years, every industry/occupation mention with page numbers, dashboard screenshot descriptions, and the Massachusetts report methodology |
 | source-docs/ne-dhhs/nevdrs/ | NEVDRS overview, infographic, coding manual, partner fact sheets |
 | source-docs/ne-dhhs/sudors/ | SUDORS fact sheet and coding manual |

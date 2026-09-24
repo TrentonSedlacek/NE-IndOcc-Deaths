@@ -9,7 +9,7 @@ Two last-minute projects, both rates by industry and occupation (I/O):
 1. Opioid-related (possibly wider drug overdose) deaths by industry and occupation.
 2. Suicide deaths by industry and occupation.
 
-Data sources to examine first: SUDORS (overdose) and NVDRS/NEVDRS (suicide), as published and held by the NE DHHS Office of Injury Surveillance. Later, Nebraska death certificate data by I/O will be pulled in from the team's death certificate repos for comparison. That is not in scope yet.
+Data sources to examine first: SUDORS (overdose) and NVDRS/NEVDRS (suicide), as published and held by the NE DHHS Office of Injury Surveillance. Nebraska death certificate data by I/O will be compared against them. The team's death certificate repos were reviewed on 2026-09-24; see docs/death-cert-data-notes.md for what they hold and the plan.
 
 The README describes the rates as "by FTE." Note that the Massachusetts report the team is using as a model does not use FTE; it uses employed workers from the American Community Survey (ACS) as the denominator (deaths per 100,000 workers). See source-docs/INVENTORY.md, Massachusetts section. Whether to use FTE (hours-adjusted) or employed-worker denominators is an open decision.
 
