@@ -15,6 +15,7 @@ Start with docs/project-brief.md for context, the people involved, what the coll
 | docs/analysis-plan.md | The plan: inputs, ten steps, decisions needed, quality checks, effort |
 | docs/provenance-comparison.md | Provenance of all ten suicide and overdose analyses in view, side-by-side table, what is most common, and the shared pipeline for the OHIs sub-indicator and the NEVDRS check |
 | docs/acs-denominator-spec.md | Denominator decision (likely ACS employed workers): tables, years, rate arithmetic, numerator rules, FTE option |
+| scripts/io_death_rates.R | The analysis, one R script: deaths from Guardian exports, NIOCCS coding, ACS denominators, Poisson CIs, suppression, QA checks. Draft, unaudited |
 | scripts/fetch_acs_denominators.py | Pulls Nebraska ACS C24030 and C24010 into data/denominators/ (needs api.census.gov access) |
 | docs/death-cert-data-notes.md | What the team's death certificate repos (DC-HDD-Surveillance, OHIs, NE-Heat-Excess-Mortality, Mother-Repo) hold: DC pipelines, I/O fields, case-finding patterns, denominators, suppression rules, and the plan for the DC side of the comparison |
 | source-docs/INVENTORY.md | Table of every PDF with description and years, every industry/occupation mention with page numbers, dashboard screenshot descriptions, and the Massachusetts report methodology |
