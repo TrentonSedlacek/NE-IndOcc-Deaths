@@ -41,3 +41,14 @@ Nothing in the plan changes; it confirms it. The occupational health team should
 - How was "not in workforce" defined, and what denominator did the revision use for it?
 - Can we have the sector-by-sector counts behind the two chosen sectors?
 - Were the census tract maps reviewed for small-number disclosure?
+
+## Reconciliation run (io_death_rates_v4.R, 2026-09-28, residents 16+, NIOCCS coding, ACS 5-year 2020-2024 denominators)
+
+| Group | Ours 2020-2021 | Can's sheet | Our rate per 100,000 worker-years |
+|---|---|---|---|
+| Construction (23) | 65 | 72 | 44.8 |
+| Manufacturing (31-33) | 60 | 55 | 28.1 |
+| Not in workforce | 66 | 84 | none (no ACS denominator) |
+| All workers | 440 | | 21.5 |
+
+Counts agree to within about 10 percent for the two sectors. The not-in-workforce gap (66 vs 84) is unexplained; candidates are all ages vs 16+, certificate Census industry code vs NIOCCS, and the 23 not-coded 2020-2021 suicides. The sheet's "72 per 100,000" for construction was a count, not a rate.
