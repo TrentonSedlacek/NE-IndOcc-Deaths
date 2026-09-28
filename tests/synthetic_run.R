@@ -1,6 +1,6 @@
 # =====================================================================
 # tests/synthetic_run.R
-# Runs scripts/io_death_rates.R end to end on FAKE data, with no network:
+# Runs scripts/io_death_rates_v4.R end to end on FAKE data, with no network:
 #   - Guardian-shaped exports for 2020-2024 (CSV, and xlsx for 2024)
 #   - a fake NIOCCS cache (run_nioccs = FALSE, so no CDC calls)
 #   - fake ACS C24030 / C24010 CSVs in the fetch_acs_denominators.py format
@@ -102,6 +102,8 @@ plant("P17", 2022, AcmeUnderlyingCode = "X72", Sex = "1", IndustryLit = "US ARMY
 plant("P18", 2022, AcmeUnderlyingCode = "X72", IndustryLit = "", OccupationLIt = "STUDENT", IndustryCode = "") # not in workforce
 plant("P19", 2022, AcmeUnderlyingCode = "X72", IndustryLit = "", OccupationLIt = "", IndustryCode = "")        # not coded
 plant("P20", 2022, AcmeUnderlyingCode = "X72", IndustryLit = "CHILD CARE", OccupationLIt = "CHILD CARE WORKER", IndustryCode = "847") # sector 62, not NIW
+plant("P23", 2021, AcmeUnderlyingCode = "X72", IndustryLit = "USAF", OccupationLIt = "PHOTO INTERPRETER")   # military by NIOCCS special code
+plant("P24", 2021, AcmeUnderlyingCode = "X72", IndustryLit = "INMATE", OccupationLIt = "INMATE")            # not in workforce by NIOCCS special code
 plant("P21", 2022, AcmeUnderlyingCode = "I21.9", MannerDeath = "N", ImmedCauseDeath = "digoxin toxicity") # natural: not overdose
 
 rows_by_file <- list()
@@ -136,6 +138,7 @@ nioccs_reply <- tribble(~IndustryLit, ~OccupationLIt, ~NAICSCode, ~SOCCode,
   "FARM", "FARMER", "111998", "11-9013",               "HOSPITAL", "NURSE", "622110", "29-1141",
   "", "STUDENT", "", "00-0000",                         "", "RETIRED", "999999", "00-0000",
   "US ARMY", "SOLDIER", "928110", "55-3016",            "NEVER WORKED", "NEVER WORKED", "", "",
+  "USAF", "PHOTO INTERPRETER", "009680", "00-9830",      "INMATE", "INMATE", "009890", "00-9100",
   "TRUCKING", "TRUCK DRIVER", "484121", "53-3032",     "RETAIL", "CASHIER", "445110", "41-2011",
   "SCHOOL", "TEACHER", "611110", "25-2021",             "HOMEMAKER", "HOMEMAKER", "", "",
   "UNKNOWN", "UNKNOWN", "", "",                         "CHILD CARE", "CHILD CARE WORKER", "624410", "39-9011")
@@ -144,7 +147,7 @@ cache <- nioccs_reply %>% rowwise() %>%
   mutate(raw = as.character(toJSON(list(Industry = list(list(NAICSCode = NAICSCode, Title = "x")),
                                         Occupation = list(SOCCode = SOCCode, Title = "y")), auto_unbox = TRUE))) %>% ungroup() %>%
   mutate(NAICSCode = "", SOCCode = "") %>% select(IndustryLit, OccupationLIt, NAICSCode, SOCCode, raw)   # codes blank on purpose: re-parsed from raw
-write_csv(cache, file.path(dirs$cache, "nioccs_cache.csv"), na = "")
+write_csv(cache, file.path(dirs$cache, "nioccs_cache_v3.csv"), na = "")
 
 # ---------------------------------------------------------------------
 # 3. Fake ACS tables, same shape and labels as the real C24030 / C24010
@@ -216,7 +219,7 @@ options(io_death_rates.test_cfg = list(dc_dir = dirs$dc, out_dir = dirs$out, cac
                                        acs_dir = dirs$acs, run_nioccs = FALSE))
 files_before <- list.files(root, recursive = TRUE)
 env <- new.env()
-sys.source(file.path("scripts", "io_death_rates.R"), envir = env)
+sys.source(file.path("scripts", "io_death_rates_v4.R"), envir = env)
 
 # ---------------------------------------------------------------------
 # 5. Checks
@@ -246,9 +249,12 @@ check(grp("P17", "ind_group") == "Military", "P17 US ARMY = Military")
 check(grp("P18", "ind_group") == "Not in workforce", "P18 STUDENT = Not in workforce")
 check(grp("P19", "ind_group") == "Not coded", "P19 blank text = Not coded")
 check(grp("P20", "ind_group") == "62", "P20 CHILD CARE = sector 62, not Not in workforce")
+check(grp("P23", "ind_group") == "Military" && grp("P23", "occ_group") == "Military", "P23 USAF 009680 / 00-9830 = Military")
+check(grp("P24", "ind_group") == "Not in workforce", "P24 INMATE 009890 / 00-9100 = Not in workforce")
+check(file.exists(file.path(dirs$out, sprintf("suicide_2020_2021_vs_nevdrs_%s.csv", format(Sys.Date(), "%Y%m%d")))), "2020-2021 NEVDRS cut written")
 check(!row_of("P21")$overdose, "P21 natural digoxin toxicity is not an overdose")
 check(grp("P01", "ind_group") == "23" && grp("P01", "occ_group") == "47", "P01 sector 23, SOC 47")
-check(env$qa$text_pairs_not_yet_coded >= 1, "uncached pair (RAILROAD) reported as not yet coded")
+check(env$qa$text_pairs_not_coded >= 1, "uncached pair (RAILROAD) reported as not yet coded")
 check(isTRUE(env$qa$group_rows_sum_to_totals), "group rows add up to case totals in every table")
 check(n_distinct(env$den_ind$group) == 21 && n_distinct(env$den_occ$group) == 23, "20 sectors and 22 SOC groups plus All workers")
 check(env$den_ind$workers[env$den_ind$group == "All workers" & env$den_ind$sex == "T"] == env$acs_total_ind, "ACS industry leaves add to C24030_001")

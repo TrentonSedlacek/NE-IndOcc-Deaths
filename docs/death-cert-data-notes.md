@@ -98,3 +98,7 @@ Open items to settle before writing the SAS: the industry code list on the DC fi
 - Suicides by ICD (X60-X84, Y87.0, U03), all ages, residents: 269, 277, 297, 274, 282 for 2020 to 2024. Manner of death and ICD agree on 1,393 of 1,406 suicides.
 - SUDORS-definition overdoses, all ages: 186, 201, 198, 139, 126. The 2021-2022 total (399) is above the published SUDORS 366; 68 of the 16+ cases come from cause-of-death text only and are on the review list.
 - The SAS programs in DC-HDD-Surveillance and OHIs filter on EventYear and compute age from NchsAge. On these exports both give zero rows. Check whether the SAS runs read a different export.
+
+## NIOCCS special codes (seen in the real v3 cache, 2026-09-28)
+
+NIOCCS returns placeholder codes instead of blanks when the text is not an industry or occupation. Industry 009670 (Army), 009680 (Air Force), 009690 (Navy), 009770 (Marines), 009790 (military, branch unknown) with occupation 00-9830, 00-9840, 00-9850 mean armed forces. Industry 009890 with occupation 00-9010 (homemaker) or 00-9100 (never worked) means not in the workforce. Industry 009990 with occupation 00-9900 means insufficient information. v3 only recognised NAICS 928110 and SOC 55 as military, so about 20 military suicides fell into Not coded; io_death_rates_v4.R reads these codes.
