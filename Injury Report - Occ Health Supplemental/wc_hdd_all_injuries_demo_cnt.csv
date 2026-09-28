@@ -1,0 +1,15 @@
+age_group,Sex,n
+16-19,Female,4
+16-19,Male,27
+20-24,Female,13
+20-24,Male,115
+25-34,Female,36
+25-34,Male,287
+35-44,Female,46
+35-44,Male,272
+45-54,Female,62
+45-54,Male,310
+55-64,Female,101
+55-64,Male,353
+65+,Female,70
+65+,Male,128

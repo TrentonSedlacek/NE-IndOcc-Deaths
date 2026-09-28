@@ -1,0 +1,106 @@
+---
+title: "Report on Occupational Inhalational Exposures to Formaldehyde and Carbon Dioxide"
+author: "Chris Austin, MPH; Occupational Health Epidemiologist"
+output: html_document
+date: "2024-03-07"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+<br>
+<br>
+<br>
+<br>
+**Background:** On March 6th, 2024, Nebraksa State Epidemiologist Dr. Matthew Donahue recieved an email from CDC Tox Team notfifying that the Nebraska Regional Poison Center, the Centers for Disease Control and Prevention, and America's Poison Centers have identified an incident of potential public health significance (PHS) in your jurisdiction.
+
+NPDS automated surveillance algorithm detected a group of suspected occupational inhalational exposures to formaldehyde and carbon dioxide. Patients developed symptoms and were managed on-site. You may already be aware of this incident.
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+PCC data shows 12 exposure events. However, looking at the case ID it shows 6 individuals exposed to both formaldehyde and carbon dioxide:  
+
+* 5 Unintentional - Occupational 
+* 1 Unintentional - Environmental
+
+The related 'Unintentional - Environmental' incident seems to be a 11 year old female in a public area.
+<br>
+<br>
+
+#### PCC Formaldehyde and Carbon Dioxide Exposure Details 
+```{r, out.width = "100%", out.height = "50px",echo=FALSE}
+
+DT::datatable(pcc_form_carbdiox_info, options = list(
+  pageLength = 15, 
+  dom = 't',
+  scrollX = TRUE,
+  scrollCollapse = TRUE))
+
+
+```
+
+<br>
+<br>
+
+Plotting a time series of 'carbon dioxide' *or* 'formaldehyde or formalin' exposure events
+for 'Unintentional - Occupational' or 'Unintentional - Environmental' we a large spike on March 5th (n=12)
+compared to previous unintentional exposures to 'carbon dioxide' *or* 'formaldehyde or formalin'.
+
+<br>
+
+
+
+```{r, out.width = "100%", echo=FALSE}
+
+
+p <- pcc_form_carbdiox |> 
+  ggplot(aes(startCalendar, n)) +
+  geom_line(color = "#969696") +
+  geom_point(color = "#33a02c", size = 2) +
+  scale_x_date(date_breaks = "1 month") +
+  scale_y_continuous(breaks = 0:12) +
+  labs(y = NULL, x = NULL, title = "Time series of ‘carbon dioxide’ and ‘formaldehyde or formalin’ exposure events \nfor Unintentional - Occupational or Unintentional - Environmental, 2018-2024" ) +
+  theme_classic() +
+  theme(
+    panel.grid.major.y = element_line(),
+    axis.text.x = element_text(angle = 90, vjust = .5, size = 6)) 
+
+
+p
+
+```
+
+<br>
+<br>
+
+I also wanted to look at 'Unintentional - Occupational' exposure events to see if there was a spike on March 5th for 'Unintentional - Occupational'. 
+
+* Do not see an unusually high spike on March 5th, so my guess is that the anomaly detection seems to be just for ‘carbon dioxide’ and ‘formaldehyde or formalin’ for 'Unintentional - Occupational'. 
+
+```{r, out.width = "100%", echo=FALSE}
+w <- pcc_workplace |> 
+  ggplot(aes(startCalendar, n)) +
+  geom_line(color = "#969696") +
+  geom_point(color = "#1f78b4") +
+  scale_x_date(date_breaks = "1 month") +
+  labs(y = NULL, x = NULL, title = "Time series of 'Unintentional - Occupational' Exposure Events, 2018-2024") +
+  theme_classic() +
+  theme(
+    panel.grid.major.y = element_line(),
+    axis.text.x = element_text(angle = 90, vjust = .5, size = 6)) 
+
+w
+```
+
+<br>
+<br>
+
+
+**Conclusion:** Although this warrants further investigation on these events, I do not  think there is a wider public safety concern. I will keep everyone updated on further updates. 
+
+<br>
+<br>
