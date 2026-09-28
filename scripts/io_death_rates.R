@@ -95,7 +95,8 @@ read_guardian <- function(yr) {
   }
   missing_vars <- setdiff(keep_vars, names(d))
   if (length(missing_vars) > 0) stop(yr, ": fields not in export: ", paste(missing_vars, collapse = ", "))
-  d[keep_vars]
+  if (!"DateOfBirth" %in% names(d)) d$DateOfBirth <- NA_character_
+  d[c(keep_vars, "DateOfBirth")]
 }
 deaths_raw <- bind_rows(lapply(cfg$years, read_guardian))
 
@@ -161,13 +162,28 @@ message("  rows after resident filter: ", nrow(deaths))
 # OHIs lines 382 to 386 (same as DC template lines 70 to 75): age in years.
 # Unit 1 years, 2 months, 3 weeks, 4 to 6 days/hours/minutes, 9 unknown;
 # NchsAge 999 is unknown. trunc() is SAS int().
-deaths <- deaths %>% mutate(age = case_when(
+deaths <- deaths %>% mutate(age_nchs = case_when(
     NchsAge == 999      ~ NA_real_,
     NchsAgeUnit == 1    ~ NchsAge,
     NchsAgeUnit == 2    ~ trunc(NchsAge / 12),
     NchsAgeUnit == 3    ~ trunc(NchsAge / 52),
     NchsAgeUnit %in% 4:6 ~ 0,
     TRUE                ~ NA_real_))
+
+# Second route: age from DateOfBirth and DateOfDeath (legacy occ_code.R did
+# this). Seen 2026-09-28: NchsAge in these exports is not the age in years
+# (every resident came out 0 to 15), so the DOB route is used when the
+# NchsAge route is obviously broken. Both are printed below.
+deaths <- deaths %>% mutate(
+  dob     = parse_dod(DateOfBirth),
+  age_dob = ifelse(!is.na(dob) & !is.na(dod), trunc(as.numeric(dod - dob) / 365.25), NA_real_))
+share_adult_nchs <- mean(deaths$age_nchs >= 16, na.rm = TRUE)
+share_adult_dob  <- mean(deaths$age_dob  >= 16, na.rm = TRUE)
+age_source <- if (!is.na(share_adult_nchs) && share_adult_nchs > 0.5) "NchsAge" else "DateOfBirth"
+deaths <- deaths %>% mutate(age = if (age_source == "NchsAge") age_nchs else age_dob)
+message("  NchsAge top values: ", top_vals(deaths$NchsAge, 8))
+message("  Age from NchsAge: share 16+ = ", round(share_adult_nchs, 3), "; from DOB: share 16+ = ", round(share_adult_dob, 3),
+        "; DOB unparsed = ", sum(is.na(deaths$dob)), ". Using: ", age_source)
 
 # OHIs line 388 and format $sexf (line 96): M or 1 = M, F or 2 = F, else U.
 # DC template line 103: MannerDeath S = suicide.
