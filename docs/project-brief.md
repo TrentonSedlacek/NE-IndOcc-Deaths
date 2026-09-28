@@ -46,6 +46,18 @@ Derry forwarded the original one-page sheet, "CDC NEVDRS - Suicide Deaths by Sec
 
 Things the three-panel design leaves open: how "non-worker" was defined and what its denominator was (not in labor force, unemployed, or everyone without a coded occupation), why construction and manufacturing were singled out, and whether the 70 to 72 figure is suicide, overdose, or combined.
 
+## What the team archive adds (2026-09-28 upload, see team-archive/README.md)
+
+The occupational health team already has most of the machinery, built by Chris Austin and adapted by Jean Kwizerimana:
+
+- An FTE denominator tool on ACS PUMS: FTE = person weight x usual hours per week / 40, civilian employed (ESR 1 or 2), grouped by NAICSP or SOCP cut to 2 or 3 digits, with replicate-weight margins of error. Outputs exist for NAICS 2-digit 2020 to 2023 and SOC 2-digit 2014 to 2023 (all 5-year PUMS, some 1-year). 2024 and the 2020-2024 5-year window are missing. Details and file-level caveats in team-archive/denominators/README.md.
+- A NIOCCS coding pipeline: the death certificate industry and occupation text (INDUSTL, OCCUPL) is sent record by record to the CDC NIOCCS web service and comes back with NAICS, SOC, and Census codes. team-archive/io-coding/nioccs/README.md.
+- A suicide-by-industry precedent: suicide_agg.R and nioccs_suicide.R take NCHS suicides 2014 to 2023, age 16+, code them with NIOCCS, cut to NAICS sectors and SOC major groups, and divide by PUMS FTE per 1,000. Neither script runs as saved, both mix ten years of deaths with one year of FTE, neither has confidence intervals or suppression, and non-workers are dropped silently. Still, this is very likely where Can and Chris's "FTE-based" revision of the sector sheet came from. team-archive/analyses/README.md.
+
+Two corrections to docs/acs-denominator-spec.md follow from this. First, the team's FTE definition is hours/40 with no weeks-worked term, not hours x weeks / 2,000; the project should pick one and say so. Second, the team codes the text through NIOCCS to NAICS and SOC rather than rolling up the death certificate Census codes, so the denominator groups are NAICSP and SOCP, not the published C24030 and C24010 categories. Either route works; they should not be mixed.
+
+The BLS folder has no FTE-by-industry denominators, so ACS PUMS remains the only in-house FTE source.
+
 ## Questions to bring to Can and Mamie
 
 1. Which fields did you use for industry and occupation: the death certificate coded fields, the text fields, or the NVDRS current occupation free text?
@@ -56,7 +68,8 @@ Things the three-panel design leaves open: how "non-worker" was defined and what
 6. Which years, and are the numbers resident or occurrent deaths?
 7. For the three-panel figure (non-workers, construction, manufacturing): what outcome and years does the 70 to 72 per 100,000 construction figure cover, what is the numerator count, and how was the non-worker group defined?
 8. Which version of the sector sheet is current, what FTE source and sector assignment did the revision use, how was "not in workforce" defined, can we see the all-sector counts, and were the tract maps checked for small-number disclosure? (Details in docs/nevdrs-sectors-factsheet-review.md.)
-9. Can we get the case-level extract (or at least the I/O crosstab) so the occupational health team can reproduce the figures?
+9. Did the FTE revision use Chris's PUMS FTE files and nioccs_suicide.R (or suicide_agg.R)? If so, which FTE file and years, and was the multi-year numerator divided by multi-year FTE?
+10. Can we get the case-level extract (or at least the I/O crosstab) so the occupational health team can reproduce the figures?
 
 ## Repo layout
 

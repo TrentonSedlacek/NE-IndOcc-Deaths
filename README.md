@@ -23,6 +23,7 @@ Start with docs/project-brief.md for context, the people involved, what the coll
 | source-docs/ne-dhhs/newsletters/ | Suicide Prevention Newsletter issues 1 to 5 |
 | source-docs/ne-dhhs/dashboard-screenshots/ | Browser prints of the Nebraska Suicide Deaths Dashboard (Power BI) |
 | source-docs/external/massachusetts/ | MA DPH report on opioid-related overdose deaths by industry and occupation, 2018-2020 (methodology model) |
+| team-archive/ | The occupational health team's own denominator, FTE, NIOCCS, and analysis files, organized with a README per folder; start at team-archive/README.md |
 | extracted-text/ | Plain-text extraction of every PDF, mirrored paths, page markers, for grepping |
 
 ## Key links

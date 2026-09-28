@@ -167,7 +167,7 @@ con <- dbConnect(odbc(),
                  Driver   = "SQL Server",
                  Server   = "dhhsessencesql1.stone.ne.gov",
                  Database = "NE_ESSENCE5_Detection", 
-                 UID    = "mssqladmin",
+                 UID    = "<REDACTED_USER>",
                  PWD    = "REDACTED",
                  port   = 1433)
 
@@ -176,7 +176,7 @@ con2 <- dbConnect(odbc(),
                   Driver   = "SQL Server",
                   Server   = "nedssqlag1.stone.ne.gov",
                   Database = "ER_SURVEILLANCE_PROD", 
-                  UID    = "syndromicprod",
+                  UID    = "<REDACTED_USER>",
                   PWD    = "REDACTED",
                   port   = 1433)
 
