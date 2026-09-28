@@ -707,7 +707,7 @@ writeLines(c(sprintf("io_death_rates.R run %s", Sys.time()),
              "Suicide: underlying X60-X84, Y87.0, U03.",
              "Overdose: SUDORS (underlying X40-X44, Y10-Y14, or overdose text on a death not ruled suicide, homicide or natural).",
              "Opioid: T40.0-T40.4, T40.6 in any multiple-cause field. MA all-intent opioid as a separate table.",
-             "Residents, age 16+, one row per certificate and event year. NIOCCS coding of usual industry and occupation text."),
+             "Residents, age 16+, one row per certificate and event year. NIOCCS coding of usual industry and occupation text.",
              "No suppression applied. Apply the DHHS floor only when a table is released to the public."),
            file.path(cfg$out_dir, sprintf("methods_%s.txt", stamp)))
 message("Done. Tables in ", cfg$out_dir, "; QA and review list in ", cfg$cache_dir)
