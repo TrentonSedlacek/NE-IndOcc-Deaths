@@ -108,6 +108,11 @@ deaths_raw <- bind_rows(lapply(cfg$years, read_guardian))
 parse_dod <- function(x) {
   x <- str_trim(coalesce(x, ""))
   out <- as.Date(rep(NA_character_, length(x)))
+  # Excel serial numbers ("45291.0" = 2023-12-31): the xlsx exports store the
+  # date this way when read as text. Origin 1899-12-30 is the Excel convention.
+  num <- suppressWarnings(as.numeric(x))
+  is_serial <- !is.na(num) & num > 20000 & num < 80000
+  out[is_serial] <- as.Date(num[is_serial], origin = "1899-12-30")
   for (fmt in c("%m/%d/%Y", "%Y-%m-%d", "%m/%d/%Y %H:%M", "%m/%d/%Y %H:%M:%S", "%Y-%m-%d %H:%M:%S", "%d%b%Y", "%m/%d/%y")) {
     todo <- is.na(out) & x != ""
     if (!any(todo)) break
@@ -173,6 +178,8 @@ deaths <- deaths %>% mutate(
   select(-sex1)
 
 message("Deaths loaded: ", nrow(deaths), " residents, all ages, ", paste(range(cfg$years), collapse = "-"))
+message("  Age diagnostics: NchsAgeUnit ", top_vals(deaths$NchsAgeUnit), "; age NA ", sum(is.na(deaths$age)),
+        "; age bands ", top_vals(cut(deaths$age, c(-1, 15, 44, 64, 200), labels = c("0-15", "16-44", "45-64", "65+"))))
 
 # ---------------------------------------------------------------------
 # 2. FLAG OUTCOMES.
