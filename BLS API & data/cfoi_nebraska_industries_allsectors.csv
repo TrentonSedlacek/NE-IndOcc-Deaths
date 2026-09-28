@@ -1,0 +1,774 @@
+seriesID,year,period,periodName,latest,value,footnotes,industry_code,industry_text
+FWU00X00000080S31,2020,A01,Annual,true,48,,000000,All workers
+FWU00X00000080S31,2019,A01,Annual,NA,53,,000000,All workers
+FWU00X00000080S31,2018,A01,Annual,NA,44,,000000,All workers
+FWU00X00000080S31,2017,A01,Annual,NA,35,,000000,All workers
+FWU00X00000080S31,2016,A01,Annual,NA,60,,000000,All workers
+FWU00X00000080S31,2015,A01,Annual,NA,50,,000000,All workers
+FWU00X00000080S31,2014,A01,Annual,NA,55,,000000,All workers
+FWU00X00000080S31,2013,A01,Annual,NA,39,,000000,All workers
+FWU00X00000080S31,2012,A01,Annual,NA,48,,000000,All workers
+FWU00X00000080S31,2011,A01,Annual,NA,39,,000000,All workers
+FWU00X11111X80S31,2019,A01,Annual,true,2,,11111X,Soybean farming
+FWU00X11111X80S31,2017,A01,Annual,NA,1,,11111X,Soybean farming
+FWU00X11115X80S31,2019,A01,Annual,true,1,,11115X,Corn farming
+FWU00X11115X80S31,2018,A01,Annual,NA,3,,11115X,Corn farming
+FWU00X11115X80S31,2015,A01,Annual,NA,3,,11115X,Corn farming
+FWU00X11115X80S31,2014,A01,Annual,NA,1,,11115X,Corn farming
+FWU00X11119180S31,2019,A01,Annual,true,1,,111191,Oilseed and grain combination farming
+FWU00X11119180S31,2018,A01,Annual,NA,2,,111191,Oilseed and grain combination farming
+FWU00X11119180S31,2017,A01,Annual,NA,1,,111191,Oilseed and grain combination farming
+FWU00X11119180S31,2014,A01,Annual,NA,1,,111191,Oilseed and grain combination farming
+FWU00X11119X80S31,2019,A01,Annual,true,1,,11119X,Other grain farming
+FWU00X11119X80S31,2018,A01,Annual,NA,2,,11119X,Other grain farming
+FWU00X11119X80S31,2017,A01,Annual,NA,1,,11119X,Other grain farming
+FWU00X11119X80S31,2014,A01,Annual,NA,1,,11119X,Other grain farming
+FWU00X1111XX80S31,2019,A01,Annual,true,4,,1111XX,Oilseed and grain farming
+FWU00X1111XX80S31,2018,A01,Annual,NA,5,,1111XX,Oilseed and grain farming
+FWU00X1111XX80S31,2017,A01,Annual,NA,2,,1111XX,Oilseed and grain farming
+FWU00X1111XX80S31,2015,A01,Annual,NA,5,,1111XX,Oilseed and grain farming
+FWU00X1111XX80S31,2014,A01,Annual,NA,2,,1111XX,Oilseed and grain farming
+FWU00X11121180S31,2017,A01,Annual,true,1,,111211,Potato farming
+FWU00X11121180S31,2016,A01,Annual,NA,1,,111211,Potato farming
+FWU00X11121X80S31,2017,A01,Annual,true,1,,11121X,Vegetable and melon farming
+FWU00X11121X80S31,2016,A01,Annual,NA,1,,11121X,Vegetable and melon farming
+FWU00X1112XX80S31,2017,A01,Annual,true,1,,1112XX,Vegetable and melon farming
+FWU00X1112XX80S31,2016,A01,Annual,NA,1,,1112XX,Vegetable and melon farming
+FWU00X111XXX80S31,2019,A01,Annual,true,10,,111XXX,Crop production
+FWU00X111XXX80S31,2018,A01,Annual,NA,7,,111XXX,Crop production
+FWU00X111XXX80S31,2017,A01,Annual,NA,9,,111XXX,Crop production
+FWU00X111XXX80S31,2016,A01,Annual,NA,11,,111XXX,Crop production
+FWU00X111XXX80S31,2015,A01,Annual,NA,7,,111XXX,Crop production
+FWU00X111XXX80S31,2014,A01,Annual,NA,11,,111XXX,Crop production
+FWU00X111XXX80S31,2013,A01,Annual,NA,10,,111XXX,Crop production
+FWU00X111XXX80S31,2012,A01,Annual,NA,5,,111XXX,Crop production
+FWU00X111XXX80S31,2011,A01,Annual,NA,12,,111XXX,Crop production
+FWU00X11211180S31,2020,A01,Annual,true,9,,112111,Beef cattle ranching and farming
+FWU00X11211180S31,2019,A01,Annual,NA,4,,112111,Beef cattle ranching and farming
+FWU00X11211180S31,2017,A01,Annual,NA,2,,112111,Beef cattle ranching and farming
+FWU00X11211180S31,2016,A01,Annual,NA,5,,112111,Beef cattle ranching and farming
+FWU00X11211180S31,2015,A01,Annual,NA,7,,112111,Beef cattle ranching and farming
+FWU00X11211180S31,2012,A01,Annual,NA,2,,112111,Beef cattle ranching and farming
+FWU00X11211280S31,2018,A01,Annual,true,1,,112112,Cattle feedlots
+FWU00X11211280S31,2015,A01,Annual,NA,1,,112112,Cattle feedlots
+FWU00X11211280S31,2013,A01,Annual,NA,3,,112112,Cattle feedlots
+FWU00X11211280S31,2012,A01,Annual,NA,2,,112112,Cattle feedlots
+FWU00X11211280S31,2011,A01,Annual,NA,1,,112112,Cattle feedlots
+FWU00X11211X80S31,2020,A01,Annual,true,9,,11211X,"Beef cattle ranching and farming, including feedlots"
+FWU00X11211X80S31,2019,A01,Annual,NA,4,,11211X,"Beef cattle ranching and farming, including feedlots"
+FWU00X11211X80S31,2017,A01,Annual,NA,2,,11211X,"Beef cattle ranching and farming, including feedlots"
+FWU00X11211X80S31,2016,A01,Annual,NA,5,,11211X,"Beef cattle ranching and farming, including feedlots"
+FWU00X11211X80S31,2015,A01,Annual,NA,8,,11211X,"Beef cattle ranching and farming, including feedlots"
+FWU00X11211X80S31,2013,A01,Annual,NA,3,,11211X,"Beef cattle ranching and farming, including feedlots"
+FWU00X11211X80S31,2012,A01,Annual,NA,4,,11211X,"Beef cattle ranching and farming, including feedlots"
+FWU00X11211X80S31,2011,A01,Annual,NA,3,,11211X,"Beef cattle ranching and farming, including feedlots"
+FWU00X11212X80S31,2018,A01,Annual,true,1,,11212X,Dairy cattle and milk production
+FWU00X1121XX80S31,2020,A01,Annual,true,9,,1121XX,Cattle ranching and farming
+FWU00X1121XX80S31,2019,A01,Annual,NA,4,,1121XX,Cattle ranching and farming
+FWU00X1121XX80S31,2018,A01,Annual,NA,4,,1121XX,Cattle ranching and farming
+FWU00X1121XX80S31,2017,A01,Annual,NA,2,,1121XX,Cattle ranching and farming
+FWU00X1121XX80S31,2016,A01,Annual,NA,5,,1121XX,Cattle ranching and farming
+FWU00X1121XX80S31,2015,A01,Annual,NA,10,,1121XX,Cattle ranching and farming
+FWU00X1121XX80S31,2014,A01,Annual,NA,4,,1121XX,Cattle ranching and farming
+FWU00X1121XX80S31,2013,A01,Annual,NA,4,,1121XX,Cattle ranching and farming
+FWU00X1121XX80S31,2012,A01,Annual,NA,7,,1121XX,Cattle ranching and farming
+FWU00X1121XX80S31,2011,A01,Annual,NA,6,,1121XX,Cattle ranching and farming
+FWU00X11221X80S31,2012,A01,Annual,true,1,,11221X,Hog and pig farming
+FWU00X1122XX80S31,2012,A01,Annual,true,1,,1122XX,Hog and pig farming
+FWU00X11231X80S31,2017,A01,Annual,true,1,,11231X,Chicken egg production
+FWU00X11233X80S31,2014,A01,Annual,true,1,,11233X,Turkey production
+FWU00X1123XX80S31,2017,A01,Annual,true,1,,1123XX,Poultry and egg production
+FWU00X1123XX80S31,2014,A01,Annual,NA,1,,1123XX,Poultry and egg production
+FWU00X112XXX80S31,2020,A01,Annual,true,9,,112XXX,Animal production and aquaculture
+FWU00X112XXX80S31,2019,A01,Annual,NA,4,,112XXX,Animal production and aquaculture
+FWU00X112XXX80S31,2018,A01,Annual,NA,4,,112XXX,Animal production and aquaculture
+FWU00X112XXX80S31,2017,A01,Annual,NA,3,,112XXX,Animal production and aquaculture
+FWU00X112XXX80S31,2016,A01,Annual,NA,6,,112XXX,Animal production and aquaculture
+FWU00X112XXX80S31,2015,A01,Annual,NA,10,,112XXX,Animal production and aquaculture
+FWU00X112XXX80S31,2014,A01,Annual,NA,5,,112XXX,Animal production and aquaculture
+FWU00X112XXX80S31,2013,A01,Annual,NA,4,,112XXX,Animal production and aquaculture
+FWU00X112XXX80S31,2012,A01,Annual,NA,8,,112XXX,Animal production and aquaculture
+FWU00X112XXX80S31,2011,A01,Annual,NA,6,,112XXX,Animal production and aquaculture
+FWU00X11511280S31,2016,A01,Annual,true,1,,115112,"Soil preparation, planting, and cultivating"
+FWU00X11511480S31,2018,A01,Annual,true,1,,115114,Postharvest crop activities (except cotton ginning)
+FWU00X11511580S31,2018,A01,Annual,true,1,,115115,Farm labor contractors and crew leaders
+FWU00X11511X80S31,2018,A01,Annual,true,2,,11511X,Support activities for crop production
+FWU00X11511X80S31,2016,A01,Annual,NA,1,,11511X,Support activities for crop production
+FWU00X1151XX80S31,2018,A01,Annual,true,2,,1151XX,Support activities for crop production
+FWU00X1151XX80S31,2016,A01,Annual,NA,1,,1151XX,Support activities for crop production
+FWU00X11521X80S31,2013,A01,Annual,true,1,,11521X,Support activities for animal production
+FWU00X1152XX80S31,2013,A01,Annual,true,1,,1152XX,Support activities for animal production
+FWU00X115XXX80S31,2018,A01,Annual,true,2,,115XXX,Support activities for agriculture and forestry
+FWU00X115XXX80S31,2016,A01,Annual,NA,1,,115XXX,Support activities for agriculture and forestry
+FWU00X115XXX80S31,2013,A01,Annual,NA,1,,115XXX,Support activities for agriculture and forestry
+FWU00X21231180S31,2012,A01,Annual,true,1,,212311,Dimension stone mining and quarrying
+FWU00X21231X80S31,2012,A01,Annual,true,1,,21231X,Stone mining and quarrying
+FWU00X21231X80S31,2011,A01,Annual,NA,1,,21231X,Stone mining and quarrying
+FWU00X21232180S31,2015,A01,Annual,true,1,,212321,Construction sand and gravel mining
+FWU00X21232X80S31,2015,A01,Annual,true,1,,21232X,"Sand, gravel, clay, and ceramic and refractory minerals mining and quarrying"
+FWU00X2123XX80S31,2015,A01,Annual,true,1,,2123XX,Nonmetallic mineral mining and quarrying
+FWU00X2123XX80S31,2012,A01,Annual,NA,1,,2123XX,Nonmetallic mineral mining and quarrying
+FWU00X2123XX80S31,2011,A01,Annual,NA,1,,2123XX,Nonmetallic mineral mining and quarrying
+FWU00X212XXX80S31,2015,A01,Annual,true,1,,212XXX,Mining (except oil and gas)
+FWU00X212XXX80S31,2012,A01,Annual,NA,1,,212XXX,Mining (except oil and gas)
+FWU00X212XXX80S31,2011,A01,Annual,NA,1,,212XXX,Mining (except oil and gas)
+FWU00X21311280S31,2014,A01,Annual,true,1,,213112,Support activities for oil and gas operations
+FWU00X21311X80S31,2014,A01,Annual,true,1,,21311X,Support activities for mining
+FWU00X2131XX80S31,2014,A01,Annual,true,1,,2131XX,Support activities for mining
+FWU00X213XXX80S31,2014,A01,Annual,true,1,,213XXX,Support activities for mining
+FWU00X22112280S31,2016,A01,Annual,true,1,,221122,Electric power distribution
+FWU00X22112280S31,2012,A01,Annual,NA,1,,221122,Electric power distribution
+FWU00X22112X80S31,2016,A01,Annual,true,1,,22112X,"Electric power transmission, control, and distribution"
+FWU00X22112X80S31,2012,A01,Annual,NA,1,,22112X,"Electric power transmission, control, and distribution"
+FWU00X2211XX80S31,2016,A01,Annual,true,1,,2211XX,"Electric power generation, transmission and distribution"
+FWU00X2211XX80S31,2012,A01,Annual,NA,1,,2211XX,"Electric power generation, transmission and distribution"
+FWU00X22131X80S31,2014,A01,Annual,true,1,,22131X,Water supply and irrigation systems
+FWU00X22132X80S31,2013,A01,Annual,true,1,,22132X,Sewage treatment facilities
+FWU00X2213XX80S31,2014,A01,Annual,true,1,,2213XX,"Water, sewage and other systems"
+FWU00X2213XX80S31,2013,A01,Annual,NA,1,,2213XX,"Water, sewage and other systems"
+FWU00X221XXX80S31,2016,A01,Annual,true,1,,221XXX,Utilities
+FWU00X221XXX80S31,2014,A01,Annual,NA,1,,221XXX,Utilities
+FWU00X221XXX80S31,2013,A01,Annual,NA,1,,221XXX,Utilities
+FWU00X221XXX80S31,2012,A01,Annual,NA,1,,221XXX,Utilities
+FWU00X23611580S31,2016,A01,Annual,true,1,,236115,New single-family housing construction (except for-sale builders)
+FWU00X23611680S31,2019,A01,Annual,true,1,,236116,New multifamily housing construction (except for-sale builders)
+FWU00X23611880S31,2014,A01,Annual,true,1,,236118,Residential remodelers
+FWU00X23611X80S31,2019,A01,Annual,true,1,,23611X,Residential building construction
+FWU00X23611X80S31,2016,A01,Annual,NA,1,,23611X,Residential building construction
+FWU00X23611X80S31,2014,A01,Annual,NA,1,,23611X,Residential building construction
+FWU00X2361XX80S31,2019,A01,Annual,true,1,,2361XX,Residential building construction
+FWU00X2361XX80S31,2016,A01,Annual,NA,1,,2361XX,Residential building construction
+FWU00X2361XX80S31,2014,A01,Annual,NA,1,,2361XX,Residential building construction
+FWU00X23621X80S31,2019,A01,Annual,true,1,,23621X,Industrial building construction
+FWU00X23621X80S31,2016,A01,Annual,NA,1,,23621X,Industrial building construction
+FWU00X23621X80S31,2015,A01,Annual,NA,1,,23621X,Industrial building construction
+FWU00X23622X80S31,2018,A01,Annual,true,1,,23622X,Commercial and institutional building construction
+FWU00X23622X80S31,2016,A01,Annual,NA,1,,23622X,Commercial and institutional building construction
+FWU00X23622X80S31,2015,A01,Annual,NA,2,,23622X,Commercial and institutional building construction
+FWU00X23622X80S31,2013,A01,Annual,NA,2,,23622X,Commercial and institutional building construction
+FWU00X2362XX80S31,2019,A01,Annual,true,3,,2362XX,Nonresidential building construction
+FWU00X2362XX80S31,2018,A01,Annual,NA,1,,2362XX,Nonresidential building construction
+FWU00X2362XX80S31,2016,A01,Annual,NA,2,,2362XX,Nonresidential building construction
+FWU00X2362XX80S31,2015,A01,Annual,NA,3,,2362XX,Nonresidential building construction
+FWU00X2362XX80S31,2014,A01,Annual,NA,1,,2362XX,Nonresidential building construction
+FWU00X2362XX80S31,2013,A01,Annual,NA,2,,2362XX,Nonresidential building construction
+FWU00X236XXX80S31,2019,A01,Annual,true,4,,236XXX,Construction of buildings
+FWU00X236XXX80S31,2018,A01,Annual,NA,1,,236XXX,Construction of buildings
+FWU00X236XXX80S31,2016,A01,Annual,NA,3,,236XXX,Construction of buildings
+FWU00X236XXX80S31,2015,A01,Annual,NA,3,,236XXX,Construction of buildings
+FWU00X236XXX80S31,2014,A01,Annual,NA,2,,236XXX,Construction of buildings
+FWU00X236XXX80S31,2013,A01,Annual,NA,2,,236XXX,Construction of buildings
+FWU00X23711X80S31,2014,A01,Annual,true,1,,23711X,Water and sewer line and related structures construction
+FWU00X2371XX80S31,2014,A01,Annual,true,1,,2371XX,Utility system construction
+FWU00X23721X80S31,2014,A01,Annual,true,1,,23721X,Land subdivision
+FWU00X2372XX80S31,2014,A01,Annual,true,1,,2372XX,Land subdivision
+FWU00X23731X80S31,2019,A01,Annual,true,2,,23731X,"Highway, street, and bridge construction"
+FWU00X23731X80S31,2018,A01,Annual,NA,2,,23731X,"Highway, street, and bridge construction"
+FWU00X23731X80S31,2017,A01,Annual,NA,1,,23731X,"Highway, street, and bridge construction"
+FWU00X23731X80S31,2016,A01,Annual,NA,1,,23731X,"Highway, street, and bridge construction"
+FWU00X23731X80S31,2014,A01,Annual,NA,2,,23731X,"Highway, street, and bridge construction"
+FWU00X23731X80S31,2013,A01,Annual,NA,1,,23731X,"Highway, street, and bridge construction"
+FWU00X23731X80S31,2012,A01,Annual,NA,1,,23731X,"Highway, street, and bridge construction"
+FWU00X2373XX80S31,2019,A01,Annual,true,2,,2373XX,"Highway, street, and bridge construction"
+FWU00X2373XX80S31,2018,A01,Annual,NA,2,,2373XX,"Highway, street, and bridge construction"
+FWU00X2373XX80S31,2017,A01,Annual,NA,1,,2373XX,"Highway, street, and bridge construction"
+FWU00X2373XX80S31,2016,A01,Annual,NA,1,,2373XX,"Highway, street, and bridge construction"
+FWU00X2373XX80S31,2014,A01,Annual,NA,2,,2373XX,"Highway, street, and bridge construction"
+FWU00X2373XX80S31,2013,A01,Annual,NA,1,,2373XX,"Highway, street, and bridge construction"
+FWU00X2373XX80S31,2012,A01,Annual,NA,1,,2373XX,"Highway, street, and bridge construction"
+FWU00X237XXX80S31,2019,A01,Annual,true,4,,237XXX,Heavy and civil engineering construction
+FWU00X237XXX80S31,2018,A01,Annual,NA,4,,237XXX,Heavy and civil engineering construction
+FWU00X237XXX80S31,2017,A01,Annual,NA,1,,237XXX,Heavy and civil engineering construction
+FWU00X237XXX80S31,2016,A01,Annual,NA,1,,237XXX,Heavy and civil engineering construction
+FWU00X237XXX80S31,2014,A01,Annual,NA,4,,237XXX,Heavy and civil engineering construction
+FWU00X237XXX80S31,2013,A01,Annual,NA,1,,237XXX,Heavy and civil engineering construction
+FWU00X23811280S31,2020,A01,Annual,true,2,,238112,Nonresidential poured concrete foundation and structure contractors
+FWU00X23811280S31,2016,A01,Annual,NA,1,,238112,Nonresidential poured concrete foundation and structure contractors
+FWU00X23811X80S31,2020,A01,Annual,true,2,,23811X,Poured concrete foundation and structure contractors
+FWU00X23811X80S31,2016,A01,Annual,NA,1,,23811X,Poured concrete foundation and structure contractors
+FWU00X23811X80S31,2014,A01,Annual,NA,3,,23811X,Poured concrete foundation and structure contractors
+FWU00X23811X80S31,2013,A01,Annual,NA,1,,23811X,Poured concrete foundation and structure contractors
+FWU00X23813180S31,2018,A01,Annual,true,1,,238131,Residential framing contractors
+FWU00X23813X80S31,2018,A01,Annual,true,1,,23813X,Framing contractors
+FWU00X23816280S31,2013,A01,Annual,true,1,,238162,Nonresidential roofing contractors
+FWU00X23816X80S31,2013,A01,Annual,true,2,,23816X,Roofing contractors
+FWU00X2381XX80S31,2020,A01,Annual,true,2,,2381XX,"Foundation, structure, and building exterior contractors"
+FWU00X2381XX80S31,2016,A01,Annual,NA,1,,2381XX,"Foundation, structure, and building exterior contractors"
+FWU00X2381XX80S31,2013,A01,Annual,NA,3,,2381XX,"Foundation, structure, and building exterior contractors"
+FWU00X23821180S31,2012,A01,Annual,true,1,,238211,Residential electrical contractors and other wiring installation contractors
+FWU00X23821280S31,2011,A01,Annual,true,1,,238212,Nonresidential electrical contractors and other wiring installation contractors
+FWU00X23821X80S31,2017,A01,Annual,true,1,,23821X,Electrical contractors and other wiring installation contractors
+FWU00X23821X80S31,2012,A01,Annual,NA,1,,23821X,Electrical contractors and other wiring installation contractors
+FWU00X23821X80S31,2011,A01,Annual,NA,1,,23821X,Electrical contractors and other wiring installation contractors
+FWU00X23822180S31,2019,A01,Annual,true,1,,238221,"Residential plumbing, heating, and air-conditioning contractors"
+FWU00X23822180S31,2013,A01,Annual,NA,1,,238221,"Residential plumbing, heating, and air-conditioning contractors"
+FWU00X23822280S31,2015,A01,Annual,true,1,,238222,"Nonresidential plumbing, heating, and air-conditioning contractors"
+FWU00X23822X80S31,2019,A01,Annual,true,1,,23822X,"Plumbing, heating, and air-conditioning contractors"
+FWU00X23822X80S31,2015,A01,Annual,NA,1,,23822X,"Plumbing, heating, and air-conditioning contractors"
+FWU00X23822X80S31,2013,A01,Annual,NA,1,,23822X,"Plumbing, heating, and air-conditioning contractors"
+FWU00X23829280S31,2018,A01,Annual,true,1,,238292,Other nonresidential building equipment contractors
+FWU00X23829X80S31,2018,A01,Annual,true,1,,23829X,Other building equipment contractors
+FWU00X2382XX80S31,2019,A01,Annual,true,1,,2382XX,Building equipment contractors
+FWU00X2382XX80S31,2018,A01,Annual,NA,1,,2382XX,Building equipment contractors
+FWU00X2382XX80S31,2017,A01,Annual,NA,1,,2382XX,Building equipment contractors
+FWU00X2382XX80S31,2015,A01,Annual,NA,1,,2382XX,Building equipment contractors
+FWU00X2382XX80S31,2013,A01,Annual,NA,1,,2382XX,Building equipment contractors
+FWU00X2382XX80S31,2012,A01,Annual,NA,1,,2382XX,Building equipment contractors
+FWU00X2382XX80S31,2011,A01,Annual,NA,1,,2382XX,Building equipment contractors
+FWU00X23832X80S31,2019,A01,Annual,true,1,,23832X,Painting and wall covering contractors
+FWU00X23835X80S31,2011,A01,Annual,true,1,,23835X,Finish carpentry contractors
+FWU00X2383XX80S31,2019,A01,Annual,true,1,,2383XX,Building finishing contractors
+FWU00X2383XX80S31,2011,A01,Annual,NA,1,,2383XX,Building finishing contractors
+FWU00X23891280S31,2015,A01,Annual,true,1,,238912,Nonresidential site preparation contractors
+FWU00X23891X80S31,2016,A01,Annual,true,1,,23891X,Site preparation contractors
+FWU00X23891X80S31,2015,A01,Annual,NA,1,,23891X,Site preparation contractors
+FWU00X23891X80S31,2012,A01,Annual,NA,3,,23891X,Site preparation contractors
+FWU00X2389XX80S31,2016,A01,Annual,true,1,,2389XX,Other specialty trade contractors
+FWU00X2389XX80S31,2015,A01,Annual,NA,1,,2389XX,Other specialty trade contractors
+FWU00X2389XX80S31,2012,A01,Annual,NA,3,,2389XX,Other specialty trade contractors
+FWU00X238XXX80S31,2020,A01,Annual,true,4,,238XXX,Specialty trade contractors
+FWU00X238XXX80S31,2019,A01,Annual,NA,4,,238XXX,Specialty trade contractors
+FWU00X238XXX80S31,2018,A01,Annual,NA,4,,238XXX,Specialty trade contractors
+FWU00X238XXX80S31,2016,A01,Annual,NA,2,,238XXX,Specialty trade contractors
+FWU00X238XXX80S31,2015,A01,Annual,NA,2,,238XXX,Specialty trade contractors
+FWU00X238XXX80S31,2013,A01,Annual,NA,4,,238XXX,Specialty trade contractors
+FWU00X238XXX80S31,2012,A01,Annual,NA,8,,238XXX,Specialty trade contractors
+FWU00X238XXX80S31,2011,A01,Annual,NA,3,,238XXX,Specialty trade contractors
+FWU00X31111X80S31,2014,A01,Annual,true,3,,31111X,Animal food manufacturing
+FWU00X3111XX80S31,2014,A01,Annual,true,3,,3111XX,Animal food manufacturing
+FWU00X31121180S31,2012,A01,Annual,true,1,,311211,Flour milling
+FWU00X31121X80S31,2012,A01,Annual,true,1,,31121X,Flour milling and malt manufacturing
+FWU00X3112XX80S31,2012,A01,Annual,true,1,,3112XX,Grain and oilseed milling
+FWU00X31161180S31,2014,A01,Annual,true,1,,311611,Animal (except poultry) slaughtering
+FWU00X31161380S31,2017,A01,Annual,true,1,,311613,Rendering and meat byproduct processing
+FWU00X31161X80S31,2017,A01,Annual,true,1,,31161X,Animal slaughtering and processing
+FWU00X31161X80S31,2014,A01,Annual,NA,1,,31161X,Animal slaughtering and processing
+FWU00X3116XX80S31,2017,A01,Annual,true,1,,3116XX,Animal slaughtering and processing
+FWU00X3116XX80S31,2014,A01,Annual,NA,1,,3116XX,Animal slaughtering and processing
+FWU00X31199180S31,2019,A01,Annual,true,1,,311991,Perishable prepared food manufacturing
+FWU00X31199X80S31,2019,A01,Annual,true,1,,31199X,All other food manufacturing
+FWU00X31199X80S31,2014,A01,Annual,NA,1,,31199X,All other food manufacturing
+FWU00X3119XX80S31,2019,A01,Annual,true,1,,3119XX,Other food manufacturing
+FWU00X3119XX80S31,2014,A01,Annual,NA,1,,3119XX,Other food manufacturing
+FWU00X311XXX80S31,2019,A01,Annual,true,1,,311XXX,Food manufacturing
+FWU00X311XXX80S31,2017,A01,Annual,NA,1,,311XXX,Food manufacturing
+FWU00X311XXX80S31,2014,A01,Annual,NA,5,,311XXX,Food manufacturing
+FWU00X311XXX80S31,2012,A01,Annual,NA,3,,311XXX,Food manufacturing
+FWU00X32712X80S31,2015,A01,Annual,true,1,,32712X,Clay building material and refractories manufacturing
+FWU00X3271XX80S31,2015,A01,Annual,true,1,,3271XX,Clay product and refractory manufacturing
+FWU00X4483XX80S31,2014,A01,Annual,true,1,,4483XX,"Jewelry, luggage, and leather goods stores"
+FWU00X448XXX80S31,2014,A01,Annual,true,1,,448XXX,Clothing and clothing accessories stores
+FWU00X45211280S31,2016,A01,Annual,true,1,,452112,Discount department stores
+FWU00X45211X80S31,2016,A01,Annual,true,1,,45211X,Department stores
+FWU00X4521XX80S31,2016,A01,Annual,true,1,,4521XX,Department stores
+FWU00X45291X80S31,2017,A01,Annual,true,1,,45291X,Warehouse clubs and supercenters
+FWU00X4529XX80S31,2017,A01,Annual,true,1,,4529XX,Other general merchandise stores
+FWU00X452XXX80S31,2017,A01,Annual,true,1,,452XXX,General merchandise stores
+FWU00X452XXX80S31,2016,A01,Annual,NA,1,,452XXX,General merchandise stores
+FWU00X45399180S31,2019,A01,Annual,true,1,,453991,Tobacco stores
+FWU00X45399X80S31,2019,A01,Annual,true,3,,45399X,All other miscellaneous store retailers
+FWU00X4539XX80S31,2019,A01,Annual,true,3,,4539XX,Other miscellaneous store retailers
+FWU00X453XXX80S31,2019,A01,Annual,true,3,,453XXX,Miscellaneous store retailers
+FWU00X45431X80S31,2014,A01,Annual,true,1,,45431X,Fuel dealers
+FWU00X4543XX80S31,2014,A01,Annual,true,1,,4543XX,Direct selling establishments
+FWU00X454XXX80S31,2014,A01,Annual,true,1,,454XXX,Nonstore retailers
+FWU00X48211180S31,2013,A01,Annual,true,1,,482111,Line-haul railroads
+FWU00X48211X80S31,2017,A01,Annual,true,1,,48211X,Rail transportation
+FWU00X48211X80S31,2013,A01,Annual,NA,1,,48211X,Rail transportation
+FWU00X48211X80S31,2012,A01,Annual,NA,1,,48211X,Rail transportation
+FWU00X4821XX80S31,2017,A01,Annual,true,1,,4821XX,Rail transportation
+FWU00X4821XX80S31,2013,A01,Annual,NA,1,,4821XX,Rail transportation
+FWU00X4821XX80S31,2012,A01,Annual,NA,1,,4821XX,Rail transportation
+FWU00X482XXX80S31,2017,A01,Annual,true,1,,482XXX,Rail transportation
+FWU00X482XXX80S31,2013,A01,Annual,NA,1,,482XXX,Rail transportation
+FWU00X482XXX80S31,2012,A01,Annual,NA,1,,482XXX,Rail transportation
+FWU00X48411X80S31,2020,A01,Annual,true,1,,48411X,"General freight trucking, local"
+FWU00X48411X80S31,2016,A01,Annual,NA,1,,48411X,"General freight trucking, local"
+FWU00X48411X80S31,2015,A01,Annual,NA,1,,48411X,"General freight trucking, local"
+FWU00X48411X80S31,2013,A01,Annual,NA,3,,48411X,"General freight trucking, local"
+FWU00X48412180S31,2018,A01,Annual,true,2,,484121,"General freight trucking, long-distance, truckload"
+FWU00X48412180S31,2017,A01,Annual,NA,2,,484121,"General freight trucking, long-distance, truckload"
+FWU00X48412180S31,2016,A01,Annual,NA,5,,484121,"General freight trucking, long-distance, truckload"
+FWU00X48412180S31,2015,A01,Annual,NA,2,,484121,"General freight trucking, long-distance, truckload"
+FWU00X48412180S31,2014,A01,Annual,NA,1,,484121,"General freight trucking, long-distance, truckload"
+FWU00X48412180S31,2012,A01,Annual,NA,3,,484121,"General freight trucking, long-distance, truckload"
+FWU00X48412280S31,2013,A01,Annual,true,1,,484122,"General freight trucking, long-distance, less than truckload"
+FWU00X48412X80S31,2020,A01,Annual,true,3,,48412X,"General freight trucking, long-distance"
+FWU00X48412X80S31,2018,A01,Annual,NA,2,,48412X,"General freight trucking, long-distance"
+FWU00X48412X80S31,2017,A01,Annual,NA,2,,48412X,"General freight trucking, long-distance"
+FWU00X48412X80S31,2016,A01,Annual,NA,5,,48412X,"General freight trucking, long-distance"
+FWU00X48412X80S31,2015,A01,Annual,NA,2,,48412X,"General freight trucking, long-distance"
+FWU00X48412X80S31,2014,A01,Annual,NA,1,,48412X,"General freight trucking, long-distance"
+FWU00X48412X80S31,2013,A01,Annual,NA,1,,48412X,"General freight trucking, long-distance"
+FWU00X48412X80S31,2012,A01,Annual,NA,3,,48412X,"General freight trucking, long-distance"
+FWU00X4841XX80S31,2020,A01,Annual,true,4,,4841XX,General freight trucking
+FWU00X4841XX80S31,2019,A01,Annual,NA,3,,4841XX,General freight trucking
+FWU00X4841XX80S31,2018,A01,Annual,NA,2,,4841XX,General freight trucking
+FWU00X4841XX80S31,2017,A01,Annual,NA,2,,4841XX,General freight trucking
+FWU00X4841XX80S31,2016,A01,Annual,NA,6,,4841XX,General freight trucking
+FWU00X4841XX80S31,2015,A01,Annual,NA,3,,4841XX,General freight trucking
+FWU00X4841XX80S31,2014,A01,Annual,NA,1,,4841XX,General freight trucking
+FWU00X4841XX80S31,2013,A01,Annual,NA,4,,4841XX,General freight trucking
+FWU00X4841XX80S31,2012,A01,Annual,NA,3,,4841XX,General freight trucking
+FWU00X48422X80S31,2020,A01,Annual,true,3,,48422X,"Specialized freight (except used goods) trucking, local"
+FWU00X48422X80S31,2018,A01,Annual,NA,1,,48422X,"Specialized freight (except used goods) trucking, local"
+FWU00X48422X80S31,2017,A01,Annual,NA,2,,48422X,"Specialized freight (except used goods) trucking, local"
+FWU00X48422X80S31,2015,A01,Annual,NA,1,,48422X,"Specialized freight (except used goods) trucking, local"
+FWU00X48422X80S31,2014,A01,Annual,NA,2,,48422X,"Specialized freight (except used goods) trucking, local"
+FWU00X48423X80S31,2016,A01,Annual,true,2,,48423X,"Specialized freight (except used goods) trucking, long-distance"
+FWU00X48423X80S31,2014,A01,Annual,NA,1,,48423X,"Specialized freight (except used goods) trucking, long-distance"
+FWU00X4842XX80S31,2020,A01,Annual,true,3,,4842XX,Specialized freight trucking
+FWU00X4842XX80S31,2018,A01,Annual,NA,3,,4842XX,Specialized freight trucking
+FWU00X4842XX80S31,2017,A01,Annual,NA,3,,4842XX,Specialized freight trucking
+FWU00X4842XX80S31,2016,A01,Annual,NA,2,,4842XX,Specialized freight trucking
+FWU00X4842XX80S31,2014,A01,Annual,NA,3,,4842XX,Specialized freight trucking
+FWU00X484XXX80S31,2020,A01,Annual,true,7,,484XXX,Truck transportation
+FWU00X484XXX80S31,2019,A01,Annual,NA,3,,484XXX,Truck transportation
+FWU00X484XXX80S31,2018,A01,Annual,NA,5,,484XXX,Truck transportation
+FWU00X484XXX80S31,2017,A01,Annual,NA,5,,484XXX,Truck transportation
+FWU00X484XXX80S31,2016,A01,Annual,NA,8,,484XXX,Truck transportation
+FWU00X484XXX80S31,2015,A01,Annual,NA,5,,484XXX,Truck transportation
+FWU00X484XXX80S31,2014,A01,Annual,NA,4,,484XXX,Truck transportation
+FWU00X484XXX80S31,2013,A01,Annual,NA,4,,484XXX,Truck transportation
+FWU00X484XXX80S31,2012,A01,Annual,NA,5,,484XXX,Truck transportation
+FWU00X48821X80S31,2015,A01,Annual,true,2,,48821X,Support activities for rail transportation
+FWU00X4882XX80S31,2015,A01,Annual,true,2,,4882XX,Support activities for rail transportation
+FWU00X48841X80S31,2011,A01,Annual,true,1,,48841X,Motor vehicle towing
+FWU00X4884XX80S31,2011,A01,Annual,true,1,,4884XX,Support activities for road transportation
+FWU00X488XXX80S31,2015,A01,Annual,true,2,,488XXX,Support activities for transportation
+FWU00X488XXX80S31,2011,A01,Annual,NA,1,,488XXX,Support activities for transportation
+FWU00X49111X80S31,2012,A01,Annual,true,1,,49111X,Postal service
+FWU00X4911XX80S31,2012,A01,Annual,true,1,,4911XX,Postal service
+FWU00X491XXX80S31,2012,A01,Annual,true,1,,491XXX,Postal service
+FWU00X49211X80S31,2015,A01,Annual,true,1,,49211X,Couriers and express delivery services
+FWU00X4921XX80S31,2015,A01,Annual,true,1,,4921XX,Couriers and express delivery services
+FWU00X492XXX80S31,2015,A01,Annual,true,1,,492XXX,Couriers and messengers
+FWU00X51111X80S31,2016,A01,Annual,true,1,,51111X,Newspaper publishers
+FWU00X51111X80S31,2014,A01,Annual,NA,1,,51111X,Newspaper publishers
+FWU00X5111XX80S31,2016,A01,Annual,true,1,,5111XX,"Newspaper, periodical, book, and directory publishers"
+FWU00X5111XX80S31,2014,A01,Annual,NA,1,,5111XX,"Newspaper, periodical, book, and directory publishers"
+FWU00X511XXX80S31,2016,A01,Annual,true,1,,511XXX,Publishing industries (except internet)
+FWU00X511XXX80S31,2014,A01,Annual,NA,1,,511XXX,Publishing industries (except internet)
+FWU00X51211X80S31,2014,A01,Annual,true,1,,51211X,Motion picture and video production
+FWU00X5121XX80S31,2014,A01,Annual,true,1,,5121XX,Motion picture and video industries
+FWU00X512XXX80S31,2014,A01,Annual,true,1,,512XXX,Motion picture and sound recording industries
+FWU00X51711X80S31,2017,A01,Annual,true,1,,51711X,Wired telecommunications carriers
+FWU00X51711X80S31,2015,A01,Annual,NA,1,,51711X,Wired telecommunications carriers
+FWU00X5171XX80S31,2017,A01,Annual,true,1,,5171XX,Wired telecommunications carriers
+FWU00X5171XX80S31,2015,A01,Annual,NA,1,,5171XX,Wired telecommunications carriers
+FWU00X517XXX80S31,2017,A01,Annual,true,1,,517XXX,Telecommunications
+FWU00X517XXX80S31,2015,A01,Annual,NA,1,,517XXX,Telecommunications
+FWU00X52312X80S31,2015,A01,Annual,true,1,,52312X,Securities brokerage
+FWU00X5231XX80S31,2015,A01,Annual,true,1,,5231XX,Securities and commodity contracts intermediation and brokerage
+FWU00X523XXX80S31,2015,A01,Annual,true,1,,523XXX,"Securities, commodity contracts, and other financial investments and related activities"
+FWU00X52411380S31,2016,A01,Annual,true,1,,524113,Direct life insurance carriers
+FWU00X52411X80S31,2016,A01,Annual,true,1,,52411X,"Direct life, health, and medical insurance carriers"
+FWU00X5241XX80S31,2016,A01,Annual,true,1,,5241XX,Insurance carriers
+FWU00X524XXX80S31,2016,A01,Annual,true,1,,524XXX,Insurance carriers and related activities
+FWU00X53111X80S31,2020,A01,Annual,true,1,,53111X,Lessors of residential buildings and dwellings
+FWU00X53111X80S31,2019,A01,Annual,NA,1,,53111X,Lessors of residential buildings and dwellings
+FWU00X53112X80S31,2019,A01,Annual,true,1,,53112X,Lessors of nonresidential buildings (except miniwarehouses)
+FWU00X5311XX80S31,2020,A01,Annual,true,1,,5311XX,Lessors of real estate
+FWU00X5311XX80S31,2019,A01,Annual,NA,2,,5311XX,Lessors of real estate
+FWU00X53131180S31,2016,A01,Annual,true,1,,531311,Residential property managers
+FWU00X53131X80S31,2016,A01,Annual,true,1,,53131X,Real estate property managers
+FWU00X5313XX80S31,2016,A01,Annual,true,1,,5313XX,Activities related to real estate
+FWU00X531XXX80S31,2020,A01,Annual,true,1,,531XXX,Real estate
+FWU00X531XXX80S31,2019,A01,Annual,NA,2,,531XXX,Real estate
+FWU00X531XXX80S31,2016,A01,Annual,NA,1,,531XXX,Real estate
+FWU00X53231X80S31,2014,A01,Annual,true,1,,53231X,General rental centers
+FWU00X5323XX80S31,2014,A01,Annual,true,1,,5323XX,General rental centers
+FWU00X5324XX80S31,2016,A01,Annual,true,1,,5324XX,Commercial and industrial machinery and equipment rental and leasing
+FWU00X532XXX80S31,2016,A01,Annual,true,1,,532XXX,Rental and leasing services
+FWU00X532XXX80S31,2014,A01,Annual,NA,1,,532XXX,Rental and leasing services
+FWU00X54111X80S31,2013,A01,Annual,true,1,,54111X,Offices of lawyers
+FWU00X5411XX80S31,2013,A01,Annual,true,1,,5411XX,Legal services
+FWU00X54133X80S31,2011,A01,Annual,true,1,,54133X,Engineering services
+FWU00X5413XX80S31,2011,A01,Annual,true,1,,5413XX,"Architectural, engineering, and related services"
+FWU00X541XXX80S31,2013,A01,Annual,true,1,,541XXX,"Professional, scientific, and technical services"
+FWU00X541XXX80S31,2011,A01,Annual,NA,1,,541XXX,"Professional, scientific, and technical services"
+FWU00X56132X80S31,2016,A01,Annual,true,1,,56132X,Temporary help services
+FWU00X5613XX80S31,2016,A01,Annual,true,1,,5613XX,Employment services
+FWU00X56161280S31,2013,A01,Annual,true,1,,561612,Security guards and patrol services
+FWU00X56161380S31,2019,A01,Annual,true,1,,561613,Armored car services
+FWU00X56161X80S31,2019,A01,Annual,true,1,,56161X,"Investigation, guard, and armored car services"
+FWU00X56161X80S31,2013,A01,Annual,NA,1,,56161X,"Investigation, guard, and armored car services"
+FWU00X56162180S31,2014,A01,Annual,true,1,,561621,Security systems services (except locksmiths)
+FWU00X56162X80S31,2014,A01,Annual,true,1,,56162X,Security systems services
+FWU00X5616XX80S31,2019,A01,Annual,true,1,,5616XX,Investigation and security services
+FWU00X5616XX80S31,2014,A01,Annual,NA,1,,5616XX,Investigation and security services
+FWU00X5616XX80S31,2013,A01,Annual,NA,1,,5616XX,Investigation and security services
+FWU00X56171X80S31,2015,A01,Annual,true,1,,56171X,Exterminating and pest control services
+FWU00X56173X80S31,2019,A01,Annual,true,1,,56173X,Landscaping services
+FWU00X56173X80S31,2018,A01,Annual,NA,1,,56173X,Landscaping services
+FWU00X56173X80S31,2012,A01,Annual,NA,1,,56173X,Landscaping services
+FWU00X5617XX80S31,2019,A01,Annual,true,1,,5617XX,Services to buildings and dwellings
+FWU00X5617XX80S31,2016,A01,Annual,NA,3,,5617XX,Services to buildings and dwellings
+FWU00X5617XX80S31,2015,A01,Annual,NA,4,,5617XX,Services to buildings and dwellings
+FWU00X5617XX80S31,2012,A01,Annual,NA,1,,5617XX,Services to buildings and dwellings
+FWU00X561XXX80S31,2019,A01,Annual,true,2,,561XXX,Administrative and support services
+FWU00X561XXX80S31,2016,A01,Annual,NA,4,,561XXX,Administrative and support services
+FWU00X561XXX80S31,2015,A01,Annual,NA,4,,561XXX,Administrative and support services
+FWU00X561XXX80S31,2014,A01,Annual,NA,1,,561XXX,Administrative and support services
+FWU00X561XXX80S31,2013,A01,Annual,NA,1,,561XXX,Administrative and support services
+FWU00X561XXX80S31,2012,A01,Annual,NA,1,,561XXX,Administrative and support services
+FWU00X56211180S31,2020,A01,Annual,true,1,,562111,Solid waste collection
+FWU00X56211180S31,2018,A01,Annual,NA,3,,562111,Solid waste collection
+FWU00X56211180S31,2016,A01,Annual,NA,1,,562111,Solid waste collection
+FWU00X56211180S31,2015,A01,Annual,NA,1,,562111,Solid waste collection
+FWU00X56211X80S31,2020,A01,Annual,true,1,,56211X,Waste collection
+FWU00X56211X80S31,2018,A01,Annual,NA,3,,56211X,Waste collection
+FWU00X56211X80S31,2016,A01,Annual,NA,1,,56211X,Waste collection
+FWU00X56211X80S31,2015,A01,Annual,NA,1,,56211X,Waste collection
+FWU00X5621XX80S31,2020,A01,Annual,true,1,,5621XX,Waste collection
+FWU00X5621XX80S31,2018,A01,Annual,NA,3,,5621XX,Waste collection
+FWU00X5621XX80S31,2016,A01,Annual,NA,1,,5621XX,Waste collection
+FWU00X5621XX80S31,2015,A01,Annual,NA,1,,5621XX,Waste collection
+FWU00X562XXX80S31,2020,A01,Annual,true,1,,562XXX,Waste management and remediation services
+FWU00X562XXX80S31,2018,A01,Annual,NA,3,,562XXX,Waste management and remediation services
+FWU00X562XXX80S31,2016,A01,Annual,NA,1,,562XXX,Waste management and remediation services
+FWU00X562XXX80S31,2015,A01,Annual,NA,1,,562XXX,Waste management and remediation services
+FWU00X61111X80S31,2013,A01,Annual,true,1,,61111X,Elementary and secondary schools
+FWU00X61111X80S31,2012,A01,Annual,NA,3,,61111X,Elementary and secondary schools
+FWU00X61111X80S31,2011,A01,Annual,NA,2,,61111X,Elementary and secondary schools
+FWU00X6111XX80S31,2013,A01,Annual,true,1,,6111XX,Elementary and secondary schools
+FWU00X6111XX80S31,2012,A01,Annual,NA,3,,6111XX,Elementary and secondary schools
+FWU00X6111XX80S31,2011,A01,Annual,NA,2,,6111XX,Elementary and secondary schools
+FWU00X61131X80S31,2018,A01,Annual,true,1,,61131X,"Colleges, universities, and professional schools"
+FWU00X61131X80S31,2016,A01,Annual,NA,1,,61131X,"Colleges, universities, and professional schools"
+FWU00X6113XX80S31,2018,A01,Annual,true,1,,6113XX,"Colleges, universities, and professional schools"
+FWU00X6113XX80S31,2016,A01,Annual,NA,1,,6113XX,"Colleges, universities, and professional schools"
+FWU00X61151280S31,2016,A01,Annual,true,1,,611512,Flight training
+FWU00X61151X80S31,2016,A01,Annual,true,1,,61151X,Technical and trade schools
+FWU00X6115XX80S31,2016,A01,Annual,true,1,,6115XX,Technical and trade schools
+FWU00X611XXX80S31,2018,A01,Annual,true,1,,611XXX,Educational services
+FWU00X611XXX80S31,2016,A01,Annual,NA,2,,611XXX,Educational services
+FWU00X611XXX80S31,2013,A01,Annual,NA,3,,611XXX,Educational services
+FWU00X611XXX80S31,2012,A01,Annual,NA,3,,611XXX,Educational services
+FWU00X611XXX80S31,2011,A01,Annual,NA,2,,611XXX,Educational services
+FWU00X62121X80S31,2015,A01,Annual,true,1,,62121X,Offices of dentists
+FWU00X6212XX80S31,2015,A01,Annual,true,1,,6212XX,Offices of dentists
+FWU00X62191X80S31,2013,A01,Annual,true,1,,62191X,Ambulance services
+FWU00X6219XX80S31,2013,A01,Annual,true,1,,6219XX,Other ambulatory health care services
+FWU00X621XXX80S31,2015,A01,Annual,true,1,,621XXX,Ambulatory health care services
+FWU00X621XXX80S31,2013,A01,Annual,NA,1,,621XXX,Ambulatory health care services
+FWU00X62311X80S31,2016,A01,Annual,true,1,,62311X,Nursing care facilities (skilled nursing facilities)
+FWU00X62311X80S31,2011,A01,Annual,NA,1,,62311X,Nursing care facilities (skilled nursing facilities)
+FWU00X6231XX80S31,2016,A01,Annual,true,1,,6231XX,Nursing care facilities (skilled nursing facilities)
+FWU00X6231XX80S31,2011,A01,Annual,NA,1,,6231XX,Nursing care facilities (skilled nursing facilities)
+FWU00X623XXX80S31,2016,A01,Annual,true,1,,623XXX,Nursing and residential care facilities
+FWU00X623XXX80S31,2011,A01,Annual,NA,1,,623XXX,Nursing and residential care facilities
+FWU00X62412X80S31,2011,A01,Annual,true,1,,62412X,Services for the elderly and persons with disabilities
+FWU00X6241XX80S31,2011,A01,Annual,true,1,,6241XX,Individual and family services
+FWU00X62422X80S31,2014,A01,Annual,true,1,,62422X,Community housing services
+FWU00X62423X80S31,2013,A01,Annual,true,1,,62423X,Emergency and other relief services
+FWU00X6242XX80S31,2014,A01,Annual,true,1,,6242XX,"Community food and housing, and emergency and other relief services"
+FWU00X6242XX80S31,2013,A01,Annual,NA,1,,6242XX,"Community food and housing, and emergency and other relief services"
+FWU00X624XXX80S31,2014,A01,Annual,true,1,,624XXX,Social assistance
+FWU00X624XXX80S31,2013,A01,Annual,NA,1,,624XXX,Social assistance
+FWU00X624XXX80S31,2011,A01,Annual,NA,1,,624XXX,Social assistance
+FWU00X71121280S31,2016,A01,Annual,true,1,,711212,Racetracks
+FWU00X71121X80S31,2017,A01,Annual,true,1,,71121X,Spectator sports
+FWU00X71121X80S31,2016,A01,Annual,NA,2,,71121X,Spectator sports
+FWU00X71121X80S31,2011,A01,Annual,NA,1,,71121X,Spectator sports
+FWU00X7112XX80S31,2017,A01,Annual,true,1,,7112XX,Spectator sports
+FWU00X7112XX80S31,2016,A01,Annual,NA,2,,7112XX,Spectator sports
+FWU00X7112XX80S31,2011,A01,Annual,NA,1,,7112XX,Spectator sports
+FWU00X71131X80S31,2012,A01,Annual,true,1,,71131X,"Promoters of performing arts, sports, and similar events with facilities"
+FWU00X7113XX80S31,2012,A01,Annual,true,1,,7113XX,"Promoters of performing arts, sports, and similar events"
+FWU00X711XXX80S31,2017,A01,Annual,true,1,,711XXX,"Performing arts, spectator sports, and related industries"
+FWU00X711XXX80S31,2016,A01,Annual,NA,2,,711XXX,"Performing arts, spectator sports, and related industries"
+FWU00X711XXX80S31,2011,A01,Annual,NA,1,,711XXX,"Performing arts, spectator sports, and related industries"
+FWU00X71391X80S31,2017,A01,Annual,true,1,,71391X,Golf courses and country clubs
+FWU00X7139XX80S31,2018,A01,Annual,true,1,,7139XX,Other amusement and recreation industries
+FWU00X7139XX80S31,2017,A01,Annual,NA,1,,7139XX,Other amusement and recreation industries
+FWU00X7139XX80S31,2015,A01,Annual,NA,1,,7139XX,Other amusement and recreation industries
+FWU00X713XXX80S31,2018,A01,Annual,true,1,,713XXX,"Amusement, gambling, and recreation industries"
+FWU00X713XXX80S31,2017,A01,Annual,NA,1,,713XXX,"Amusement, gambling, and recreation industries"
+FWU00X713XXX80S31,2015,A01,Annual,NA,1,,713XXX,"Amusement, gambling, and recreation industries"
+FWU00X72111X80S31,2019,A01,Annual,true,1,,72111X,Hotels (except casino hotels) and motels
+FWU00X72119180S31,2015,A01,Annual,true,1,,721191,Bed-and-breakfast inns
+FWU00X72119X80S31,2015,A01,Annual,true,1,,72119X,Other traveler accommodation
+FWU00X7211XX80S31,2019,A01,Annual,true,1,,7211XX,Traveler accommodation
+FWU00X7211XX80S31,2015,A01,Annual,NA,1,,7211XX,Traveler accommodation
+FWU00X72121180S31,2016,A01,Annual,true,1,,721211,RV (recreational vehicle) parks and campgrounds
+FWU00X72121X80S31,2016,A01,Annual,true,1,,72121X,RV (recreational vehicle) parks and recreational camps
+FWU00X7212XX80S31,2016,A01,Annual,true,1,,7212XX,RV (recreational vehicle) parks and recreational camps
+FWU00X721XXX80S31,2019,A01,Annual,true,1,,721XXX,Accommodation
+FWU00X721XXX80S31,2016,A01,Annual,NA,1,,721XXX,Accommodation
+FWU00X721XXX80S31,2015,A01,Annual,NA,1,,721XXX,Accommodation
+FWU00X72251180S31,2015,A01,Annual,true,1,,722511,Full-service restaurants
+FWU00X72251380S31,2020,A01,Annual,true,2,,722513,Limited-service restaurants
+FWU00X72251380S31,2017,A01,Annual,NA,1,,722513,Limited-service restaurants
+FWU00X72251X80S31,2020,A01,Annual,true,2,,72251X,Restaurants and other eating places
+FWU00X72251X80S31,2017,A01,Annual,NA,1,,72251X,Restaurants and other eating places
+FWU00X72251X80S31,2015,A01,Annual,NA,1,,72251X,Restaurants and other eating places
+FWU00X7225XX80S31,2020,A01,Annual,true,2,,7225XX,Restaurants and other eating places
+FWU00X7225XX80S31,2017,A01,Annual,NA,1,,7225XX,Restaurants and other eating places
+FWU00X7225XX80S31,2015,A01,Annual,NA,1,,7225XX,Restaurants and other eating places
+FWU00X722XXX80S31,2020,A01,Annual,true,2,,722XXX,Food services and drinking places
+FWU00X722XXX80S31,2017,A01,Annual,NA,1,,722XXX,Food services and drinking places
+FWU00X722XXX80S31,2015,A01,Annual,NA,1,,722XXX,Food services and drinking places
+FWU00X81111180S31,2020,A01,Annual,true,1,,811111,General automotive repair
+FWU00X81111X80S31,2020,A01,Annual,true,1,,81111X,Automotive mechanical and electrical repair and maintenance
+FWU00X81112180S31,2019,A01,Annual,true,1,,811121,"Automotive body, paint, and interior repair and maintenance"
+FWU00X81112X80S31,2019,A01,Annual,true,1,,81112X,"Automotive body, paint, interior, and glass repair"
+FWU00X81119180S31,2011,A01,Annual,true,1,,811191,Automotive oil change and lubrication shops
+FWU00X81119X80S31,2011,A01,Annual,true,1,,81119X,Other automotive repair and maintenance
+FWU00X8111XX80S31,2020,A01,Annual,true,1,,8111XX,Automotive repair and maintenance
+FWU00X8111XX80S31,2019,A01,Annual,NA,1,,8111XX,Automotive repair and maintenance
+FWU00X8111XX80S31,2011,A01,Annual,NA,1,,8111XX,Automotive repair and maintenance
+FWU00X81131X80S31,2017,A01,Annual,true,2,,81131X,Commercial and industrial machinery and equipment (except automotive and electronic) repair and maintenance
+FWU00X8113XX80S31,2017,A01,Annual,true,2,,8113XX,Commercial and industrial machinery and equipment (except automotive and electronic) repair and maintenance
+FWU00X811XXX80S31,2020,A01,Annual,true,1,,811XXX,Repair and maintenance
+FWU00X811XXX80S31,2019,A01,Annual,NA,1,,811XXX,Repair and maintenance
+FWU00X811XXX80S31,2017,A01,Annual,NA,2,,811XXX,Repair and maintenance
+FWU00X811XXX80S31,2011,A01,Annual,NA,1,,811XXX,Repair and maintenance
+FWU00X81211280S31,2013,A01,Annual,true,1,,812112,Beauty salons
+FWU00X81211X80S31,2013,A01,Annual,true,1,,81211X,"Hair, nail, and skin care services"
+FWU00X8121XX80S31,2013,A01,Annual,true,1,,8121XX,Personal care services
+FWU00X81221X80S31,2015,A01,Annual,true,1,,81221X,Funeral homes and funeral services
+FWU00X81222X80S31,2017,A01,Annual,true,1,,81222X,Cemeteries and crematories
+FWU00X8122XX80S31,2017,A01,Annual,true,1,,8122XX,Death care services
+FWU00X8122XX80S31,2015,A01,Annual,NA,1,,8122XX,Death care services
+FWU00X812XXX80S31,2017,A01,Annual,true,1,,812XXX,Personal and laundry services
+FWU00X812XXX80S31,2015,A01,Annual,NA,1,,812XXX,Personal and laundry services
+FWU00X812XXX80S31,2013,A01,Annual,NA,1,,812XXX,Personal and laundry services
+FWU00X81311X80S31,2016,A01,Annual,true,2,,81311X,Religious organizations
+FWU00X8131XX80S31,2016,A01,Annual,true,2,,8131XX,Religious organizations
+FWU00X813XXX80S31,2016,A01,Annual,true,2,,813XXX,"Religious, grantmaking, civic, professional, and similar organizations"
+FWU00X81411X80S31,2020,A01,Annual,true,1,,81411X,Private households
+FWU00X8141XX80S31,2020,A01,Annual,true,1,,8141XX,Private households
+FWU00X814XXX80S31,2020,A01,Annual,true,1,,814XXX,Private households
+FWU00X92114X80S31,2019,A01,Annual,true,1,,92114X,"Executive and legislative offices, combined"
+FWU00X9211XX80S31,2019,A01,Annual,true,1,,9211XX,"Executive, legislative, and other general government support"
+FWU00X921XXX80S31,2019,A01,Annual,true,1,,921XXX,"Executive, legislative, and other general government support"
+FWU00X92212X80S31,2019,A01,Annual,true,1,,92212X,Police protection
+FWU00X92212X80S31,2017,A01,Annual,NA,1,,92212X,Police protection
+FWU00X92212X80S31,2015,A01,Annual,NA,1,,92212X,Police protection
+FWU00X92214X80S31,2014,A01,Annual,true,1,,92214X,Correctional institutions
+FWU00X92216X80S31,2019,A01,Annual,true,1,,92216X,Fire protection
+FWU00X92216X80S31,2014,A01,Annual,NA,1,,92216X,Fire protection
+FWU00X9221XX80S31,2019,A01,Annual,true,3,,9221XX,"Justice, public order, and safety activities"
+FWU00X9221XX80S31,2017,A01,Annual,NA,1,,9221XX,"Justice, public order, and safety activities"
+FWU00X9221XX80S31,2015,A01,Annual,NA,1,,9221XX,"Justice, public order, and safety activities"
+FWU00X9221XX80S31,2014,A01,Annual,NA,2,,9221XX,"Justice, public order, and safety activities"
+FWU00X922XXX80S31,2019,A01,Annual,true,3,,922XXX,"Justice, public order, and safety activities"
+FWU00X922XXX80S31,2017,A01,Annual,NA,1,,922XXX,"Justice, public order, and safety activities"
+FWU00X922XXX80S31,2015,A01,Annual,NA,1,,922XXX,"Justice, public order, and safety activities"
+FWU00X922XXX80S31,2014,A01,Annual,NA,2,,922XXX,"Justice, public order, and safety activities"
+FWU00X92412X80S31,2016,A01,Annual,true,1,,92412X,Administration of conservation programs
+FWU00X9241XX80S31,2016,A01,Annual,true,1,,9241XX,Administration of environmental quality programs
+FWU00X924XXX80S31,2016,A01,Annual,true,1,,924XXX,Administration of environmental quality programs
+FWU00X92811X80S31,2016,A01,Annual,true,1,,92811X,National security
+FWU00X9281XX80S31,2016,A01,Annual,true,1,,9281XX,National security and international affairs
+FWU00X928XXX80S31,2016,A01,Annual,true,1,,928XXX,National security and international affairs
+FWU00XGP1AAA80S31,2018,A01,Annual,true,25,,GP1AAA,Goods producing
+FWU00XGP1AAA80S31,2017,A01,Annual,NA,16,,GP1AAA,Goods producing
+FWU00XGP1AAA80S31,2016,A01,Annual,NA,25,,GP1AAA,Goods producing
+FWU00XGP1AAA80S31,2015,A01,Annual,NA,26,,GP1AAA,Goods producing
+FWU00XGP1AAA80S31,2014,A01,Annual,NA,34,,GP1AAA,Goods producing
+FWU00XGP1AAA80S31,2013,A01,Annual,NA,22,,GP1AAA,Goods producing
+FWU00XGP1AAA80S31,2012,A01,Annual,NA,28,,GP1AAA,Goods producing
+FWU00XGP1AAA80S31,2011,A01,Annual,NA,25,,GP1AAA,Goods producing
+FWU00XGP1CON80S31,2020,A01,Annual,true,4,,GP1CON,Construction
+FWU00XGP1CON80S31,2019,A01,Annual,NA,12,,GP1CON,Construction
+FWU00XGP1CON80S31,2018,A01,Annual,NA,9,,GP1CON,Construction
+FWU00XGP1CON80S31,2017,A01,Annual,NA,3,,GP1CON,Construction
+FWU00XGP1CON80S31,2016,A01,Annual,NA,6,,GP1CON,Construction
+FWU00XGP1CON80S31,2015,A01,Annual,NA,5,,GP1CON,Construction
+FWU00XGP1CON80S31,2014,A01,Annual,NA,10,,GP1CON,Construction
+FWU00XGP1CON80S31,2013,A01,Annual,NA,7,,GP1CON,Construction
+FWU00XGP1CON80S31,2012,A01,Annual,NA,10,,GP1CON,Construction
+FWU00XGP1CON80S31,2011,A01,Annual,NA,4,,GP1CON,Construction
+FWU00XGP1MFG80S31,2020,A01,Annual,true,1,,GP1MFG,Manufacturing
+FWU00XGP1MFG80S31,2019,A01,Annual,NA,4,,GP1MFG,Manufacturing
+FWU00XGP1MFG80S31,2018,A01,Annual,NA,3,,GP1MFG,Manufacturing
+FWU00XGP1MFG80S31,2017,A01,Annual,NA,1,,GP1MFG,Manufacturing
+FWU00XGP1MFG80S31,2016,A01,Annual,NA,1,,GP1MFG,Manufacturing
+FWU00XGP1MFG80S31,2015,A01,Annual,NA,3,,GP1MFG,Manufacturing
+FWU00XGP1MFG80S31,2014,A01,Annual,NA,7,,GP1MFG,Manufacturing
+FWU00XGP1MFG80S31,2012,A01,Annual,NA,4,,GP1MFG,Manufacturing
+FWU00XGP1NRM80S31,2020,A01,Annual,true,20,,GP1NRM,Natural resources and mining
+FWU00XGP1NRM80S31,2019,A01,Annual,NA,14,,GP1NRM,Natural resources and mining
+FWU00XGP1NRM80S31,2018,A01,Annual,NA,13,,GP1NRM,Natural resources and mining
+FWU00XGP1NRM80S31,2017,A01,Annual,NA,12,,GP1NRM,Natural resources and mining
+FWU00XGP1NRM80S31,2016,A01,Annual,NA,18,,GP1NRM,Natural resources and mining
+FWU00XGP1NRM80S31,2015,A01,Annual,NA,18,,GP1NRM,Natural resources and mining
+FWU00XGP1NRM80S31,2014,A01,Annual,NA,17,,GP1NRM,Natural resources and mining
+FWU00XGP1NRM80S31,2013,A01,Annual,NA,15,,GP1NRM,Natural resources and mining
+FWU00XGP1NRM80S31,2012,A01,Annual,NA,14,,GP1NRM,Natural resources and mining
+FWU00XGP1NRM80S31,2011,A01,Annual,NA,19,,GP1NRM,Natural resources and mining
+FWU00XGP2AFH80S31,2020,A01,Annual,true,20,,GP2AFH,"Agriculture, forestry, fishing and hunting"
+FWU00XGP2AFH80S31,2019,A01,Annual,NA,14,,GP2AFH,"Agriculture, forestry, fishing and hunting"
+FWU00XGP2AFH80S31,2018,A01,Annual,NA,13,,GP2AFH,"Agriculture, forestry, fishing and hunting"
+FWU00XGP2AFH80S31,2017,A01,Annual,NA,12,,GP2AFH,"Agriculture, forestry, fishing and hunting"
+FWU00XGP2AFH80S31,2016,A01,Annual,NA,18,,GP2AFH,"Agriculture, forestry, fishing and hunting"
+FWU00XGP2AFH80S31,2015,A01,Annual,NA,17,,GP2AFH,"Agriculture, forestry, fishing and hunting"
+FWU00XGP2AFH80S31,2014,A01,Annual,NA,16,,GP2AFH,"Agriculture, forestry, fishing and hunting"
+FWU00XGP2AFH80S31,2013,A01,Annual,NA,15,,GP2AFH,"Agriculture, forestry, fishing and hunting"
+FWU00XGP2AFH80S31,2012,A01,Annual,NA,13,,GP2AFH,"Agriculture, forestry, fishing and hunting"
+FWU00XGP2AFH80S31,2011,A01,Annual,NA,18,,GP2AFH,"Agriculture, forestry, fishing and hunting"
+FWU00XGP2CON80S31,2020,A01,Annual,true,4,,GP2CON,Construction
+FWU00XGP2CON80S31,2019,A01,Annual,NA,12,,GP2CON,Construction
+FWU00XGP2CON80S31,2018,A01,Annual,NA,9,,GP2CON,Construction
+FWU00XGP2CON80S31,2017,A01,Annual,NA,3,,GP2CON,Construction
+FWU00XGP2CON80S31,2016,A01,Annual,NA,6,,GP2CON,Construction
+FWU00XGP2CON80S31,2015,A01,Annual,NA,5,,GP2CON,Construction
+FWU00XGP2CON80S31,2014,A01,Annual,NA,10,,GP2CON,Construction
+FWU00XGP2CON80S31,2013,A01,Annual,NA,7,,GP2CON,Construction
+FWU00XGP2CON80S31,2012,A01,Annual,NA,10,,GP2CON,Construction
+FWU00XGP2CON80S31,2011,A01,Annual,NA,4,,GP2CON,Construction
+FWU00XGP2MFG80S31,2020,A01,Annual,true,1,,GP2MFG,Manufacturing
+FWU00XGP2MFG80S31,2019,A01,Annual,NA,4,,GP2MFG,Manufacturing
+FWU00XGP2MFG80S31,2018,A01,Annual,NA,3,,GP2MFG,Manufacturing
+FWU00XGP2MFG80S31,2017,A01,Annual,NA,1,,GP2MFG,Manufacturing
+FWU00XGP2MFG80S31,2016,A01,Annual,NA,1,,GP2MFG,Manufacturing
+FWU00XGP2MFG80S31,2015,A01,Annual,NA,3,,GP2MFG,Manufacturing
+FWU00XGP2MFG80S31,2014,A01,Annual,NA,7,,GP2MFG,Manufacturing
+FWU00XGP2MFG80S31,2012,A01,Annual,NA,4,,GP2MFG,Manufacturing
+FWU00XGP2MIN80S31,2015,A01,Annual,true,1,,GP2MIN,"Mining, quarrying, and oil and gas extraction"
+FWU00XGP2MIN80S31,2014,A01,Annual,NA,1,,GP2MIN,"Mining, quarrying, and oil and gas extraction"
+FWU00XGP2MIN80S31,2012,A01,Annual,NA,1,,GP2MIN,"Mining, quarrying, and oil and gas extraction"
+FWU00XGP2MIN80S31,2011,A01,Annual,NA,1,,GP2MIN,"Mining, quarrying, and oil and gas extraction"
+FWU00XSP1AAA80S31,2018,A01,Annual,true,19,,SP1AAA,Service providing
+FWU00XSP1AAA80S31,2017,A01,Annual,NA,19,,SP1AAA,Service providing
+FWU00XSP1AAA80S31,2016,A01,Annual,NA,35,,SP1AAA,Service providing
+FWU00XSP1AAA80S31,2015,A01,Annual,NA,24,,SP1AAA,Service providing
+FWU00XSP1AAA80S31,2014,A01,Annual,NA,21,,SP1AAA,Service providing
+FWU00XSP1AAA80S31,2013,A01,Annual,NA,17,,SP1AAA,Service providing
+FWU00XSP1AAA80S31,2012,A01,Annual,NA,20,,SP1AAA,Service providing
+FWU00XSP1AAA80S31,2011,A01,Annual,NA,14,,SP1AAA,Service providing
+FWU00XSP1EHS80S31,2016,A01,Annual,true,3,,SP1EHS,Educational and health services
+FWU00XSP1EHS80S31,2015,A01,Annual,NA,1,,SP1EHS,Educational and health services
+FWU00XSP1EHS80S31,2014,A01,Annual,NA,1,,SP1EHS,Educational and health services
+FWU00XSP1EHS80S31,2013,A01,Annual,NA,5,,SP1EHS,Educational and health services
+FWU00XSP1EHS80S31,2012,A01,Annual,NA,3,,SP1EHS,Educational and health services
+FWU00XSP1EHS80S31,2011,A01,Annual,NA,4,,SP1EHS,Educational and health services
+FWU00XSP1FIA80S31,2020,A01,Annual,true,1,,SP1FIA,Financial activities
+FWU00XSP1FIA80S31,2019,A01,Annual,NA,2,,SP1FIA,Financial activities
+FWU00XSP1FIA80S31,2016,A01,Annual,NA,3,,SP1FIA,Financial activities
+FWU00XSP1FIA80S31,2015,A01,Annual,NA,1,,SP1FIA,Financial activities
+FWU00XSP1FIA80S31,2014,A01,Annual,NA,1,,SP1FIA,Financial activities
+FWU00XSP1INF80S31,2017,A01,Annual,true,1,,SP1INF,Information
+FWU00XSP1INF80S31,2016,A01,Annual,NA,1,,SP1INF,Information
+FWU00XSP1INF80S31,2015,A01,Annual,NA,1,,SP1INF,Information
+FWU00XSP1INF80S31,2014,A01,Annual,NA,2,,SP1INF,Information
+FWU00XSP1LEH80S31,2020,A01,Annual,true,2,,SP1LEH,Leisure and hospitality
+FWU00XSP1LEH80S31,2019,A01,Annual,NA,1,,SP1LEH,Leisure and hospitality
+FWU00XSP1LEH80S31,2018,A01,Annual,NA,1,,SP1LEH,Leisure and hospitality
+FWU00XSP1LEH80S31,2017,A01,Annual,NA,3,,SP1LEH,Leisure and hospitality
+FWU00XSP1LEH80S31,2016,A01,Annual,NA,3,,SP1LEH,Leisure and hospitality
+FWU00XSP1LEH80S31,2015,A01,Annual,NA,3,,SP1LEH,Leisure and hospitality
+FWU00XSP1LEH80S31,2012,A01,Annual,NA,3,,SP1LEH,Leisure and hospitality
+FWU00XSP1LEH80S31,2011,A01,Annual,NA,1,,SP1LEH,Leisure and hospitality
+FWU00XSP1OTS80S31,2020,A01,Annual,true,2,,SP1OTS,"Other services, except public administration"
+FWU00XSP1OTS80S31,2019,A01,Annual,NA,1,,SP1OTS,"Other services, except public administration"
+FWU00XSP1OTS80S31,2017,A01,Annual,NA,3,,SP1OTS,"Other services, except public administration"
+FWU00XSP1OTS80S31,2016,A01,Annual,NA,2,,SP1OTS,"Other services, except public administration"
+FWU00XSP1OTS80S31,2015,A01,Annual,NA,1,,SP1OTS,"Other services, except public administration"
+FWU00XSP1OTS80S31,2013,A01,Annual,NA,1,,SP1OTS,"Other services, except public administration"
+FWU00XSP1OTS80S31,2011,A01,Annual,NA,1,,SP1OTS,"Other services, except public administration"
+FWU00XSP1PAD80S31,2019,A01,Annual,true,4,,SP1PAD,Public administration
+FWU00XSP1PAD80S31,2016,A01,Annual,NA,2,,SP1PAD,Public administration
+FWU00XSP1PAD80S31,2015,A01,Annual,NA,1,,SP1PAD,Public administration
+FWU00XSP1PAD80S31,2014,A01,Annual,NA,2,,SP1PAD,Public administration
+FWU00XSP1PBS80S31,2019,A01,Annual,true,4,,SP1PBS,Professional and business services
+FWU00XSP1PBS80S31,2018,A01,Annual,NA,5,,SP1PBS,Professional and business services
+FWU00XSP1PBS80S31,2016,A01,Annual,NA,5,,SP1PBS,Professional and business services
+FWU00XSP1PBS80S31,2015,A01,Annual,NA,5,,SP1PBS,Professional and business services
+FWU00XSP1PBS80S31,2014,A01,Annual,NA,1,,SP1PBS,Professional and business services
+FWU00XSP1PBS80S31,2013,A01,Annual,NA,2,,SP1PBS,Professional and business services
+FWU00XSP1PBS80S31,2012,A01,Annual,NA,1,,SP1PBS,Professional and business services
+FWU00XSP1PBS80S31,2011,A01,Annual,NA,1,,SP1PBS,Professional and business services
+FWU00XSP1TTU80S31,2019,A01,Annual,true,11,,SP1TTU,"Trade, transportation, and utilities"
+FWU00XSP1TTU80S31,2018,A01,Annual,NA,10,,SP1TTU,"Trade, transportation, and utilities"
+FWU00XSP1TTU80S31,2017,A01,Annual,NA,9,,SP1TTU,"Trade, transportation, and utilities"
+FWU00XSP1TTU80S31,2016,A01,Annual,NA,16,,SP1TTU,"Trade, transportation, and utilities"
+FWU00XSP1TTU80S31,2015,A01,Annual,NA,11,,SP1TTU,"Trade, transportation, and utilities"
+FWU00XSP1TTU80S31,2014,A01,Annual,NA,14,,SP1TTU,"Trade, transportation, and utilities"
+FWU00XSP1TTU80S31,2013,A01,Annual,NA,9,,SP1TTU,"Trade, transportation, and utilities"
+FWU00XSP1TTU80S31,2012,A01,Annual,NA,13,,SP1TTU,"Trade, transportation, and utilities"
+FWU00XSP1TTU80S31,2011,A01,Annual,NA,6,,SP1TTU,"Trade, transportation, and utilities"
+FWU00XSP2ADW80S31,2020,A01,Annual,true,1,,SP2ADW,Administrative and support and waste management and remediation services
+FWU00XSP2ADW80S31,2019,A01,Annual,NA,4,,SP2ADW,Administrative and support and waste management and remediation services
+FWU00XSP2ADW80S31,2018,A01,Annual,NA,5,,SP2ADW,Administrative and support and waste management and remediation services
+FWU00XSP2ADW80S31,2016,A01,Annual,NA,5,,SP2ADW,Administrative and support and waste management and remediation services
+FWU00XSP2ADW80S31,2015,A01,Annual,NA,5,,SP2ADW,Administrative and support and waste management and remediation services
+FWU00XSP2ADW80S31,2014,A01,Annual,NA,1,,SP2ADW,Administrative and support and waste management and remediation services
+FWU00XSP2ADW80S31,2013,A01,Annual,NA,1,,SP2ADW,Administrative and support and waste management and remediation services
+FWU00XSP2ADW80S31,2012,A01,Annual,NA,1,,SP2ADW,Administrative and support and waste management and remediation services
+FWU00XSP2AER80S31,2018,A01,Annual,true,1,,SP2AER,"Arts, entertainment, and recreation"
+FWU00XSP2AER80S31,2017,A01,Annual,NA,2,,SP2AER,"Arts, entertainment, and recreation"
+FWU00XSP2AER80S31,2016,A01,Annual,NA,2,,SP2AER,"Arts, entertainment, and recreation"
+FWU00XSP2AER80S31,2015,A01,Annual,NA,1,,SP2AER,"Arts, entertainment, and recreation"
+FWU00XSP2AER80S31,2011,A01,Annual,NA,1,,SP2AER,"Arts, entertainment, and recreation"
+FWU00XSP2AFS80S31,2020,A01,Annual,true,2,,SP2AFS,Accommodation and food services
+FWU00XSP2AFS80S31,2019,A01,Annual,NA,1,,SP2AFS,Accommodation and food services
+FWU00XSP2AFS80S31,2017,A01,Annual,NA,1,,SP2AFS,Accommodation and food services
+FWU00XSP2AFS80S31,2016,A01,Annual,NA,1,,SP2AFS,Accommodation and food services
+FWU00XSP2AFS80S31,2015,A01,Annual,NA,2,,SP2AFS,Accommodation and food services
+FWU00XSP2EDS80S31,2018,A01,Annual,true,1,,SP2EDS,Educational services
+FWU00XSP2EDS80S31,2016,A01,Annual,NA,2,,SP2EDS,Educational services
+FWU00XSP2EDS80S31,2013,A01,Annual,NA,3,,SP2EDS,Educational services
+FWU00XSP2EDS80S31,2012,A01,Annual,NA,3,,SP2EDS,Educational services
+FWU00XSP2EDS80S31,2011,A01,Annual,NA,2,,SP2EDS,Educational services
+FWU00XSP2FIN80S31,2016,A01,Annual,true,1,,SP2FIN,Finance and insurance
+FWU00XSP2FIN80S31,2015,A01,Annual,NA,1,,SP2FIN,Finance and insurance
+FWU00XSP2HSA80S31,2016,A01,Annual,true,1,,SP2HSA,Health care and social assistance
+FWU00XSP2HSA80S31,2015,A01,Annual,NA,1,,SP2HSA,Health care and social assistance
+FWU00XSP2HSA80S31,2014,A01,Annual,NA,1,,SP2HSA,Health care and social assistance
+FWU00XSP2HSA80S31,2013,A01,Annual,NA,2,,SP2HSA,Health care and social assistance
+FWU00XSP2HSA80S31,2011,A01,Annual,NA,2,,SP2HSA,Health care and social assistance
+FWU00XSP2INF80S31,2017,A01,Annual,true,1,,SP2INF,Information
+FWU00XSP2INF80S31,2016,A01,Annual,NA,1,,SP2INF,Information
+FWU00XSP2INF80S31,2015,A01,Annual,NA,1,,SP2INF,Information
+FWU00XSP2INF80S31,2014,A01,Annual,NA,2,,SP2INF,Information
+FWU00XSP2OTS80S31,2020,A01,Annual,true,2,,SP2OTS,"Other services, except public administration"
+FWU00XSP2OTS80S31,2019,A01,Annual,NA,1,,SP2OTS,"Other services, except public administration"
+FWU00XSP2OTS80S31,2017,A01,Annual,NA,3,,SP2OTS,"Other services, except public administration"
+FWU00XSP2OTS80S31,2016,A01,Annual,NA,2,,SP2OTS,"Other services, except public administration"
+FWU00XSP2OTS80S31,2015,A01,Annual,NA,1,,SP2OTS,"Other services, except public administration"
+FWU00XSP2OTS80S31,2013,A01,Annual,NA,1,,SP2OTS,"Other services, except public administration"
+FWU00XSP2OTS80S31,2011,A01,Annual,NA,1,,SP2OTS,"Other services, except public administration"
+FWU00XSP2PAD80S31,2019,A01,Annual,true,4,,SP2PAD,Public administration
+FWU00XSP2PAD80S31,2016,A01,Annual,NA,2,,SP2PAD,Public administration
+FWU00XSP2PAD80S31,2015,A01,Annual,NA,1,,SP2PAD,Public administration
+FWU00XSP2PAD80S31,2014,A01,Annual,NA,2,,SP2PAD,Public administration
+FWU00XSP2PST80S31,2013,A01,Annual,true,1,,SP2PST,"Professional, scientific, and technical services"
+FWU00XSP2PST80S31,2011,A01,Annual,NA,1,,SP2PST,"Professional, scientific, and technical services"
+FWU00XSP2RET80S31,2019,A01,Annual,true,4,,SP2RET,Retail trade
+FWU00XSP2RET80S31,2018,A01,Annual,NA,1,,SP2RET,Retail trade
+FWU00XSP2RET80S31,2017,A01,Annual,NA,2,,SP2RET,Retail trade
+FWU00XSP2RET80S31,2016,A01,Annual,NA,3,,SP2RET,Retail trade
+FWU00XSP2RET80S31,2015,A01,Annual,NA,1,,SP2RET,Retail trade
+FWU00XSP2RET80S31,2014,A01,Annual,NA,2,,SP2RET,Retail trade
+FWU00XSP2RET80S31,2012,A01,Annual,NA,1,,SP2RET,Retail trade
+FWU00XSP2RRL80S31,2020,A01,Annual,true,1,,SP2RRL,Real estate and rental and leasing
+FWU00XSP2RRL80S31,2019,A01,Annual,NA,2,,SP2RRL,Real estate and rental and leasing
+FWU00XSP2RRL80S31,2016,A01,Annual,NA,2,,SP2RRL,Real estate and rental and leasing
+FWU00XSP2RRL80S31,2014,A01,Annual,NA,1,,SP2RRL,Real estate and rental and leasing
+FWU00XSP2TRW80S31,2020,A01,Annual,true,11,,SP2TRW,Transportation and warehousing
+FWU00XSP2TRW80S31,2019,A01,Annual,NA,3,,SP2TRW,Transportation and warehousing
+FWU00XSP2TRW80S31,2018,A01,Annual,NA,5,,SP2TRW,Transportation and warehousing
+FWU00XSP2TRW80S31,2017,A01,Annual,NA,6,,SP2TRW,Transportation and warehousing
+FWU00XSP2TRW80S31,2016,A01,Annual,NA,8,,SP2TRW,Transportation and warehousing
+FWU00XSP2TRW80S31,2015,A01,Annual,NA,8,,SP2TRW,Transportation and warehousing
+FWU00XSP2TRW80S31,2014,A01,Annual,NA,4,,SP2TRW,Transportation and warehousing
+FWU00XSP2TRW80S31,2013,A01,Annual,NA,5,,SP2TRW,Transportation and warehousing
+FWU00XSP2TRW80S31,2012,A01,Annual,NA,7,,SP2TRW,Transportation and warehousing
+FWU00XSP2TRW80S31,2011,A01,Annual,NA,5,,SP2TRW,Transportation and warehousing
+FWU00XSP2UTL80S31,2016,A01,Annual,true,1,,SP2UTL,Utilities
+FWU00XSP2UTL80S31,2014,A01,Annual,NA,1,,SP2UTL,Utilities
+FWU00XSP2UTL80S31,2013,A01,Annual,NA,1,,SP2UTL,Utilities
+FWU00XSP2UTL80S31,2012,A01,Annual,NA,1,,SP2UTL,Utilities
+FWU00XSP2WHT80S31,2020,A01,Annual,true,1,,SP2WHT,Wholesale trade
+FWU00XSP2WHT80S31,2019,A01,Annual,NA,4,,SP2WHT,Wholesale trade
+FWU00XSP2WHT80S31,2018,A01,Annual,NA,4,,SP2WHT,Wholesale trade
+FWU00XSP2WHT80S31,2017,A01,Annual,NA,1,,SP2WHT,Wholesale trade
+FWU00XSP2WHT80S31,2016,A01,Annual,NA,4,,SP2WHT,Wholesale trade
+FWU00XSP2WHT80S31,2015,A01,Annual,NA,2,,SP2WHT,Wholesale trade
+FWU00XSP2WHT80S31,2014,A01,Annual,NA,7,,SP2WHT,Wholesale trade
+FWU00XSP2WHT80S31,2013,A01,Annual,NA,3,,SP2WHT,Wholesale trade
+FWU00XSP2WHT80S31,2012,A01,Annual,NA,4,,SP2WHT,Wholesale trade
+FWU00XSP2WHT80S31,2011,A01,Annual,NA,1,,SP2WHT,Wholesale trade

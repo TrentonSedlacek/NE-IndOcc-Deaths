@@ -1,0 +1,422 @@
+seriesID,year,period,periodName,latest,value,case_code_text,category_text,industry_code,industry_text,event_code,event_text
+FWUGFX2XXXXX8ES31,2020,A01,Annual,true,2,Fatalities by detailed event or exposure,Gender-- Women,NA,NA,2XXXXX,Transportation incidents
+FWUGFX2XXXXX8ES31,2019,A01,Annual,NA,3,Fatalities by detailed event or exposure,Gender-- Women,NA,NA,2XXXXX,Transportation incidents
+FWUGFX2XXXXX8ES31,2016,A01,Annual,NA,5,Fatalities by detailed event or exposure,Gender-- Women,NA,NA,2XXXXX,Transportation incidents
+FWUGFX2XXXXX8ES31,2015,A01,Annual,NA,1,Fatalities by detailed event or exposure,Gender-- Women,NA,NA,2XXXXX,Transportation incidents
+FWUGFX2XXXXX8ES31,2014,A01,Annual,NA,3,Fatalities by detailed event or exposure,Gender-- Women,NA,NA,2XXXXX,Transportation incidents
+FWUGFX2XXXXX8ES31,2013,A01,Annual,NA,3,Fatalities by detailed event or exposure,Gender-- Women,NA,NA,2XXXXX,Transportation incidents
+FWUGFX2XXXXX8ES31,2011,A01,Annual,NA,3,Fatalities by detailed event or exposure,Gender-- Women,NA,NA,2XXXXX,Transportation incidents
+FWUGFX3XXXXX8ES31,2016,A01,Annual,true,1,Fatalities by detailed event or exposure,Gender-- Women,NA,NA,3XXXXX,Fires and explosions
+FWUGFX3XXXXX8ES31,2011,A01,Annual,NA,1,Fatalities by detailed event or exposure,Gender-- Women,NA,NA,3XXXXX,Fires and explosions
+FWUGFX6XXXXX8ES31,2015,A01,Annual,true,1,Fatalities by detailed event or exposure,Gender-- Women,NA,NA,6XXXXX,Contact with objects and equipment
+FWUGFX6XXXXX8ES31,2011,A01,Annual,NA,1,Fatalities by detailed event or exposure,Gender-- Women,NA,NA,6XXXXX,Contact with objects and equipment
+FWUGMX00000080S31,2020,A01,Annual,true,46,Fatalities in all sectors,Gender-- Men,000000,All workers,NA,NA
+FWUGMX00000080S31,2019,A01,Annual,NA,50,Fatalities in all sectors,Gender-- Men,000000,All workers,NA,NA
+FWUGMX00000080S31,2018,A01,Annual,NA,42,Fatalities in all sectors,Gender-- Men,000000,All workers,NA,NA
+FWUGMX00000080S31,2017,A01,Annual,NA,33,Fatalities in all sectors,Gender-- Men,000000,All workers,NA,NA
+FWUGMX00000080S31,2016,A01,Annual,NA,52,Fatalities in all sectors,Gender-- Men,000000,All workers,NA,NA
+FWUGMX00000080S31,2015,A01,Annual,NA,45,Fatalities in all sectors,Gender-- Men,000000,All workers,NA,NA
+FWUGMX00000080S31,2014,A01,Annual,NA,51,Fatalities in all sectors,Gender-- Men,000000,All workers,NA,NA
+FWUGMX00000080S31,2013,A01,Annual,NA,36,Fatalities in all sectors,Gender-- Men,000000,All workers,NA,NA
+FWUGMX00000080S31,2012,A01,Annual,NA,44,Fatalities in all sectors,Gender-- Men,000000,All workers,NA,NA
+FWUGMX00000080S31,2011,A01,Annual,NA,32,Fatalities in all sectors,Gender-- Men,000000,All workers,NA,NA
+FWUGMX1XXXXX8ES31,2020,A01,Annual,true,4,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUGMX1XXXXX8ES31,2017,A01,Annual,NA,2,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUGMX1XXXXX8ES31,2016,A01,Annual,NA,3,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUGMX1XXXXX8ES31,2015,A01,Annual,NA,3,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUGMX1XXXXX8ES31,2014,A01,Annual,NA,6,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUGMX1XXXXX8ES31,2013,A01,Annual,NA,4,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUGMX1XXXXX8ES31,2011,A01,Annual,NA,1,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUGMX2XXXXX8ES31,2020,A01,Annual,true,24,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,2XXXXX,Transportation incidents
+FWUGMX2XXXXX8ES31,2019,A01,Annual,NA,25,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,2XXXXX,Transportation incidents
+FWUGMX2XXXXX8ES31,2018,A01,Annual,NA,18,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,2XXXXX,Transportation incidents
+FWUGMX2XXXXX8ES31,2017,A01,Annual,NA,20,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,2XXXXX,Transportation incidents
+FWUGMX2XXXXX8ES31,2016,A01,Annual,NA,31,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,2XXXXX,Transportation incidents
+FWUGMX2XXXXX8ES31,2015,A01,Annual,NA,22,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,2XXXXX,Transportation incidents
+FWUGMX2XXXXX8ES31,2014,A01,Annual,NA,23,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,2XXXXX,Transportation incidents
+FWUGMX2XXXXX8ES31,2013,A01,Annual,NA,18,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,2XXXXX,Transportation incidents
+FWUGMX2XXXXX8ES31,2012,A01,Annual,NA,23,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,2XXXXX,Transportation incidents
+FWUGMX2XXXXX8ES31,2011,A01,Annual,NA,22,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,2XXXXX,Transportation incidents
+FWUGMX3XXXXX8ES31,2018,A01,Annual,true,1,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,3XXXXX,Fires and explosions
+FWUGMX3XXXXX8ES31,2017,A01,Annual,NA,1,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,3XXXXX,Fires and explosions
+FWUGMX3XXXXX8ES31,2016,A01,Annual,NA,1,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,3XXXXX,Fires and explosions
+FWUGMX3XXXXX8ES31,2015,A01,Annual,NA,4,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,3XXXXX,Fires and explosions
+FWUGMX3XXXXX8ES31,2014,A01,Annual,NA,2,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,3XXXXX,Fires and explosions
+FWUGMX4XXXXX8ES31,2019,A01,Annual,true,7,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,4XXXXX,"Falls, slips, trips"
+FWUGMX4XXXXX8ES31,2018,A01,Annual,NA,8,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,4XXXXX,"Falls, slips, trips"
+FWUGMX4XXXXX8ES31,2016,A01,Annual,NA,6,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,4XXXXX,"Falls, slips, trips"
+FWUGMX4XXXXX8ES31,2015,A01,Annual,NA,4,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,4XXXXX,"Falls, slips, trips"
+FWUGMX4XXXXX8ES31,2014,A01,Annual,NA,9,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,4XXXXX,"Falls, slips, trips"
+FWUGMX4XXXXX8ES31,2013,A01,Annual,NA,4,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,4XXXXX,"Falls, slips, trips"
+FWUGMX4XXXXX8ES31,2012,A01,Annual,NA,4,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,4XXXXX,"Falls, slips, trips"
+FWUGMX5XXXXX8ES31,2020,A01,Annual,true,5,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWUGMX5XXXXX8ES31,2018,A01,Annual,NA,5,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWUGMX5XXXXX8ES31,2016,A01,Annual,NA,3,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWUGMX5XXXXX8ES31,2014,A01,Annual,NA,1,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWUGMX5XXXXX8ES31,2013,A01,Annual,NA,1,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWUGMX5XXXXX8ES31,2012,A01,Annual,NA,5,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWUGMX6XXXXX8ES31,2020,A01,Annual,true,10,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,6XXXXX,Contact with objects and equipment
+FWUGMX6XXXXX8ES31,2019,A01,Annual,NA,14,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,6XXXXX,Contact with objects and equipment
+FWUGMX6XXXXX8ES31,2018,A01,Annual,NA,9,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,6XXXXX,Contact with objects and equipment
+FWUGMX6XXXXX8ES31,2017,A01,Annual,NA,7,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,6XXXXX,Contact with objects and equipment
+FWUGMX6XXXXX8ES31,2016,A01,Annual,NA,8,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,6XXXXX,Contact with objects and equipment
+FWUGMX6XXXXX8ES31,2015,A01,Annual,NA,10,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,6XXXXX,Contact with objects and equipment
+FWUGMX6XXXXX8ES31,2014,A01,Annual,NA,10,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,6XXXXX,Contact with objects and equipment
+FWUGMX6XXXXX8ES31,2013,A01,Annual,NA,9,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,6XXXXX,Contact with objects and equipment
+FWUGMX6XXXXX8ES31,2012,A01,Annual,NA,10,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,6XXXXX,Contact with objects and equipment
+FWUGMX6XXXXX8ES31,2011,A01,Annual,NA,4,Fatalities by detailed event or exposure,Gender-- Men,NA,NA,6XXXXX,Contact with objects and equipment
+FWURBN00000080S31,2014,A01,Annual,true,4,Fatalities in all sectors,"Race-- Black or African-American, Native-born",000000,All workers,NA,NA
+FWURBT00000080S31,2016,A01,Annual,true,3,Fatalities in all sectors,"Race-- Black or African-American, non-Hispanic, Total",000000,All workers,NA,NA
+FWURBT00000080S31,2014,A01,Annual,NA,4,Fatalities in all sectors,"Race-- Black or African-American, non-Hispanic, Total",000000,All workers,NA,NA
+FWURFT00000080S31,2018,A01,Annual,true,36,Fatalities in all sectors,"Race-- Total, Native-born",000000,All workers,NA,NA
+FWURFT00000080S31,2017,A01,Annual,NA,32,Fatalities in all sectors,"Race-- Total, Native-born",000000,All workers,NA,NA
+FWURFT00000080S31,2016,A01,Annual,NA,55,Fatalities in all sectors,"Race-- Total, Native-born",000000,All workers,NA,NA
+FWURFT00000080S31,2015,A01,Annual,NA,48,Fatalities in all sectors,"Race-- Total, Native-born",000000,All workers,NA,NA
+FWURFT00000080S31,2014,A01,Annual,NA,47,Fatalities in all sectors,"Race-- Total, Native-born",000000,All workers,NA,NA
+FWURFT00000080S31,2013,A01,Annual,NA,35,Fatalities in all sectors,"Race-- Total, Native-born",000000,All workers,NA,NA
+FWURFT00000080S31,2012,A01,Annual,NA,41,Fatalities in all sectors,"Race-- Total, Native-born",000000,All workers,NA,NA
+FWURFT00000080S31,2011,A01,Annual,NA,36,Fatalities in all sectors,"Race-- Total, Native-born",000000,All workers,NA,NA
+FWURFT1XXXXX8ES31,2017,A01,Annual,true,2,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWURFT1XXXXX8ES31,2016,A01,Annual,NA,4,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWURFT1XXXXX8ES31,2015,A01,Annual,NA,6,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWURFT1XXXXX8ES31,2014,A01,Annual,NA,6,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWURFT1XXXXX8ES31,2013,A01,Annual,NA,4,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWURFT1XXXXX8ES31,2011,A01,Annual,NA,2,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWURFT2XXXXX8ES31,2018,A01,Annual,true,15,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,2XXXXX,Transportation incidents
+FWURFT2XXXXX8ES31,2017,A01,Annual,NA,19,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,2XXXXX,Transportation incidents
+FWURFT2XXXXX8ES31,2016,A01,Annual,NA,33,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,2XXXXX,Transportation incidents
+FWURFT2XXXXX8ES31,2015,A01,Annual,NA,21,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,2XXXXX,Transportation incidents
+FWURFT2XXXXX8ES31,2014,A01,Annual,NA,21,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,2XXXXX,Transportation incidents
+FWURFT2XXXXX8ES31,2013,A01,Annual,NA,19,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,2XXXXX,Transportation incidents
+FWURFT2XXXXX8ES31,2012,A01,Annual,NA,21,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,2XXXXX,Transportation incidents
+FWURFT2XXXXX8ES31,2011,A01,Annual,NA,24,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,2XXXXX,Transportation incidents
+FWURFT3XXXXX8ES31,2018,A01,Annual,true,1,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,3XXXXX,Fires and explosions
+FWURFT3XXXXX8ES31,2017,A01,Annual,NA,1,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,3XXXXX,Fires and explosions
+FWURFT3XXXXX8ES31,2016,A01,Annual,NA,2,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,3XXXXX,Fires and explosions
+FWURFT3XXXXX8ES31,2015,A01,Annual,NA,4,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,3XXXXX,Fires and explosions
+FWURFT3XXXXX8ES31,2014,A01,Annual,NA,2,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,3XXXXX,Fires and explosions
+FWURFT4XXXXX8ES31,2018,A01,Annual,true,7,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURFT4XXXXX8ES31,2017,A01,Annual,NA,3,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURFT4XXXXX8ES31,2016,A01,Annual,NA,4,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURFT4XXXXX8ES31,2015,A01,Annual,NA,4,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURFT4XXXXX8ES31,2014,A01,Annual,NA,9,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURFT4XXXXX8ES31,2013,A01,Annual,NA,4,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURFT4XXXXX8ES31,2012,A01,Annual,NA,6,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURFT4XXXXX8ES31,2011,A01,Annual,NA,3,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURFT5XXXXX8ES31,2018,A01,Annual,true,4,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWURFT5XXXXX8ES31,2016,A01,Annual,NA,3,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWURFT5XXXXX8ES31,2014,A01,Annual,NA,1,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWURFT5XXXXX8ES31,2013,A01,Annual,NA,1,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWURFT5XXXXX8ES31,2012,A01,Annual,NA,5,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWURFT6XXXXX8ES31,2018,A01,Annual,true,8,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURFT6XXXXX8ES31,2017,A01,Annual,NA,7,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURFT6XXXXX8ES31,2016,A01,Annual,NA,9,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURFT6XXXXX8ES31,2015,A01,Annual,NA,11,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURFT6XXXXX8ES31,2014,A01,Annual,NA,8,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURFT6XXXXX8ES31,2013,A01,Annual,NA,7,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURFT6XXXXX8ES31,2012,A01,Annual,NA,8,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURFT6XXXXX8ES31,2011,A01,Annual,NA,3,Fatalities by detailed event or exposure,"Race-- Total, Native-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURHF00000080S31,2018,A01,Annual,true,6,Fatalities in all sectors,"Race-- Hispanic or Latino, Foreign-born",000000,All workers,NA,NA
+FWURHF00000080S31,2014,A01,Annual,NA,8,Fatalities in all sectors,"Race-- Hispanic or Latino, Foreign-born",000000,All workers,NA,NA
+FWURHF00000080S31,2012,A01,Annual,NA,4,Fatalities in all sectors,"Race-- Hispanic or Latino, Foreign-born",000000,All workers,NA,NA
+FWURHF2XXXXX8ES31,2014,A01,Annual,true,5,Fatalities by detailed event or exposure,"Race-- Hispanic or Latino, Foreign-born",NA,NA,2XXXXX,Transportation incidents
+FWURHT00000080S31,2018,A01,Annual,true,7,Fatalities in all sectors,"Race-- Hispanic or Latino, Total",000000,All workers,NA,NA
+FWURHT00000080S31,2017,A01,Annual,NA,4,Fatalities in all sectors,"Race-- Hispanic or Latino, Total",000000,All workers,NA,NA
+FWURHT00000080S31,2015,A01,Annual,NA,4,Fatalities in all sectors,"Race-- Hispanic or Latino, Total",000000,All workers,NA,NA
+FWURHT00000080S31,2014,A01,Annual,NA,9,Fatalities in all sectors,"Race-- Hispanic or Latino, Total",000000,All workers,NA,NA
+FWURHT00000080S31,2013,A01,Annual,NA,3,Fatalities in all sectors,"Race-- Hispanic or Latino, Total",000000,All workers,NA,NA
+FWURHT00000080S31,2012,A01,Annual,NA,5,Fatalities in all sectors,"Race-- Hispanic or Latino, Total",000000,All workers,NA,NA
+FWURHT00000080S31,2011,A01,Annual,NA,3,Fatalities in all sectors,"Race-- Hispanic or Latino, Total",000000,All workers,NA,NA
+FWURHT2XXXXX8ES31,2014,A01,Annual,true,5,Fatalities by detailed event or exposure,"Race-- Hispanic or Latino, Total",NA,NA,2XXXXX,Transportation incidents
+FWURNT00000080S31,2018,A01,Annual,true,8,Fatalities in all sectors,"Race-- Total, Foreign-born",000000,All workers,NA,NA
+FWURNT00000080S31,2017,A01,Annual,NA,3,Fatalities in all sectors,"Race-- Total, Foreign-born",000000,All workers,NA,NA
+FWURNT00000080S31,2016,A01,Annual,NA,5,Fatalities in all sectors,"Race-- Total, Foreign-born",000000,All workers,NA,NA
+FWURNT00000080S31,2015,A01,Annual,NA,2,Fatalities in all sectors,"Race-- Total, Foreign-born",000000,All workers,NA,NA
+FWURNT00000080S31,2014,A01,Annual,NA,8,Fatalities in all sectors,"Race-- Total, Foreign-born",000000,All workers,NA,NA
+FWURNT00000080S31,2013,A01,Annual,NA,4,Fatalities in all sectors,"Race-- Total, Foreign-born",000000,All workers,NA,NA
+FWURNT00000080S31,2012,A01,Annual,NA,7,Fatalities in all sectors,"Race-- Total, Foreign-born",000000,All workers,NA,NA
+FWURNT00000080S31,2011,A01,Annual,NA,3,Fatalities in all sectors,"Race-- Total, Foreign-born",000000,All workers,NA,NA
+FWURNT1XXXXX8ES31,2014,A01,Annual,true,1,Fatalities by detailed event or exposure,"Race-- Total, Foreign-born",NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWURNT1XXXXX8ES31,2012,A01,Annual,NA,1,Fatalities by detailed event or exposure,"Race-- Total, Foreign-born",NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWURNT2XXXXX8ES31,2018,A01,Annual,true,3,Fatalities by detailed event or exposure,"Race-- Total, Foreign-born",NA,NA,2XXXXX,Transportation incidents
+FWURNT2XXXXX8ES31,2017,A01,Annual,NA,1,Fatalities by detailed event or exposure,"Race-- Total, Foreign-born",NA,NA,2XXXXX,Transportation incidents
+FWURNT2XXXXX8ES31,2016,A01,Annual,NA,3,Fatalities by detailed event or exposure,"Race-- Total, Foreign-born",NA,NA,2XXXXX,Transportation incidents
+FWURNT2XXXXX8ES31,2015,A01,Annual,NA,2,Fatalities by detailed event or exposure,"Race-- Total, Foreign-born",NA,NA,2XXXXX,Transportation incidents
+FWURNT2XXXXX8ES31,2014,A01,Annual,NA,5,Fatalities by detailed event or exposure,"Race-- Total, Foreign-born",NA,NA,2XXXXX,Transportation incidents
+FWURNT2XXXXX8ES31,2013,A01,Annual,NA,2,Fatalities by detailed event or exposure,"Race-- Total, Foreign-born",NA,NA,2XXXXX,Transportation incidents
+FWURNT2XXXXX8ES31,2012,A01,Annual,NA,4,Fatalities by detailed event or exposure,"Race-- Total, Foreign-born",NA,NA,2XXXXX,Transportation incidents
+FWURNT2XXXXX8ES31,2011,A01,Annual,NA,1,Fatalities by detailed event or exposure,"Race-- Total, Foreign-born",NA,NA,2XXXXX,Transportation incidents
+FWURNT4XXXXX8ES31,2018,A01,Annual,true,2,Fatalities by detailed event or exposure,"Race-- Total, Foreign-born",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURNT6XXXXX8ES31,2018,A01,Annual,true,1,Fatalities by detailed event or exposure,"Race-- Total, Foreign-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURNT6XXXXX8ES31,2014,A01,Annual,NA,2,Fatalities by detailed event or exposure,"Race-- Total, Foreign-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURNT6XXXXX8ES31,2013,A01,Annual,NA,2,Fatalities by detailed event or exposure,"Race-- Total, Foreign-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURWN00000080S31,2019,A01,Annual,true,43,Fatalities in all sectors,"Race-- White, Native-born",000000,All workers,NA,NA
+FWURWN00000080S31,2018,A01,Annual,NA,34,Fatalities in all sectors,"Race-- White, Native-born",000000,All workers,NA,NA
+FWURWN00000080S31,2017,A01,Annual,NA,27,Fatalities in all sectors,"Race-- White, Native-born",000000,All workers,NA,NA
+FWURWN00000080S31,2016,A01,Annual,NA,53,Fatalities in all sectors,"Race-- White, Native-born",000000,All workers,NA,NA
+FWURWN00000080S31,2015,A01,Annual,NA,43,Fatalities in all sectors,"Race-- White, Native-born",000000,All workers,NA,NA
+FWURWN00000080S31,2014,A01,Annual,NA,42,Fatalities in all sectors,"Race-- White, Native-born",000000,All workers,NA,NA
+FWURWN00000080S31,2013,A01,Annual,NA,33,Fatalities in all sectors,"Race-- White, Native-born",000000,All workers,NA,NA
+FWURWN00000080S31,2012,A01,Annual,NA,40,Fatalities in all sectors,"Race-- White, Native-born",000000,All workers,NA,NA
+FWURWN00000080S31,2011,A01,Annual,NA,33,Fatalities in all sectors,"Race-- White, Native-born",000000,All workers,NA,NA
+FWURWN1XXXXX8ES31,2016,A01,Annual,true,3,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWURWN1XXXXX8ES31,2015,A01,Annual,NA,6,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWURWN1XXXXX8ES31,2014,A01,Annual,NA,6,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWURWN1XXXXX8ES31,2013,A01,Annual,NA,3,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWURWN2XXXXX8ES31,2018,A01,Annual,true,14,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,2XXXXX,Transportation incidents
+FWURWN2XXXXX8ES31,2017,A01,Annual,NA,16,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,2XXXXX,Transportation incidents
+FWURWN2XXXXX8ES31,2016,A01,Annual,NA,32,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,2XXXXX,Transportation incidents
+FWURWN2XXXXX8ES31,2015,A01,Annual,NA,19,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,2XXXXX,Transportation incidents
+FWURWN2XXXXX8ES31,2014,A01,Annual,NA,19,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,2XXXXX,Transportation incidents
+FWURWN2XXXXX8ES31,2013,A01,Annual,NA,18,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,2XXXXX,Transportation incidents
+FWURWN2XXXXX8ES31,2012,A01,Annual,NA,21,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,2XXXXX,Transportation incidents
+FWURWN2XXXXX8ES31,2011,A01,Annual,NA,22,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,2XXXXX,Transportation incidents
+FWURWN4XXXXX8ES31,2018,A01,Annual,true,7,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURWN4XXXXX8ES31,2016,A01,Annual,NA,4,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURWN4XXXXX8ES31,2015,A01,Annual,NA,4,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURWN4XXXXX8ES31,2014,A01,Annual,NA,9,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURWN4XXXXX8ES31,2013,A01,Annual,NA,4,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURWN4XXXXX8ES31,2012,A01,Annual,NA,6,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURWN4XXXXX8ES31,2011,A01,Annual,NA,3,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURWN5XXXXX8ES31,2018,A01,Annual,true,4,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWURWN5XXXXX8ES31,2016,A01,Annual,NA,3,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWURWN5XXXXX8ES31,2012,A01,Annual,NA,4,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWURWN6XXXXX8ES31,2018,A01,Annual,true,7,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURWN6XXXXX8ES31,2017,A01,Annual,NA,7,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURWN6XXXXX8ES31,2016,A01,Annual,NA,9,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURWN6XXXXX8ES31,2015,A01,Annual,NA,11,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURWN6XXXXX8ES31,2014,A01,Annual,NA,6,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURWN6XXXXX8ES31,2013,A01,Annual,NA,7,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURWN6XXXXX8ES31,2012,A01,Annual,NA,8,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURWN6XXXXX8ES31,2011,A01,Annual,NA,3,Fatalities by detailed event or exposure,"Race-- White, Native-born",NA,NA,6XXXXX,Contact with objects and equipment
+FWURWT00000080S31,2020,A01,Annual,true,42,Fatalities in all sectors,"Race-- White, non-Hispanic, Total",000000,All workers,NA,NA
+FWURWT00000080S31,2019,A01,Annual,NA,45,Fatalities in all sectors,"Race-- White, non-Hispanic, Total",000000,All workers,NA,NA
+FWURWT00000080S31,2018,A01,Annual,NA,35,Fatalities in all sectors,"Race-- White, non-Hispanic, Total",000000,All workers,NA,NA
+FWURWT00000080S31,2017,A01,Annual,NA,27,Fatalities in all sectors,"Race-- White, non-Hispanic, Total",000000,All workers,NA,NA
+FWURWT00000080S31,2016,A01,Annual,NA,54,Fatalities in all sectors,"Race-- White, non-Hispanic, Total",000000,All workers,NA,NA
+FWURWT00000080S31,2015,A01,Annual,NA,44,Fatalities in all sectors,"Race-- White, non-Hispanic, Total",000000,All workers,NA,NA
+FWURWT00000080S31,2014,A01,Annual,NA,42,Fatalities in all sectors,"Race-- White, non-Hispanic, Total",000000,All workers,NA,NA
+FWURWT00000080S31,2013,A01,Annual,NA,33,Fatalities in all sectors,"Race-- White, non-Hispanic, Total",000000,All workers,NA,NA
+FWURWT00000080S31,2012,A01,Annual,NA,42,Fatalities in all sectors,"Race-- White, non-Hispanic, Total",000000,All workers,NA,NA
+FWURWT00000080S31,2011,A01,Annual,NA,34,Fatalities in all sectors,"Race-- White, non-Hispanic, Total",000000,All workers,NA,NA
+FWURWT1XXXXX8ES31,2016,A01,Annual,true,3,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWURWT1XXXXX8ES31,2015,A01,Annual,NA,6,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWURWT1XXXXX8ES31,2014,A01,Annual,NA,6,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWURWT1XXXXX8ES31,2013,A01,Annual,NA,3,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWURWT2XXXXX8ES31,2020,A01,Annual,true,22,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,2XXXXX,Transportation incidents
+FWURWT2XXXXX8ES31,2018,A01,Annual,NA,14,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,2XXXXX,Transportation incidents
+FWURWT2XXXXX8ES31,2017,A01,Annual,NA,16,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,2XXXXX,Transportation incidents
+FWURWT2XXXXX8ES31,2016,A01,Annual,NA,32,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,2XXXXX,Transportation incidents
+FWURWT2XXXXX8ES31,2015,A01,Annual,NA,20,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,2XXXXX,Transportation incidents
+FWURWT2XXXXX8ES31,2014,A01,Annual,NA,19,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,2XXXXX,Transportation incidents
+FWURWT2XXXXX8ES31,2013,A01,Annual,NA,18,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,2XXXXX,Transportation incidents
+FWURWT2XXXXX8ES31,2012,A01,Annual,NA,23,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,2XXXXX,Transportation incidents
+FWURWT2XXXXX8ES31,2011,A01,Annual,NA,23,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,2XXXXX,Transportation incidents
+FWURWT4XXXXX8ES31,2018,A01,Annual,true,8,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURWT4XXXXX8ES31,2016,A01,Annual,NA,5,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURWT4XXXXX8ES31,2015,A01,Annual,NA,4,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURWT4XXXXX8ES31,2014,A01,Annual,NA,9,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURWT4XXXXX8ES31,2013,A01,Annual,NA,4,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURWT4XXXXX8ES31,2012,A01,Annual,NA,6,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURWT4XXXXX8ES31,2011,A01,Annual,NA,3,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,4XXXXX,"Falls, slips, trips"
+FWURWT5XXXXX8ES31,2020,A01,Annual,true,5,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWURWT5XXXXX8ES31,2018,A01,Annual,NA,4,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWURWT5XXXXX8ES31,2016,A01,Annual,NA,3,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWURWT5XXXXX8ES31,2012,A01,Annual,NA,4,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWURWT6XXXXX8ES31,2020,A01,Annual,true,10,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,6XXXXX,Contact with objects and equipment
+FWURWT6XXXXX8ES31,2018,A01,Annual,NA,7,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,6XXXXX,Contact with objects and equipment
+FWURWT6XXXXX8ES31,2017,A01,Annual,NA,7,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,6XXXXX,Contact with objects and equipment
+FWURWT6XXXXX8ES31,2016,A01,Annual,NA,9,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,6XXXXX,Contact with objects and equipment
+FWURWT6XXXXX8ES31,2015,A01,Annual,NA,11,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,6XXXXX,Contact with objects and equipment
+FWURWT6XXXXX8ES31,2014,A01,Annual,NA,6,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,6XXXXX,Contact with objects and equipment
+FWURWT6XXXXX8ES31,2013,A01,Annual,NA,7,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,6XXXXX,Contact with objects and equipment
+FWURWT6XXXXX8ES31,2012,A01,Annual,NA,8,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,6XXXXX,Contact with objects and equipment
+FWURWT6XXXXX8ES31,2011,A01,Annual,NA,3,Fatalities by detailed event or exposure,"Race-- White, non-Hispanic, Total",NA,NA,6XXXXX,Contact with objects and equipment
+FWUACX00000080S31,2018,A01,Annual,true,1,Fatalities in all sectors,Age group-- 18 to 19 years,000000,All workers,NA,NA
+FWUACX00000080S31,2017,A01,Annual,NA,2,Fatalities in all sectors,Age group-- 18 to 19 years,000000,All workers,NA,NA
+FWUACX00000080S31,2016,A01,Annual,NA,1,Fatalities in all sectors,Age group-- 18 to 19 years,000000,All workers,NA,NA
+FWUACX2XXXXX8ES31,2018,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 18 to 19 years,NA,NA,2XXXXX,Transportation incidents
+FWUACX2XXXXX8ES31,2017,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 18 to 19 years,NA,NA,2XXXXX,Transportation incidents
+FWUACX2XXXXX8ES31,2016,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 18 to 19 years,NA,NA,2XXXXX,Transportation incidents
+FWUADX00000080S31,2020,A01,Annual,true,2,Fatalities in all sectors,Age group-- 20 to 24 years,000000,All workers,NA,NA
+FWUADX00000080S31,2019,A01,Annual,NA,4,Fatalities in all sectors,Age group-- 20 to 24 years,000000,All workers,NA,NA
+FWUADX00000080S31,2018,A01,Annual,NA,1,Fatalities in all sectors,Age group-- 20 to 24 years,000000,All workers,NA,NA
+FWUADX00000080S31,2016,A01,Annual,NA,4,Fatalities in all sectors,Age group-- 20 to 24 years,000000,All workers,NA,NA
+FWUADX00000080S31,2014,A01,Annual,NA,5,Fatalities in all sectors,Age group-- 20 to 24 years,000000,All workers,NA,NA
+FWUADX00000080S31,2013,A01,Annual,NA,1,Fatalities in all sectors,Age group-- 20 to 24 years,000000,All workers,NA,NA
+FWUADX00000080S31,2012,A01,Annual,NA,5,Fatalities in all sectors,Age group-- 20 to 24 years,000000,All workers,NA,NA
+FWUADX00000080S31,2011,A01,Annual,NA,4,Fatalities in all sectors,Age group-- 20 to 24 years,000000,All workers,NA,NA
+FWUADX1XXXXX8ES31,2014,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 20 to 24 years,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUADX2XXXXX8ES31,2018,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 20 to 24 years,NA,NA,2XXXXX,Transportation incidents
+FWUADX2XXXXX8ES31,2014,A01,Annual,NA,3,Fatalities by detailed event or exposure,Age group-- 20 to 24 years,NA,NA,2XXXXX,Transportation incidents
+FWUADX2XXXXX8ES31,2013,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 20 to 24 years,NA,NA,2XXXXX,Transportation incidents
+FWUADX2XXXXX8ES31,2012,A01,Annual,NA,4,Fatalities by detailed event or exposure,Age group-- 20 to 24 years,NA,NA,2XXXXX,Transportation incidents
+FWUADX2XXXXX8ES31,2011,A01,Annual,NA,3,Fatalities by detailed event or exposure,Age group-- 20 to 24 years,NA,NA,2XXXXX,Transportation incidents
+FWUADX5XXXXX8ES31,2014,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 20 to 24 years,NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWUADX6XXXXX8ES31,2012,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 20 to 24 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUADX6XXXXX8ES31,2011,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 20 to 24 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAEX00000080S31,2020,A01,Annual,true,8,Fatalities in all sectors,Age group-- 25 to 34 years,000000,All workers,NA,NA
+FWUAEX00000080S31,2019,A01,Annual,NA,6,Fatalities in all sectors,Age group-- 25 to 34 years,000000,All workers,NA,NA
+FWUAEX00000080S31,2018,A01,Annual,NA,7,Fatalities in all sectors,Age group-- 25 to 34 years,000000,All workers,NA,NA
+FWUAEX00000080S31,2017,A01,Annual,NA,2,Fatalities in all sectors,Age group-- 25 to 34 years,000000,All workers,NA,NA
+FWUAEX00000080S31,2016,A01,Annual,NA,9,Fatalities in all sectors,Age group-- 25 to 34 years,000000,All workers,NA,NA
+FWUAEX00000080S31,2015,A01,Annual,NA,7,Fatalities in all sectors,Age group-- 25 to 34 years,000000,All workers,NA,NA
+FWUAEX00000080S31,2014,A01,Annual,NA,6,Fatalities in all sectors,Age group-- 25 to 34 years,000000,All workers,NA,NA
+FWUAEX00000080S31,2013,A01,Annual,NA,4,Fatalities in all sectors,Age group-- 25 to 34 years,000000,All workers,NA,NA
+FWUAEX00000080S31,2012,A01,Annual,NA,8,Fatalities in all sectors,Age group-- 25 to 34 years,000000,All workers,NA,NA
+FWUAEX00000080S31,2011,A01,Annual,NA,3,Fatalities in all sectors,Age group-- 25 to 34 years,000000,All workers,NA,NA
+FWUAEX1XXXXX8ES31,2020,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 25 to 34 years,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUAEX1XXXXX8ES31,2017,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 25 to 34 years,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUAEX1XXXXX8ES31,2016,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 25 to 34 years,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUAEX2XXXXX8ES31,2019,A01,Annual,true,2,Fatalities by detailed event or exposure,Age group-- 25 to 34 years,NA,NA,2XXXXX,Transportation incidents
+FWUAEX2XXXXX8ES31,2018,A01,Annual,NA,3,Fatalities by detailed event or exposure,Age group-- 25 to 34 years,NA,NA,2XXXXX,Transportation incidents
+FWUAEX2XXXXX8ES31,2017,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 25 to 34 years,NA,NA,2XXXXX,Transportation incidents
+FWUAEX2XXXXX8ES31,2016,A01,Annual,NA,4,Fatalities by detailed event or exposure,Age group-- 25 to 34 years,NA,NA,2XXXXX,Transportation incidents
+FWUAEX2XXXXX8ES31,2015,A01,Annual,NA,5,Fatalities by detailed event or exposure,Age group-- 25 to 34 years,NA,NA,2XXXXX,Transportation incidents
+FWUAEX2XXXXX8ES31,2014,A01,Annual,NA,3,Fatalities by detailed event or exposure,Age group-- 25 to 34 years,NA,NA,2XXXXX,Transportation incidents
+FWUAEX2XXXXX8ES31,2013,A01,Annual,NA,2,Fatalities by detailed event or exposure,Age group-- 25 to 34 years,NA,NA,2XXXXX,Transportation incidents
+FWUAEX2XXXXX8ES31,2012,A01,Annual,NA,4,Fatalities by detailed event or exposure,Age group-- 25 to 34 years,NA,NA,2XXXXX,Transportation incidents
+FWUAEX3XXXXX8ES31,2016,A01,Annual,true,2,Fatalities by detailed event or exposure,Age group-- 25 to 34 years,NA,NA,3XXXXX,Fires and explosions
+FWUAEX5XXXXX8ES31,2018,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 25 to 34 years,NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWUAEX6XXXXX8ES31,2014,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 25 to 34 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAEX6XXXXX8ES31,2012,A01,Annual,NA,2,Fatalities by detailed event or exposure,Age group-- 25 to 34 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAEX6XXXXX8ES31,2011,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 25 to 34 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAFX00000080S31,2020,A01,Annual,true,6,Fatalities in all sectors,Age group-- 35 to 44 years,000000,All workers,NA,NA
+FWUAFX00000080S31,2019,A01,Annual,NA,5,Fatalities in all sectors,Age group-- 35 to 44 years,000000,All workers,NA,NA
+FWUAFX00000080S31,2018,A01,Annual,NA,8,Fatalities in all sectors,Age group-- 35 to 44 years,000000,All workers,NA,NA
+FWUAFX00000080S31,2017,A01,Annual,NA,6,Fatalities in all sectors,Age group-- 35 to 44 years,000000,All workers,NA,NA
+FWUAFX00000080S31,2016,A01,Annual,NA,8,Fatalities in all sectors,Age group-- 35 to 44 years,000000,All workers,NA,NA
+FWUAFX00000080S31,2015,A01,Annual,NA,8,Fatalities in all sectors,Age group-- 35 to 44 years,000000,All workers,NA,NA
+FWUAFX00000080S31,2014,A01,Annual,NA,6,Fatalities in all sectors,Age group-- 35 to 44 years,000000,All workers,NA,NA
+FWUAFX00000080S31,2013,A01,Annual,NA,4,Fatalities in all sectors,Age group-- 35 to 44 years,000000,All workers,NA,NA
+FWUAFX00000080S31,2012,A01,Annual,NA,5,Fatalities in all sectors,Age group-- 35 to 44 years,000000,All workers,NA,NA
+FWUAFX00000080S31,2011,A01,Annual,NA,3,Fatalities in all sectors,Age group-- 35 to 44 years,000000,All workers,NA,NA
+FWUAFX1XXXXX8ES31,2017,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUAFX1XXXXX8ES31,2014,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUAFX1XXXXX8ES31,2013,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUAFX2XXXXX8ES31,2020,A01,Annual,true,5,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,2XXXXX,Transportation incidents
+FWUAFX2XXXXX8ES31,2019,A01,Annual,NA,3,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,2XXXXX,Transportation incidents
+FWUAFX2XXXXX8ES31,2018,A01,Annual,NA,3,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,2XXXXX,Transportation incidents
+FWUAFX2XXXXX8ES31,2017,A01,Annual,NA,4,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,2XXXXX,Transportation incidents
+FWUAFX2XXXXX8ES31,2016,A01,Annual,NA,6,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,2XXXXX,Transportation incidents
+FWUAFX2XXXXX8ES31,2015,A01,Annual,NA,3,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,2XXXXX,Transportation incidents
+FWUAFX2XXXXX8ES31,2014,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,2XXXXX,Transportation incidents
+FWUAFX2XXXXX8ES31,2013,A01,Annual,NA,2,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,2XXXXX,Transportation incidents
+FWUAFX2XXXXX8ES31,2012,A01,Annual,NA,3,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,2XXXXX,Transportation incidents
+FWUAFX2XXXXX8ES31,2011,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,2XXXXX,Transportation incidents
+FWUAFX3XXXXX8ES31,2015,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,3XXXXX,Fires and explosions
+FWUAFX4XXXXX8ES31,2018,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,4XXXXX,"Falls, slips, trips"
+FWUAFX4XXXXX8ES31,2016,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,4XXXXX,"Falls, slips, trips"
+FWUAFX4XXXXX8ES31,2015,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,4XXXXX,"Falls, slips, trips"
+FWUAFX5XXXXX8ES31,2018,A01,Annual,true,3,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWUAFX5XXXXX8ES31,2015,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWUAFX6XXXXX8ES31,2018,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAFX6XXXXX8ES31,2016,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAFX6XXXXX8ES31,2015,A01,Annual,NA,2,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAFX6XXXXX8ES31,2014,A01,Annual,NA,2,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAFX6XXXXX8ES31,2012,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 35 to 44 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAGX00000080S31,2020,A01,Annual,true,3,Fatalities in all sectors,Age group-- 45 to 54 years,000000,All workers,NA,NA
+FWUAGX00000080S31,2019,A01,Annual,NA,21,Fatalities in all sectors,Age group-- 45 to 54 years,000000,All workers,NA,NA
+FWUAGX00000080S31,2018,A01,Annual,NA,8,Fatalities in all sectors,Age group-- 45 to 54 years,000000,All workers,NA,NA
+FWUAGX00000080S31,2017,A01,Annual,NA,4,Fatalities in all sectors,Age group-- 45 to 54 years,000000,All workers,NA,NA
+FWUAGX00000080S31,2016,A01,Annual,NA,6,Fatalities in all sectors,Age group-- 45 to 54 years,000000,All workers,NA,NA
+FWUAGX00000080S31,2015,A01,Annual,NA,5,Fatalities in all sectors,Age group-- 45 to 54 years,000000,All workers,NA,NA
+FWUAGX00000080S31,2014,A01,Annual,NA,10,Fatalities in all sectors,Age group-- 45 to 54 years,000000,All workers,NA,NA
+FWUAGX00000080S31,2013,A01,Annual,NA,10,Fatalities in all sectors,Age group-- 45 to 54 years,000000,All workers,NA,NA
+FWUAGX00000080S31,2012,A01,Annual,NA,14,Fatalities in all sectors,Age group-- 45 to 54 years,000000,All workers,NA,NA
+FWUAGX00000080S31,2011,A01,Annual,NA,8,Fatalities in all sectors,Age group-- 45 to 54 years,000000,All workers,NA,NA
+FWUAGX1XXXXX8ES31,2016,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUAGX1XXXXX8ES31,2013,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUAGX1XXXXX8ES31,2011,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUAGX2XXXXX8ES31,2019,A01,Annual,true,12,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,2XXXXX,Transportation incidents
+FWUAGX2XXXXX8ES31,2018,A01,Annual,NA,4,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,2XXXXX,Transportation incidents
+FWUAGX2XXXXX8ES31,2017,A01,Annual,NA,2,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,2XXXXX,Transportation incidents
+FWUAGX2XXXXX8ES31,2016,A01,Annual,NA,4,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,2XXXXX,Transportation incidents
+FWUAGX2XXXXX8ES31,2015,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,2XXXXX,Transportation incidents
+FWUAGX2XXXXX8ES31,2014,A01,Annual,NA,5,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,2XXXXX,Transportation incidents
+FWUAGX2XXXXX8ES31,2013,A01,Annual,NA,4,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,2XXXXX,Transportation incidents
+FWUAGX2XXXXX8ES31,2012,A01,Annual,NA,5,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,2XXXXX,Transportation incidents
+FWUAGX2XXXXX8ES31,2011,A01,Annual,NA,4,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,2XXXXX,Transportation incidents
+FWUAGX3XXXXX8ES31,2015,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,3XXXXX,Fires and explosions
+FWUAGX3XXXXX8ES31,2011,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,3XXXXX,Fires and explosions
+FWUAGX4XXXXX8ES31,2013,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,4XXXXX,"Falls, slips, trips"
+FWUAGX4XXXXX8ES31,2012,A01,Annual,NA,3,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,4XXXXX,"Falls, slips, trips"
+FWUAGX6XXXXX8ES31,2019,A01,Annual,true,5,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAGX6XXXXX8ES31,2016,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAGX6XXXXX8ES31,2013,A01,Annual,NA,4,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAGX6XXXXX8ES31,2012,A01,Annual,NA,3,Fatalities by detailed event or exposure,Age group-- 45 to 54 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAHX00000080S31,2020,A01,Annual,true,12,Fatalities in all sectors,Age group-- 55 to 64 years,000000,All workers,NA,NA
+FWUAHX00000080S31,2019,A01,Annual,NA,7,Fatalities in all sectors,Age group-- 55 to 64 years,000000,All workers,NA,NA
+FWUAHX00000080S31,2018,A01,Annual,NA,15,Fatalities in all sectors,Age group-- 55 to 64 years,000000,All workers,NA,NA
+FWUAHX00000080S31,2017,A01,Annual,NA,10,Fatalities in all sectors,Age group-- 55 to 64 years,000000,All workers,NA,NA
+FWUAHX00000080S31,2016,A01,Annual,NA,15,Fatalities in all sectors,Age group-- 55 to 64 years,000000,All workers,NA,NA
+FWUAHX00000080S31,2015,A01,Annual,NA,14,Fatalities in all sectors,Age group-- 55 to 64 years,000000,All workers,NA,NA
+FWUAHX00000080S31,2014,A01,Annual,NA,11,Fatalities in all sectors,Age group-- 55 to 64 years,000000,All workers,NA,NA
+FWUAHX00000080S31,2013,A01,Annual,NA,6,Fatalities in all sectors,Age group-- 55 to 64 years,000000,All workers,NA,NA
+FWUAHX00000080S31,2012,A01,Annual,NA,10,Fatalities in all sectors,Age group-- 55 to 64 years,000000,All workers,NA,NA
+FWUAHX00000080S31,2011,A01,Annual,NA,13,Fatalities in all sectors,Age group-- 55 to 64 years,000000,All workers,NA,NA
+FWUAHX1XXXXX8ES31,2015,A01,Annual,true,3,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUAHX1XXXXX8ES31,2012,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUAHX1XXXXX8ES31,2011,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUAHX2XXXXX8ES31,2020,A01,Annual,true,9,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,2XXXXX,Transportation incidents
+FWUAHX2XXXXX8ES31,2018,A01,Annual,NA,6,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,2XXXXX,Transportation incidents
+FWUAHX2XXXXX8ES31,2017,A01,Annual,NA,7,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,2XXXXX,Transportation incidents
+FWUAHX2XXXXX8ES31,2016,A01,Annual,NA,7,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,2XXXXX,Transportation incidents
+FWUAHX2XXXXX8ES31,2015,A01,Annual,NA,7,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,2XXXXX,Transportation incidents
+FWUAHX2XXXXX8ES31,2014,A01,Annual,NA,5,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,2XXXXX,Transportation incidents
+FWUAHX2XXXXX8ES31,2013,A01,Annual,NA,4,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,2XXXXX,Transportation incidents
+FWUAHX2XXXXX8ES31,2012,A01,Annual,NA,5,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,2XXXXX,Transportation incidents
+FWUAHX2XXXXX8ES31,2011,A01,Annual,NA,9,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,2XXXXX,Transportation incidents
+FWUAHX3XXXXX8ES31,2018,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,3XXXXX,Fires and explosions
+FWUAHX3XXXXX8ES31,2017,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,3XXXXX,Fires and explosions
+FWUAHX3XXXXX8ES31,2014,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,3XXXXX,Fires and explosions
+FWUAHX4XXXXX8ES31,2018,A01,Annual,true,4,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,4XXXXX,"Falls, slips, trips"
+FWUAHX4XXXXX8ES31,2016,A01,Annual,NA,3,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,4XXXXX,"Falls, slips, trips"
+FWUAHX4XXXXX8ES31,2012,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,4XXXXX,"Falls, slips, trips"
+FWUAHX5XXXXX8ES31,2016,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWUAHX5XXXXX8ES31,2013,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,5XXXXX,Exposure to harmful substances or environments
+FWUAHX6XXXXX8ES31,2020,A01,Annual,true,3,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAHX6XXXXX8ES31,2019,A01,Annual,NA,4,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAHX6XXXXX8ES31,2018,A01,Annual,NA,4,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAHX6XXXXX8ES31,2016,A01,Annual,NA,4,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAHX6XXXXX8ES31,2015,A01,Annual,NA,2,Fatalities by detailed event or exposure,Age group-- 55 to 64 years,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAIX00000080S31,2020,A01,Annual,true,17,Fatalities in all sectors,Age group-- 65 years and over,000000,All workers,NA,NA
+FWUAIX00000080S31,2019,A01,Annual,NA,10,Fatalities in all sectors,Age group-- 65 years and over,000000,All workers,NA,NA
+FWUAIX00000080S31,2018,A01,Annual,NA,4,Fatalities in all sectors,Age group-- 65 years and over,000000,All workers,NA,NA
+FWUAIX00000080S31,2017,A01,Annual,NA,11,Fatalities in all sectors,Age group-- 65 years and over,000000,All workers,NA,NA
+FWUAIX00000080S31,2016,A01,Annual,NA,17,Fatalities in all sectors,Age group-- 65 years and over,000000,All workers,NA,NA
+FWUAIX00000080S31,2015,A01,Annual,NA,16,Fatalities in all sectors,Age group-- 65 years and over,000000,All workers,NA,NA
+FWUAIX00000080S31,2014,A01,Annual,NA,17,Fatalities in all sectors,Age group-- 65 years and over,000000,All workers,NA,NA
+FWUAIX00000080S31,2013,A01,Annual,NA,14,Fatalities in all sectors,Age group-- 65 years and over,000000,All workers,NA,NA
+FWUAIX00000080S31,2012,A01,Annual,NA,6,Fatalities in all sectors,Age group-- 65 years and over,000000,All workers,NA,NA
+FWUAIX00000080S31,2011,A01,Annual,NA,8,Fatalities in all sectors,Age group-- 65 years and over,000000,All workers,NA,NA
+FWUAIX1XXXXX8ES31,2020,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUAIX1XXXXX8ES31,2015,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUAIX2XXXXX8ES31,2020,A01,Annual,true,7,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,2XXXXX,Transportation incidents
+FWUAIX2XXXXX8ES31,2019,A01,Annual,NA,6,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,2XXXXX,Transportation incidents
+FWUAIX2XXXXX8ES31,2017,A01,Annual,NA,5,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,2XXXXX,Transportation incidents
+FWUAIX2XXXXX8ES31,2016,A01,Annual,NA,12,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,2XXXXX,Transportation incidents
+FWUAIX2XXXXX8ES31,2015,A01,Annual,NA,7,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,2XXXXX,Transportation incidents
+FWUAIX2XXXXX8ES31,2014,A01,Annual,NA,9,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,2XXXXX,Transportation incidents
+FWUAIX2XXXXX8ES31,2013,A01,Annual,NA,8,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,2XXXXX,Transportation incidents
+FWUAIX2XXXXX8ES31,2012,A01,Annual,NA,4,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,2XXXXX,Transportation incidents
+FWUAIX2XXXXX8ES31,2011,A01,Annual,NA,6,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,2XXXXX,Transportation incidents
+FWUAIX3XXXXX8ES31,2014,A01,Annual,true,1,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,3XXXXX,Fires and explosions
+FWUAIX4XXXXX8ES31,2014,A01,Annual,true,3,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,4XXXXX,"Falls, slips, trips"
+FWUAIX6XXXXX8ES31,2020,A01,Annual,true,5,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAIX6XXXXX8ES31,2018,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAIX6XXXXX8ES31,2017,A01,Annual,NA,4,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAIX6XXXXX8ES31,2016,A01,Annual,NA,1,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAIX6XXXXX8ES31,2015,A01,Annual,NA,5,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,6XXXXX,Contact with objects and equipment
+FWUAIX6XXXXX8ES31,2013,A01,Annual,NA,2,Fatalities by detailed event or exposure,Age group-- 65 years and over,NA,NA,6XXXXX,Contact with objects and equipment
+FWUGFX00000080S31,2020,A01,Annual,true,2,Fatalities in all sectors,Gender-- Women,000000,All workers,NA,NA
+FWUGFX00000080S31,2019,A01,Annual,NA,3,Fatalities in all sectors,Gender-- Women,000000,All workers,NA,NA
+FWUGFX00000080S31,2016,A01,Annual,NA,8,Fatalities in all sectors,Gender-- Women,000000,All workers,NA,NA
+FWUGFX00000080S31,2015,A01,Annual,NA,5,Fatalities in all sectors,Gender-- Women,000000,All workers,NA,NA
+FWUGFX00000080S31,2014,A01,Annual,NA,4,Fatalities in all sectors,Gender-- Women,000000,All workers,NA,NA
+FWUGFX00000080S31,2013,A01,Annual,NA,3,Fatalities in all sectors,Gender-- Women,000000,All workers,NA,NA
+FWUGFX00000080S31,2012,A01,Annual,NA,4,Fatalities in all sectors,Gender-- Women,000000,All workers,NA,NA
+FWUGFX00000080S31,2011,A01,Annual,NA,7,Fatalities in all sectors,Gender-- Women,000000,All workers,NA,NA
+FWUGFX1XXXXX8ES31,2015,A01,Annual,true,3,Fatalities by detailed event or exposure,Gender-- Women,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUGFX1XXXXX8ES31,2014,A01,Annual,NA,1,Fatalities by detailed event or exposure,Gender-- Women,NA,NA,1XXXXX,Violence and other injuries by persons or animals
+FWUGFX1XXXXX8ES31,2011,A01,Annual,NA,1,Fatalities by detailed event or exposure,Gender-- Women,NA,NA,1XXXXX,Violence and other injuries by persons or animals
