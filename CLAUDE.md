@@ -6,3 +6,4 @@
 - Scripts read K: and run only on a DHHS machine; nothing here runs in the cloud.
 - Always give full file paths when telling Trenton where a file is or what to run. On his machine the working folder is C:\Users\tsedlac\Downloads. Death certificates are under K:\Occupational Health Grant\data\dc\{YYYY}\. Never say "the script" or "that file" without the path.
 - NIOCCS use is approved (Trenton, 2026-09-29): sending industry and occupation text to the CDC NIOCCS web service is fine.
+- Version every script Trenton runs: io_death_rates_v3.R, v4, ... Never send a file with the same name as one already sent. Say the full path of the new file and of any file it must sit next to.
