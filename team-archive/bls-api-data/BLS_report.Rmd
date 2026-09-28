@@ -180,8 +180,8 @@ con <- dbConnect(odbc(),
                  Driver = "SQL Server",
                  Server = "dhhsessencesql1.stone.ne.gov",
                  Database = "NE_ESSENCE5_Detection", 
-                 UID    =<REDACTED_USER>"mssqladmin",
-                 PWD    =<REDACTED_PASSWORD>"CPadmin!1",
+                 UID    ="<REDACTED_USER>",
+                 PWD    ="<REDACTED_PASSWORD>",
                  port = 1433)
 
 
@@ -189,8 +189,8 @@ con2 <- dbConnect(odbc(),
                   Driver = "SQL Server",
                   Server = "NEDSSQLAG2.stone.ne.gov",
                   Database = "ER_SURVEILLANCE_PROD", 
-                  UID    =<REDACTED_USER>"syndromicprod",
-                  PWD    =<REDACTED_PASSWORD>"pE#R2dN",
+                  UID    ="<REDACTED_USER>",
+                  PWD    ="<REDACTED_PASSWORD>",
                   port = 1433)
 
 ```

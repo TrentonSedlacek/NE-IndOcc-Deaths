@@ -37,7 +37,7 @@ for (i in list_df[c(1:ntile)]) {
     'seriesid'= i$series_id,
     'startyear'= 2011,
     'endyear'= 2020,
-    'registrationKey'='538da0aa9c4e48e1b550ba89ea975150')
+    'registrationKey'='<REDACTED_BLS_API_KEY>')
   
   response <- blsAPI(payload, api_version = 2) 
   
@@ -88,7 +88,7 @@ for (i in list_df[c(1:9)]) {
     'seriesid'= i$series_id,
     'startyear'= 2011,
     'endyear'= 2020,
-    'registrationKey'='538da0aa9c4e48e1b550ba89ea975150')
+    'registrationKey'='<REDACTED_BLS_API_KEY>')
   
   response <- blsAPI(payload, api_version = 2) 
   json <- fromJSON(response)
@@ -134,7 +134,7 @@ for (i in list_df[c(1:2)]) {
     'seriesid'= i$series_id,
     'startyear'= 2011,
     'endyear'= 2020,
-    'registrationKey'='538da0aa9c4e48e1b550ba89ea975150')
+    'registrationKey'='<REDACTED_BLS_API_KEY>')
   
   response <- blsAPI(payload, api_version = 2) 
   json <- fromJSON(response)
@@ -192,7 +192,7 @@ for (i in list_df[c(1:ntile)]) {
     'seriesid'= i$series_id,
     'startyear'= 2011,
     'endyear'= 2020,
-    'registrationKey'='538da0aa9c4e48e1b550ba89ea975150')
+    'registrationKey'='<REDACTED_BLS_API_KEY>')
   
   response <- blsAPI(payload, api_version = 2) 
   
@@ -245,7 +245,7 @@ for (i in list_df[c(1:ntile)]) {
     'seriesid'= i$series_id,
     'startyear'= 2016,
     'endyear'= 2020,
-    'registrationKey'='538da0aa9c4e48e1b550ba89ea975150')
+    'registrationKey'='<REDACTED_BLS_API_KEY>')
   
   response <- blsAPI(payload, api_version = 2) 
   
@@ -631,7 +631,7 @@ for (i in list_df[c(1:ntile)]) {
   ,
     'startyear'= 2016,
     'endyear'= 2020,
-    'registrationKey'='63250c09f8e941a2a468d84a775ab14b')
+    'registrationKey'='<REDACTED_BLS_API_KEY>')
     #63250c09f8e941a2a468d84a775ab14b   -- gmail acct
     #538da0aa9c4e48e1b550ba89ea975150   -- nebraska.gov acct 
   response <- blsAPI(payload, api_version = 2) 
@@ -771,7 +771,7 @@ payload <- list(
   ,
   'startyear'= 2016,
   'endyear'= 2022,
-  'registrationKey'='7683a2eda3284492939d639f0a51ff7e')
+  'registrationKey'='<REDACTED_BLS_API_KEY>')
 #63250c09f8e941a2a468d84a775ab14b   -- gmail acct
 #7683a2eda3284492939d639f0a51ff7e   -- nebraska.gov acct 
 response <- blsAPI(payload, api_version = 2) 
