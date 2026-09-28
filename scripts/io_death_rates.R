@@ -101,9 +101,26 @@ deaths_raw <- bind_rows(lapply(cfg$years, read_guardian))
 
 # Text to numbers. suppressWarnings plays the role of SAS "input(x, ?? 8.)"
 # in OHIs lines 378 and 381: a non-number quietly becomes missing.
+# Year of death comes from DateOfDeath (legacy "check io code titles.sas":
+# dod_yr = year(DateOfDeath)). The CSV exports carry EventYear = 0 on every
+# row (seen 2026-09-28 on all 96,551 rows for 2020 to 2024), so EventYear is
+# only a fallback when the date cannot be read.
+parse_dod <- function(x) {
+  x <- str_trim(coalesce(x, ""))
+  out <- as.Date(rep(NA_character_, length(x)))
+  for (fmt in c("%m/%d/%Y", "%Y-%m-%d", "%m/%d/%Y %H:%M", "%m/%d/%Y %H:%M:%S", "%Y-%m-%d %H:%M:%S", "%d%b%Y", "%m/%d/%y")) {
+    todo <- is.na(out) & x != ""
+    if (!any(todo)) break
+    out[todo] <- suppressWarnings(as.Date(x[todo], format = fmt))
+  }
+  out
+}
 deaths <- deaths_raw %>%
   mutate(across(everything(), str_trim)) %>%
-  mutate(EventYear   = suppressWarnings(as.integer(EventYear)),
+  mutate(dod         = parse_dod(DateOfDeath),
+         EventYear_export = suppressWarnings(as.integer(EventYear)),
+         EventYear   = coalesce(as.integer(format(dod, "%Y")),
+                                ifelse(EventYear_export > 0, EventYear_export, NA_integer_)),
          NchsAge     = suppressWarnings(as.numeric(NchsAge)),
          NchsAgeUnit = suppressWarnings(as.integer(NchsAgeUnit)))
 
@@ -112,8 +129,9 @@ deaths <- deaths_raw %>%
 # as 0, these lines say why.
 top_vals <- function(x, n = 6) { t <- sort(table(coalesce(as.character(x), "<NA>")), decreasing = TRUE); paste(names(t)[1:min(n, length(t))], t[1:min(n, length(t))], sep = "=", collapse = ", ") }
 message("Load diagnostics: rows read ", nrow(deaths_raw))
-message("  EventYear top values (raw text): ", top_vals(deaths_raw$EventYear))
-message("  EventYear after as.integer: ", top_vals(deaths$EventYear))
+message("  EventYear in export (raw text): ", top_vals(deaths_raw$EventYear))
+message("  DateOfDeath sample formats: ", top_vals(substr(deaths_raw$DateOfDeath, 1, 10), 3), "; unparsed dates: ", sum(is.na(deaths$dod) & deaths_raw$DateOfDeath != ""))
+message("  Year of death used: ", top_vals(deaths$EventYear, 8))
 message("  ResidingStateNchs top values: ", top_vals(deaths_raw$ResidingStateNchs))
 message("  NchsAgeUnit top values: ", top_vals(deaths_raw$NchsAgeUnit), "; NchsAge NA after numeric: ", sum(is.na(deaths$NchsAge)))
 
