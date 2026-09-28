@@ -1,0 +1,105 @@
+===== Page 1 =====
+CDC’s National Violent Death 
+Reporting System (NVDRS)
+Violence is a Major Public Health Problem
+In the United States, seven people per hour die a violent death. More than 19,100 people were victims of homicide 
+and almost 47,500 people died by suicide in 2019 alone. The economic costs are staggering—with suicide costing 
+the U.S. economy $68 billion and homicide $36 billion, and this is just the costs for medical care and lost work. Other 
+costs, including the emotional toll on victims’  families and the costs to the criminal justice system for arrest and 
+incarceration of offenders are substantial and not included in this estimate. Also, many Americans survive violent 
+experiences and are left struggling with long-term physical, psychological, and emotional consequences. Violence 
+erodes entire communities—reducing productivity, decreasing property values, disrupting social services, and making 
+people feel unsafe in the places where they live, work, and learn. 
+A Comprehensive  
+Look at Violent Deaths
+NVDRS covers all types of violent deaths—including 
+homicides and suicides—in all settings and for all age 
+groups. NVDRS includes over 600 unique data elements 
+that provide valuable context about violent deaths such 
+as relationship problems; mental health problems and 
+treatment; toxicology results; and life stressors, including 
+recent problems with a job, finances, or physical health 
+problems. Extensive information about the incidents, such 
+as weapons used, characteristics of suspects, and locations 
+where they occurred are included. Such data are far more 
+comprehensive than what is available elsewhere.
+Linking Data to  
+Get the Whole Story
+To help find answers to prevent violent deaths, we need 
+to know the facts. CDC’s NVDRS links information about 
+the “who, when, where, and how” from data on violent 
+deaths and provides insights about “why” they occurred. 
+Frontline investigators including law enforcement, coroners, 
+and medical examiners collect valuable information about 
+violent deaths. However, these data are seldom combined 
+in a systematic manner to provide a complete picture.
+NVDRS provides a clearer understanding of violent deaths. 
+NVDRS is the only state-based surveillance (reporting) 
+system that pools data on violent deaths and their 
+circumstances from multiple sources into one anonymous 
+database. No personally identifiable information is collected. 
+National Center for Injury Prevention and Control 
+Division of Violence Prevention
+===== Page 2 =====
+What NVDRS Can Do
+• Inform decision makers and program planners
+about the magnitude, trends, and characteristics
+of violent deaths.
+• Educate your community about circumstances
+that contribute to violence in your county, state,
+or territory.
+• Develop and tailor violence prevention efforts
+to maximize benefits.
+• Evaluate the impact of prevention programs
+and strategies.
+Accessing NVDRS
+CDC’s Injury Center distributes information from 
+NVDRS at the state and national level in both 
+summary and topic-specific reports. 
+NVDRS data are stored in an incident-based 
+database. Descriptive data can be accessed free of 
+charge from Web-Based Injury Statistics Query 
+And Reporting System (WISQARS). 
+What Makes NVDRS Unique
+Other data systems mainly count deaths and provide basic 
+demographic information. In contrast, NVDRS:
+• Gathers and links detailed investigative information
+from several sources, including law enforcement,
+medical examiners and coroners, toxicology, and
+death certificates. With this linked information, NVDRS
+is able to provide a more complete picture of the
+circumstances that contribute to violent deaths.
+• Helps identify emerging issues, such as
+veteran suicide.
+• Combines data about deaths that occurred during
+the same violent event to help identify circumstances
+of multiple homicides or homicides followed by the
+suicide of the homicide suspect.
+• Collects information on the suspect and the
+relationship of the victim to the suspect to better
+characterize homicides.
+CDC provides technical assistance for NVDRS  
+in the form of manuals and complementary resources. 
+For further information on NVDRS, visit  
+www.cdc.gov/violenceprevention/datasources/
+nvdrs/index.html
+The Reach of NVDRS
+NVDRS began collecting data on violent 
+deaths from six states in 2002, followed 
+by progressive additions to the system 
+over several years. In 2018, NVDRS was 
+expanded to include data collection 
+from all 50 states, Puerto Rico, and 
+the District of Columbia. This expansion 
+brings NVDRS closer to the goal of 
+providing a complete picture of violent 
+deaths across the nation
+PR
+2002: MA, MD, NJ, OR, SC, VA
+2003: AK, CO, GA, NC, OK, RI, WI
+2004: KY, NM, UT
+2009: MI, OH
+2014: AZ, CT, HI, IA, IL, IN, KS, ME, MN, NH, NY, PA, VT, WA
+2016: AL, CA, DE, DC, LA, MO, NE, NV, Puerto Rico, WV
+2018: AR, FL, ID, MS, MT, ND, SD, TN, TX, WY
+States added by year:

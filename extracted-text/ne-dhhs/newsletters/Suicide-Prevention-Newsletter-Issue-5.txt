@@ -1,0 +1,260 @@
+===== Page 1 =====
+Department of Health and Human Services 
+Suicide Prevention Newsletter 
+Issue #5 – First Half of 2026 
+ 
+ 
+ 
+ 
+ 
+ 
+“Helping People Live Better Lives”   | pg. 1 
+Program Update 
+After a short pause, the Nebraska Violent Death 
+Reporting System (NEVDRS) is pleased to 
+reconnect with partners and communities across 
+the state. Our work continues to focus on 
+understanding violent deaths in Nebraska so that 
+prevention efforts are informed by accurate, timely 
+data. 
+Our Team 
+• Rishad Ahmed, MBA, PhD – Injury 
+Surveillance Epidemiologist III 
+• Mamie Lush, MA, BSPH – 
+NEVDRS/SUDORS Epidemiologist I 
+• Can Ceyhan, BA – NEVDRS/SUDORS 
+Informatician I 
+NEVDRS works closely with coroners/county 
+attorneys, law enforcement, and prevention 
+partners across Nebraska to ensure high-quality 
+data collection. Our goal is to translate data into 
+meaningful prevention action.  
+Click here to view our webpage:  
+NEVDRS Webpage 
+ 
+ 
+ 
+What We Are Working On 
+1. Annual Suicide Death Reports 
+We have transitioned from a brief annual 
+framework to a more comprehensive Annual 
+Suicide Death Report. 
+• 2021 Report: Expected publication in first 
+half of 2026 
+• 2022 Report: Expected publication in 
+second half of 2026 
+These reports provide deeper analysis of trends 
+and circumstances surrounding suicide deaths in 
+Nebraska. 
+2. Fact Sheets 
+All 2022 suicide fact sheets are now published. 
+Update: 
+• Rates per 100,000 population by Behavioral 
+Health Region 
+• Replacement of previous census tract 
+mapping 
+This change improves clarity and allows local 
+leaders, schools, and community organizations to 
+better understand risk in their counties. 
+3. Nebraska Suicide Deaths Interactive 
+Dashboard 
+Our public-facing Power BI dashboard is now live.  
+It includes: 
+• Data from 2020 through the most recent 
+available year 
+• Filtering by age, sex, race/ethnicity, and 
+education 
+• Incident characteristics such as method and 
+location of suicide 
+
+===== Page 2 =====
+ 
+“Helping People Living Better Lives”   | pg. 2 
+• Nebraska maps displaying age-adjusted 
+death rates per 100,000 population 
+• Map views by local health department 
+jurisdictions, behavioral health regions, and 
+statewide totals 
+Click here to view the dashboard:  
+Nebraska Suicide Deaths Dashboard 
+Click here to view specifics on the data:  
+About the Data 
+ 
+Why this dashboard matters: 
+Community leaders, prevention coalitions, and 
+policymakers can now explore Nebraska data to 
+guide targeted strategies. 
+ 
+Spotlight: Suicide Among Adults 
+Ages 35-55 (227 deaths, 38.5% of 
+total suicide deaths) 
+in Nebraska, 2021–2022 
+ 
+This quarter’s issue will focus on adults in midlife. 
+Why this group matters: 
+Adults ages 35-55 often face multiple stressors at 
+once - work pressures, financial strain, caregiving 
+responsibilities, relationship changes, and health 
+concerns. Understanding patterns in this age group 
+helps communities design prevention efforts that 
+reflect real-world challenges. 
+ 
+Who Was Most Affected? 
+• Median age: 44 
+• Majority male 
+• Predominantly White, non-Hispanic 
+• Most common education level: 
+o Men: High school graduate 
+o Women: Some college or associate 
+degree 
+Method of Death 
+• Firearms were the most common method 
+overall, especially among males 
+• Strangulation was most common among 
+females 
+• Poisoning accounted for a smaller share 
+• Other methods (e.g. sharp or blunt 
+instruments, drowning, and fire) were 
+relatively uncommon. 
+6.2%
+12.3%
+34.8%
+46.7%
+0% 20% 40% 60%
+Other*
+Posioning
+Strangulation
+Firearm
+Methods of Death in Nebraska
+2021–2022 (n = 227)
+Source: NEVDRS, 2021-2022 
+===== Page 3 =====
+ 
+“Helping People Living Better Lives”   | pg. 3 
+ 
+Access to highly lethal methods 
+significantly influences outcomes.  
+Seasonal Patterns 
+• Higher numbers in late fall and winter 
+• Secondary increase during summer 
+• Lower numbers in spring 
+• Males accounted for the majority each 
+month 
+ 
+Circumstances and Contributing 
+Factors 
+(n = 212) 
+Location and Housing 
+• 70.8% occurred in a residence 
+• 19.3% experienced homelessness or 
+housing instability 
+ 
+Most deaths occur at home, 
+emphasizing the importance of 
+family awareness, safe storage 
+practices, and recognizing 
+warning signs. Housing instability 
+is also a significant stressor. 
+Mental Health 
+• 51.9% had a history of mental health 
+problems 
+• 42.0% diagnosis of depression 
+• 31.1% had a history of treatment 
+• 25.9% were receiving mental health 
+treatment prior to death 
+• 52.8% were perceived by others to have 
+been depressed prior to death 
+Many individuals had known 
+mental health challenges, but not 
+all were engaged in ongoing care. 
+Stigma reduction, improved 
+access to services, and early 
+intervention remain essential. 
+Prior Suicidal Behavior 
+• 38.2% had prior suicidal ideation 
+• 19.3% had a prior suicide attempt 
+• 25.0% had recently disclosed intent 
+• 34.0% left a suicide note 
+11.5%
+8.4%8.4%
+6.2%
+7.9%7.9%
+9.7%
+7.0%
+7.9%
+7.0%
+10.1%
+7.9%
+Suicide Deaths by Month in 
+Nebraska
+2021–2022 (n = 227)
+Source: NEVDRS, 2021-2022 
+===== Page 4 =====
+ 
+“Helping People Living Better Lives”   | pg. 4 
+Warning signs were present in 
+many cases. This underscores 
+the importance of taking 
+statements about self-harm 
+seriously and responding quickly. 
+Substance Use 
+• 28.3% had a history of alcohol abuse 
+• 25.9% had a history of substance abuse 
+other than alcohol 
+Substance use and suicide risk 
+are closely linked. Integrated 
+mental health and substance use 
+prevention efforts are critical. 
+Life Stressors 
+• 28.3% experienced intimate partner 
+problems 
+• 17.0% had physical health problems 
+• 13.7% had legal problems 
+• 12.3% had a recent argument with someone
+ 
+Ongoing Data Efforts  
+NEVDRS continues to: 
+• Provide training and technical assistance to coroners/county attorneys and law enforcement 
+• Improve data quality and abstraction processes 
+• Responding to data requests from local and state partners 
+• Support prevention planning with evidence-based insights 
+Our commitment remains focused on accurate data that leads to actionable prevention strategies 
+across Nebraska. 
+Prevention and Support Resources 
+If you or someone you know is struggling, confidential help is 
+available 24/7:  
+988 Suicide & Crisis Lifeline 
+Call 988 
+Veterans: Press 1 
+LGBTQI+: Press 3 
+Nebraska Family Helpline 
+1-888-866-8660 
+Additional Resources: 
+o Click here to view 99 Coping Skills 
+o Click to view 60 Ways to be Kind to Yourself 
+
+===== Page 5 =====
+ 
+“Helping People Living Better Lives”   | pg. 5 
+Native Americans—All Nations Hotline (Text SUPPORT to 33464)  
+Women’s Center for Advancement (402-345-7273) 
+ 
+Rural Youth Suicide Prevention Line (1-800-273-TALK or text HOME to 741741) 
+  
+Boys Town: Your Life Your Voice (1-800-448-3000 or text VOICE to 20121) 
+ 
+National Domestic Violence Hotline (1-800-799-7233 or text BEGIN to 88788) 
+ 
+ 
+ 
+ 
+Contact Information 
+Mamie Lush, MA, BSPH 
+NEVDRS/SUDORS Epidemiologist I 
+Mamie.Lush@nebraska.gov 
+Can Ceyhan 
+NEVDRS/SUDORS Data Analyst 
+Can.Ceyhan@nebraska.gov 
+ 
+ 
+

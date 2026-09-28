@@ -1,0 +1,116 @@
+===== Page 1 =====
+Number of Deaths by Year
+0
+100
+200
+300
+400
+Number of Suicide Deaths
+2020 2021 2022
+289 305
+284
+CharacteristicsDemographics Geography
+Year
+All 
+Race and Ethnicity
+All 
+Education
+All 
+Sex
+All 
+Age Range
+All 
+Number of Deaths by Sex Number of Deaths by Race and Ethnicity
+Number of Deaths by Age Groups Number of Deaths by Educational Attainment
+Nebraska NEVDRS/SUDORS About the Data
+*Data suppressed due to small numbers (count between 1-5) or if only one category is suppressed the next lowest category is also suppressed.
+Note: Suicide death counts in this dashboard, based on data from the National Violent Death Reporting System (NVDRS), may differ from those in the Vital Statistics Death Dashboards. Please see 
+the "About the Data" tab for more details.
+Source: Nebraska Violent Death Reporting System (NVDRS), Nebraska DHHS
+Number of Deaths Select Data:
+Filters Used
+Year:
+Sex:
+Race and Ethnicity:
+Education:
+Age Range:
+2020-2022
+Both Sexes
+All Education Levels
+All Races and Ethnicities
+All Ages
+0 200 400 600 800
+Female
+Male
+162
+716
+Female
+Male
+0 50 100 150 200
+0-19
+20-29
+30-39
+40-49
+50-59
+60-69
+70-79
+80+
+73
+146
+187
+155
+128
+88
+65
+36
+0-19
+20-29
+30-39
+40-49
+50-59
+60-69
+70-79
+80+
+0 100 200 300 400
+Less than High School
+High School or G.E.D
+Some College or Associates Degree
+Bachelor's Degree
+Graduate Degree
+Unknown
+119
+365
+245
+86
+35
+28
+Less than High School
+High School or G.E.D
+Some College or Associates Degree
+Bachelor's Degree
+Graduate Degree
+Unknown
+0 200 400 600 800
+White, NH
+Black, NH
+Asian/PI, NH
+American Indian, NH
+Multiracial, NH
+Hispanic
+761
+30
+10
+15
+8
+54
+White, NH
+Black, NH
+Asian/PI, NH
+American Indian, NH
+Multiracial, NH
+Hispanic
+Nebraska Suicide Deaths Dashboard
+Demographic Overview of Suicide Deaths
+Microsoft Power BI  
+9/24/26, 4:31 PM Microsoft Power BI
+https://app.powerbigov.us/view?r=eyJrIjoiMjg1ZjI5ZmMtOGQxNy00ZTkwLTgwZjctYTExNGNhOTRhN2RjIiwidCI6IjA0MzIwN2RmLWU2ODktNGJmNi0… 1/1

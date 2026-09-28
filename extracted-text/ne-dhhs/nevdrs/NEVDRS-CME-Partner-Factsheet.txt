@@ -1,0 +1,95 @@
+===== Page 1 =====
+CDC’s National Violent Death Reporting System 
+& Coroner/Medical Examiner Partners
+The Centers for Disease Control and Prevention’s National Violent Death Reporting System (NVDRS) links 
+details of violent deaths – the who, when, where and how – and shares insights into why they occurred. 
+NVDRS relies on information from coroner/medical examiner reports (including toxicology), law 
+enforcement reports, and death certificates to pool anonymized data on violent deaths and their 
+circumstances into one database. Such data are far more comprehensive than what is available 
+elsewhere and decision-makers and program planners can use this information to develop and tailor 
+violence prevention efforts.
+For which types of deaths is 
+information collected?
+NVDRS compiles data for these types of cases:
+• Suicides 
+• Homicides 
+• Deaths that occur while in custody of law enforcement or     
+a cor
+rectional facility (excluding legal executions) 
+• All firearm related deaths 
+• Deaths of undetermined manner, including undetermined 
+drug overdose deaths
+Why does NVDRS collect information 
+on deaths of undetermined intent? 
+NVDRS collects information on deaths with an undetermined 
+intent because this:
+• Provides a more complete picture of violent deaths that may 
+be int
+entional
+• Allows public health professionals or data analysts to 
+examine what unique fac
+tors result in an undetermined 
+classification of manner of death 
+• Sheds light on drug overdose deaths that could not be 
+classified as suicide or unint
+entional (the most common type 
+of death of undetermined intent in NVDRS)
+What types of data are collected?  
+Trained abstractors enter information into the encrypted, 
+anonymized system according to standardized CDC            
+guidelines. NVDRS collects data for all age groups and            
+includes information on: 
+• Injury characteristics (e.g., cause of death, type of location) 
+• Demographics (e.g., sex, race/ethnicity)
+• Circumstances that preceded or were related to a victim’s 
+death 
+• 
+Mental health diagnoses 
+• Toxicology 
+• Narratives that provide a brief summary of the incident 
+based on law enforcement and coroner/ medical examiner 
+reports
+• More than 600 other unique data elements 
+National Center for Injury Prevention and Control 
+Division of Violence Prevention
+===== Page 2 =====
+What can NVDRS data be 
+used to do?
+• Uncover timely topics and emerging 
+issues related to violent deaths
+• Reveal important variations in 
+patt
+erns of violent deaths across locations, 
+populations, and over time
+• Better understand the circumstances 
+that contr
+ibute to violence in the county, 
+state, or territory
+• Guide, inform, and help target and 
+evaluate violence prevention efforts, 
+including suicide prevention
+Leading to…
+• Greater understanding of violent and 
+under
+mined deaths
+• More effective use of violence       
+pr
+evention resources
+• Healthier, safer communities
+What is the role of Coroners/Medical 
+Examiners in NVDRS?
+Coroners and medical examiners and the data they provide are an essential component of the NVDRS. Without their 
+partnership, NVDRS could not assess circumstances of violent deaths or patterns in injury characteristics and other 
+critical information that help local communities identify the most important contributing factors to violent deaths, 
+which in turn help prevention partners develop effective prevention strategies. 
+When coroners and medical examiners provide detailed information in their reports, NVDRS can be used to develop 
+more thorough insights into why these violent deaths occurred and identify ways to prevent future violent deaths.
+Is the information in NVDRS secure?                  
+What protections are in place?
+Since NVDRS data collec
+tion began in 2003, there have been no reported data breaches. Participating NVDRS states 
+enter data into an encrypted, web-based system. The VDRS states submit this information to CDC using the most up-
+to-date security protocols. Local laws that protect other types of health department records, such as communicable 
+disease records, also apply to NVDRS files.
+For further information on NVDRS, visit https://www.cdc.gov/violenceprevention/nvdrs.
+

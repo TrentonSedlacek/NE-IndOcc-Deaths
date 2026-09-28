@@ -1,0 +1,40 @@
+===== Page 1 =====
+Year
+All 
+12.8
+10.9**
+13.7
+13.7
+16.1
+17.1
+16.9**
+13.8
+24.1
+13.5**
+16.6
+16.9
+12.6
+23.119.5
+16.7**
+13.4
+14.6
+23.6
+State of Nebraska Behavioral Health
+Regions
+Local Health
+DepartmentsSelect Map Level:
+Death Rate (age-adjusted per 100,000 population), by Local Health Departments, Year(s): 2020-2022
+CharacteristicsDemographics Geography
+Select Map Data: Death Rate (age-adjusted) 
+10.9 24.1
+Nebraska NEVDRS/SUDORS About the Data
+*Data suppressed due to small numbers (count between 1-5) or if only one category is suppressed the next lowest category is also suppressed.
+**Unstable rate, use with caution.
+Note: Suicide death counts in this dashboard, based on data from the National Violent Death Reporting System (NVDRS), may differ from those in the Vital Statistics Death Dashboards. Please see the 
+"About the Data" tab for more details.
+Source: Nebraska Violent Death Reporting System (NVDRS), Nebraska DHHS
+Nebraska Suicide Deaths Dashboard
+Geographic Distribution of Age-Adjusted Suicide Death Rates
+Microsoft Power BI Pages  
+9/24/26, 4:43 PM Microsoft Power BI
+https://app.powerbigov.us/view?r=eyJrIjoiMjg1ZjI5ZmMtOGQxNy00ZTkwLTgwZjctYTExNGNhOTRhN2RjIiwidCI6IjA0MzIwN2RmLWU2ODktNGJmNi0… 1/1

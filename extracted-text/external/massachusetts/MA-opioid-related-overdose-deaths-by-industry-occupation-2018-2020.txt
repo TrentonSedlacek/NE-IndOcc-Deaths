@@ -1,0 +1,817 @@
+===== Page 1 =====
+1 
+Massachusetts Department of Public Health, Occupational Health Surveillance Program SEPTEMBER 2022 
+       
+ 
+    
+ 
+ 
+ 
+Like the rest of the nation, Massachusetts (MA) has been greatly impacted by the opioid epidemic, seeing a doubling of 
+the annual rate of opioid-related overdose deaths between 2011 and 2020. 1 While opioid overdoses and deaths in MA 
+have stabilized and even decreased among some groups in recent years, a better understanding of affected groups and 
+more tailored prevention efforts would better ensure that deaths decline among all groups. 
+ 
+Our research has shown that workers in industries and occupations that place them at high risk for injury and illness have 
+been most affected by the opioid epidemic. This finding is consistent with research showing increased use of prescribed 
+opioids for pain management following work-related injury. 2,3,4 Previous reports from the Massachusetts Department of 
+Public Health (MDPH) Occupational Health Surveillance Program (OHSP) found that workers in Construction and 
+Extraction occupations, as well as in Farming, Fishing, and Forestry occupations had much higher rates of fatal overdose 
+than workers in other occupations. 5,6 
+ 
+The purpose of this data brief is to provide more recent information on the magnitude, trends, and risk factors for opioid-
+related overdose deaths among the working-age population in MA and to identify industries and occupations that have 
+emerged with high rates and numbers of deaths since 2017, with a special focus on the effects of the COVID-19 
+pandemic in 2020. The numbers and rates of opioid-related overdose deaths vary across industries and occupations, 
+suggesting that work-related factors should be considered in the strategic planning of outreach and intervention efforts to 
+reverse the harmful effects of this epidemic.  
+ 
+ 
+ 
+Massachusetts death certificates were analyzed to identify opioid-related overdose deaths from 2018 through 2020, 
+among working-age decedents (residents 16 years or older) for whom valid industry and/or occupation information was 
+available. Occupation describes the kind of work an individual does to earn a living (i.e., job title), while industry describes 
+the activities the individual’s employer is engaged in. Additional factors (such as availability of paid sick leave) that may 
+help explain why opioid-related overdose death rates among working-age decedents vary by industry and occupation 
+were also examined. Key data highlights and associated prevention measures are:  
+ 
+Key Data Highlights: 
+ The 2020 opioid-related overdose death rate has increased 10.5% from 2019 to 2020. The data also shows that 
+there were more fatal opioid overdoses in 2020 among decedents of working age than ever before.   
+ The opioid-related overdose death rate for all Massachusetts workers across all industry sectors was 44.7 deaths 
+per 100,000 workers in 2018-2019 and 48.8 deaths per 100,000 workers in 2020. 
+ Opioid-related overdose death rates for eleven industry sectors (out of 20) increased in 2020 compared to 2018-
+2019. This shift was most pronounced for the following three industry sectors: Accommodation and Food 
+Services; Real Estate and Rental and Leasing; and Retail Trade.  
+ The opioid-related overdose death rate for all Massachusetts workers across all occupation groups was 48.4 
+deaths per 100,000 workers in 2018-2019 and 57.4 deaths per 100,000 workers in 2020. 
+ 
+1 Massachusetts Department of Public Health (2021). Data Brief: Opioid-Related Overdose Deaths among Massachusetts Residents. 
+https://www.mass.gov/doc/opioid-related-overdose-deaths-among-ma-residents-may-2021/download  
+2 Franklin, G. M., Stover, B. D., Turner, J. A., Fulton-Kehoe, D., & Wickizer, T. M. (2008). Early opioid prescription and subsequent disability among 
+workers with back injuries: the Disability Risk Identification Study Cohort. Spine, 33(2), 199-204. 
+3 Dembe, A., Wickizer, T., Sieck, C., Partridge, J., & Balchick, R. (2012). Opioid use and dosing in the workers' compensation setting. A comparative 
+review and new data from Ohio. American Journal of Industrial Medicine, 55(4), 313-324.  
+4 Savych B, Neumark D, Lea R. (2019). Do opioids help injured workers recover and get back to work? The  
+impact of opioid prescriptions on duration of temporary disability. Ind Relat, 58, 549-90.  
+5 Massachusetts Department of Public Health (2018). Opioid-related Overdose Deaths in Massachusetts by Industry and Occupation, 2011-2015. 
+https://www.mass.gov/files/documents/2020/03/19/opioid-industry-occupation.pdf  
+6 Massachusetts Department of Public Health (2021). Opioid-related Overdose Deaths in Massachusetts by Industry and Occupation, 2016-2017. 
+https://www.mass.gov/doc/opioid-related-overdose-deaths-by-industry-and-occupation-2016-2017-0/download  
+Data Highlights and Prevention Measures 
+Opioid-related Overdose Deaths in 
+Massachusetts by Industry and 
+Occupation: 2018-2020 
+===== Page 2 =====
+2 
+ Opioid-related overdose death rates for seventeen occupational groups (out of 22) increased in 2020 compared to 
+2018-2019. This shift was most pronounced for the following occupation groups: Food Preparation and Serving 
+Related; Healthcare Support; and Legal. 
+ The rate for all workers, as well as the rates for all racial/ethnic groups increased in 2020, however, the rate for 
+Black, non-Hispanics nearly doubled in 2020 compared to more modest annual increases in previous years.  
+ In 2020, groups with workers reporting lower percentages of access to paid sick leave had opioid overdose rates 
+that were higher (4.9 and 3.5 times, respectively, for industry and occupation) than groups with workers reporting 
+higher percentages of access to paid sick leave. 
+ 
+It is important to note, due to the COVID-19 pandemic and subsequent public health interventions, many experienced 
+disruptions to employment (e.g., job loss) or changes in the nature of their work (e.g., work from home). Between March 
+and April 2020, there was a rapid drop in employment, with many workers leaving the workforce, shifting jobs, or taking 
+pay cuts/reduced hours. The impact was especially pronounced in some industry sectors and occupational groups. The 
+following few months brought a gradual re-opening of certain industry sectors, although some never returned to full 
+capacity or full in-person work. An aim of this data brief is to examine the 2020 overdose deaths by industry and 
+occupation to understand how patterns of death in 2020 might vary compared to previous non-pandemic years.   
+ 
+Workplace Strategies to Prevent Opioid-related Overdose Deaths: 
+The workplace is an important venue for health and safety, which includes concerns related to opioid-related overdose 
+prevention. As this data brief demonstrates, certain industry and occupation groups have higher rates of opioid-related 
+overdose deaths. Employers, unions, employee assistance programs, community organizations, practitioners, insurers, 
+and government agencies can all play an important role in preventing fatal opioid-related overdose: 
+ Create a work environment that fosters communication, cultivates connectedness, and promotes asking for help 
+ Stronger health and safety measures and policies that can reduce ergonomic risk factors and prevent injury at the 
+worksite 
+ Recovery-friendly workplace initiatives/compassionate drug-free workplace policies 
+ Employee assistance/peer support programs 
+ Naloxone training, as appropriate 
+ Stay at work/return to work accommodations 
+ Improved employee benefits (e.g., access to health insurance options that cover nonpharmacologic pain 
+treatments) 
+ Organizational supports for their employees’ treatment for and recovery from substance use/opioid dependency 
+ Equity-centered approaches to combat the large inequities seen in overdose rates between various populations 
+are needed. This involves including voices from the communities of focus in dissemination and intervention 
+planning, as well as being intentional in outreach strategies to reduce the gaps seen in the data below.   
+ Integrated approaches to COVID-19 vaccine outreach, such as combining COVID-19 vaccination information with 
+harm reduction strategies (e.g., naloxone training, fentanyl test strip distribution), and mental health services 
+ 
+Selected Examples of Current MDPH Prevention Efforts to Support Workers 
+Across the state, there are many prevention initiatives and activities that are designed for workers and that address the 
+complex associations between work and opioid use. Described below are a few examples of this work: 
+ In collaboration with Health Resources in Action (HRiA), in work funded by the State Opioid Response (SOR) 
+grant, MDPH has developed new trainings and a comprehensive website aiming to increase opioid awareness 
+and provide resources for Massachusetts employers to implement policies and practices that build capacity for 
+‘upstream’ prevention efforts. More information can be found here: https://behereinitiative.org/workplace/. 
+ The agency that oversees the state’s workers’ compensation system, the Massachusetts Department of Industrial 
+Accidents (DIA), has a program called the Opioid Alternative Treatment Pathway (OATP). Injured workers who 
+have been prescribed opioids for pain and are facing a litigation process with insurers can voluntarily enter the 
+OATP to gain immediate access to care coordinators who work with them and their medical providers to safely 
+taper/reduce their use of opioids and to use alternative pain management strategies, with a goal of helping them 
+regain functionality for an improved quality of life, or a return to work. MDPH is funding a researcher from UMass 
+Lowell to conduct an evaluation of the OATP; results from this evaluation have been well received by the DIA are 
+already being incorporated into OATP to improve the program.  
+ The Fatality Assessment and Control Evaluation (FACE) Project at MDPH has drafted a protocol for on-site 
+investigation of worksites where a fatal overdose has occurred. This FACE protocol will allow for the identification 
+of factors that precede or happen during the emergency response at the worksite; information obtained will help 
+guide the development of comprehensive recommendations for employers to prevent similar deaths and provide 
+organizational supports for their employees. In collaboration with researchers from UMass Lowell and 
+Massachusetts College of Pharmacy and Health Sciences, the tool is being piloted in the summer and fall of 
+===== Page 3 =====
+3 
+2022.   
+ At a community level, MDPH-funded prevention initiatives, such as Hampshire HOPE, have been working to 
+educate local employers about opioids and the workplace. This work involves developing a toolkit for employers 
+to support a recovery-friendly workplace. 
+ As part of MDPH’s Vaccine Equity Initiative, a program aiming to increase the number of people vaccinated 
+against COVID-19 in communities hard-hit by the pandemic, vaccine outreach efforts to worker groups particularly 
+impacted by the opioid epidemic (e.g., fishing, construction) also include opioid overdose prevention services. 
+ MDPH’s Bureau of Substance Addiction Services (BSAS) recently started a recovery-based re-entry services 
+program focused on Black and Latino Men. The program serves Black and Latino men with a history of substance 
+misuse who have been incarcerated in Suffolk, Essex, Worcester, and Hampden counties and provides funding to 
+local non-profit, community-based organizations to provide culturally responsive wraparound services. This work 
+is especially relevant, given the findings presented below on the elevated rates of overdose among Black, non-
+Hispanic workers.  
+   
+ 
+ 
+ 
+Figure 1. Rate and number of opioid-related overdose deaths among Massachusetts working-age decedents, n=12,770 
+ 
+   
+ 
+ 
+ The 2020 opioid-related overdose death rate has increased 10.5% from 2019 to 2020. The data also shows 
+that there were more fatal opioid overdoses in 2020 among decedents of working age than ever before.   
+ From 2011 through 2016 there was a 26.9% increase in opioid-related overdose deaths among 
+Massachusetts working-age decedents (p<0.05). The 2020 opioid-related overdose death rate (49.6 deaths 
+per 100,000 workers) is approximately 2.7% higher than in 2016 (48.3 deaths per 100,000 workers), though 
+this difference is not statistically significant. Since 2016, the opioid-related overdose death rate among 
+Massachusetts workers had been relatively stable. 
+ These findings are consistent with opioid-related overdose deaths seen throughout Massachusetts statewide. 
+Overall, the opioid-related overdose death rate has been stable for the past several years. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+0
+10
+20
+30
+40
+50
+60
+0
+200
+400
+600
+800
+1,000
+1,200
+1,400
+1,600
+1,800
+2011 2012 2013 2014 2015 2016 2017 2018 2019 2020
+Opioid-related overdose deaths per 100,000 
+workers
+Opioid-related overdose deaths
+Year
+Opioid-related Overdose Death Rates among Workers 
+Numerator source: Massachusetts Registry of Vital Records and Statistics, 2011-2020 
+Denominator source: American Community Survey, 2011-2020 
+===== Page 4 =====
+4 
+ 
+ 
+Figure 2. Rate of opioid-related deaths among Massachusetts working-age decedents by industry sectors 
+ 
+ 
+ 
+ 
+ The opioid-related overdose death rate for all Massachusetts workers across all industry sectors was 44.7 
+deaths per 100,000 workers in 2018-2019 and 48.8 deaths per 100,000 workers in 2020. 
+ The Construction industry sector had the highest rate of opioid-related overdose deaths (216.7 deaths per 
+100,000 workers in 2018-2019 and 226.2 deaths per 100,000 workers in 2020) and the highest number of 
+opioid-related overdose deaths (n=935 in 2018-2019 and n=447 in 2020). 
+ The following industries had opioid-related overdose death rates that were significantly higher than the rate 
+for all Massachusetts workers in all industries: 
+o Accommodation and Food Services (76.2 deaths per 100,000 workers in 2018-2019; 117.5 deaths 
+per 100,000 workers in 2020) 
+o Administrative and Support and Waste Management Services (80.4; 91.1) 
+o Agriculture, Forestry, Fishing, and Hunting (207.0; 244.1) 
+o Construction (216.7; 226.2) 
+o Other Services, Except Public Administration (68.5; 75.9) 
+o Transportation and Warehousing (72.7; 86.9) 
+ 
+ 
+ 
+ 
+ 
+ 
+Opioid-related Overdose Death Rates by Industry and Occupation 
+ 
+*This category excluded 6 opioid-related overdose deaths among those working in the military or military specific occupations due to lack of denominator 
+information and 30 opioid-related overdose deaths because the death certificates did not contain enough information to code occupation. 
+Numerator source: Occupational Health Surveillance Program, 2020 
+Denominator source: American Community Survey, 2020 
+† In 2018-2019, this category excluded 14 opioid-related overdose deaths among those working in the military or military specific occupations due to lack of denominator information and 50 opioid-
+related overdose deaths because the death certificates did not contain enough information to code industry; In 2020, this category excluded 5 opioid-related overdose deaths among those working in 
+the military or military specific occupations due to lack of denominator information and 13 opioid-related overdose deaths because the death certificates did not contain enough information to code 
+industry. 
+*Suppressed due to cell size restriction 
+‡Industries with a statistically significant higher rate compared to the rate for all workers 
+₸ 65.6% of these deaths occurred among workers employed in Fishing industries 
+Numerator source: Massachusetts Registry of Vital Records and Statistics, 2018-2020 
+Denominator source: American Community Survey, 2018-2020 
+22
+7
+103
+182
+25
+26
+45
+115
+*
+114
+0
+17
+171
+16
+28
+447
+29
+32
+112
+208
+1,736
+45
+15
+185
+284
+29
+44
+102
+223
+*
+250
+*
+38
+303
+44
+53
+935
+73
+55
+225
+371
+3,342
+0 50 100 150 200 250 300 350
+Wholesale Trade
+Utilities
+TransportaƟon and Warehousing‡
+Retail Trade
+Real Estate and Rental and Leasing
+Public Administration
+Professional, Scientific, and Technical Services
+Other Services, Except Public AdministraƟon‡
+Mining, Quarrying, and Oil and Gas Extraction
+Manufacturing
+Management of Companies and Enterprises
+Information
+Health Care and Social Assistance
+Finance and Insurance
+Educational Services
+ConstrucƟon‡
+Arts, Entertainment, and Recreation
+Agriculture, Forestry, Fishing, and HunƟng‡₸
+AdministraƟve and Support and Waste Management Services‡
+AccommodaƟon and Food Services‡
+All Industries†
+Opioid-related overdose deaths per 100,000 workers
+Industry Sectors
+2018-2019
+2020
+===== Page 5 =====
+5 
+0 0.5 1 1.5 2 2.5
+2018-2019 / 2020 Rate Ratio (CI)‡
+All Industries†
+Accommodation and Food Services
+Administrative and Support and Waste Management Services
+Agriculture, Forestry, Fishing, and Hunting
+Arts, Entertainment, and Recreation
+Construction
+Educational Services
+Finance and Insurance
+Health Care and Social Assistance
+Information
+Management of Companies and Enterprises
+Manufacturing
+Mining, Quarrying, and Oil and Gas Extraction
+Other Services, Except Public Administration
+Professional, Scientific, and Technical Services
+Public Administration
+Real Estate and Rental and Leasing
+Retail Trade
+Transportation and Warehousing
+Utilities
+Wholesale Trade
+Figure 3. Rate ratios of opioid-related deaths among Massachusetts working-age decedents by industry sectors, 
+comparing 2018-2019 vs. 2020 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Compared to 2018-2019, the rate of opioid-related overdoses among Massachusetts workers in the following industries 
+increased in 2020:  
+ Accommodation and Food Services 
+ Administrative and Support and Waste Management Services 
+ Agriculture, Forestry, Fishing, and Hunting 
+ Construction 
+ Educational Services 
+ Health Care and Social Assistance 
+ Other Services, Except Public Administration 
+ Public Administration 
+ Real Estate and Rental and Leasing 
+ Retail Trade 
+ Transportation and Warehousing 
+ 
+  
+ 
+ 
+† In 2018-2019, this category excluded 14 opioid-related overdose deaths among those working in the military or military specific occupations due to lack of denominator information and 50 opioid-
+related overdose deaths because the death certificates did not contain enough information to code industry; In 2020, this category excluded 5 opioid-related overdose deaths among those working in 
+the military or military specific occupations due to lack of denominator information and 13 opioid-related overdose deaths because the death certificates did not contain enough information to code 
+industry. 
+‡ Rate ratios are the difference in opioid-related overdose death rates from 2018-2019 to 2020. If the rate ratio and confidence interval (CI) includes 1, it means there is no difference in the rates of 
+2018-2019 and 2020. If the rate ratio and CI favors the left (less than one) and does not include 1, it means the rate of 2018-2019 is statistically greater than the rate of 2020. If the rate ratio and CI 
+favors the right (great than one) and does not include 1, it means the rate of 2020 is statistically greater than the rate of 2018-2019. 
+Numerator source: Massachusetts Registry of Vital Records and Statistics, 2018-2020 
+Denominator source: American Community Survey, 2018-2020 
+===== Page 6 =====
+6 
+Figure 4. Rate of opioid-related deaths among Massachusetts working-age decedents by occupational groups 
+ 
+  
+ 
+ 
+ 
+ The opioid-related overdose death rate for all Massachusetts workers across all occupation groups was 48.4 
+deaths per 100,000 workers in 2018-2019 and 57.4 deaths per 100,000 workers in 2020. 
+ The Construction and Extraction occupation group had the second highest rate of opioid-related overdose 
+deaths (272.8 deaths per 100,000 workers in 2018-2019 and 310.8 deaths per 100,000 workers in 2020) and 
+the highest number of opioid-related overdose deaths (n=861 in 2018-2019 and n=420 in 2020). 
+ The following occupations had opioid-related overdose death rates that were significantly higher than the rate 
+for all Massachusetts workers in all occupations: 
+o Building and Grounds Cleaning and Maintenance (116.3 deaths per 100,000 workers in 2018-2019; 
+177.6 deaths per 100,000 workers in 2020) 
+o Construction and Extraction (272.8; 310.8) 
+o Farming, Fishing, and Forestry (475.5; 654.9) 
+o Food Preparation and Serving Related (81.9; 130.2) 
+o Installation, Maintenance, and Repair (110.5; 117.2) 
+o Personal Care and Service (67.7; 86.2) 
+o Production (81.7; 92.2) 
+o Transportation and Material Moving (68.3; 103.2) 
+ 
+ 
+ 
+ 
+† In 2018-2019, this category excluded 14 opioid-related overdose deaths among those working in the military or military specific occupations due to lack of denominator information and 
+23 opioid-related overdose deaths because the death certificates did not contain enough information to code occupation ; In 2020, this category excluded 5 opioid-related overdose 
+deaths among those working in the military or military specific occupations due to lack of denominator information and 13 opioid-related overdose deaths because the death certificates 
+did not contain enough information to code occupation. 
+‡Occupations with a statistically significant higher rate compared to the rate for all workers 
+₸ at least 74.1% of these deaths occurred among workers employed in Fishing occupations 
+Numerator source: Massachusetts Registry of Vital Records and Statistics, 2018-2020 
+Denominator source: American Community Survey, 2018-2020 
+177
+140
+19
+76
+72
+99
+79
+8
+5
+87
+63
+36
+182
+27
+15
+420
+12
+31
+21
+107
+31
+11
+1,736
+273
+247
+34
+189
+152
+231
+149
+14
+14
+162
+91
+68
+322
+51
+37
+861
+20
+46
+46
+216
+57
+25
+3,342
+0 100 200 300 400 500 600 700 800 900
+TransportaƟon and Material Moving‡
+Sales and Related
+Protective Service
+ProducƟon‡
+Personal Care and Service‡
+Office and Administrative Support
+Management
+Life, Physical and Social Science
+Legal
+InstallaƟon, Maintenance, and Repair‡
+Healthcare Support
+Healthcare Practitioner and Technical
+Food PreparaƟon and Serving Related‡
+Farming, Fishing, and Forestry‡₸
+Education, Training, and Library
+ConstrucƟon and ExtracƟon‡
+Computer and Mathematical
+Community and Social Services
+Business and Financial Operations
+Building and Grounds Cleaning and Maintenance‡
+Arts, Design, Entertainment, Sports and Media
+Architecture and Engineering
+All OccupaƟons†
+Opioid-related overdose deaths per 100,000 workers
+Occupation Group
+2018-2019
+2020
+===== Page 7 =====
+7 
+0.5 1 1.5 2
+2018-2019 / 2020 Rate Ratio (CI)‡
+All OccupaƟons†
+Architecture and Engineering
+Arts, Design, Entertainment, Sports and Media
+Building and Grounds Cleaning and Maintenance
+Business and Financial Operations
+Community and Social Services
+Computer and Mathematical
+Construction and Extraction
+Education, Training, and Library
+Farming, Fishing, and Forestry
+Food Preparation and Serving Related
+Healthcare Practitioner and Technical
+Healthcare Support
+Installation, Maintenance, and Repair
+Legal
+Life, Physical and Social Science
+Management
+Office and Administrative Support
+Personal Care and Service
+Production
+Protective Service
+Sales and Related
+Transportation and Material Moving
+Figure 5. Rate ratios of opioid-related deaths among Massachusetts working-age decedents by occupational groups,  
+comparing 2018-2019 vs. 2020 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Compared to 2018-2019, the rate of opioid-related overdoses among Massachusetts workers in the following industries 
+increased in 2020:  
+ 
+ Arts, Design, Entertainment, Sports and 
+Media 
+ Building and Grounds Cleaning and 
+Maintenance 
+ Community and Social Services 
+ Computer and Mathematical 
+ Construction and Extraction 
+ Farming, Fishing, and Forestry 
+ Food Preparation and Serving Related 
+ Healthcare Practitioner and Technical 
+ 
+ 
+ Healthcare Support 
+ Installation, Maintenance, and Repair 
+ Legal 
+ Life, Physical and Social Science 
+ Management 
+ Personal Care and Service 
+ Protective Service 
+ Sales and Related 
+ Transportation and Material Moving 
+ 
+ 
+ 
+† In 2018-2019, this category excluded 14 opioid-related overdose deaths among those working in the military or military specific occupations due to lack of denominator information and 23 opioid-
+related overdose deaths because the death certificates did not contain enough information to code occupation ; In 2020, this category excluded 5 opioid-related overdose deaths among those 
+working in the military or military specific occupations due to lack of denominator information and 13 opioid-related overdose deaths because the death certificates did not contain enough information 
+to code occupation. 
+‡ Rate ratios are the difference in opioid-related overdose death rates from 2018-2019 to 2020. If the rate ratio and confidence interval (CI) includes 1, it means there is no difference in the rates of 
+2018-2019 and 2020. If the rate ratio and CI favors the left (less than one) and does not include 1, it means the rate of 2018-2019 is statistically greater than the rate of 2020. If the rate ratio and CI 
+favors the right (great than one) and does not include 1, it means the rate of 2020 is statistically greater than the rate of 2018-2019. 
+Numerator source: Massachusetts Registry of Vital Records and Statistics, 2018-2020 
+Denominator source: American Community Survey, 2018-2020 
+===== Page 8 =====
+8 
+ 
+ 
+Figure 6. Rate of opioid-related deaths among Massachusetts working-age decedents by race/ethnicity, n=8,433  
+ 
+ Rates among workers by race/ethnicity were examined for each year during 2016-2020 (Figure 3). The rate 
+for white, non-Hispanic workers has decreased slightly from 2016 to 2017 but remained relatively stable, 
+which is similar to the pattern for all workers. However, the rate among Hispanic workers decreased from 
+2016 to 2019 and increased in 2020. The rate among Black, non-Hispanic workers fluctuated between 2016 
+to 2020. 
+ The rate for all racial/ethnic groups increased in 2020, however, the rate for Black, non-Hispanic workers 
+nearly doubled in 2020 compared to previous years. This same jump was seen overall in state-wide deaths. 7 
+This elevated rate highlights the need for prevention approaches that center equity and authentically engage 
+the perspectives of Black workers.  
+ Among Black, non-Hispanic workers, the top five occupation groups with rates of opioid-related overdose 
+deaths that were significantly higher than the rate for all occupations were: 
+o Construction and extraction (711.7 deaths per 100,000 workers) 
+o Building and Grounds Cleaning and Maintenance (303.5) 
+o Personal Care and Service (204.6) 
+o Food Preparation and Serving Related (194.5) 
+o Sales and Related (135.6) 
+ Due to low numbers of opioid-related overdose deaths among other racial and ethnic groups in the examined 
+time period, it was not possible to generate rates for Asian/Pacific Islander, non-Hispanic working-age 
+decedents (n=53) and American Indian/Alaska Native, non-Hispanic working-age decedents (n=22). 
+ It is important to note, using data from 2016-2020, the rate for Hispanic, and Black, non-Hispanic working-age 
+decedents may be underestimated because the death certificates among these racial/ethnic groups were 
+more likely to have missing industry and occupation information and therefore, as mentioned below in the 
+Methods section, these death certificates were excluded from the analysis.  
+ 
+ 
+ 
+7 Opioid-Related Overdose Deaths, All Intents, MA Residents – Demographic Data Highlights. Massachusetts Department of Public Health. June 2022. 
+https://www.mass.gov/doc/opioid-related-overdose-deaths-demographics-june-2022/download  
+Opioid-related Overdose Death Rates by Demographics 
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+All workers
+(n=8,433)
+White, non-Hispanic
+(n=6,690)
+Hispanic
+(n=835)
+Black, non-Hispanic
+(n=444)
+Opioid-related overdose deaths per 100,000 workers
+Racial/Ethnic Categories
+2016 2017 2018 2019 2020
+Numerator source: Massachusetts Registry of Vital Records and Statistics, 2016-2020 
+Denominator source: American Community Survey, 2016-2020 
+===== Page 9 =====
+9 
+ 
+Figure 7. Rate of opioid-related deaths among Massachusetts working-age decedents by percentage of workers by availability of 
+paid sick leave, n=1,736* 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+In Massachusetts, workers may use sick time if they are injured, ill or have a routine medical appointment. 8 They can also 
+use this time for their child, spouse, parent, or spouse’s parent for the same purposes. Additionally, workers may use this 
+time to deal with domestic violence involving themselves or their children. Employers with 11 or more employees must 
+provide paid sick time. Employers with fewer than 11 employees must provide earned sick time, but it does not need to 
+be paid. Eligibility is not based on the number of hours worked; the Earned Sick Time Law applies to part-time, full-time, 
+temporary, seasonal, and other employees. The Massachusetts Earned Sick Time Law went into effect in July 2015 and 
+was implemented in 2016. 
+ 
+If paid sick leave is unavailable, a worker may decide to work while in pain, which may increase reliance on pain 
+medication, including opioids. As shown in Figure 4, industry sectors and occupation groups were categorized as having 
+either a high or low percentage of workers with paid sick leave, based on data from the Massachusetts COVID-19 
+Community Impact Survey (CCIS), a survey conducted in the fall of 2020 of over 30,000 MA residents, that aimed to 
+better understand the biggest health needs facing people living in Massachusetts during the pandemic. 9 Respondents 
+answered questions about their industry, occupation and availability of paid sick leave. In the CCIS, 82.2% of employed 
+respondents across all industries and 82.5% of employed respondents across all occupations reported having paid sick 
+leave. Based on these averages, we classified industry sectors and occupational groups as having high or low paid sick 
+leave availability. An industry sector was considered to have high availability of paid sick if 82.2% or more of survey 
+respondents within that industry sector reported having access to paid sick leave, while an occupation group was 
+considered to have high availability of paid sick leave if 82.5% or more of survey respondents within that occupation group 
+reported having access to paid sick leave. All other industry sectors and occupation groups were categorized as having 
+low availability of paid sick leave.  
+ 
+The opioid-related overdose death rates were 4.9 and 3.5 times higher among industry sectors and occupation groups 
+with low percentages of workers reporting paid sick leave in the CCIS compared to those with high percentages of 
+workers with paid sick leave, respectively. 
+ 
+8 Office of Attorney General Maura Healey. Earned sick time. https://www.mass.gov/info-details/earned-sick-time  
+9 Massachusetts Department of Public Health (2021). COVID-19 Community Impact Survey. https://www.mass.gov/info-details/covid-19-community-
+impact-survey?msclkid=6d05cdddb9b611ecbf6e6f73ae48cd6d  
+Opioid-related Overdose Death Rates by Access to Paid Sick Leave 
+*The industry category excluded 5 opioid-related overdose deaths among those working in the military or military specific occupations due to lack of denominator information and 13 
+opioid-related overdose deaths because the death certificates did not contain enough information to code industry. The occupation category excluded from the opioid-related overdose 
+death rate calculation were 33 deaths among those working in the military or military-specific occupations and 51 deaths which lacked information about paid sick leave and/or had 
+insufficient sample size to calculate access to paid sick leave 
+Paid sick leave categories (High, Low) were derived from Massachusetts data from the COVID-19 Community Impact Survey. An Industry sector was considered to have high availability 
+of paid sick leave if 82.2% or more of Survey respondents within that industry sector reported having access to paid sick leave. All other industry sectors were categorized as having low 
+availability of paid sick leave. An Occupation group was considered to have high availability of paid sick leave if 82.5% or more of Survey respondents within that occupation group 
+reported having access to paid sick leave. All other occupation groups were categorized as having low availability of paid sick leave. 
+Numerator source: Massachusetts Registry of Vital Records and Statistics, 2020 
+Denominator source: American Community Survey, 2020 
+0
+20
+40
+60
+80
+100
+120
+High Low
+Opioid-related overdose deaths per 100,000 
+workers
+Percent of workers with paid sick leave
+Industry
+Occupation
+===== Page 10 =====
+10 
+The following industry sectors were categorized as having a low percentage of workers covered by paid sick leave in 
+CCIS:  
+ Construction 
+ Transportation and Warehousing 
+ Administration and Support and Waste Management Services 
+ Accommodation and Food Services 
+ Other Services, except Public Administration 
+ Arts, Entertainment, and Recreation 
+ Retail Trade 
+ Real Estate and Rental and Leasing 
+ 
+The following occupation groups were categorized as having a low percentage of workers covered by paid sick leave in 
+the CCIS: 
+ Construction and Extraction 
+ Production 
+ Transportation and Material Moving 
+ Arts, Design, Entertainment, Sports, and Media 
+ Building and Grounds Cleaning and Maintenance 
+ Sales and Related 
+ Healthcare Support 
+ Food Preparation and Serving Related 
+ Personal Care and Service 
+ Education, Training, and Library 
+ 
+ 
+ 
+ 
+Opioid-related overdose deaths were identified by the causes of death listed on death certificates, which were available 
+electronically through a file provided by the Massachusetts Registry of Vital Records. The following International 
+Classification of Diseases – 10th edition (ICD-10) codes were selected from the underlying cause of death field to identify 
+all fatal poisonings/overdoses, regardless of intent: X40-X49 (unintentional), X60-X69 (self-harm/suicide), X85-X90 & 
+Y35.2 (assault/homicide/other) and Y10-Y19 (undetermined intent). Additionally, multiple cause of death fields were 
+searched to identify fatal poisonings in which the substance involved was an opioid: T40.0 (opium), T40.1 (heroin), T40.2 
+(other opioids), T40.3 (methadone), T40.4) (synthetic narcotics), and T40.6 (other unspecified narcotics). Additional 
+information obtained from the death certificates included decedent’s age, sex. Race/ethnicity, residence, and usual 
+industry and occupation. Occupation describes the kind of work and individual does to earn a living (i.e., job title), while 
+industry describes the activities the individual’s employer is engaged in. Using the National Institute for Occupational 
+Safety and Health Industry and Occupation Computerized Coding System (NIOCCS), industry and occupation were 
+assigned North American Industry Classification System (NAICS) codes and the Standard Occupation Classification 
+System (SOC) codes, respectively, and were further classified by manual review. Since this analysis focuses on working-
+age Massachusetts residents who are employed, deaths among out-of-state residents, individuals not in the workforce 
+either because they were homemakers, unemployed or had never been employed, unable to work due to disability or 
+another reason, or were students were excluded. Additionally, deaths were excluded if death certificates lacked enough 
+information to code either industry or occupation. 
+ 
+The distribution and rate of opioid-related overdose deaths among working-age Massachusetts residents was presented 
+by industry and occupation. For 2018-2019, two-year average annual opioid-related overdose death rates and for 2020, 
+one-year average annual opioid-related overdose death rates among working-age decedents were calculated as the 
+number of deaths per 100,000 workers. 95% confidence intervals were calculated for all rates. For brevity in this data 
+brief, all average annual rates, whether two-year or one-year, are referred to as just rates. Joinpoint regression was used 
+to identify segments of time when the rate of opioid-related overdose deaths among Massachusetts working-age 
+decedents changed from 2011 to 2020. Data on the average annual number of workers employed in Massachusetts 
+between 2011 and 2020 were obtained from the American Community Survey, 2011-2020 and served as the denominator 
+for rates.  
+ 
+As noted above, using Massachusetts data from the COVID-19 Community Impact Survey, occupation groups were 
+categorized according to the availability level (high or low) of paid sick leave, based on the Massachusetts total of 
+respondents. An industry sector was considered to have high availability of paid sick if 82.2% or more of survey 
+respondents within that industry sector reported having access to paid sick leave, while occupation was considered to 
+Methods 
+===== Page 11 =====
+11 
+have high availability of paid sick leave if 82.5% or more survey respondents within that occupation reported having 
+access to paid sick leave. An industry sector was considered to have low availability of paid sick leave if less than 82.2% 
+of survey respondents within that industry reported having access to paid sick leave, while an occupation was considered 
+to have low availability of paid sick leave if less than 82.5% of survey respondents within that occupation reported having 
+access to paid sick leave. 
+ 
+Data Sources: 
+ Opioid-related overdose deaths: Death certificates provided by the Massachusetts Registry of Vital Records, 
+Massachusetts Department of Public Health (MDPH) 
+ Denominators for rates: American Community Survey (ACS): United States Census Bureau, U.S. Department of 
+Commerce 
+ Paid sick leave estimates: COVID-19 Community Impact Survey, Massachusetts Department of Public Health 
+(MDPH) 
+ 
+Statistical Significance: The 95% confidence interval (95% CI) is a range of values determined by the degree of 
+variability of the data within which the true value is likely to lie. The confidence interval indicates the precision of a 
+calculation; the wider the interval, the less precision in the estimate. The 95% confidence intervals used in this report for 
+crude rates are the indicators of reliability (or stability) of the estimate. Smaller population subgroups or smaller numbers 
+of respondents yield less precise estimates 
