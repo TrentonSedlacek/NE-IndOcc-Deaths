@@ -1,157 +1,145 @@
-# =====================================================================
 # tests/synthetic_run.R
-# Runs scripts/io_death_rates_v4.R end to end on FAKE data, with no network:
-#   - Guardian-shaped exports for 2020-2024 (CSV, and xlsx for 2024)
-#   - a fake NIOCCS cache (run_nioccs = FALSE, so no CDC calls)
-#   - fake ACS C24030 / C24010 CSVs in the fetch_acs_denominators.py format
-# Every record is invented. Nothing here comes from a real certificate.
-#
-# Run from the repo root:  Rscript tests/synthetic_run.R
-# Exits with an error if any check fails.
-# =====================================================================
-suppressPackageStartupMessages({ library(dplyr); library(readr); library(jsonlite) })
+# Runs scripts/io_death_rates_v5.R end to end on FAKE data, with no network:
+#   - Guardian-shaped exports 2020-2024 made to look like the real ones: EventYear and NchsAge 0 on every row,
+#     dates as Excel serial strings (2020, 2023; "45291.0" style in 2022), m/d/Y text in the 2021 CSV, and a
+#     2024 .xlsx with real Excel date cells; overlapping exports; a blank-id row; unreadable dates
+#   - a fake NIOCCS cache with stored codes, and a fake GET() (defined here) standing in for CDC
+#   - fake ACS C24030 / C24010 with the full subtotal outline
+# Every record is invented. The old v4 test is tests/synthetic_run_v4.R.
+# Run from the repo root:  Rscript tests/synthetic_run.R    Exits with an error if any check fails.
+suppressPackageStartupMessages({ library(dplyr); library(readr) })
 set.seed(20260928)
 
-root <- file.path(tempdir(), "io_synthetic")
-unlink(root, recursive = TRUE)
-dirs <- list(dc = file.path(root, "dc"), out = file.path(root, "Output"),
-             cache = file.path(root, "Cache"), acs = file.path(root, "Denominators"))
-for (d in dirs) dir.create(d, recursive = TRUE, showWarnings = FALSE)
+root <- file.path(tempdir(), "io_v5_synthetic"); unlink(root, recursive = TRUE)
+dc_dir <- file.path(root, "dc"); work <- file.path(root, "Downloads"); cache_dir <- file.path(work, "Cache")
+for (d in c(dc_dir, cache_dir)) dir.create(d, recursive = TRUE, showWarnings = FALSE)
+invisible(file.copy(file.path("scripts", "acs_group_map.csv"), work))   # the map sits next to the script
 
 # ---------------------------------------------------------------------
 # 1. Fake Guardian exports
 # ---------------------------------------------------------------------
-keep_vars <- c("DeathCertificateId", "StateFileNumber", "EventYear", "DateOfDeath",
-               "ResidingStateNchs", "NchsAge", "NchsAgeUnit", "Sex", "MannerDeath",
-               "AcmeUnderlyingCode", paste0("D2Acme", 1:20), paste0("D2SmicarAxis", 1:20),
-               "ImmedCauseDeath", "Consq1", "Consq2", "Consq3", "OtherSignificantConditions",
-               "IndustryLit", "OccupationLIt", "IndustryCode", "OccupationCode")
-extra_vars <- c("FirstName", "LastName", "DateOfBirth", "ResidingCity", "ResidenceCounty",
-                "InjuryAtWork", "RecordStatus", "Education", "CountyCode")
-
-io_pool <- tribble(~IndustryLit, ~OccupationLIt, ~IndustryCode,
-  "CONSTRUCTION", "CARPENTER", "077",   "MEAT PACKING", "MEAT CUTTER", "118",
-  "FARM", "FARMER", "017",              "HOSPITAL", "NURSE", "819",
-  "", "STUDENT", "",                    "", "RETIRED", "",
-  "US ARMY", "SOLDIER", "967",          "", "", "",
-  "NEVER WORKED", "NEVER WORKED", "",   "TRUCKING", "TRUCK DRIVER", "617",
-  "RETAIL", "CASHIER", "499",           "SCHOOL", "TEACHER", "786",
-  "HOMEMAKER", "HOMEMAKER", "",         "UNKNOWN", "UNKNOWN", "",
-  "RAILROAD", "CONDUCTOR", "607",       "CHILD CARE", "CHILD CARE WORKER", "847")
-ucod_pool <- c("X70", "X72", "X74", "X84", "Y87.0", "U03", "X42", "X44", "Y12", "X64", "X45",
-               "I21.9", "C34.1", "J44.9", "V89.2", "X47", "X85", "W19", "X60", "Y14")
-text_pool <- c("acute fentanyl toxicity", "mixed drug intoxication", "carbon monoxide poisoning",
-               "acute ethanol intoxication", "gunshot wound of head", "hanging",
-               "atherosclerotic cardiovascular disease", "", NA)
-tcode_pool <- c("T40.1", "T40.4", "T43.6", "T51.0", "T58", "T40.2", "T42.4")
-
-blank_row <- function() as.list(setNames(rep(NA_character_, length(c(keep_vars, extra_vars))), c(keep_vars, extra_vars)))
-
-make_row <- function(id, yr) {
-  r <- blank_row()
-  io <- io_pool[sample(nrow(io_pool), 1), ]
-  unit <- sample(c(1, 1, 1, 1, 1, 1, 2, 3, 4, 5, 6, 9), 1)
-  r$DeathCertificateId <- id; r$StateFileNumber <- paste0("SFN", id); r$EventYear <- as.character(yr)
-  r$DateOfDeath <- sprintf("%d-06-15", yr)
-  r$ResidingStateNchs <- sample(c(rep("NE", 17), "IA", "KS", "ne"), 1)
-  r$NchsAgeUnit <- as.character(unit)
-  r$NchsAge <- as.character(switch(as.character(unit), "1" = sample(c(10:95, 999), 1), "2" = sample(1:230, 1),
-                                   "3" = sample(1:60, 1), "9" = 999, sample(1:20, 1)))
-  r$Sex <- sample(c("M", "M", "F", "U", "1", "2"), 1)
-  r$MannerDeath <- sample(c("A", "N", "S", "H", "C", "P"), 1)
-  r$AcmeUnderlyingCode <- sample(ucod_pool, 1)
-  n_t <- sample(0:3, 1)
-  if (n_t > 0) for (k in seq_len(n_t)) {
-    r[[paste0("D2Acme", k)]] <- sample(tcode_pool, 1)
-    r[[paste0("D2SmicarAxis", k + 1)]] <- sample(tcode_pool, 1)
-  }
-  r$ImmedCauseDeath <- sample(text_pool, 1); r$Consq1 <- sample(text_pool, 1)
-  r$IndustryLit <- io$IndustryLit; r$OccupationLIt <- io$OccupationLIt; r$IndustryCode <- io$IndustryCode
+cols <- c("DeathCertificateId", "StateFileNumber", "EventYear", "DateOfDeath", "DateOfBirth", "ResidingStateNchs",
+          "NchsAge", "NchsAgeUnit", "Sex", "MannerDeath", "InjuryAtWork", "AcmeUnderlyingCode",
+          paste0("D2Acme", 1:20), paste0("D2SmicarAxis", 1:20), "ImmedCauseDeath", "Consq1", "Consq2", "Consq3",
+          "OtherSignificantConditions", "IndustryLit", "OccupationLIt", "IndustryCode", "OccupationCode",
+          "FirstName", "LastName", "RecordStatus")
+rows <- list()
+# add(): one row in one export. Dates are given as ISO text here and written in that export's format below.
+# Defaults: NE resident, male, age 40, manner A, CONSTRUCTION / CARPENTER.
+add <- function(export, id, dod, ...) {
+  r <- as.list(setNames(rep(NA_character_, length(cols)), cols))
+  r$DeathCertificateId <- id; r$StateFileNumber <- paste0("SFN", id); r$EventYear <- "0"; r$NchsAge <- "0"; r$NchsAgeUnit <- "1"
+  r$DateOfDeath <- dod; r$DateOfBirth <- if (is.na(dod)) NA else paste0(as.integer(substr(dod, 1, 4)) - 40, substr(dod, 5, 10))
+  r$ResidingStateNchs <- "NE"; r$Sex <- "M"; r$MannerDeath <- "A"
+  r$IndustryLit <- "CONSTRUCTION"; r$OccupationLIt <- "CARPENTER"
   r$FirstName <- "FAKE"; r$LastName <- paste0("PERSON", id); r$RecordStatus <- "Registered"
-  r
+  args <- list(...); for (nm in names(args)) r[[nm]] <- args[[nm]]
+  rows[[length(rows) + 1]] <<- list(export = export, r = r)
 }
 
-# Planted records with a known expected result (id -> expectation checked below).
-planted <- list()
-plant <- function(id, yr, ...) {
-  r <- blank_row()
-  r$DeathCertificateId <- id; r$EventYear <- as.character(yr); r$ResidingStateNchs <- "NE"
-  r$NchsAge <- "40"; r$NchsAgeUnit <- "1"; r$Sex <- "M"; r$MannerDeath <- "A"
-  r$IndustryLit <- "CONSTRUCTION"; r$OccupationLIt <- "CARPENTER"; r$IndustryCode <- "077"
-  args <- list(...)
-  for (nm in names(args)) r[[nm]] <- args[[nm]]
-  planted[[id]] <<- list(row = r, file_year = yr)
+# Filler: 40 natural deaths per export (never a case), mixed residence, sex and age, including children.
+cached_pairs <- list(c("CONSTRUCTION", "CARPENTER"), c("FARM", "FARMER"), c("SCHOOL", "TEACHER"), c("", "RETIRED"), c("", ""))
+for (yr in 2020:2024) for (k in 1:40) {
+  dod <- as.Date(sprintf("%d-01-01", yr)) + sample(0:364, 1); io <- cached_pairs[[sample(length(cached_pairs), 1)]]
+  add(yr, sprintf("%d%04d", yr, k), format(dod), DateOfBirth = format(dod - round(sample(0:99, 1) * 365.25) - sample(0:300, 1)),
+      ResidingStateNchs = sample(c(rep("NE", 8), "IA", "ne"), 1), Sex = sample(c("M", "F", "1", "2", "U"), 1), MannerDeath = "N",
+      AcmeUnderlyingCode = sample(c("I21.9", "C34.1", "J44.9", "G30.9", "E11.9"), 1),
+      ImmedCauseDeath = sample(c("atherosclerotic cardiovascular disease", "lung cancer", "digoxin toxicity", ""), 1),
+      IndustryLit = io[1], OccupationLIt = io[2])
 }
-plant("P01", 2022, AcmeUnderlyingCode = "X70", MannerDeath = "S")                       # suicide, sector 23, SOC 47
-plant("P02", 2022, AcmeUnderlyingCode = "X70", ResidingStateNchs = "IA")                 # non-resident: out
-plant("P03", 2022, AcmeUnderlyingCode = "X74", NchsAge = "200", NchsAgeUnit = "2")       # 16 years by months: in
-plant("P04", 2022, AcmeUnderlyingCode = "X74", NchsAge = "999")                          # unknown age: out
-plant("P05", 2022, AcmeUnderlyingCode = "X74", NchsAge = "15")                           # 15: out of 16+
-plant("P06", 2022, AcmeUnderlyingCode = "X42", D2Acme3 = "T40.4")                        # overdose + opioid
-plant("P07", 2022, AcmeUnderlyingCode = "", MannerDeath = "P", ImmedCauseDeath = "Acute Fentanyl Toxicity") # text-only overdose
-plant("P08", 2022, AcmeUnderlyingCode = "X64", MannerDeath = "S", ImmedCauseDeath = "intentional overdose") # suicide, not overdose
-plant("P09", 2022, AcmeUnderlyingCode = "X45", ImmedCauseDeath = "acute ethanol intoxication")   # not overdose
-plant("P10", 2022, AcmeUnderlyingCode = "X47", ImmedCauseDeath = "carbon monoxide toxicity")     # not overdose
-plant("P11", 2022, AcmeUnderlyingCode = "Y87.0")                                         # suicide
-plant("P12", 2022, AcmeUnderlyingCode = "U03")                                           # suicide
-plant("P13", 2022, AcmeUnderlyingCode = "UO3")                                           # letter O: not suicide
-plant("P14", 2022, AcmeUnderlyingCode = "X85", D2SmicarAxis5 = "T40.1", MannerDeath = "H") # MA opioid only
-plant("P15", 2021, AcmeUnderlyingCode = "X72", MannerDeath = "S")                        # also copied into 2022 file
-plant("P16", 2020, AcmeUnderlyingCode = "X72", EventYear = "2019")                       # 2019 in 2020 file: out
-plant("P17", 2022, AcmeUnderlyingCode = "X72", Sex = "1", IndustryLit = "US ARMY", OccupationLIt = "SOLDIER", IndustryCode = "967") # military
-plant("P18", 2022, AcmeUnderlyingCode = "X72", IndustryLit = "", OccupationLIt = "STUDENT", IndustryCode = "") # not in workforce
-plant("P19", 2022, AcmeUnderlyingCode = "X72", IndustryLit = "", OccupationLIt = "", IndustryCode = "")        # not coded
-plant("P20", 2022, AcmeUnderlyingCode = "X72", IndustryLit = "CHILD CARE", OccupationLIt = "CHILD CARE WORKER", IndustryCode = "847") # sector 62, not NIW
-plant("P23", 2021, AcmeUnderlyingCode = "X72", IndustryLit = "USAF", OccupationLIt = "PHOTO INTERPRETER")   # military by NIOCCS special code
-plant("P24", 2021, AcmeUnderlyingCode = "X72", IndustryLit = "INMATE", OccupationLIt = "INMATE")            # not in workforce by NIOCCS special code
-plant("P21", 2022, AcmeUnderlyingCode = "I21.9", MannerDeath = "N", ImmedCauseDeath = "digoxin toxicity") # natural: not overdose
+for (i in 1:3) rows[[length(rows) + 1]] <- list(export = 2021, r = rows[[i]]$r)   # 3 late 2020 deaths repeated in the 2021 export
+for (k in 1:5) add(2021, paste0("ROSTER", k), NA, ResidingStateNchs = NA, Sex = NA, MannerDeath = NA)   # placeholder rows, no dates
 
-rows_by_file <- list()
+# Planted records with a known result.
+# Suicides (22 counted)
+add(2022, "P01", "2022-06-15", AcmeUnderlyingCode = "X70", MannerDeath = "S")                      # suicide, 23 / 47
+add(2022, "P02", "2022-06-15", AcmeUnderlyingCode = "X70", ResidingStateNchs = "IA")                # non-resident: out
+add(2022, "P03", "2022-06-15", AcmeUnderlyingCode = "X74", DateOfBirth = "2006-06-15")             # 16th birthday: in
+add(2022, "P05", "2022-06-15", AcmeUnderlyingCode = "X74", DateOfBirth = "2006-06-16")             # one day short of 16: out
+add(2022, "P08", "2022-06-15", AcmeUnderlyingCode = "X64", MannerDeath = "S", ImmedCauseDeath = "intentional overdose of oxycodone")
+add(2022, "P11", "2022-06-15", AcmeUnderlyingCode = "Y87.0")                                       # suicide
+add(2022, "P12", "2022-06-15", AcmeUnderlyingCode = "U03")                                         # suicide
+add(2022, "P13", "2022-06-15", AcmeUnderlyingCode = "UO3")                                         # letter O: not a suicide
+add(2021, "P15", "2021-12-10", AcmeUnderlyingCode = "X72", MannerDeath = "S")
+rows[[length(rows) + 1]] <- list(export = 2022, r = rows[[length(rows)]]$r)                       # P15 repeated in the 2022 export
+add(2020, "P16", "2019-12-20", AcmeUnderlyingCode = "X72")                                         # 2019 death in the 2020 export: out
+add(2022, "P17", "2022-06-15", AcmeUnderlyingCode = "X72", Sex = "1", IndustryLit = "US ARMY", OccupationLIt = "SOLDIER")  # SOC 55: Military
+add(2022, "P18", "2022-06-15", AcmeUnderlyingCode = "X72", IndustryLit = "", OccupationLIt = "STUDENT")   # text: Not in workforce
+add(2022, "P19", "2022-06-15", AcmeUnderlyingCode = "X72", IndustryLit = "", OccupationLIt = "")          # Not coded, never sent
+add(2022, "P20", "2022-06-15", AcmeUnderlyingCode = "X72", IndustryLit = "CHILD CARE", OccupationLIt = "CHILD CARE WORKER")  # 62 / 39
+add(2021, "P23", "2021-06-15", AcmeUnderlyingCode = "X72", IndustryLit = "USAF", OccupationLIt = "PHOTO INTERPRETER")  # 009680 / 00-9830
+add(2021, "P24", "2021-06-15", AcmeUnderlyingCode = "X72", IndustryLit = "INMATE", OccupationLIt = "INMATE")          # 009890 / 00-9100
+add(2023, "P25", "2023-06-15", AcmeUnderlyingCode = "X72", MannerDeath = "")                       # manner blank: still a suicide
+add(2023, "P26", "2023-06-15", AcmeUnderlyingCode = "X72", Sex = "U")                              # sex U: in T only
+add(2022, "P27", "2022-06-15", AcmeUnderlyingCode = "X72", IndustryLit = "US ARMY", OccupationLIt = "CIVILIAN ACCOUNTANT")  # 928110: 92 / 13
+add(2020, "P28", "2020-06-15", AcmeUnderlyingCode = "X72", IndustryLit = "UNKNOWN", OccupationLIt = "UNKNOWN")        # 009990: Not coded
+add(2024, "P29", "2024-06-15", AcmeUnderlyingCode = "X72", IndustryLit = "RAILROAD", OccupationLIt = "CONDUCTOR")     # not cached: sent
+add(2024, "P30", "2024-06-15", AcmeUnderlyingCode = "X72", IndustryLit = "AMAZON", OccupationLIt = "PICKER")          # CDC error reply
+add(2021, "P31", "2021-06-15", AcmeUnderlyingCode = "X72", IndustryLit = "", OccupationLIt = "RETIRED")               # text: Not in workforce
+add(2022, "P36", "2022-06-15", AcmeUnderlyingCode = "X64", MannerDeath = "S", D2Acme2 = "T40.2")  # suicide and MA opioid
+add(2022, "P40", "2022-06-15", AcmeUnderlyingCode = "X72", Sex = "F")                              # female, 23
+add(2024, "P42", "2024-06-15", AcmeUnderlyingCode = "X72", IndustryLit = "HOSPITAL", OccupationLIt = "NURSE")         # cached error reply
+add(2022, NA, "2022-06-15", AcmeUnderlyingCode = "X72")                                            # blank id: dropped, counted
+add(2022, "P32", "2022-06-15", AcmeUnderlyingCode = "X72", DateOfBirth = "unknown")               # unreadable DOB: dropped
+add(2023, "P33", "2023/13/45", AcmeUnderlyingCode = "X72", DateOfBirth = "1980-01-01")           # unreadable DOD: dropped
+# Overdoses (5 counted; 4 opioid) and MA opioid (6)
+add(2022, "P06", "2022-06-15", AcmeUnderlyingCode = "X42", D2Acme3 = "T40.4", ImmedCauseDeath = "acute fentanyl toxicity")
+add(2020, "D1", "2020-12-31", AcmeUnderlyingCode = "X42", D2Acme1 = "T40.4")                      # date corrected across the year
+add(2021, "D1", "2021-01-01", AcmeUnderlyingCode = "X42", D2Acme1 = "T40.4")                      #   boundary: counted once, in 2021
+add(2021, "D2", "2021-11-20", AcmeUnderlyingCode = "R99", MannerDeath = "P", ImmedCauseDeath = "pending investigation")
+add(2022, "D2", "2021-11-20", AcmeUnderlyingCode = "X42", D2Acme1 = "T40.4", ImmedCauseDeath = "acute fentanyl toxicity")  # finalized
+add(2023, "P34", "2023-06-15", AcmeUnderlyingCode = "Y12", MannerDeath = "C")                      # overdose, not opioid
+add(2024, "P35", "2024-06-15", AcmeUnderlyingCode = "X44", D2SmicarAxis2 = "T40.1")                # overdose + opioid (entity axis)
+add(2022, "P14", "2022-06-15", AcmeUnderlyingCode = "X85", D2SmicarAxis5 = "T40.1", MannerDeath = "H")  # MA opioid only
+# Text: review candidates (2) and non-candidates
+add(2022, "P07", "2022-06-15", AcmeUnderlyingCode = "R99", MannerDeath = "P", ImmedCauseDeath = "Acute Fentanyl Toxicity")  # candidate
+add(2023, "P38", "2023-06-15", AcmeUnderlyingCode = "W19", OtherSignificantConditions = "acute methamphetamine intoxication")  # candidate
+add(2022, "P09", "2022-06-15", AcmeUnderlyingCode = "X45", ImmedCauseDeath = "acute ethanol intoxication")
+add(2022, "P37", "2022-06-15", AcmeUnderlyingCode = "X45", ImmedCauseDeath = "acute ethanol intoxication",
+    OtherSignificantConditions = "history of drug abuse")                                          # words in different fields
+add(2022, "P10", "2022-06-15", AcmeUnderlyingCode = "X47", ImmedCauseDeath = "carbon monoxide toxicity")
+add(2022, "P21", "2022-06-15", AcmeUnderlyingCode = "I21.9", MannerDeath = "N", ImmedCauseDeath = "digoxin toxicity")
+
+# Write each export in its own date format.
 for (yr in 2020:2024) {
-  rows <- lapply(sprintf("%d%04d", yr, 1:40), make_row, yr = yr)
-  rows_by_file[[as.character(yr)]] <- rows
-}
-for (p in planted) rows_by_file[[as.character(p$file_year)]] <- c(rows_by_file[[as.character(p$file_year)]], list(p$row))
-# Overlap: 3 late 2020 deaths repeated in the 2021 file, and planted P15 repeated in 2022.
-rows_by_file[["2021"]] <- c(rows_by_file[["2021"]], rows_by_file[["2020"]][1:3])
-rows_by_file[["2022"]] <- c(rows_by_file[["2022"]], list(planted$P15$row))
-# ROSTER placeholder rows with EventYear 0 in the 2021 export.
-for (k in 1:5) { r <- blank_row(); r$DeathCertificateId <- paste0("ROSTER", k); r$EventYear <- "0"
-  rows_by_file[["2021"]] <- c(rows_by_file[["2021"]], list(r)) }
-
-for (yr in 2020:2024) {
-  df <- bind_rows(lapply(rows_by_file[[as.character(yr)]], as_tibble))
-  df <- df[sample(ncol(df))]                               # column order differs from the keep list
-  dir.create(file.path(dirs$dc, yr), showWarnings = FALSE)
-  if (yr == 2024) {
-    writexl::write_xlsx(df, file.path(dirs$dc, yr, "DeathCertificates24.xlsx"))   # exercises the xlsx branch
-  } else {
-    write_csv(df, file.path(dirs$dc, yr, sprintf("DeathCertificates%02d.csv", yr %% 100)), na = "")
+  df <- bind_rows(lapply(Filter(function(x) x$export == yr, rows), function(x) as_tibble(x$r)))
+  for (v in c("DateOfDeath", "DateOfBirth")) {
+    x <- df[[v]]; ok <- !is.na(x) & grepl("^\\d{4}-\\d{2}-\\d{2}$", x)
+    d <- as.Date(ifelse(ok, x, NA)); serial <- as.numeric(d - as.Date("1899-12-30"))
+    if (yr == 2021) x[ok] <- format(d[ok], "%m/%d/%Y")                # text dates
+    if (yr == 2022) x[ok] <- paste0(serial[ok], ".0")                 # serial with .0
+    if (yr %in% c(2020, 2023)) x[ok] <- as.character(serial[ok])      # serial
+    df[[v]] <- if (yr == 2024) d else x                               # real Excel date cells
   }
+  df <- df[sample(ncol(df))]                                          # column order differs by export
+  dir.create(file.path(dc_dir, yr), showWarnings = FALSE)
+  if (yr == 2024) writexl::write_xlsx(df, file.path(dc_dir, yr, "DeathCertificates24.xlsx"))
+  else write_csv(df, file.path(dc_dir, yr, sprintf("DeathCertificates%02d.csv", yr %% 100)), na = "")
 }
 
 # ---------------------------------------------------------------------
-# 2. Fake NIOCCS cache (field names as the team's scripts use them)
+# 2. Fake NIOCCS cache (codes stored, as v3/v4 wrote them) and fake CDC GET
 # ---------------------------------------------------------------------
-nioccs_reply <- tribble(~IndustryLit, ~OccupationLIt, ~NAICSCode, ~SOCCode,
-  "CONSTRUCTION", "CARPENTER", "236118", "47-2031",   "MEAT PACKING", "MEAT CUTTER", "311611", "51-3023",
-  "FARM", "FARMER", "111998", "11-9013",               "HOSPITAL", "NURSE", "622110", "29-1141",
-  "", "STUDENT", "", "00-0000",                         "", "RETIRED", "999999", "00-0000",
-  "US ARMY", "SOLDIER", "928110", "55-3016",            "NEVER WORKED", "NEVER WORKED", "", "",
-  "USAF", "PHOTO INTERPRETER", "009680", "00-9830",      "INMATE", "INMATE", "009890", "00-9100",
-  "TRUCKING", "TRUCK DRIVER", "484121", "53-3032",     "RETAIL", "CASHIER", "445110", "41-2011",
-  "SCHOOL", "TEACHER", "611110", "25-2021",             "HOMEMAKER", "HOMEMAKER", "", "",
-  "UNKNOWN", "UNKNOWN", "", "",                         "CHILD CARE", "CHILD CARE WORKER", "624410", "39-9011")
-# RAILROAD / CONDUCTOR is left out on purpose: it should be reported as not yet coded.
-cache <- nioccs_reply %>% rowwise() %>%
-  mutate(raw = as.character(toJSON(list(Industry = list(list(NAICSCode = NAICSCode, Title = "x")),
-                                        Occupation = list(SOCCode = SOCCode, Title = "y")), auto_unbox = TRUE))) %>% ungroup() %>%
-  mutate(NAICSCode = "", SOCCode = "") %>% select(IndustryLit, OccupationLIt, NAICSCode, SOCCode, raw)   # codes blank on purpose: re-parsed from raw
-write_csv(cache, file.path(dirs$cache, "nioccs_cache_v3.csv"), na = "")
+reply <- function(naics, soc) sprintf('{"Industry":[{"NAICSCode":"%s","NAICSTitle":"x"}],"Occupation":[{"SOCCode":"%s","SOCTitle":"y"}]}', naics, soc)
+cache <- tribble(~IndustryLit, ~OccupationLIt, ~NAICSCode, ~SOCCode,
+  "CONSTRUCTION", "CARPENTER", "236118", "47-2031",    "FARM", "FARMER", "111998", "11-9013",
+  "SCHOOL", "TEACHER", "611110", "25-2021",             "", "STUDENT", "", "00-0000",
+  "", "RETIRED", "999999", "00-0000",                   "US ARMY", "SOLDIER", "928110", "55-3016",
+  "US ARMY", "CIVILIAN ACCOUNTANT", "928110", "13-2011", "USAF", "PHOTO INTERPRETER", "009680", "00-9830",
+  "INMATE", "INMATE", "009890", "00-9100",              "UNKNOWN", "UNKNOWN", "009990", "00-9900",
+  "CHILD CARE", "CHILD CARE WORKER", "624410", "39-9011") %>% mutate(raw = reply(NAICSCode, SOCCode))
+cache <- bind_rows(cache, tibble(IndustryLit = "HOSPITAL", OccupationLIt = "NURSE", NAICSCode = "", SOCCode = "",
+                                 raw = '{"Message":"An error has occurred."}'))   # an error reply v4 cached
+write_csv(cache, file.path(cache_dir, "nioccs_cache_v3.csv"), na = "")
+nioccs_calls <- character()
+GET <- function(url, query, ...) {            # found before httr::GET because it sits in the global environment
+  nioccs_calls <<- c(nioccs_calls, paste(query$i, "/", query$o))
+  body <- if (query$i == "RAILROAD") reply("482111", "53-4031") else "<html>An error has occurred.</html>"
+  structure(list(url = url, status_code = 200L, headers = list(`content-type` = "application/json"), content = charToRaw(body)), class = "response")
+}
 
 # ---------------------------------------------------------------------
 # 3. Fake ACS tables, same shape and labels as the real C24030 / C24010
-#    (labels as believed correct; see docs/script-audit.md)
 # ---------------------------------------------------------------------
 c24030_lines <- c("Agriculture, forestry, fishing and hunting, and mining:",
   "  Agriculture, forestry, fishing and hunting", "  Mining, quarrying, and oil and gas extraction",
@@ -184,96 +172,138 @@ c24010_lines <- c("Management, business, science, and arts occupations:",
   "  Construction and extraction occupations", "  Installation, maintenance, and repair occupations",
   "Production, transportation, and material moving occupations:", "  Production occupations",
   "  Transportation occupations", "  Material moving occupations")
-
-# Build "Estimate!!Total:!!Male:!!Parent:!!Leaf" labels from the indented
-# outline, give each leaf a random estimate, and make parents the sum.
-fake_acs <- function(table_id, lines) {
+fake_acs <- function(table_id, lines) {     # "Estimate!!Total:!!Male:!!Parent:!!Leaf"; parents are the sum of their leaves
   out <- tibble(label = "Estimate!!Total:", estimate = 0)
   for (sx in c("Male", "Female")) {
     out <- bind_rows(out, tibble(label = paste0("Estimate!!Total:!!", sx, ":"), estimate = 0))
     path <- character()
     for (ln in lines) {
       depth <- (nchar(ln) - nchar(sub("^ +", "", ln))) / 2
-      name <- sub("^ +", "", ln)
-      path <- c(path[seq_len(depth)], name)
+      path <- c(path[seq_len(depth)], sub("^ +", "", ln))
       out <- bind_rows(out, tibble(label = paste0("Estimate!!Total:!!", sx, ":!!", paste(path, collapse = "!!")), estimate = 0))
     }
   }
   is_leaf <- sapply(out$label, function(l) !any(startsWith(out$label, paste0(l, "!!"))))
   out$estimate[is_leaf] <- sample(2000:60000, sum(is_leaf), replace = TRUE)
   for (i in which(!is_leaf)) out$estimate[i] <- sum(out$estimate[is_leaf & startsWith(out$label, paste0(out$label[i], "!!"))])
-  out %>% mutate(table = table_id, dataset = "acs5", year = 2024,
-                 variable = sprintf("%s_%03dE", table_id, row_number()), moe = round(sqrt(estimate) * 10)) %>%
-    select(table, dataset, year, variable, label, estimate, moe)
+  out %>% mutate(variable = sprintf("%s_%03d", table_id, row_number()), moe = round(sqrt(estimate) * 10)) %>% select(variable, label, estimate, moe)
 }
-acs_c24030 <- fake_acs("C24030", c24030_lines)
-acs_c24010 <- fake_acs("C24010", c24010_lines)
-stopifnot(nrow(acs_c24030) == 55, nrow(acs_c24010) == 73)   # 55 and 73 variables, as in the real tables
-bind_rows(acs_c24030, acs_c24010) %>% mutate(variable = sub("E$", "", variable)) %>%
-  select(variable, label, estimate, moe) %>% write_csv(file.path(dirs$cache, "acs_2024.csv"))
+acs <- bind_rows(fake_acs("C24030", c24030_lines), fake_acs("C24010", c24010_lines))
+stopifnot(nrow(acs) == 55 + 73)                                   # 55 and 73 variables, as in the real tables
+write_csv(acs, file.path(cache_dir, "acs_2024.csv"))
 
 # ---------------------------------------------------------------------
-# 4. Run the real script against the fake data
+# 4. Run v5 against the fake data (the options point it at the temp folders)
 # ---------------------------------------------------------------------
-options(io_death_rates.test_cfg = list(dc_dir = dirs$dc, out_dir = dirs$out, cache_dir = dirs$cache,
-                                       acs_dir = dirs$acs, run_nioccs = FALSE))
-files_before <- list.files(root, recursive = TRUE)
+options(io_v5_dc_dir = dc_dir, io_v5_work_dir = work)
+files_before <- list.files(work, recursive = TRUE)
 env <- new.env()
-sys.source(file.path("scripts", "io_death_rates_v4.R"), envir = env)
+sys.source(file.path("scripts", "io_death_rates_v5.R"), envir = env)
+stamp <- format(Sys.Date(), "%Y%m%d")
 
 # ---------------------------------------------------------------------
 # 5. Checks
 # ---------------------------------------------------------------------
 fails <- character()
 check <- function(ok, what) { cat(ifelse(isTRUE(ok), "PASS ", "FAIL "), what, "\n"); if (!isTRUE(ok)) fails <<- c(fails, what) }
-d <- env$deaths; cs <- env$cases
-row_of <- function(id) d[d$DeathCertificateId == id, ]
+d <- env$deaths; cs <- env$cases; tb <- env$tables
+row_of <- function(id) d[d$DeathCertificateId %in% id, ]
 grp <- function(id, col) cs[[col]][cs$DeathCertificateId == id]
+cell <- function(o, g, grp_name, sx) { x <- tb$deaths[tb$outcome == o & tb$grouping == g & tb$group == grp_name & tb$sex == sx]; if (length(x)) x else NA }
 
-check(nrow(row_of("P01")) == 1 && row_of("P01")$suicide, "P01 X70 is a suicide")
-check(nrow(row_of("P02")) == 0, "P02 non-resident dropped")
-check(nrow(row_of("P05")) == 0, "P05 age 15 dropped")
-check(row_of("P06")$overdose && row_of("P06")$overdose_opioid, "P06 X42 + T40.4 = overdose, opioid")
-check(row_of("P07")$overdose && row_of("P07")$overdose_text_only, "P07 text-only overdose counted and flagged")
-check(row_of("P08")$suicide && !row_of("P08")$overdose, "P08 X64 suicide by overdose is suicide, not SUDORS overdose")
-check(!row_of("P09")$overdose, "P09 ethanol only is not an overdose")
-check(!row_of("P10")$overdose, "P10 carbon monoxide is not an overdose")
-check(row_of("P11")$suicide, "P11 Y87.0 with a dot is a suicide")
-check(row_of("P12")$suicide, "P12 U03 is a suicide")
-check(!row_of("P13")$suicide, "P13 UO3 (letter O) is not a suicide")
+# Reading and dedup
+check(all(d$year %in% 2020:2024) && !any(grepl("^ROSTER", d$DeathCertificateId)), "years come from DateOfDeath; ROSTER rows dropped")
+check(env$n_blank_id == 1, "blank-id row dropped and counted (1)")
+check(nrow(env$dc) - n_distinct(env$dc$DeathCertificateId) == 6, "6 overlap copies dropped (3 filler, P15, D1, D2)")
+check(env$n_year_moved == 1, "1 id whose year moved between exports (D1)")
+check(env$n_bad_dod == 1 && env$n_bad_dob == 1, "unreadable DateOfDeath (P33) and DateOfBirth (P32) counted")
+check(nrow(row_of("D1")) == 1 && row_of("D1")$year == 2021 && row_of("D1")$export == 2021, "D1 counted once, in 2021 (latest export)")
+check(nrow(row_of("D2")) == 1 && row_of("D2")$overdose && row_of("D2")$overdose_opioid, "D2 pending R99 replaced by final X42 + T40.4")
 check(sum(d$DeathCertificateId == "P15") == 1, "P15 overlap copy counted once")
-check(nrow(row_of("P16")) == 0, "P16 year 2019 dropped")
-check(!any(grepl("^ROSTER", d$DeathCertificateId)), "ROSTER rows dropped")
-check(row_of("P17")$sex == "M", "P17 Sex 1 = M")
-check(grp("P17", "ind_group") == "Military", "P17 US ARMY = Military")
-check(grp("P18", "ind_group") == "Not in workforce", "P18 STUDENT = Not in workforce")
-check(grp("P19", "ind_group") == "Not coded", "P19 blank text = Not coded")
-check(grp("P20", "ind_group") == "62", "P20 CHILD CARE = sector 62, not Not in workforce")
-check(grp("P23", "ind_group") == "Military" && grp("P23", "occ_group") == "Military", "P23 USAF 009680 / 00-9830 = Military")
-check(grp("P24", "ind_group") == "Not in workforce", "P24 INMATE 009890 / 00-9100 = Not in workforce")
-check(file.exists(file.path(dirs$out, sprintf("suicide_2020_2021_vs_nevdrs_%s.csv", format(Sys.Date(), "%Y%m%d")))), "2020-2021 NEVDRS cut written")
-check(!row_of("P21")$overdose, "P21 natural digoxin toxicity is not an overdose")
+check(nrow(row_of(c("P02", "P05", "P16", "P32", "P33"))) == 0, "non-resident, age 15, 2019 death, unreadable dates: out")
+check(nrow(row_of("P03")) == 1 && row_of("P03")$age == 16, "P03 died on 16th birthday: in, age 16")
+check(all(d$year[d$export == 2021 & d$DeathCertificateId %in% c("P23", "P24", "P31")] == 2021), "m/d/Y text dates read (2021 CSV)")
+check(sum(d$export == 2024) > 0 && all(!is.na(d$age[d$export == 2024])), "xlsx Excel date cells read (2024)")
+# Outcomes
+check(sum(d$suicide) == 22, "22 suicides")
+check(sum(d$overdose) == 5, "5 overdoses (ICD only)")
+check(sum(d$overdose_opioid) == 4, "4 opioid overdoses")
+check(sum(d$opioid_ma_def) == 6, "6 MA-definition opioid deaths")
+check(sum(d$text_candidate) == 2 && all(c("P07", "P38") %in% d$DeathCertificateId[d$text_candidate]), "2 text-only candidates (P07, P38)")
+check(!row_of("P07")$overdose, "P07 text-only fentanyl toxicity is NOT counted as an overdose")
+check(!any(d$text_candidate[d$DeathCertificateId %in% c("P08", "P09", "P37", "P10", "P21", "P06")]), "P08 P09 P37 P10 P21 P06 are not candidates")
+check(row_of("P08")$suicide && !row_of("P08")$overdose, "P08 X64 is suicide, not overdose")
+check(row_of("P25")$suicide, "P25 suicide with manner blank")
+check(row_of("P11")$suicide && row_of("P12")$suicide && !row_of("P13")$suicide, "Y87.0 and U03 suicide; UO3 not")
+check(row_of("P36")$suicide && row_of("P36")$opioid_ma_def && !row_of("P36")$overdose, "P36 X64 + T40.2: suicide and MA opioid, not SUDORS")
+check(row_of("P14")$opioid_ma_def && !row_of("P14")$overdose, "P14 X85 + T40.1: MA opioid only")
+check(!row_of("P34")$overdose_opioid && row_of("P34")$overdose, "P34 Y12 without T40: overdose, not opioid")
+check(row_of("P35")$overdose_opioid, "P35 T40.1 on the entity axis: opioid overdose")
+# NIOCCS and groups
+check(identical(nioccs_calls, c("RAILROAD / CONDUCTOR", "AMAZON / PICKER")), "NIOCCS sent only the 2 uncached pairs")
+check(env$n_unusable == 1 && env$n_cached_no_codes == 1, "error reply not usable (1); cached error reply counted (1)")
+new_cache <- read_csv(file.path(cache_dir, "nioccs_cache_v3.csv"), col_types = cols(.default = "c"), na = character())
+check(nrow(new_cache) == nrow(cache) + 1 && "RAILROAD" %in% new_cache$IndustryLit && !"AMAZON" %in% new_cache$IndustryLit,
+      "RAILROAD reply saved; AMAZON error page not saved")
+check(grp("P29", "ind_group") == "48-49" && grp("P29", "occ_group") == "53", "P29 RAILROAD = 48-49 / 53")
+check(grp("P30", "ind_group") == "Not coded" && grp("P42", "ind_group") == "Not coded", "P30 and P42 (no usable reply) = Not coded")
 check(grp("P01", "ind_group") == "23" && grp("P01", "occ_group") == "47", "P01 sector 23, SOC 47")
-check(env$qa$text_pairs_not_coded >= 1, "uncached pair (RAILROAD) reported as not yet coded")
-check(isTRUE(env$qa$group_rows_sum_to_totals), "group rows add up to case totals in every table")
-check(n_distinct(env$den_ind$group) == 21 && n_distinct(env$den_occ$group) == 23, "20 sectors and 22 SOC groups plus All workers")
-check(env$den_ind$workers[env$den_ind$group == "All workers" & env$den_ind$sex == "T"] == env$acs_total_ind, "ACS industry leaves add to C24030_001")
-check(env$den_occ$workers[env$den_occ$group == "All workers" & env$den_occ$sex == "T"] == env$acs_total_occ, "ACS occupation leaves add to C24010_001")
-t <- env$tables_raw$suicide_industry %>% filter(sex == "T", group == "All workers")
-check(abs(t$rate - t$deaths / (t$workers * 5) * 1e5) < 1e-9, "rate = deaths / (workers x 5) x 100,000")
-check(abs(t$rate_lo - qchisq(0.025, 2 * t$deaths) / 2 / (t$workers * 5) * 1e5) < 1e-9, "exact Poisson lower limit")
-pct <- env$tables_raw$suicide_industry %>% filter(sex == "M", group != "All workers") %>% pull(pct_of_deaths)
-check(abs(sum(pct) - 100) < 1e-9, "percent of deaths sums to 100 within a sex")
-check("injury_at_work_industry" %in% names(env$tables) && "pneumoconiosis_occupation" %in% names(env$tables), "extra outcomes from the table are produced")
+check(grp("P17", "ind_group") == "Military" && grp("P17", "occ_group") == "Military", "P17 SOC 55 = Military")
+check(grp("P23", "ind_group") == "Military" && grp("P23", "occ_group") == "Military", "P23 009680 / 00-9830 = Military")
+check(grp("P27", "ind_group") == "92" && grp("P27", "occ_group") == "13", "P27 DoD civilian 928110 / 13-2011 = sector 92, SOC 13")
+check(grp("P24", "ind_group") == "Not in workforce" && grp("P24", "occ_group") == "Not in workforce", "P24 009890 / 00-9100 = Not in workforce")
+check(grp("P18", "ind_group") == "Not in workforce" && grp("P31", "ind_group") == "Not in workforce", "STUDENT and RETIRED text = Not in workforce")
+check(grp("P28", "ind_group") == "Not coded" && grp("P19", "ind_group") == "Not coded", "009990 / 00-9900 and blank text = Not coded")
+check(grp("P20", "ind_group") == "62" && grp("P20", "occ_group") == "39", "P20 CHILD CARE = 62 / 39")
+# Tables
+check(!any(tb$sex == "U") && all(c("M", "F", "T") %in% tb$sex), "no sex U rows; M, F and T present")
+check(!"rr" %in% names(tb) && all(tb$grouping %in% c("industry", "occupation")), "no rate ratio column; grouping column says industry or occupation")
+check(all(env$sums$ok) && nrow(env$sums) == 8, "sums check: T rows equal flagged cases in all 8 tables")
+check(cell("suicide", "industry", "All workers", "T") == 13 && cell("suicide", "industry", "All workers", "M") == 11 &&
+      cell("suicide", "industry", "All workers", "F") == 1, "suicide All workers T 13, M 11, F 1 (U only in T)")
+check(cell("suicide", "industry", "23", "T") == 10 && cell("suicide", "industry", "23", "M") == 8, "suicide sector 23: T 10, M 8")
+check(cell("suicide", "industry", "Military", "T") == 2 && cell("suicide", "industry", "Not in workforce", "T") == 3 &&
+      cell("suicide", "industry", "Not coded", "T") == 4, "suicide Military 2, Not in workforce 3, Not coded 4")
+check(cell("suicide", "industry", "92", "T") == 1 && cell("suicide", "occupation", "13", "T") == 1, "DoD civilian counted in 92 and SOC 13")
+check(cell("overdose", "industry", "23", "T") == 5 && cell("overdose_opioid", "occupation", "47", "T") == 4 &&
+      cell("opioid_ma_def", "industry", "23", "T") == 6, "overdose 5, opioid 4, MA 6 in sector 23 / SOC 47")
+t <- tb %>% filter(outcome == "suicide", grouping == "industry", sex == "T", group == "All workers")
+check(abs(t$rate - 13 / (t$workers * 5) * 1e5) < 1e-9, "rate = deaths / (workers x 5) x 100,000")
+check(abs(t$rate_lo - qchisq(0.025, 26) / 2 / (t$workers * 5) * 1e5) < 1e-9 && abs(t$rate_hi - qchisq(0.975, 28) / 2 / (t$workers * 5) * 1e5) < 1e-9,
+      "exact Poisson 95% limits")
+pct <- tb %>% filter(outcome == "suicide", grouping == "industry", sex == "T", group != "All workers") %>% pull(pct_of_deaths)
+check(abs(sum(pct) - 100) < 1e-9, "percent of deaths sums to 100")
+check(all(is.na(tb$rate[tb$group %in% c("Military", "Not in workforce", "Not coded")])), "no rate on Military / Not in workforce / Not coded")
+check(sum(env$den$workers[env$den$group == "All workers" & env$den$sex == "T" & env$den$table == "C24030"]) ==
+      acs$estimate[acs$variable == "C24030_001"], "ACS industry leaves add to C24030_001")
+check(n_distinct(env$den$group[env$den$table == "C24030"]) == 21 && n_distinct(env$den$group[env$den$table == "C24010"]) == 23,
+      "20 sectors and 22 SOC groups plus All workers")
+r <- env$recon
+check(r$deaths[r$group == "Not in workforce"] == 2 && r$deaths[r$group == "23"] == 1 && r$nevdrs_sheet[r$group == "23"] == 72,
+      "2020-2021 suicide cut: Not in workforce 2, construction 1, NEVDRS 72 beside it")
+# Files
+new_files <- setdiff(list.files(work, recursive = TRUE), files_before)
+expect <- c(paste0("Output/io_death_rates_", stamp, ".csv"), paste0("Output/suicide_2020_2021_vs_nevdrs_", stamp, ".csv"),
+            paste0("Cache/qa_", stamp, ".txt"), paste0("Cache/cases_", stamp, ".csv"), paste0("Cache/review_", stamp, ".csv"))
+check(setequal(new_files, expect), "wrote exactly the 2 Output tables and the QA, case and review files in Cache")
+review <- read_csv(file.path(cache_dir, paste0("review_", stamp, ".csv")), col_types = cols(.default = "c"))
+check(setequal(review$DeathCertificateId, c("P07", "P38")), "review list holds P07 and P38")
+out <- read_csv(file.path(work, "Output", paste0("io_death_rates_", stamp, ".csv")), col_types = cols(.default = "c"))
+check(any(as.numeric(out$deaths) %in% 1:5), "small counts are written, not suppressed")
+check(!any(grepl("PERSON|^P[0-9]|^D[12]$", unlist(lapply(list.files(file.path(work, "Output"), full.names = TRUE), readLines)))),
+      "no certificate ids or names in Output")
+qa <- readLines(file.path(cache_dir, paste0("qa_", stamp, ".txt")))
+check(any(grepl("text_candidates_not_counted", qa)) && !any(grepl("more variable", qa)), "QA file shows every column, including text candidates")
 
-outs <- list.files(dirs$out, pattern = "\\.csv$", full.names = TRUE)
-all_out <- bind_rows(lapply(outs, read_csv, show_col_types = FALSE, col_types = cols(.default = "c")))
-dn <- suppressWarnings(as.numeric(all_out$deaths))
-check(any(dn >= 1 & dn <= 5, na.rm = TRUE), "small counts are written, not suppressed")
-check(all(is.na(all_out$rate[all_out$group %in% c("Military", "Not in workforce", "Not coded")])), "no rate on non-rate rows")
-new_files <- setdiff(list.files(root, recursive = TRUE), files_before)
-check(all(startsWith(new_files, "Cache/") | startsWith(new_files, "Output/")), "script wrote only to Output and Cache")
-check(!any(grepl("DeathCertificateId|PERSON", unlist(lapply(outs, readLines)))), "no certificate ids or names in Output")
+# ---------------------------------------------------------------------
+# 6. Second run: an ACS leaf missing from the map must stop the run; no pair is re-sent
+# ---------------------------------------------------------------------
+nioccs_calls <- character()
+acs$label <- sub("oil and gas extraction$", "oil and gas extraction industries", acs$label)
+write_csv(acs, file.path(cache_dir, "acs_2024.csv"))
+msg <- tryCatch({ sys.source(file.path("scripts", "io_death_rates_v5.R"), envir = new.env()); "no error" }, error = function(e) conditionMessage(e))
+check(grepl("not in acs_group_map.csv", msg) && grepl("extraction industries", msg), "unmapped ACS leaf stops the run and names it")
+check(identical(nioccs_calls, "AMAZON / PICKER"), "second run re-sends only the pair whose reply was not usable (RAILROAD not re-sent)")
 
 cat("\n", length(fails), "failures\n")
 if (length(fails) > 0) stop("Synthetic run failed: ", paste(fails, collapse = "; "))
