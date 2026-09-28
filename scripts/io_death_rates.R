@@ -107,9 +107,20 @@ deaths <- deaths_raw %>%
          NchsAge     = suppressWarnings(as.numeric(NchsAge)),
          NchsAgeUnit = suppressWarnings(as.integer(NchsAgeUnit)))
 
+# Load diagnostics: row counts after each filter and the commonest values of
+# the two filter fields. Aggregate only, never a record. If deaths come out
+# as 0, these lines say why.
+top_vals <- function(x, n = 6) { t <- sort(table(coalesce(as.character(x), "<NA>")), decreasing = TRUE); paste(names(t)[1:min(n, length(t))], t[1:min(n, length(t))], sep = "=", collapse = ", ") }
+message("Load diagnostics: rows read ", nrow(deaths_raw))
+message("  EventYear top values (raw text): ", top_vals(deaths_raw$EventYear))
+message("  EventYear after as.integer: ", top_vals(deaths$EventYear))
+message("  ResidingStateNchs top values: ", top_vals(deaths_raw$ResidingStateNchs))
+message("  NchsAgeUnit top values: ", top_vals(deaths_raw$NchsAgeUnit), "; NchsAge NA after numeric: ", sum(is.na(deaths$NchsAge)))
+
 # DC template line 25, OHIs line 378: keep the requested years. This also
 # drops the 5 ROSTER placeholder rows (EventYear 0) in the 2021 export.
 deaths <- deaths %>% filter(EventYear %in% cfg$years)
+message("  rows after year filter: ", nrow(deaths))
 
 # DC template line 28 (proc sort nodupkey by DeathCertificateId EventYear):
 # one row per certificate. Yearly exports overlap by 53 to 66 late deaths
@@ -122,6 +133,7 @@ ids_in_two_years <- deaths %>% count(DeathCertificateId) %>% filter(n > 1) %>% n
 if (cfg$ne_residents_only) {
   deaths <- deaths %>% filter(toupper(coalesce(ResidingStateNchs, "")) == "NE")
 }
+message("  rows after resident filter: ", nrow(deaths))
 
 # OHIs lines 382 to 386 (same as DC template lines 70 to 75): age in years.
 # Unit 1 years, 2 months, 3 weeks, 4 to 6 days/hours/minutes, 9 unknown;
