@@ -92,7 +92,7 @@ server <- function(input, output, session) {
         # Construct base API call for each selected year without industry-specific parameters
         base_url <- paste0("https://api.census.gov/data/timeseries/qwi/", input$data_type, "?get=", 
                            input$indicator, "&for=state:31", "&year=", year, "&quarter=", input$quarter, 
-                           "&key=fda55d10ae1222ea2b997924b0baee5d4185a81a")
+                           "&key=REDACTED")
         
         # Add dynamic parameters based on data type
         if (input$data_type == "sa") {
@@ -129,7 +129,7 @@ server <- function(input, output, session) {
           # Construct base API call for each selected year and industry
           base_url <- paste0("https://api.census.gov/data/timeseries/qwi/", input$data_type, "?get=", 
                              input$indicator, "&for=state:31", "&year=", year, "&quarter=", input$quarter, 
-                             "&industry=", industry, "&key=fda55d10ae1222ea2b997924b0baee5d4185a81a")
+                             "&industry=", industry, "&key=REDACTED")
           
           # Add dynamic parameters based on data type
           if (input$data_type == "sa") {
