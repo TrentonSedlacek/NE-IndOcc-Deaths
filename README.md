@@ -12,6 +12,7 @@ Start with docs/project-brief.md for context, the people involved, what the coll
 | docs/web-captures/ | Verbatim saves of NE DHHS, CDC, WISQARS, and Census web pages (one file per page, duplicates removed, source URL and capture date at top) |
 | docs/meetings/ | Meeting transcripts |
 | docs/nevdrs-sectors-factsheet-review.md | Review of Can's unpublished suicide-by-sector fact sheet (population denominators, unstated sector method, tract maps) |
+| docs/analysis-plan.md | The plan: inputs, ten steps, decisions needed, quality checks, effort |
 | docs/provenance-comparison.md | Provenance of all ten suicide and overdose analyses in view, side-by-side table, what is most common, and the shared pipeline for the OHIs sub-indicator and the NEVDRS check |
 | docs/acs-denominator-spec.md | Denominator decision (likely ACS employed workers): tables, years, rate arithmetic, numerator rules, FTE option |
 | scripts/fetch_acs_denominators.py | Pulls Nebraska ACS C24030 and C24010 into data/denominators/ (needs api.census.gov access) |
