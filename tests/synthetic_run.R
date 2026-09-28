@@ -270,12 +270,12 @@ check(abs(t2$worker_years - 2 * t2$workers) < 1e-9, "2020-2021 table uses worker
 pct <- env$tables_raw$suicide_ind %>% filter(sex == "M", group != "All workers") %>% pull(pct_of_all_deaths)
 check(abs(sum(pct) - 100) < 1e-9, "percent of all deaths sums to 100 within a sex")
 
-# Suppression: no published count or rate for 1 to 5 deaths.
+# No suppression: every count, including 1 to 5, is written as is.
 outs <- list.files(dirs$out, pattern = "\\.csv$", full.names = TRUE)
 all_out <- bind_rows(lapply(outs, read_csv, show_col_types = FALSE, col_types = cols(.default = "c")))
 dn <- suppressWarnings(as.numeric(all_out$deaths))
-check(!any(dn >= 1 & dn <= 5, na.rm = TRUE), "no count of 1 to 5 in Output")
-check(all(is.na(all_out$rate[all_out$flag == "suppressed"])), "no rate on suppressed rows")
+check(any(dn >= 1 & dn <= 5, na.rm = TRUE), "small counts are written, not suppressed")
+check(!("flag" %in% names(all_out)) || !any(all_out$flag %in% c("suppressed"), na.rm = TRUE), "no suppressed flag exists")
 check(all(is.na(all_out$rate[all_out$group %in% c("Military", "Not in workforce", "Not coded")])), "no rate on non-rate rows")
 
 # Record-level output only in Cache.

@@ -6,7 +6,7 @@
 # One script, top to bottom. Sections:
 #   0 config      1 load deaths     2 flag outcomes    3 NIOCCS coding
 #   4 cert-code cross-check         5 ACS denominators 6 rates
-#   7 suppression                   8 QA checks        9 write
+#   7 (no suppression; see CLAUDE.md)  8 QA checks   9 write
 #
 # Provenance: every death-certificate rule copies a line in SAS that the
 # team already uses.
@@ -22,8 +22,8 @@
 # never write it in this file.
 #
 # Where record-level data goes: only the Cache folder (NIOCCS replies,
-# manual review list, QA counts). The Output folder gets suppressed
-# aggregate tables only. Nothing prints a record to the console.
+# manual review list, QA counts). The Output folder gets aggregate
+# tables only, with full counts: NO suppression at this stage. Nothing prints a record to the console.
 # =====================================================================
 
 suppressPackageStartupMessages({
@@ -46,8 +46,6 @@ cfg <- list(
   acs_dir      = "K:/Occupational Health Grant/Trenton Sedlacek/IO-Death-Rates/Denominators",
   acs_year     = 2024,          # ACS 5-year ending year: 2020-2024 window
   min_age      = 16,            # OHIs line 412: age ge 16 (worker denominator)
-  suppress_floor = 6,           # OHIs line 64 and 931: counts 1 to 5 are not published
-  unstable_below = 20,          # OHIs line 932: fewer than 20 events flagged unstable
   ne_residents_only = TRUE,     # DC template line 68, OHIs line 379
   # Sending I/O text to CDC needs Derry's data use agreement answer (plan
   # section 4). Leave FALSE until then; the cache is reused either way.
@@ -638,30 +636,19 @@ tables <- list(
   suicide_ind_2020_2021 = build_table("suicide", "ind_group", den_ind, sector_labels, check_yrs))
 
 # ---------------------------------------------------------------------
-# 7. SUPPRESSION. OHIs line 931 (1 to 5 events: value blanked) and
-#    line 932 (else fewer than 20: unstable). Here the count itself and its
-#    percent are blanked too, because these tables print the count.
-#    Non-rate rows keep their counts (subject to the same floor) but never
-#    get a rate.
+# 7. NO SUPPRESSION. Full counts and rates everywhere, on purpose.
+#    Suppression is applied only at the moment something goes to the
+#    public, in a separate step, never inside the analysis. Non-rate rows
+#    (military, not in workforce, not coded) keep counts and get no rate.
 # ---------------------------------------------------------------------
-suppress <- function(tab) {
-  tab %>% mutate(
-    nonrate    = group %in% nonrate_groups,
-    suppressed = deaths >= 1 & deaths < cfg$suppress_floor,
-    flag = case_when(suppressed ~ "suppressed",
-                     nonrate    ~ "",
-                     deaths < cfg$unstable_below ~ "unstable",
-                     TRUE ~ ""),
-    across(c(workers, workers_moe90, worker_years, rate, rate_lo, rate_hi, rr, rr_lo, rr_hi), ~ ifelse(nonrate, NA, .x)),
-    across(c(deaths, pct_of_all_deaths, rate, rate_lo, rate_hi, rr, rr_lo, rr_hi), ~ ifelse(suppressed, NA, .x))) %>%
-    select(-nonrate, -suppressed)
-}
-tables_raw <- tables                        # unsuppressed, for the QA checks only; never written
-tables     <- lapply(tables, suppress)
+tables <- lapply(tables, function(tab) tab %>%
+  mutate(across(c(workers, workers_moe90, worker_years, rate, rate_lo, rate_hi, rr, rr_lo, rr_hi),
+                ~ ifelse(group %in% nonrate_groups, NA, .x))))
+tables_raw <- tables
 
 # ---------------------------------------------------------------------
 # 8. QA CHECKS (plan section 5). Printed; the run is not done until all pass.
-#    Counts here are NOT suppressed, so this goes to Cache, not Output.
+#    Written to Cache alongside the review list.
 # ---------------------------------------------------------------------
 by_year_16plus <- deaths %>% group_by(EventYear) %>%
   summarise(suicide = sum(suicide), overdose = sum(overdose), overdose_opioid = sum(overdose_opioid), .groups = "drop")
@@ -707,8 +694,8 @@ message("Reference totals to compare by hand (all ages): NEVDRS dashboard suicid
         "SUDORS 2021-2022 combined 366. Compare them with deaths_by_year_all_ages_residents.")
 
 # ---------------------------------------------------------------------
-# 9. WRITE. Output gets suppressed aggregate tables and a methods note.
-#    QA counts (unsuppressed) go to Cache. No record-level output leaves Cache.
+# 9. WRITE. Output gets the aggregate tables (full counts) and a methods note.
+#    QA counts go to Cache. No record-level output leaves Cache.
 # ---------------------------------------------------------------------
 stamp <- format(Sys.Date(), "%Y%m%d")
 for (nm in names(tables)) write_csv(tables[[nm]], file.path(cfg$out_dir, sprintf("%s_%s.csv", nm, stamp)), na = "")
@@ -720,7 +707,7 @@ writeLines(c(sprintf("io_death_rates.R run %s", Sys.time()),
              "Suicide: underlying X60-X84, Y87.0, U03.",
              "Overdose: SUDORS (underlying X40-X44, Y10-Y14, or overdose text on a death not ruled suicide, homicide or natural).",
              "Opioid: T40.0-T40.4, T40.6 in any multiple-cause field. MA all-intent opioid as a separate table.",
-             "Residents, age 16+, one row per certificate and event year. NIOCCS coding of usual industry and occupation text.",
-             sprintf("Suppression: counts and rates blank for 1 to %d deaths; unstable under %d.", cfg$suppress_floor - 1, cfg$unstable_below)),
+             "Residents, age 16+, one row per certificate and event year. NIOCCS coding of usual industry and occupation text."),
+             "No suppression applied. Apply the DHHS floor only when a table is released to the public."),
            file.path(cfg$out_dir, sprintf("methods_%s.txt", stamp)))
 message("Done. Tables in ", cfg$out_dir, "; QA and review list in ", cfg$cache_dir)

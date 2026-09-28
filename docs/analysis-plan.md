@@ -9,7 +9,7 @@ Two tables, same layout, one per outcome:
 - Suicide deaths by industry sector and by occupation group, Nebraska residents aged 16 and over, 2020 to 2024 pooled.
 - Drug overdose deaths (SUDORS definition), same strata, same years, with an opioid-involved subset.
 
-Each row: sector or group, deaths, workers, rate per 100,000 workers, 95 percent confidence interval, rate ratio versus all workers, and a flag for suppressed or unstable. Plus three rows that are never dropped: not in workforce, industry not coded, military. Plus one column each for male and female where the counts allow.
+Each row: sector or group, deaths, workers, rate per 100,000 workers, 95 percent confidence interval, rate ratio versus all workers. No suppression: every count is shown, including small ones, until a table is released to the public. Plus three rows that are never dropped: not in workforce, industry not coded, military. Plus one column each for male and female where the counts allow.
 
 Secondary output: the same suicide table for 2020 to 2021 only, so it can be laid next to Can's 84 / 72 / 55.
 
@@ -42,9 +42,9 @@ Do not use: QCEW, QWI, OEWS (jobs, not people; no self-employed; no occupation).
 
 6. Denominators. From C24030 and C24010: workers by sector and group, total and by sex. Multiply by 5 for worker-years. If an FTE column is wanted, compute FTE from the same 2020-2024 PUMS as sum of PWGTP x WKHP / 40 over ESR 1 or 2 (the team's existing formula) and present it as a second rate column, never as a replacement.
 
-7. Rates. Rate = deaths / (workers x 5) x 100,000. Poisson exact 95 percent CI on the death count. Rate ratio = sector rate / all-worker rate with its CI. Crude only; no age adjustment by sector (no age-by-sector denominators from published tables). Sex-specific rates where the male or female count is 6 or more.
+7. Rates. Rate = deaths / (workers x 5) x 100,000. Poisson exact 95 percent CI on the death count. Rate ratio = sector rate / all-worker rate with its CI. Crude only; no age adjustment by sector (no age-by-sector denominators from published tables). Sex-specific rates for every group.
 
-8. Suppression and flags. Blank the rate when deaths are 1 to 5 (DHHS floor). Flag unstable when deaths are under 20. Never show a census tract map.
+8. No suppression during analysis. Full counts everywhere. The DHHS floor is applied once, at release, as a separate step on the final public table. Never show a census tract map.
 
 9. Reconcile with NEVDRS. Run the suicide table for 2020-2021 and compare the construction, manufacturing and not-in-workforce counts with 84, 72, 55. Differences will come from age (Can used all ages), residency, manner versus ICD, and sector assignment. Document each.
 
@@ -66,7 +66,7 @@ Do not use: QCEW, QWI, OEWS (jobs, not people; no self-employed; no occupation).
 - Sector counts sum to the total plus not-in-workforce plus not-coded plus military, exactly.
 - ACS worker total by sector matches the published Nebraska C24030 total.
 - Every rate reproduces from the counts and denominators in the table by hand.
-- No cell under 6 is printed with a rate; no record-level output exists outside K:.
+- No record-level output exists outside K:.
 
 ## 6. Effort
 
