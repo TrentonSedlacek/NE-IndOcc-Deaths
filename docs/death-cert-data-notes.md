@@ -87,3 +87,14 @@ The occupational health team can produce, from the death certificate alone, the 
 Then the meeting with Can and Mamie becomes a reconciliation of two tables built from the same certificates, instead of an argument about one number.
 
 Open items to settle before writing the SAS: the industry code list on the DC file (Census 2012 or 2018 codes, 3 or 4 digits) and its crosswalk to NAICS sectors; whether to use MannerDeath or the ICD range for suicide; and which denominator Derry wants to stand behind.
+
+## Facts learned from the first real runs (2026-09-28, Guardian exports 2020 to 2024 as read by R)
+
+- EventYear is 0 on every one of the 96,551 rows. Year of death must come from DateOfDeath.
+- NchsAge is 0 on every row. NchsAgeUnit looks normal (1 = years on 94,861 rows) but the age itself is not there. Age must come from DateOfBirth and DateOfDeath.
+- DateOfDeath and DateOfBirth are Excel serial numbers (for example 45291.0 = 2023-12-31) in the xlsx exports; the 2021 CSV has text dates. Birth dates go back before 1954, so serials from 1 upward must be accepted.
+- Yearly exports overlap by about 53 late-registered prior-year deaths, as the DC-HDD notes say.
+- 91,386 of 96,498 deaths in 2020 to 2024 are Nebraska residents; 90,347 of those are aged 16 and over.
+- Suicides by ICD (X60-X84, Y87.0, U03), all ages, residents: 269, 277, 297, 274, 282 for 2020 to 2024. Manner of death and ICD agree on 1,393 of 1,406 suicides.
+- SUDORS-definition overdoses, all ages: 186, 201, 198, 139, 126. The 2021-2022 total (399) is above the published SUDORS 366; 68 of the 16+ cases come from cause-of-death text only and are on the review list.
+- The SAS programs in DC-HDD-Surveillance and OHIs filter on EventYear and compute age from NchsAge. On these exports both give zero rows. Check whether the SAS runs read a different export.
