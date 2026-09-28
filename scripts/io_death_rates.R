@@ -34,16 +34,20 @@ suppressPackageStartupMessages({
 # ---------------------------------------------------------------------
 # 0. CONFIG. The only block anyone should need to edit.
 # ---------------------------------------------------------------------
+# Where this script file is. Output, Cache and Denominators folders are
+# created next to it, so nothing below needs editing.
+here <- tryCatch(dirname(normalizePath(sys.frame(1)$ofile)), error = function(e) getwd())
+
 cfg <- list(
   years        = 2020:2024,
-  # {YYYY}/DeathCertificates{YY}.csv (the CSV the SAS programs read). If the
-  # CSV is not there the .xlsx is read instead; R can open it, SAS cannot.
+  # Death certificates: the K: folder they already live in.
+  # {YYYY}/DeathCertificates{YY}.csv if saved, else the .xlsx (R can read it).
   dc_dir       = "K:/Occupational Health Grant/data/dc",
-  out_dir      = "K:/Occupational Health Grant/Trenton Sedlacek/IO-Death-Rates/Output",
-  cache_dir    = "K:/Occupational Health Grant/Trenton Sedlacek/IO-Death-Rates/Cache",
-  # Folder holding acs_acs5_2024_C24030_NE.csv and acs_acs5_2024_C24010_NE.csv
-  # from scripts/fetch_acs_denominators.py. If absent, tidycensus pulls them.
-  acs_dir      = "K:/Occupational Health Grant/Trenton Sedlacek/IO-Death-Rates/Denominators",
+  out_dir      = file.path(here, "Output"),
+  cache_dir    = file.path(here, "Cache"),
+  # Optional: ACS CSVs from scripts/fetch_acs_denominators.py go here.
+  # If the folder is empty, tidycensus pulls them with your installed key.
+  acs_dir      = file.path(here, "Denominators"),
   acs_year     = 2024,          # ACS 5-year ending year: 2020-2024 window
   min_age      = 16,            # OHIs line 412: age ge 16 (worker denominator)
   ne_residents_only = TRUE,     # DC template line 68, OHIs line 379
