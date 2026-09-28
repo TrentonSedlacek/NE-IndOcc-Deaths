@@ -58,3 +58,17 @@ Ran clean; every check passed. Versus v4 on the same exports: suicide 1,362 (unc
 ## First real run of v7 (2026-09-28)
 
 Suicide only, readable rewrite. Ran clean; every count and rate identical to v6: 1,362 suicides, 66 overlap copies dropped, 18 Military, 159 Not in workforce, 53 Not coded, construction 174 (48.0 per 100,000 worker-years), all workers 1,132 (22.1), 2020-2021 cut 65 / 60 / 66 against 72 / 55 / 84. Output: C:\Users\tsedlac\Downloads\Output\suicide_io_rates_20260928.csv. v7 is the release script.
+
+## First real run of v8 (2026-09-28): Derry's settings
+
+NCHS annual files dth20 to dth24, residents 16 to 64, NIOCCS, PUMS 2020-2024 5-year denominators (persons and FTE), suicide and overdose. Ran clean; PUMS 2024 5-year pulled through tidycensus; only 150 new NIOCCS pairs (NCHS text mostly matches the Guardian text already cached). Civilian employed 16-64: 952,391 persons, 951,076 FTE.
+
+| | Suicides | Rate, persons | Rate, FTE |
+|---|---|---|---|
+| Construction (23) | 148 | 42.4 | 39.6 |
+| Agriculture (11) | 62 | 35.0 | 27.9 |
+| Manufacturing (31-33) | 125 | 23.9 | 22.3 |
+| All workers | 921 | 19.3 | 19.4 |
+| Construction trades (SOC 47) | 143 | 60.8 | 57.5 |
+
+Suicides 16-64 by year: 219 / 223 / 233 / 227 / 221 (1,123). Overdose 710, opioid 389. 2020-2021 cut: construction 56, manufacturing 51, not in workforce 62 against the sheet's 72 / 55 / 84 (the sheet is all ages; ours is 16-64). Output: C:\Users\tsedlac\Downloads\Output\io_death_rates_v8_20260928.csv.
