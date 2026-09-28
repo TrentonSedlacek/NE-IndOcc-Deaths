@@ -51,4 +51,4 @@ Nothing in the plan changes; it confirms it. The occupational health team should
 | Not in workforce | 66 | 84 | none (no ACS denominator) |
 | All workers | 440 | | 21.5 |
 
-Counts agree to within about 10 percent for the two sectors. The not-in-workforce gap (66 vs 84) is unexplained; candidates are all ages vs 16+, certificate Census industry code vs NIOCCS, and the 23 not-coded 2020-2021 suicides. The sheet's "72 per 100,000" for construction was a count, not a rate.
+Counts agree to within about 10 percent for the two sectors. The not-in-workforce gap (66 vs 84) is unexplained; candidates are all ages vs 16+, certificate Census industry code vs NIOCCS, and the 23 not-coded 2020-2021 suicides. The sheet reports 72 deaths and 1.8 per 100,000 total population for construction; the 1.8 divides by all Nebraskans, not by construction workers, so it is not comparable to a per-worker rate.
