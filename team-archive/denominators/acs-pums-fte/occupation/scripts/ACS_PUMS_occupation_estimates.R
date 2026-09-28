@@ -4,7 +4,7 @@ library(srvyr, warn.conflicts = FALSE)
 
 #clipr::write_clip()
 
-census_api_key("fda55d10ae1222ea2b997924b0baee5d4185a81a", install = TRUE) # may need to get a new key
+census_api_key("<REDACTED_CENSUS_API_KEY>", install = TRUE) # may need to get a new key
 
 # get api key at http://api.census.gov/data/key_signup.html
 

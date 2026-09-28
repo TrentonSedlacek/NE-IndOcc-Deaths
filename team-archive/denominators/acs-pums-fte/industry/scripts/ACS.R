@@ -2,7 +2,7 @@ library(tidycensus)
 library(tidyverse)
 library(dplyr)
 library(srvyr)
-census_api_key("fda55d10ae1222ea2b997924b0baee5d4185a81a", install = TRUE)
+census_api_key("<REDACTED_CENSUS_API_KEY>", install = TRUE)
 pums_data <- get_pums(
   variables = c("AGEP", "ESR", "OCCP", "NAICSP", "WKHP", "COW"),
   survey = "acs5",  
