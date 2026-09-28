@@ -4,3 +4,5 @@
 - No em dashes anywhere.
 - No secrets in files. Census key and any credentials come from environment variables.
 - Scripts read K: and run only on a DHHS machine; nothing here runs in the cloud.
+- Always give full file paths when telling Trenton where a file is or what to run. On his machine the working folder is C:\Users\tsedlac\Downloads. Death certificates are under K:\Occupational Health Grant\data\dc\{YYYY}\. Never say "the script" or "that file" without the path.
+- NIOCCS use is approved (Trenton, 2026-09-29): sending industry and occupation text to the CDC NIOCCS web service is fine.

@@ -19,7 +19,7 @@ cfg <- list(
   cache_dir  = file.path(here, "Cache"),
   acs_year   = 2024,     # ACS 5-year ending year
   min_age    = 16,
-  run_nioccs = FALSE     # TRUE sends industry/occupation text to CDC NIOCCS (needs data use OK)
+  run_nioccs = TRUE      # sends industry/occupation text to CDC NIOCCS; replies are cached, each pair sent once
 )
 if (!is.null(getOption("io_death_rates.test_cfg"))) cfg <- modifyList(cfg, getOption("io_death_rates.test_cfg"))
 for (d in c(cfg$out_dir, cfg$cache_dir)) dir.create(d, showWarnings = FALSE, recursive = TRUE)
