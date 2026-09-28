@@ -1,5 +1,7 @@
-# io_death_rates_extras.R
-# Optional add-ons. Run AFTER io_death_rates.R in the same R session.
+# io_death_rates_extras_v3.R
+# Optional add-ons. Run AFTER io_death_rates_v3.R in the same R session:
+#   source("C:/Users/tsedlac/Downloads/io_death_rates_v3.R")
+#   source("C:/Users/tsedlac/Downloads/io_death_rates_extras_v3.R")
 # 1. NEVDRS reconciliation: suicide by sector for 2020-2021 only, next to Can's 84 / 72 / 55.
 # 2. Certificate-code cross-check: the certificate's own IndustryCode (Census code, trailing
 #    digit dropped; OHIs subindicators.sas lines 87-91 and 392) rolled to a NAICS sector and
