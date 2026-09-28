@@ -1,5 +1,5 @@
 # tests/synthetic_run.R
-# Runs scripts/io_death_rates_v5.R end to end on FAKE data, with no network:
+# Runs scripts/io_death_rates_v6.R end to end on FAKE data, with no network:
 #   - Guardian-shaped exports 2020-2024 made to look like the real ones: EventYear and NchsAge 0 on every row,
 #     dates as Excel serial strings (2020, 2023; "45291.0" style in 2022), m/d/Y text in the 2021 CSV, and a
 #     2024 .xlsx with real Excel date cells; overlapping exports; a blank-id row; unreadable dates
@@ -198,7 +198,7 @@ write_csv(acs, file.path(cache_dir, "acs_2024.csv"))
 options(io_v5_dc_dir = dc_dir, io_v5_work_dir = work)
 files_before <- list.files(work, recursive = TRUE)
 env <- new.env()
-sys.source(file.path("scripts", "io_death_rates_v5.R"), envir = env)
+sys.source(file.path("scripts", "io_death_rates_v6.R"), envir = env)
 stamp <- format(Sys.Date(), "%Y%m%d")
 
 # ---------------------------------------------------------------------
@@ -301,7 +301,7 @@ check(any(grepl("text_candidates_not_counted", qa)) && !any(grepl("more variable
 nioccs_calls <- character()
 acs$label <- sub("oil and gas extraction$", "oil and gas extraction industries", acs$label)
 write_csv(acs, file.path(cache_dir, "acs_2024.csv"))
-msg <- tryCatch({ sys.source(file.path("scripts", "io_death_rates_v5.R"), envir = new.env()); "no error" }, error = function(e) conditionMessage(e))
+msg <- tryCatch({ sys.source(file.path("scripts", "io_death_rates_v6.R"), envir = new.env()); "no error" }, error = function(e) conditionMessage(e))
 check(grepl("not in acs_group_map.csv", msg) && grepl("extraction industries", msg), "unmapped ACS leaf stops the run and names it")
 check(identical(nioccs_calls, "AMAZON / PICKER"), "second run re-sends only the pair whose reply was not usable (RAILROAD not re-sent)")
 
