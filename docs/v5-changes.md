@@ -54,3 +54,7 @@ Script: `/home/user/NE-IndOcc-Deaths/scripts/io_death_rates_v5.R` (169 lines). I
 ## First real run of v6 (2026-09-28, Trenton's machine)
 
 Ran clean; every check passed. Versus v4 on the same exports: suicide 1,362 (unchanged), overdose 776 (was 808; the 32 text-only hits are no longer counted), overdose_opioid 410 (was 415), opioid_ma_def 436 (unchanged). 38 text-only candidates written to the review list. Overlap copies dropped 66; latest-export-wins changed no suicide count. NEVDRS 2020-2021 cut unchanged: 65 / 60 / 66 against 72 / 55 / 84. Headline 2020-2024 rates per 100,000 worker-years: construction suicide 48.0 (174 deaths), agriculture 46.9, all workers 22.1; construction overdose 29.5 (107), accommodation and food 25.3, all workers 11.0.
+
+## First real run of v7 (2026-09-28)
+
+Suicide only, readable rewrite. Ran clean; every count and rate identical to v6: 1,362 suicides, 66 overlap copies dropped, 18 Military, 159 Not in workforce, 53 Not coded, construction 174 (48.0 per 100,000 worker-years), all workers 1,132 (22.1), 2020-2021 cut 65 / 60 / 66 against 72 / 55 / 84. Output: C:\Users\tsedlac\Downloads\Output\suicide_io_rates_20260928.csv. v7 is the release script.
