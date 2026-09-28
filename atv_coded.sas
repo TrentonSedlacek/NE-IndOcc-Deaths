@@ -1,0 +1,232 @@
+proc import datafile="K:\Occupational Health Grant\Jean Kwizerimana\Deacertificate\nioccs_atv.csv" 
+dbms=csv 
+out= atv_coded 
+replace; 
+run; 
+proc print data=atv_coded; run;
+proc contents data=atv_coded; run;
+
+/*data atv_coded;
+    set atv_coded;
+    where upcase(injuryhowoccur) contains 'UTV' or
+          upcase(injuryhowoccur) contains 'UTILITY' or
+          upcase(injuryhowoccur) contains 'GOLF' or
+          upcase(injuryhowoccur) contains 'BIKE' or
+          upcase(injuryhowoccur) contains 'POLARIS';
+run;*/
+ data atv_code;
+    set atv_coded;
+    if prxmatch('/UTV|Utility|golf|bike|polaris/i', injuryhowoccur) = 0;
+run;
+
+*proc print data=UTV_deaths; run;
+
+*editing age;
+data atv_age;
+set atv_code;
+length age_cat $  18;
+
+if 0 <age <=20 then age_cat ="<=20 Years";
+else if 21<age<=39 then age_cat = "21-39 Years";
+else if 40<age<=59 then age_cat = "40-59 Years";
+else age_cat ="60+ Years";
+if 2005 <= dod_yr <=2023;
+run;
+
+*formating cause of death;
+data atv_traffic;
+set atv_age;
+length cause $ 50;
+retain cause; 
+select (AcmeUnderlyingCode);
+when ("V865") cause = "Driver (Non-Traffic)"; 
+when ("V860") cause = "Driver (Traffic)";
+when ("V869") cause = "Unknwn (Non-Traffic)";
+when ("V861") cause = "Passenger(Traffic)";
+when ("V866") cause = "Passenger (Non-traffic)";
+when ("V863") cause = "Unknown (Traffic)";
+otherwise cause = "Other";
+end;
+run;
+*formating cases into traffic and non-traffic;
+data atv_tra; 
+set atv_traffic;
+retain traffic; 
+select (cause); 
+when ("Driver (Non-Traffic)", "Unknwn (Non-Traffic)", "Passenger (Non-traffic)" ) traffic = "Non - Traffic";
+when ( "Driver (Traffic)", "Passenger(Traffic)", "Unknown (Traffic)") traffic = "Traffic"; 
+otherwise traffic = "Other";
+end; 
+run;
+*formating cases into driver and passenger;
+data atv;
+set atv_tra;
+length driv_stat $ 50;
+retain driv_stat; 
+select (cause); 
+when ("Driver (Non-Traffic)", "Driver (Traffic)" ) driv_stat = "Driver";
+*when ( "Passenger (Non-traffic)", "Passenger(Traffic)") driv_stat = "Passenger"; 
+otherwise driv_stat= "Other";
+end; 
+run;
+*formating occupations;
+data atv_occ; 
+set atv; 
+retain occupation; 
+select (CensusOccupationcode); 
+when (205, 6050) occupation = "Farmers";
+when (9070) occupation = "Students"; 
+otherwise occupation = "Other";
+end;
+run;
+data atv_edu; 
+set atv_occ;
+retain edu; 
+select(education); 
+when ("BACHELORS DEGREE, BA, AB, BS", "COLLEGE, BUT NO DEGREE", "ASSOCIATE DEGREE, AA, AS", "DOCTORATE DEGREE, PHD, EDD", "MASTERS DEGREE, MA, MS") edu = "College or Higher";
+otherwise edu = "HS or Lower"; 
+end; 
+run;
+*selecting final cases to be used; 
+data atv_final; 
+set atv_occ; 
+month= month(dod);
+*if traffic in ("Traffic", "Non - Traffic");
+*if facstate in ("Nebraska");
+run;
+*dod-yr;
+proc freq data=atv_final  order=freq;
+tables age_cat*occupationcode;
+run;
+*gender;
+proc freq data=atv_final order=freq; 
+tables sex*driv_stat/chisq relrisk;
+run;
+*outcome; 
+proc freq data=atv_tra order=freq; 
+tables traffic/nocum;
+run;
+*occupation; 
+proc freq data=atv_occ order=freq; 
+tables SOCcode;
+run;
+*age;
+proc sort data=atv_final; by age_cat; run;
+proc freq data=atv_edu;
+*by age_cat;
+tables educ*ResideInCity/fisher;
+run;
+*driving status (driver/passenger);
+proc freq data=atv_final order=freq; 
+tables driv_stat*traffic/chisq;
+run;
+*city limits status; 
+proc freq data=atv order=freq; 
+tables driv_stat*sex/chisq;
+run;
+*reside in city;
+proc freq data=atv_occ order=freq; 
+tables ResideInCity*age_cat/norow nopercent nofreq;
+run;
+*veterans; 
+proc freq data=atv_final order=freq; 
+tables occupation;
+run;
+proc freq data=atv_occ; 
+tables occupation; 
+run;
+*Annual trends; 
+proc sgplot data=atv_occ; 
+vbar sex/ group=driv_stat groupdisplay=cluster datalabel;
+title 'Trend of Annual Deaths from All Terrain Vehicle Accidents';
+xaxis label= "Year of Death";
+yaxis label= "Number od Deaths";
+run;
+*monthly trends; 
+proc sgplot data=atv_final; 
+vbar month/datalabel;
+title 'Monthly Deaths from All Terrain Vehicle Accidents (2005-2024)';
+xaxis label= "Month";
+yaxis label= "Number od Deaths";
+run;
+proc sgplot data=linear; 
+histogram count; 
+run;
+
+proc freq data=atv_final order=freq; 
+tables age/out=linear nocum nopercent;
+run;
+proc freq data=atv_final order=freq; 
+tables dod_yr/out=deaths nocum nopercent;
+run;
+proc means data=deaths; 
+var count; 
+run;
+proc corr data=deaths spearman;
+var dod_yr count;
+run;
+proc genmod data=deaths;
+   model count = dod_yr/ dist=poisson link=log;
+run;
+proc sort data=deaths; 
+by dod_yr; 
+run;
+proc esm data=deaths
+    out=smoothed
+    lead=5
+    print=(estimates statistics);
+    id dod_yr interval=year;
+    forecast count;
+run;
+data deaths;
+   set deaths;
+   *dod_y = input(put(dod_yr, 4.), date9.);
+   *format dod_yr year4.;
+run;
+
+
+proc contents data=deaths; run;
+
+proc reg data=linear; 
+model count=age; 
+run;
+data atv_final; 
+set atv_final; 
+count=1;
+keep traffic dod_yr sex resideincity age occupation driv_stat age_cat month DeathCertificateId count;
+run;
+proc print data=atv_final; run;
+data atv_bi; 
+set atv_final; 
+proc sort data=atv_bi; 
+by age_cat; 
+run;
+proc freq data=atv_bi;
+*by  age_cat;
+tables resideincity*dod_yr/nocum nopercent out=binom; 
+run;
+proc arima data=deaths;
+    identify var=count;
+    estimate p=1 q=1; /* Adjust model parameters as needed */
+	forecast lead=5;
+run;
+proc sgplot data=atv_bi; 
+vbar month/group=age_cat datalabel groupdisplay=cluster; 
+run;
+proc freq data=atv_coded order=freq;
+tables CensusOccupationTitle/ out=binom; 
+run;
+proc freq data=atv_edu order=freq;
+tables driv_stat/nocum chisq; 
+run;
+proc print data=binom; run;
+proc logistic data=atv_final plots=diagnostics; 
+class sex (ref='F'); 
+model driv_stat (event='Driver')= sex; 
+run;
+
+proc logistic data=atv_final; 
+   class sex (ref='F') / param=ref; 
+   model driv_stat(event='Driver') = sex / clodds=pl clparm=wald lackfit; 
+   oddsratio sex;
+run;
