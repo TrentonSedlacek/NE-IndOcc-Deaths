@@ -33,7 +33,11 @@ Derry's concern: NEVDRS staff produced industry/occupation figures (for example 
 - The Massachusetts model: death certificate numerator, usual I/O text coded with NIOCCS to NAICS and SOC, ACS employed workers as denominator, per 100,000 workers with 95% CIs, exclusions for non-workforce, uncodable, and military.
 - CDC precedent for suicide by I/O using NVDRS: Peterson et al., MMWR 2020;69:57-62 (32 states, 2016). Listed on the CDC NVDRS resources page (docs/web-captures/cdc-nvdrs-resources.md).
 
-## What is known about the unpublished NEVDRS I/O work (from Trenton, 2026-09-24)
+## The unpublished NEVDRS sector fact sheet (received 2026-09-28)
+
+Derry forwarded the original one-page sheet, "CDC NEVDRS - Suicide Deaths by Sectors in 2020 and 2021," saved at source-docs/ne-dhhs/unpublished/. Full review in docs/nevdrs-sectors-factsheet-review.md. The short version: 84 not-in-workforce, 72 construction, and 55 manufacturing suicide deaths for 2020-2021, with every rate computed per 100,000 total Nebraska population rather than per worker (construction prints as 1.8 per 100,000). The 70 to 72 figure was the count. Derry says Can and Chris later revised it to FTE-based rates; that version has not been seen. The sector assignment method is not stated on the sheet.
+
+## What was known before the sheet arrived (from Trenton, 2026-09-24)
 
 - Not published; the occupational health team does not have access to it.
 - It is a three-panel comparison: non-workers, construction, and manufacturing. Not all-industry rates.
@@ -51,7 +55,8 @@ Things the three-panel design leaves open: how "non-worker" was defined and what
 5. Which case definition: NVDRS manner of death or death certificate ICD-10? For overdose, SUDORS case definition (X40-44, Y10-14 plus literal text) or something else?
 6. Which years, and are the numbers resident or occurrent deaths?
 7. For the three-panel figure (non-workers, construction, manufacturing): what outcome and years does the 70 to 72 per 100,000 construction figure cover, what is the numerator count, and how was the non-worker group defined?
-8. Can we get the case-level extract (or at least the I/O crosstab) so the occupational health team can reproduce the figures?
+8. Which version of the sector sheet is current, what FTE source and sector assignment did the revision use, how was "not in workforce" defined, can we see the all-sector counts, and were the tract maps checked for small-number disclosure? (Details in docs/nevdrs-sectors-factsheet-review.md.)
+9. Can we get the case-level extract (or at least the I/O crosstab) so the occupational health team can reproduce the figures?
 
 ## Repo layout
 

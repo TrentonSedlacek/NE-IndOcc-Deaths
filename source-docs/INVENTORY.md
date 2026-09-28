@@ -43,6 +43,7 @@ Paths are relative to `source-docs/`.
 | ne-dhhs/nevdrs/NEVDRS-Overview.pdf | 2 | CDC NVDRS program overview | Cites 2019 national figures |
 | ne-dhhs/nevdrs/NEVDRS-Vital-Statistics-Partners-Factsheet.pdf | 2 | CDC NVDRS fact sheet for vital statistics partners | Not year specific |
 | ne-dhhs/nevdrs/NVDRS-Law-Enforcement-Partner-Factsheet.pdf | 2 | CDC NVDRS fact sheet for law enforcement partners | Not year specific |
+| ne-dhhs/unpublished/Suicide-Deaths-by-Sectors-2020-2021-Final-1.pdf | 1 | Unpublished NEVDRS three-panel fact sheet (Can Ceyhan, original version, forwarded by Derry Stover 2026-09-28): suicide deaths among not-in-workforce, construction, and manufacturing; rates per 100,000 total population; census tract maps. Reviewed in docs/nevdrs-sectors-factsheet-review.md | 2020-2021 |
 | ne-dhhs/newsletters/Suicide-Prevention-Newsletter-Issue-1.pdf | 8 | NEVDRS Suicide Prevention Newsletter, Issue 1, Q1 2024 (team, fact sheets, annual frameworks, Power BI dashboard in development) | Published 2024; data 2020-2022 |
 | ne-dhhs/newsletters/Suicide-Prevention-Newsletter-Issue-2.pdf | 5 | Issue 2, Q2 2024 (dashboard demonstration, annual reports, census tract maps) | Published 2024; data 2020-2022 |
 | ne-dhhs/newsletters/Suicide-Prevention-Newsletter-Issue-3.pdf | 5 | Issue 3, Q3 2024 (2022 NEVDRS data published, dashboard updated) | Published 2024; data 2021-2022 |
