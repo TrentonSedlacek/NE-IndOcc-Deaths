@@ -130,7 +130,7 @@ deaths <- deaths_raw %>%
 top_vals <- function(x, n = 6) { t <- sort(table(coalesce(as.character(x), "<NA>")), decreasing = TRUE); paste(names(t)[1:min(n, length(t))], t[1:min(n, length(t))], sep = "=", collapse = ", ") }
 message("Load diagnostics: rows read ", nrow(deaths_raw))
 message("  EventYear in export (raw text): ", top_vals(deaths_raw$EventYear))
-message("  DateOfDeath sample formats: ", top_vals(substr(deaths_raw$DateOfDeath, 1, 10), 3), "; unparsed dates: ", sum(is.na(deaths$dod) & deaths_raw$DateOfDeath != ""))
+message("  DateOfDeath sample formats: ", top_vals(substr(deaths_raw$DateOfDeath, 1, 10), 3), "; unparsed dates: ", sum(is.na(deaths$dod) & coalesce(deaths_raw$DateOfDeath, "") != ""))
 message("  Year of death used: ", top_vals(deaths$EventYear, 8))
 message("  ResidingStateNchs top values: ", top_vals(deaths_raw$ResidingStateNchs))
 message("  NchsAgeUnit top values: ", top_vals(deaths_raw$NchsAgeUnit), "; NchsAge NA after numeric: ", sum(is.na(deaths$NchsAge)))
