@@ -1,0 +1,7 @@
+denominator_type,label,source,cste_number,industry_split
+EMP,Employed persons 16+,BLS Geographic Profile / CPS annual average,0.01,by industry: CPS GP Table 20 or QCEW annual average employment by NAICS sector
+FTE,Full-time equivalent workers,NIOSH ELF query (CPS hours),0.02,by industry: BLS hours-based FTE in CFOI rate tables
+FTE_HOURS,Hours-based FTE (BLS SOII rate base),"BLS SOII, embedded in published rates",,published by industry directly
+WC,Workers covered by WC,NASI report Table 3,0.03,no industry split published; use QCEW covered employment as a proxy
+POP15,Resident population 15+,Census vintage single-year estimates,,by age and sex available; not by industry
+BRFSS_WEIGHTED,Weighted employed adults,BRFSS survey weights,,by industry/occupation within the survey

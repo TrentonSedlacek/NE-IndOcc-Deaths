@@ -1,0 +1,33 @@
+Query Parameters,,,,,,,,,,,
+Age(s):,>= 16,,,,,,,,,,
+Weight in use:,Composited Weight,,,,,,,,,,
+Labor Estimate Type:,Full time equivalents - Primary Job,,,,,,,,,,
+Year(s):,2013; 2012; 2011; 2010; 2009; 2008; 2007; 2006; 2005; 2004; 2003,,,,,,,,,,
+State:,Nebraska,,,,,,,,,,
+Industry Code(Primary Job 2003+):,"0170 : Crop production; 0180 : Animal production; 0190 : Forestry except logging; 0270 : Logging; 0280 : Fishing, hunting, and trapping; 0290 : Support activities for agriculture and forestry; 0770 : Construction; 6070 : Air transportation; 6080 : Rail transportation; 6090 : Water transportation; 6170 : Truck transportation; 6180 : Bus service and urban transit; 6190 : Taxi and limousine service; 6270 : Pipeline transportation; 6280 : Scenic and sightseeing transportation; 6290 : Services incidental to transportation; 6370 : Postal Service; 6380 : Couriers and messengers; 6390 : Warehousing and storage",,,,,,,,,,
+Non-selected variables:,Default value = All,,,,,,,,,,
+Group Columns By:,Year,,,,,,,,,,
+Group Rows By:,Industry Code(Primary Job 2003+),,,,,,,,,,
+,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013
+Industry Code(Primary Job 2003+),Workers,Workers,Workers,Workers,Workers,Workers,Workers,Workers,Workers,Workers,Workers
+0170 : Crop production  ,"14,975","20,855","16,059","16,028","17,824","17,251","13,547","14,434","19,963","17,705","19,561"
+0180 : Animal production  ,"58,924","48,315","39,367","38,782","32,693","34,284","30,207","28,044","39,999","38,150","37,848"
+0190 : Forestry except logging ,0,0,0,0,0,223,0,386,207,,0
+0270 : Logging ,0,0,0,0,47,29,0,0,108,76,0
+"0280 : Fishing, hunting, and trapping ",0,68,0,61,122,68,0,0,72,160,637
+0290 : Support activities for agriculture and forestry ,"2,044","4,491",467,"1,124",283,664,"1,208","2,723","1,049",991,"1,554"
+"Total Agriculture, Forestry, Fishing, and Hunting","75,943","73,729","55,893","55,995","50,969","52,519","44,962","45,587","61,398","57,082","59,600"
+0770 : Construction ,"66,311","72,085","64,994","60,203","57,605","62,212","50,618","58,345","65,977","70,661","71,721"
+6070 : Air transportation ,"1,686","1,093","1,162","1,369","1,749","1,172",762,704,307,"1,148",926
+6080 : Rail transportation ,"8,344","12,455","10,701","9,355","11,714","10,302","8,225","5,914","6,909","10,338","10,293"
+6090 : Water transportation ,0,0,0,0,80,0,0,0,381,0,0
+6170 : Truck transportation ,"22,292","16,392","15,370","19,386","22,657","19,913","17,103","19,329","20,262","16,598","18,724"
+6180 : Bus service and urban transit ,"2,023","1,639","1,819","1,827","1,223","1,459","1,034",752,537,135,"1,534"
+6190 : Taxi and limousine service ,76,49,193,551,460,555,878,297,0,326,156
+6270 : Pipeline transportation ,254,422,"1,129",698,"1,316",926,198,0,429,488,747
+6290 : Services incidental to transportation ,"1,775","1,882","3,625","2,912","2,806","5,102","4,948","3,869","3,624","4,629","3,786"
+6370 : Postal Service ,"6,214","5,243","4,016","4,534","4,790","3,262","2,596","2,244","2,141","3,072","3,760"
+6380 : Couriers and messengers ,"3,255","2,974","2,911","3,286","2,039","2,585","3,786","2,436","2,444","2,317","2,706"
+6390 : Warehousing and storage ,"1,437","1,655","1,399","2,289","1,761","2,545","2,211","2,035","1,734","1,449","1,538"
+Total Transporation And Warehousing,"47,356","43,804","42,325","46,207","50,595","47,821","41,741","37,580","38,768","40,500","44,170"
+Total:,"189,610","189,618","163,212","162,405","159,169","162,552","137,321","141,512","166,143","168,243","175,491"
