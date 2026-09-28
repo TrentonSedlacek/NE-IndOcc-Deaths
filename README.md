@@ -15,7 +15,10 @@ Start with docs/project-brief.md for context, the people involved, what the coll
 | docs/analysis-plan.md | The plan: inputs, ten steps, decisions needed, quality checks, effort |
 | docs/provenance-comparison.md | Provenance of all ten suicide and overdose analyses in view, side-by-side table, what is most common, and the shared pipeline for the OHIs sub-indicator and the NEVDRS check |
 | docs/acs-denominator-spec.md | Denominator decision (likely ACS employed workers): tables, years, rate arithmetic, numerator rules, FTE option |
-| scripts/io_death_rates.R | The analysis, one R script: deaths from Guardian exports, NIOCCS coding, ACS denominators, Poisson CIs, suppression, QA checks. Audited against the plan and SAS sources; passes a 40-check synthetic test (tests/synthetic_run.R); ACS labels and live NIOCCS still unverified, see docs/script-audit.md |
+| scripts/io_death_rates.R | The analysis, one short R script (about 200 lines). Outcomes are rows in a table at the top; add a row to add an indicator. Needs scripts/acs_group_map.csv next to it |
+| scripts/io_death_rates_extras.R | Optional add-ons run after the main script: NEVDRS 2020-2021 reconciliation, certificate-code cross-check, review list |
+| scripts/acs_group_map.csv | ACS C24030 and C24010 category names mapped to NAICS sectors and SOC major groups |
+| scripts/old/ | The first, long version of the script, kept for reference |
 | docs/script-audit.md | Audit findings on the R script: what was wrong, what changed, what is unverified, decisions still needed |
 | tests/synthetic_run.R | Offline test: fake Guardian rows with planted answers, fake NIOCCS cache and ACS tables; runs every section with no network |
 | scripts/fetch_acs_denominators.py | Pulls Nebraska ACS C24030 and C24010 into data/denominators/ (needs api.census.gov access) |

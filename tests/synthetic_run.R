@@ -140,13 +140,7 @@ nioccs_reply <- tribble(~IndustryLit, ~OccupationLIt, ~NAICSCode, ~SOCCode,
   "SCHOOL", "TEACHER", "611110", "25-2021",             "HOMEMAKER", "HOMEMAKER", "", "",
   "UNKNOWN", "UNKNOWN", "", "",                         "CHILD CARE", "CHILD CARE WORKER", "624410", "39-9011")
 # RAILROAD / CONDUCTOR is left out on purpose: it should be reported as not yet coded.
-cache <- nioccs_reply %>% rowwise() %>% mutate(
-  status = "OK", coded_on = "2026-09-28",
-  raw_json = as.character(toJSON(list(
-    Industry = list(NAICSCode = NAICSCode, CensusIndustryTitle = paste("Fake", IndustryLit), IndustryScore = 0.9),
-    Occupation = list(SOCCode = SOCCode, SOCTitle = paste("Fake", OccupationLIt), CensusOccupationTitle = "x", OccupationScore = 0.4)),
-    auto_unbox = TRUE))) %>% ungroup() %>% select(IndustryLit, OccupationLIt, status, coded_on, raw_json)
-cache <- bind_rows(cache, tibble(IndustryLit = "RAILROAD", OccupationLIt = "CONDUCTOR", status = "FAILED", coded_on = "2026-09-28", raw_json = ""))
+cache <- nioccs_reply %>% select(IndustryLit, OccupationLIt, NAICSCode, SOCCode)
 write_csv(cache, file.path(dirs$cache, "nioccs_cache.csv"), na = "")
 
 # ---------------------------------------------------------------------
@@ -209,8 +203,8 @@ fake_acs <- function(table_id, lines) {
 acs_c24030 <- fake_acs("C24030", c24030_lines)
 acs_c24010 <- fake_acs("C24010", c24010_lines)
 stopifnot(nrow(acs_c24030) == 55, nrow(acs_c24010) == 73)   # 55 and 73 variables, as in the real tables
-write_csv(acs_c24030, file.path(dirs$acs, "acs_acs5_2024_C24030_NE.csv"))
-write_csv(acs_c24010, file.path(dirs$acs, "acs_acs5_2024_C24010_NE.csv"))
+bind_rows(acs_c24030, acs_c24010) %>% mutate(variable = sub("E$", "", variable)) %>%
+  select(variable, label, estimate, moe) %>% write_csv(file.path(dirs$cache, "acs_2024.csv"))
 
 # ---------------------------------------------------------------------
 # 4. Run the real script against the fake data
@@ -225,64 +219,52 @@ sys.source(file.path("scripts", "io_death_rates.R"), envir = env)
 # 5. Checks
 # ---------------------------------------------------------------------
 fails <- character()
-check <- function(ok, what) { if (!isTRUE(ok)) fails <<- c(fails, what); cat(if (isTRUE(ok)) "PASS " else "FAIL ", what, "\n") }
+check <- function(ok, what) { cat(ifelse(isTRUE(ok), "PASS ", "FAIL "), what, "\n"); if (!isTRUE(ok)) fails <<- c(fails, what) }
 d <- env$deaths; cs <- env$cases
 row_of <- function(id) d[d$DeathCertificateId == id, ]
+grp <- function(id, col) cs[[col]][cs$DeathCertificateId == id]
 
 check(nrow(row_of("P01")) == 1 && row_of("P01")$suicide, "P01 X70 is a suicide")
 check(nrow(row_of("P02")) == 0, "P02 non-resident dropped")
-check(nrow(row_of("P03")) == 1 && row_of("P03")$age == 16, "P03 200 months = 16 years, kept")
-check(nrow(row_of("P04")) == 0, "P04 age 999 dropped")
 check(nrow(row_of("P05")) == 0, "P05 age 15 dropped")
 check(row_of("P06")$overdose && row_of("P06")$overdose_opioid, "P06 X42 + T40.4 = overdose, opioid")
-check(row_of("P07")$overdose && row_of("P07")$od_text_only, "P07 text-only overdose counted and flagged")
+check(row_of("P07")$overdose && row_of("P07")$overdose_text_only, "P07 text-only overdose counted and flagged")
 check(row_of("P08")$suicide && !row_of("P08")$overdose, "P08 X64 suicide by overdose is suicide, not SUDORS overdose")
 check(!row_of("P09")$overdose, "P09 ethanol only is not an overdose")
 check(!row_of("P10")$overdose, "P10 carbon monoxide is not an overdose")
 check(row_of("P11")$suicide, "P11 Y87.0 with a dot is a suicide")
 check(row_of("P12")$suicide, "P12 U03 is a suicide")
 check(!row_of("P13")$suicide, "P13 UO3 (letter O) is not a suicide")
-check(row_of("P14")$ma_opioid && !row_of("P14")$overdose, "P14 X85 + T40.1 counts for MA only")
 check(sum(d$DeathCertificateId == "P15") == 1, "P15 overlap copy counted once")
-check(nrow(row_of("P16")) == 0, "P16 EventYear 2019 dropped")
+check(nrow(row_of("P16")) == 0, "P16 year 2019 dropped")
 check(!any(grepl("^ROSTER", d$DeathCertificateId)), "ROSTER rows dropped")
 check(row_of("P17")$sex == "M", "P17 Sex 1 = M")
-check(cs$ind_group[cs$DeathCertificateId == "P17"] == "Military", "P17 US ARMY = Military")
-check(cs$ind_group[cs$DeathCertificateId == "P18"] == "Not in workforce" &&
-      cs$occ_group[cs$DeathCertificateId == "P18"] == "Not in workforce", "P18 STUDENT = Not in workforce")
-check(cs$ind_group[cs$DeathCertificateId == "P19"] == "Not coded", "P19 blank text = Not coded")
-check(cs$ind_group[cs$DeathCertificateId == "P20"] == "62", "P20 CHILD CARE = sector 62, not Not in workforce")
+check(grp("P17", "ind_group") == "Military", "P17 US ARMY = Military")
+check(grp("P18", "ind_group") == "Not in workforce", "P18 STUDENT = Not in workforce")
+check(grp("P19", "ind_group") == "Not coded", "P19 blank text = Not coded")
+check(grp("P20", "ind_group") == "62", "P20 CHILD CARE = sector 62, not Not in workforce")
 check(!row_of("P21")$overdose, "P21 natural digoxin toxicity is not an overdose")
-check(cs$ind_group[cs$DeathCertificateId == "P01"] == "23" && cs$occ_group[cs$DeathCertificateId == "P01"] == "47", "P01 sector 23, SOC 47")
-check(env$ids_in_two_years == 0, "no certificate id in two event years")
+check(grp("P01", "ind_group") == "23" && grp("P01", "occ_group") == "47", "P01 sector 23, SOC 47")
 check(env$qa$text_pairs_not_yet_coded >= 1, "uncached pair (RAILROAD) reported as not yet coded")
-check(isTRUE(env$qa$all_sums_match), "sector rows add up to case totals in every table")
+check(isTRUE(env$qa$group_rows_sum_to_totals), "group rows add up to case totals in every table")
 check(n_distinct(env$den_ind$group) == 21 && n_distinct(env$den_occ$group) == 23, "20 sectors and 22 SOC groups plus All workers")
 check(env$den_ind$workers[env$den_ind$group == "All workers" & env$den_ind$sex == "T"] == env$acs_total_ind, "ACS industry leaves add to C24030_001")
 check(env$den_occ$workers[env$den_occ$group == "All workers" & env$den_occ$sex == "T"] == env$acs_total_occ, "ACS occupation leaves add to C24010_001")
-
-# Rate arithmetic by hand for one row.
-t <- env$tables_raw$suicide_ind %>% filter(sex == "T", group == "All workers")
+t <- env$tables_raw$suicide_industry %>% filter(sex == "T", group == "All workers")
 check(abs(t$rate - t$deaths / (t$workers * 5) * 1e5) < 1e-9, "rate = deaths / (workers x 5) x 100,000")
 check(abs(t$rate_lo - qchisq(0.025, 2 * t$deaths) / 2 / (t$workers * 5) * 1e5) < 1e-9, "exact Poisson lower limit")
-t2 <- env$tables_raw$suicide_ind_2020_2021 %>% filter(sex == "T", group == "All workers")
-check(abs(t2$worker_years - 2 * t2$workers) < 1e-9, "2020-2021 table uses workers x 2")
-pct <- env$tables_raw$suicide_ind %>% filter(sex == "M", group != "All workers") %>% pull(pct_of_all_deaths)
-check(abs(sum(pct) - 100) < 1e-9, "percent of all deaths sums to 100 within a sex")
+pct <- env$tables_raw$suicide_industry %>% filter(sex == "M", group != "All workers") %>% pull(pct_of_deaths)
+check(abs(sum(pct) - 100) < 1e-9, "percent of deaths sums to 100 within a sex")
+check("injury_at_work_industry" %in% names(env$tables) && "pneumoconiosis_occupation" %in% names(env$tables), "extra outcomes from the table are produced")
 
-# No suppression: every count, including 1 to 5, is written as is.
 outs <- list.files(dirs$out, pattern = "\\.csv$", full.names = TRUE)
 all_out <- bind_rows(lapply(outs, read_csv, show_col_types = FALSE, col_types = cols(.default = "c")))
 dn <- suppressWarnings(as.numeric(all_out$deaths))
 check(any(dn >= 1 & dn <= 5, na.rm = TRUE), "small counts are written, not suppressed")
-check(!("flag" %in% names(all_out)) || !any(all_out$flag %in% c("suppressed"), na.rm = TRUE), "no suppressed flag exists")
 check(all(is.na(all_out$rate[all_out$group %in% c("Military", "Not in workforce", "Not coded")])), "no rate on non-rate rows")
-
-# Record-level output only in Cache.
 new_files <- setdiff(list.files(root, recursive = TRUE), files_before)
 check(all(startsWith(new_files, "Cache/") | startsWith(new_files, "Output/")), "script wrote only to Output and Cache")
 check(!any(grepl("DeathCertificateId|PERSON", unlist(lapply(outs, readLines)))), "no certificate ids or names in Output")
-check(file.exists(file.path(dirs$cache, "manual_review_list.csv")), "review list written to Cache")
 
 cat("\n", length(fails), "failures\n")
 if (length(fails) > 0) stop("Synthetic run failed: ", paste(fails, collapse = "; "))

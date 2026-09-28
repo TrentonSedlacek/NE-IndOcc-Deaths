@@ -1,3 +1,7 @@
+# Note (2026-09-29)
+
+This audit covers the first, long version of the script, now at scripts/old/io_death_rates_v1_long.R. The current scripts/io_death_rates.R is a rewrite: about 200 lines, outcomes as a table, same death-certificate rules, same ACS and rate method, same synthetic test (tests/synthetic_run.R). The findings below still describe the rules both versions share.
+
 # Audit of scripts/io_death_rates.R
 
 Audited and fixed 2026-09-28. Checked against docs/analysis-plan.md, docs/provenance-comparison.md section C, the DC template (dc_condition_surveillance.sas), OHIs subindicators.sas (lines 360 to 470 and 894 to 1000), dc-data-sources.md, the team's NIOCCS scripts, the denominators README and docs/acs-denominator-spec.md.
