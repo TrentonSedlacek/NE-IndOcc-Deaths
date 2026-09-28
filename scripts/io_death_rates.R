@@ -112,7 +112,8 @@ parse_dod <- function(x) {
   # Excel serial numbers ("45291.0" = 2023-12-31): the xlsx exports store the
   # date this way when read as text. Origin 1899-12-30 is the Excel convention.
   num <- suppressWarnings(as.numeric(x))
-  is_serial <- !is.na(num) & num > 20000 & num < 80000
+  # Serial 1 = 1900-01-01, so birth dates back to 1900 are serials from 1 up.
+  is_serial <- !is.na(num) & num >= 1 & num < 80000
   out[is_serial] <- as.Date(num[is_serial], origin = "1899-12-30")
   for (fmt in c("%m/%d/%Y", "%Y-%m-%d", "%m/%d/%Y %H:%M", "%m/%d/%Y %H:%M:%S", "%Y-%m-%d %H:%M:%S", "%d%b%Y", "%m/%d/%y")) {
     todo <- is.na(out) & x != ""
