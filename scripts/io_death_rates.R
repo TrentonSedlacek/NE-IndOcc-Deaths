@@ -114,23 +114,40 @@ message("Cases: ", paste(outcomes$outcome, sapply(outcomes$outcome, function(o) 
 # ---- 3. CODE INDUSTRY AND OCCUPATION (CDC NIOCCS web service) ---------
 # One GET per distinct text pair (team's GET.R); replies cached so each pair is sent once.
 cache_file <- file.path(cfg$cache_dir, "nioccs_cache.csv")
+`%||%` <- function(a, b) if (is.null(a) || !length(a)) b else a
+# CDC's reply: {"Industry": {...NAICSCode...}, "Occupation": {...SOCCode...}}; either part may be
+# wrapped in a one-element list. The raw reply is kept in the cache so a parse problem can be re-read.
+parse_reply <- function(raw) {
+  j <- tryCatch(fromJSON(raw, simplifyVector = FALSE), error = function(e) list())
+  ind <- j$Industry; occ <- j$Occupation
+  if (!is.null(ind) && is.null(names(ind)) && length(ind)) ind <- ind[[1]]
+  if (!is.null(occ) && is.null(names(occ)) && length(occ)) occ <- occ[[1]]
+  c(NAICSCode = as.character(ind$NAICSCode %||% ""), SOCCode = as.character(occ$SOCCode %||% ""))
+}
 cache <- if (file.exists(cache_file)) read_csv(cache_file, col_types = cols(.default = "c"), na = character(), show_col_types = FALSE) else
-         tibble(IndustryLit = character(), OccupationLIt = character(), NAICSCode = character(), SOCCode = character())
+         tibble(IndustryLit = character(), OccupationLIt = character(), NAICSCode = character(), SOCCode = character(), raw = character())
+if (!"raw" %in% names(cache)) cache$raw <- ""
+# Re-read codes from the stored replies (fixes any row saved by an older parser), drop rows with no reply.
+if (nrow(cache)) { parsed <- t(sapply(cache$raw, parse_reply)); cache$NAICSCode <- parsed[, 1]; cache$SOCCode <- parsed[, 2] }
+cache <- cache %>% filter(raw != "")
 cases <- cases %>% mutate(IndustryLit = coalesce(IndustryLit, ""), OccupationLIt = coalesce(OccupationLIt, ""))
 todo <- cases %>% distinct(IndustryLit, OccupationLIt) %>% filter(IndustryLit != "" | OccupationLIt != "") %>% anti_join(cache, by = c("IndustryLit", "OccupationLIt"))
 if (cfg$run_nioccs && nrow(todo) > 0) {
   message("NIOCCS: coding ", nrow(todo), " text pairs")
+  n_ok <- 0
   for (i in seq_len(nrow(todo))) {
     r <- try(GET("https://wwwn.cdc.gov/nioccs/IOCode?", query = list(i = todo$IndustryLit[i], o = todo$OccupationLIt[i], c = 2), timeout(30)), silent = TRUE)
-    if (inherits(r, "try-error") || status_code(r) != 200) next
-    j <- fromJSON(content(r, as = "text", encoding = "UTF-8"), simplifyVector = FALSE)
-    row <- tibble(IndustryLit = todo$IndustryLit[i], OccupationLIt = todo$OccupationLIt[i],
-                  NAICSCode = as.character(j$Industry$NAICSCode %||% ""), SOCCode = as.character(j$Occupation$SOCCode %||% ""))
+    if (inherits(r, "try-error") || status_code(r) != 200) { if (i == 1) message("  first call failed: ", if (inherits(r, "try-error")) r else status_code(r)); next }
+    raw <- content(r, as = "text", encoding = "UTF-8"); codes <- parse_reply(raw)
+    if (i == 1) message("  first reply: ", substr(raw, 1, 300))
+    row <- tibble(IndustryLit = todo$IndustryLit[i], OccupationLIt = todo$OccupationLIt[i], NAICSCode = codes[["NAICSCode"]], SOCCode = codes[["SOCCode"]], raw = raw)
     write_csv(row, cache_file, append = file.exists(cache_file), na = "")
-    cache <- bind_rows(cache, row); Sys.sleep(0.2)
+    cache <- bind_rows(cache, row); n_ok <- n_ok + (codes[["NAICSCode"]] != ""); Sys.sleep(0.2)
+    if (i %% 200 == 0) message("  ", i, " of ", nrow(todo))
   }
+  message("NIOCCS: ", n_ok, " of ", nrow(todo), " pairs got an industry code")
 } else if (nrow(todo) > 0) message("NIOCCS off: ", nrow(todo), " text pairs not coded (set run_nioccs = TRUE)")
-`%||%` <- function(a, b) if (is.null(a) || !length(a)) b else a
+cache <- cache %>% select(IndustryLit, OccupationLIt, NAICSCode, SOCCode) %>% distinct(IndustryLit, OccupationLIt, .keep_all = TRUE)
 
 # Sector = NAICS 2-digit (31-33, 44-45, 48-49 combined); occupation group = SOC first 2 digits.
 # Rows that get counts but no rate: Military (not in ACS), Not in workforce, Not coded.

@@ -140,7 +140,10 @@ nioccs_reply <- tribble(~IndustryLit, ~OccupationLIt, ~NAICSCode, ~SOCCode,
   "SCHOOL", "TEACHER", "611110", "25-2021",             "HOMEMAKER", "HOMEMAKER", "", "",
   "UNKNOWN", "UNKNOWN", "", "",                         "CHILD CARE", "CHILD CARE WORKER", "624410", "39-9011")
 # RAILROAD / CONDUCTOR is left out on purpose: it should be reported as not yet coded.
-cache <- nioccs_reply %>% select(IndustryLit, OccupationLIt, NAICSCode, SOCCode)
+cache <- nioccs_reply %>% rowwise() %>%
+  mutate(raw = as.character(toJSON(list(Industry = list(list(NAICSCode = NAICSCode, Title = "x")),
+                                        Occupation = list(SOCCode = SOCCode, Title = "y")), auto_unbox = TRUE))) %>% ungroup() %>%
+  mutate(NAICSCode = "", SOCCode = "") %>% select(IndustryLit, OccupationLIt, NAICSCode, SOCCode, raw)   # codes blank on purpose: re-parsed from raw
 write_csv(cache, file.path(dirs$cache, "nioccs_cache.csv"), na = "")
 
 # ---------------------------------------------------------------------
