@@ -1,0 +1,177 @@
+OccCategory.x,year,Count,suicide_per_1000_fte
+Management Occupations,2016,21,0.168
+Management Occupations,2017,30,0.236
+Management Occupations,2018,32,0.258
+Management Occupations,2019,31,0.248
+Management Occupations,2020,30,0.232
+Management Occupations,2021,31,0.232
+Management Occupations,2022,29,0.212
+Management Occupations,2023,24,0.173
+Business and Financial Operations Occupations,2016,3,0.066
+Business and Financial Operations Occupations,2017,5,0.109
+Business and Financial Operations Occupations,2018,6,0.117
+Business and Financial Operations Occupations,2019,11,0.208
+Business and Financial Operations Occupations,2020,5,0.092
+Business and Financial Operations Occupations,2021,2,0.036
+Business and Financial Operations Occupations,2022,5,0.087
+Business and Financial Operations Occupations,2023,4,0.068
+Computer and Mathematical Occupations,2016,7,0.281
+Computer and Mathematical Occupations,2017,3,0.111
+Computer and Mathematical Occupations,2018,5,0.178
+Computer and Mathematical Occupations,2019,3,0.103
+Computer and Mathematical Occupations,2020,7,0.223
+Computer and Mathematical Occupations,2021,5,0.153
+Computer and Mathematical Occupations,2022,7,0.211
+Computer and Mathematical Occupations,2023,5,0.148
+Architecture and Engineering Occupations,2016,1,0.075
+Architecture and Engineering Occupations,2017,4,0.307
+Architecture and Engineering Occupations,2018,1,0.073
+Architecture and Engineering Occupations,2019,5,0.37
+Architecture and Engineering Occupations,2020,3,0.203
+Architecture and Engineering Occupations,2021,2,0.131
+Architecture and Engineering Occupations,2022,5,0.304
+Architecture and Engineering Occupations,2023,4,0.232
+"Life, Physical, and Social Science Occupations",2016,2,0.247
+"Life, Physical, and Social Science Occupations",2017,0,0
+"Life, Physical, and Social Science Occupations",2018,1,0.113
+"Life, Physical, and Social Science Occupations",2019,0,0
+"Life, Physical, and Social Science Occupations",2020,1,0.092
+"Life, Physical, and Social Science Occupations",2021,5,0.456
+"Life, Physical, and Social Science Occupations",2022,2,0.177
+"Life, Physical, and Social Science Occupations",2023,2,0.171
+Community and Social Service Occupations,2016,1,0.06
+Community and Social Service Occupations,2017,0,0
+Community and Social Service Occupations,2018,1,0.054
+Community and Social Service Occupations,2019,0,0
+Community and Social Service Occupations,2020,1,0.054
+Community and Social Service Occupations,2021,2,0.11
+Community and Social Service Occupations,2022,3,0.164
+Community and Social Service Occupations,2023,1,0.055
+Legal Occupations,2016,0,0
+Legal Occupations,2017,0,0
+Legal Occupations,2018,1,0.124
+Legal Occupations,2019,3,0.358
+Legal Occupations,2020,0,0
+Legal Occupations,2021,2,0.231
+Legal Occupations,2022,1,0.117
+Legal Occupations,2023,1,0.103
+Educational Instruction and Library Occupations,2016,3,0.048
+Educational Instruction and Library Occupations,2017,4,0.064
+Educational Instruction and Library Occupations,2018,5,0.079
+Educational Instruction and Library Occupations,2019,7,0.109
+Educational Instruction and Library Occupations,2020,7,0.105
+Educational Instruction and Library Occupations,2021,3,0.044
+Educational Instruction and Library Occupations,2022,6,0.087
+Educational Instruction and Library Occupations,2023,4,0.058
+"Arts, Design, Entertainment, Sports, and Media Occupations",2016,2,0.159
+"Arts, Design, Entertainment, Sports, and Media Occupations",2017,3,0.23
+"Arts, Design, Entertainment, Sports, and Media Occupations",2018,0,0
+"Arts, Design, Entertainment, Sports, and Media Occupations",2019,12,0.851
+"Arts, Design, Entertainment, Sports, and Media Occupations",2020,5,0.356
+"Arts, Design, Entertainment, Sports, and Media Occupations",2021,3,0.229
+"Arts, Design, Entertainment, Sports, and Media Occupations",2022,1,0.079
+"Arts, Design, Entertainment, Sports, and Media Occupations",2023,2,0.156
+Healthcare Practitioners and Technical Occupations,2016,6,0.106
+Healthcare Practitioners and Technical Occupations,2017,8,0.142
+Healthcare Practitioners and Technical Occupations,2018,6,0.108
+Healthcare Practitioners and Technical Occupations,2019,6,0.104
+Healthcare Practitioners and Technical Occupations,2020,3,0.052
+Healthcare Practitioners and Technical Occupations,2021,14,0.234
+Healthcare Practitioners and Technical Occupations,2022,6,0.096
+Healthcare Practitioners and Technical Occupations,2023,6,0.092
+Healthcare Support Occupations,2016,8,0.36
+Healthcare Support Occupations,2017,8,0.358
+Healthcare Support Occupations,2018,5,0.178
+Healthcare Support Occupations,2019,3,0.108
+Healthcare Support Occupations,2020,7,0.259
+Healthcare Support Occupations,2021,7,0.253
+Healthcare Support Occupations,2022,1,0.036
+Healthcare Support Occupations,2023,6,0.221
+Protective Service Occupations,2016,4,0.248
+Protective Service Occupations,2017,3,0.191
+Protective Service Occupations,2018,4,0.246
+Protective Service Occupations,2019,7,0.421
+Protective Service Occupations,2020,8,0.485
+Protective Service Occupations,2021,2,0.118
+Protective Service Occupations,2022,3,0.172
+Protective Service Occupations,2023,4,0.238
+Food Preparation and Serving Related Occupations,2016,8,0.208
+Food Preparation and Serving Related Occupations,2017,9,0.243
+Food Preparation and Serving Related Occupations,2018,6,0.16
+Food Preparation and Serving Related Occupations,2019,7,0.188
+Food Preparation and Serving Related Occupations,2020,9,0.261
+Food Preparation and Serving Related Occupations,2021,6,0.165
+Food Preparation and Serving Related Occupations,2022,16,0.428
+Food Preparation and Serving Related Occupations,2023,6,0.165
+Building and Grounds Cleaning and Maintenance Occupations,2016,3,0.103
+Building and Grounds Cleaning and Maintenance Occupations,2017,8,0.271
+Building and Grounds Cleaning and Maintenance Occupations,2018,8,0.271
+Building and Grounds Cleaning and Maintenance Occupations,2019,4,0.137
+Building and Grounds Cleaning and Maintenance Occupations,2020,11,0.4
+Building and Grounds Cleaning and Maintenance Occupations,2021,6,0.218
+Building and Grounds Cleaning and Maintenance Occupations,2022,8,0.302
+Building and Grounds Cleaning and Maintenance Occupations,2023,10,0.366
+ Personal Care and Service Occupations,2016,0,0
+ Personal Care and Service Occupations,2017,0,0
+ Personal Care and Service Occupations,2018,1,0.042
+ Personal Care and Service Occupations,2019,2,0.086
+ Personal Care and Service Occupations,2020,10,0.428
+ Personal Care and Service Occupations,2021,2,0.091
+ Personal Care and Service Occupations,2022,10,0.455
+ Personal Care and Service Occupations,2023,2,0.097
+Sales and Related Occupations,2016,12,0.133
+Sales and Related Occupations,2017,11,0.119
+Sales and Related Occupations,2018,20,0.217
+Sales and Related Occupations,2019,16,0.175
+Sales and Related Occupations,2020,11,0.126
+Sales and Related Occupations,2021,11,0.126
+Sales and Related Occupations,2022,13,0.154
+Sales and Related Occupations,2023,14,0.166
+Office and Administrative Support Occupations,2016,10,0.081
+Office and Administrative Support Occupations,2017,13,0.106
+Office and Administrative Support Occupations,2018,10,0.089
+Office and Administrative Support Occupations,2019,12,0.109
+Office and Administrative Support Occupations,2020,13,0.117
+Office and Administrative Support Occupations,2021,13,0.118
+Office and Administrative Support Occupations,2022,6,0.055
+Office and Administrative Support Occupations,2023,12,0.113
+"Farming, Fishing, and Forestry Occupations",2016,1,0.069
+"Farming, Fishing, and Forestry Occupations",2017,2,0.126
+"Farming, Fishing, and Forestry Occupations",2018,3,0.184
+"Farming, Fishing, and Forestry Occupations",2019,5,0.297
+"Farming, Fishing, and Forestry Occupations",2020,7,0.418
+"Farming, Fishing, and Forestry Occupations",2021,8,0.49
+"Farming, Fishing, and Forestry Occupations",2022,7,0.461
+"Farming, Fishing, and Forestry Occupations",2023,1,0.069
+Construction and Extraction Occupations,2016,32,0.579
+Construction and Extraction Occupations,2017,40,0.711
+Construction and Extraction Occupations,2018,31,0.549
+Construction and Extraction Occupations,2019,37,0.65
+Construction and Extraction Occupations,2020,27,0.494
+Construction and Extraction Occupations,2021,40,0.746
+Construction and Extraction Occupations,2022,25,0.453
+Construction and Extraction Occupations,2023,38,0.693
+" Installation, Maintenance, and Repair Occupations",2016,11,0.293
+" Installation, Maintenance, and Repair Occupations",2017,16,0.426
+" Installation, Maintenance, and Repair Occupations",2018,14,0.379
+" Installation, Maintenance, and Repair Occupations",2019,16,0.43
+" Installation, Maintenance, and Repair Occupations",2020,18,0.487
+" Installation, Maintenance, and Repair Occupations",2021,16,0.439
+" Installation, Maintenance, and Repair Occupations",2022,24,0.652
+" Installation, Maintenance, and Repair Occupations",2023,17,0.459
+Production Occupations,2016,15,0.213
+Production Occupations,2017,13,0.183
+Production Occupations,2018,20,0.281
+Production Occupations,2019,19,0.268
+Production Occupations,2020,13,0.178
+Production Occupations,2021,18,0.235
+Production Occupations,2022,19,0.249
+Production Occupations,2023,24,0.323
+Transportation and Material Moving Occupations,2016,32,0.473
+Transportation and Material Moving Occupations,2017,35,0.502
+Transportation and Material Moving Occupations,2018,27,0.344
+Transportation and Material Moving Occupations,2019,34,0.431
+Transportation and Material Moving Occupations,2020,23,0.298
+Transportation and Material Moving Occupations,2021,20,0.263
+Transportation and Material Moving Occupations,2022,34,0.445
+Transportation and Material Moving Occupations,2023,34,0.44
