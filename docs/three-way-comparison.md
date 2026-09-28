@@ -25,3 +25,20 @@ Reading: the earlier occ health table and v8 are the same deaths, the same coder
 | Health care | 62, 11.0 | 59, 11.7 |
 
 By occupation the agreement is the same: construction and extraction trades 59.7 before vs 57.5 now per 100,000 FTE, and the ranking of the 22 groups is unchanged.
+
+## Like for like: v9 (v8 with ages 16 and over) against the earlier occupational health table, suicides 2020-2021
+
+v9 = v8 with the upper age limit removed; same NCHS file, same NIOCCS cache, same PUMS 2020-2024 tool. The earlier table's rate is the mean of its single-year rates per 1,000 FTE, times 100.
+
+| Sector | Before: deaths, per 100,000 FTE | v9: deaths, per 100,000 persons / FTE |
+|---|---|---|
+| Construction | 65, 43.8 | 65, 44.2 / 41.5 |
+| Manufacturing | 59, 25.7 | 59, 26.8 / 25.1 |
+| Agriculture | 41, 41.2 | 41, 48.1 / 39.0 |
+| Transportation and warehousing | 34, 29.7 | 34, 34.6 / 30.9 |
+| Accommodation and food | 22, 24.8 | 22, 19.3 / 25.0 |
+| Health care | 33, 11.8 | 33, 11.1 / 11.8 |
+| Retail | 27, 13.7 | 27, 12.6 / 14.0 |
+| All coded sectors | 440 | 440 |
+
+Every sector count matches exactly. FTE rates match within a few percent (the earlier table used a different PUMS vintage for each year). v8 (16 to 64) is therefore the same pipeline with one age setting changed.
