@@ -2,6 +2,8 @@
 
 Version 1, 2026-09-28. Method follows the Massachusetts DPH report (2022) and the CDC NVDRS industry paper (Peterson 2020). Everything below runs on a DHHS machine with K: access; nothing runs in the cloud.
 
+Status note (2026-09-29): this is the original plan, kept as written apart from factual corrections. The release scripts differ from it. scripts/io_death_rates_v8.R takes deaths from the NCHS annual files dth20 to dth24 (not the Guardian exports), keeps residents 16 to 64 (scripts/io_death_rates_v9.R: 16 and over), and uses ACS PUMS 2020-2024 5-year persons and FTE (PWGTP x WKHP / 40) as denominators instead of tables C24030 and C24010. Sending industry and occupation text to NIOCCS was approved by Trenton on 2026-09-29. Scripts v3 to v7 followed this plan's Guardian and ACS-table route. Results: docs/v5-changes.md and docs/three-way-comparison.md.
+
 ## 1. What we are producing
 
 Two tables, same layout, one per outcome:
@@ -46,7 +48,7 @@ Do not use: QCEW, QWI, OEWS (jobs, not people; no self-employed; no occupation).
 
 8. No suppression during analysis. Full counts everywhere. The DHHS floor is applied once, at release, as a separate step on the final public table. Never show a census tract map.
 
-9. Reconcile with NEVDRS. Run the suicide table for 2020-2021 and compare the construction, manufacturing and not-in-workforce counts with 84, 72, 55. Differences will come from age (Can used all ages), residency, manner versus ICD, and sector assignment. Document each.
+9. Reconcile with NEVDRS. Run the suicide table for 2020-2021 and compare the construction, manufacturing and not-in-workforce counts with 72, 55, 84. Differences will come from age (the sheet's not-in-workforce panel includes ages 10-19, so it is not limited to 16 and over), residency (NEVDRS includes residents who died out of state), manner versus ICD (NEVDRS reclassifies deaths after investigation, per the dashboard page), and sector assignment. Document each.
 
 10. Write up. One methods page (this plan, updated with what actually happened), the two tables, the reconciliation table, and a limitations list: usual versus current industry, NIOCCS coding error, ACS sampling error in small sectors, 2020 pandemic year, occurrent deaths of non-residents excluded.
 
@@ -57,11 +59,11 @@ Do not use: QCEW, QWI, OEWS (jobs, not people; no self-employed; no occupation).
 | Headline denominator: workers or FTE | Workers per 100,000, matching MA and CDC; FTE as a second column if wanted | Derry |
 | Headline coding: NIOCCS or certificate code | NIOCCS, with the certificate code as the cross-check | Derry, Trenton |
 | Years | 2020 to 2024 pooled; by-year only for statewide totals | Trenton |
-| Is sending I/O text to the CDC NIOCCS service allowed under the data use agreement | Confirm; the text carries no identifiers but the question has to be asked once | Derry |
+| Is sending I/O text to the CDC NIOCCS service allowed under the data use agreement | Settled: approved by Trenton, 2026-09-29 (CLAUDE.md) | Trenton |
 
 ## 5. Quality checks that must pass before numbers leave the team
 
-- Statewide suicide total by year within a few percent of the Vital Statistics 10-year sheet (2020: about 289, 2021: about 305, 2022: about 284 on the NEVDRS dashboard).
+- Statewide suicide total by year within a few percent of the Vital Statistics 10-year sheet (NEVDRS fact sheets: 2020: 289, 2021: 284, 2022: 305; the Vital Statistics 10-year sheet gives 306 for 2022).
 - Statewide overdose total by year within a few percent of the SUDORS sheets (2021-2022 combined: 366).
 - Sector counts sum to the total plus not-in-workforce plus not-coded plus military, exactly.
 - ACS worker total by sector matches the published Nebraska C24030 total.

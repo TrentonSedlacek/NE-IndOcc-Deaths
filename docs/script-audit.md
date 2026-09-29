@@ -1,6 +1,6 @@
 # Note (2026-09-29)
 
-This audit covers the first, long version of the script, now at scripts/old/io_death_rates_v1_long.R. The current scripts/io_death_rates.R is a rewrite: about 200 lines, outcomes as a table, same death-certificate rules, same ACS and rate method, same synthetic test (tests/synthetic_run.R). The findings below still describe the rules both versions share.
+Historical. This audit covers the first, long version of the script, now at scripts/old/io_death_rates_v1_long.R, as it stood on 2026-09-28. Superseded since: (a) every suppression item below (findings 1 and 22, the "floor 6" line, decision 6) is withdrawn; per CLAUDE.md no script suppresses, and scripts/old/io_death_rates_v1_long.R line 697 and every later version say "No suppression"; the DHHS floor is applied only at public release. (b) The data use question (finding 25, decision 5) is settled: NIOCCS use was approved by Trenton on 2026-09-29. (c) tests/synthetic_run.R now tests scripts/io_death_rates_v6.R (see docs/v5-changes.md), not the 40-check test described here. (d) The release scripts are now scripts/io_death_rates_v8.R and scripts/io_death_rates_v9.R.
 
 # Audit of scripts/io_death_rates.R
 
@@ -20,7 +20,7 @@ Severity: High = wrong numbers or a disclosure risk. Medium = wrong in some case
 
 | # | Sev | Section | What was wrong | What changed |
 |---|---|---|---|---|
-| 1 | High | 7 | Suppression blanked the rate but left the 1 to 5 count in the `deaths` column (and `pct_of_all_deaths`) of every written table. The fake run printed 183 cells with 1 to 5 deaths (confirmed). | Counts, percents, rates and RRs are all blanked for 1 to 5 deaths, the same floor applies to non-rate rows, and QA runs on an unsuppressed copy that is never written. |
+| 1 | High | 7 | Suppression blanked the rate but left the 1 to 5 count in the `deaths` column (and `pct_of_all_deaths`) of every written table. The fake run printed 183 cells with 1 to 5 deaths (confirmed). | Withdrawn (see note at top): no script suppresses; full counts are written. |
 | 2 | High | 6 | `pct_of_all_deaths` compared `counts$sex == sex` across vectors of different lengths (recycling), so the percents were wrong. Male percents summed to 105.9 (confirmed). | Now computed per sex with group_by. The test checks that they sum to 100. |
 | 3 | High | 2 | The overdose text branch took any text hit. That included suicides by overdose (X64), homicides, and natural "digoxin toxicity" deaths (confirmed on planted records). SUDORS covers unintentional and undetermined intent only. | A text-only hit counts only when the manner is not S, H or N. Text-only cases go on the review list and are counted in QA. This needs a human decision (see below). |
 | 4 | High | 3 | Cache keys: `read_csv` turns "" into NA, so every pair with a blank side ("" / "STUDENT", "" / "RETIRED", "" / "") missed the cache on every run. They were re-sent to CDC and never joined back (confirmed). The "" / "" pair was also sent to CDC. A duplicate key in the cache would have duplicated deaths in the join. | The cache is read with `na = character()`, blank-blank pairs are never sent, and the cache is deduplicated before the join. |
@@ -41,7 +41,7 @@ Severity: High = wrong numbers or a disclosure risk. Medium = wrong in some case
 | 19 | Low | 2 | `paste` turned NA text into "NA". `sapply` returned a vector, not a matrix, for 1 row. | coalesce to "". The matrix is built with as.matrix. |
 | 20 | Low | 1 | Sex codes "1" and "2" were not mapped. OHIs `$sexf` maps them. | Mapped. Age uses trunc (SAS int). Non-numbers become missing quietly, as `?? 8.` does in SAS. |
 | 21 | Low | 0, 5 | Required a Census key at the top even when it was not needed, and called `census_api_key()`. | The key is read only in the tidycensus branch and passed as `key=`. A saved `fetch_acs_denominators.py` CSV is used when present. |
-| 22 | Low | 8, 9 | The QA file (unsuppressed counts) was written to Output. | Written to Cache. Output gets suppressed tables and the methods note only. |
+| 22 | Low | 8, 9 | The QA file (unsuppressed counts) was written to Output. | Written to Cache. Output gets group-level tables (full counts, no suppression) and the methods note only. |
 | 23 | Low | 8 | By-year totals were 16+ only. The plan compares them with all-ages Vital Statistics and SUDORS sheets. | Adds all-ages resident totals by year. |
 | 24 | Low | 6 | The MA all-intent definition was only a console message. | Added as table `ma_opioid_ind`. |
 | 25 | Info | 0 | `run_nioccs = TRUE` by default, before the data use agreement question (plan section 4) is answered. | Default is FALSE, with a comment. |
@@ -94,8 +94,8 @@ To close this out: run `python scripts/fetch_acs_denominators.py` on a machine w
 2. **Non-worker word list and the "RETIRED" rule.** Now: homemaker, housewife, student, retired, unemployed, never worked, disabled, disability, child. Infant, minor, inmate and prisoner were dropped. Should "NONE" be Not coded or Not in workforce?
 3. **Military = NAICS 928110.** This also catches civilian Department of Defense employees, who are in the ACS civilian denominator. This is the plan's rule; confirm it.
 4. **NIOCCS confidence.** Look up the field name in one cached `raw_json` and set `nioccs_ind_conf_field`, `nioccs_occ_conf_field` and `nioccs_conf_min`.
-5. **Data use agreement** for sending I/O text to CDC (plan section 4). `run_nioccs` stays FALSE until this is answered.
-6. **Complementary suppression.** A total minus the male cell can reveal a suppressed female cell. OHIs does not handle this. Decide whether the sex columns need it.
+5. **Data use agreement** for sending I/O text to CDC. Settled: approved by Trenton, 2026-09-29.
+6. **Complementary suppression.** Withdrawn from the analysis. It is a question for the one-time public release step only, when Trenton asks for it.
 7. **Rate ratio CI.** It treats the sector count and the all-worker count as independent, which makes it slightly wide. Acceptable for a crude table, but say so in the methods.
 8. **Not done:** the occupation cross-check (plan step 5, second half; no SAS rule exists for Census occupation code ranges) and the FTE column (plan step 6; needs a PUMS 2020-2024 rerun).
 9. **SAS fix at source:** subindicators.sas line 88, 7071 should be 7070.

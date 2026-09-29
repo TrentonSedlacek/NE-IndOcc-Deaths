@@ -2,6 +2,8 @@
 
 Written 2026-09-28. Purpose: see, side by side, how each analysis that touches Nebraska suicide or overdose deaths gets from raw records to a number, so that the sub-indicator suicide-by-industry measure and the Can/Mamie check can share one provenance instead of adding a tenth variant.
 
+Status (2026-09-29): section C's recommendation (Guardian numerator, published ACS tables) was followed by scripts v3 to v7. The release scripts v8 and v9 instead follow A5 to A7: NCHS annual files, NIOCCS, ACS PUMS persons and FTE (docs/v5-changes.md, docs/three-way-comparison.md).
+
 "Provenance" here means: numerator source, case definition, residency, years, age range, where industry and occupation (I/O) come from, how they are coded and to what level, denominator source and unit, standardization, uncertainty, suppression, and what the output is.
 
 ## A. The analyses
@@ -54,7 +56,7 @@ Written 2026-09-28. Purpose: see, side by side, how each analysis that touches N
 ### A6. Team suicide by occupation per FTE (nioccs_suicide.R, Jean Kwizerimana adaptation of Chris Austin's tools)
 - Numerator: A5's suicides file, DOD_YR 2014 onward.
 - I/O source: INDUSTL and OCCUPL text. Coding: CDC NIOCCS web service, one GET per record, c = 2. Level: SOC major group and NAICS 2-digit sector (31-33, 44-45, 48-49 combined). SOC 11-9013 recoded into group 45. Group "00" dropped.
-- Age: filter AGEUNITS >= 16 (probably the age-unit code, not age). Residency: inherited from A5.
+- Age: filter AGEUNITS >= 16. In the NCHS layout AGEUNITS holds the age number and AGETYPE its unit (scripts/io_death_rates_v8.R reads it that way, AGETYPE 1 = years), so this is effectively 16 and over, with no AGETYPE check. v9 reproduces A7's 2020-2021 sector counts exactly at 16 and over. Residency: inherited from A5.
 - Denominator: ACS PUMS 2023 5-year FTE by SOC 2-digit (FTE = PWGTP x WKHP / 40, civilian employed). Unit: per 1,000 FTE. Ten years of deaths over one year of FTE.
 - Standardization: none. Uncertainty: none. Suppression: none. Non-workers: dropped.
 - Output: suicide_counts_occ.csv on K:. Does not run as saved.
@@ -97,7 +99,7 @@ Written 2026-09-28. Purpose: see, side by side, how each analysis that touches N
 | Numerator source | NVDRS abstraction | NVDRS abstraction | SUDORS abstraction | Death certificates | NCHS annual DC files | A5 | A6 | Guardian DC exports | Death certificates | NVDRS |
 | Case definition | manner = suicide (X60-X84, Y87.0, U03) | same | X40-44, Y10-14 or overdose text | ICD underlying (unstated) | X60-X84, Y870, "UO3" typo | inherits A5 | inherits A5 | InjuryAtWork = Y; J60-J66 | opioid T40 with poisoning underlying | manner = suicide |
 | Residency | residents | residents | not stated (CDC: occurrent) | residents | RES_ST = NE on occurrence file | inherits | inherits | ResidingStateNchs = NE | residents | residents |
-| Age | all | all | all | all, by group | none | 16+ (wrong variable) | 16+ (wrong variable) | 16+ / 15+ | 16+ | 16-64 |
+| Age | all | all | all | all, by group | none | 16+ (AGEUNITS, no AGETYPE check) | 16+ (AGEUNITS, no AGETYPE check) | 16+ / 15+ | 16+ | 16-64 |
 | Years | 1 or 2 | 2020-21 pooled | 2 pooled | 2013-22 by year | 2005-23 | 2014-23 pooled | 2014-23 by year | by year 2021-25 | 2018-19, 2020 | 2016 |
 | I/O source | none | unstated | none | none | DC codes carried | DC text | DC text | DC industry code | DC text | NVDRS (DC) text |
 | I/O coding | | unstated | | | none | NIOCCS | NIOCCS | Census code crosswalk | NIOCCS + manual | NIOCCS |
@@ -127,11 +129,11 @@ Recommended shared provenance for both the sub-indicator and the Can/Mamie check
 1. Numerator: Guardian yearly death certificate datasets (A8's loader), residents, one row per certificate, age 16+ computed from NchsAge and NchsAgeUnit. Suicide: AcmeUnderlyingCode X60-X84, Y87.0, U03. Overdose: SUDORS definition (X40-X44, Y10-Y14, plus literal text) with an opioid subset on T40.0-T40.4, T40.6 in the multiple-cause fields, and the Massachusetts all-intent opioid definition as a second column for comparability. Years 2020 to 2024 pooled, and by year for the sub-indicator trend.
 2. I/O: code IndustryLit and OccupationLIt through NIOCCS to NAICS sector and SOC major group (the majority method, and Massachusetts's), and also carry the certificate's IndustryCode crosswalk (A8's method) so the two can be compared on the same deaths. Keep explicit rows for not in workforce, not coded, and military; never drop them.
 3. Denominator: ACS employed workers by sector and group (published C24030 and C24010, or PUMS with ESR 1 or 2), 2020-2024 5-year, times five for pooled rates; per 100,000 workers, matching A9 and A10. Add a second column per FTE from the team's PUMS tool (hours/40) if Derry wants it, computed from the same PUMS vintage so the two rates differ only in the hours weighting. QCEW stays as a cross-check, not the headline, because it counts jobs and drops most farm work.
-4. Statistics: Poisson 95 percent CIs on counts, rate ratio against all workers, crude by sector (age-by-industry denominators are not available from published tables), DHHS floor of 6 and the under-20 unstable flag, which A8 already implements.
+4. Statistics: Poisson 95 percent CIs on counts, rate ratio against all workers, crude by sector (age-by-industry denominators are not available from published tables). No suppression during analysis (CLAUDE.md): every count is shown; the DHHS floor is applied once, to a final table, at public release.
 5. Reconciliation with NEVDRS: before any rate, match the pooled 2020-2021 counts against the sector sheet (84, 72, 55) using both I/O methods. Agreement on counts isolates the denominator as the only difference.
 
 ## D. The two-for-one
 
-Add S11 "Suicide deaths by industry and occupation" to the OHIs sub-indicator set. It reuses A8's loader, residency, age, dedupe and suppression, adds the suicide case definition and the NIOCCS coding step, and takes its denominator from the ACS files in this repo rather than QCEW. Its by-year rows feed the sub-indicator trend; its 2020-2021 pooled rows are the Can/Mamie comparison. An overdose measure (S12) is the same code with the SUDORS definition swapped in. The strata list (NAICS 2-digit plus UNK) already exists in ohis/sub-indicators/strata.csv; SOC major groups would be added.
+Add S11 "Suicide deaths by industry and occupation" to the OHIs sub-indicator set. It reuses A8's loader, residency, age and dedupe (not its suppression, which belongs only to the release step), adds the suicide case definition and the NIOCCS coding step, and takes its denominator from the ACS files in this repo rather than QCEW. Its by-year rows feed the sub-indicator trend; its 2020-2021 pooled rows are the Can/Mamie comparison. An overdose measure (S12) is the same code with the SUDORS definition swapped in. The strata list (NAICS 2-digit plus UNK) already exists in ohis/sub-indicators/strata.csv; SOC major groups would be added.
 
 Open decisions this does not settle: per worker vs per FTE as the headline (Derry), NIOCCS vs certificate code as the headline I/O method (recommend NIOCCS, report both), and whether the ACS denominator comes from published tables or PUMS (PUMS if FTE is wanted; either otherwise).

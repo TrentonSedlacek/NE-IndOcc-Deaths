@@ -116,11 +116,11 @@ Method issues to settle before reusing the numbers:
 - The rate is per 1,000 FTE. The Massachusetts model and the brief's likely choice is per 100,000 ACS employed workers.
 - Decedents with NAICS or SOC "00", and any code without a denominator row (unemployed, never worked, homemaker, student, retired, military, insufficient information), vanish silently. There is no non-worker or not-coded row, which is the part of the NEVDRS sheet that most needs checking.
 - `AGEUNITS >= 16` assumes the age is in years; filter on `AGETYPE` (or the Guardian `NchsAgeUnit`) as well.
-- No confidence intervals for the count (Poisson), no suppression (DHHS floor of 6, CSTE fewer than 5), no pooling of years; single-year sector counts will be small.
+- No confidence intervals for the count (Poisson), no pooling of years; single-year sector counts will be small.
 - Year-specific rates use mixed 1-year and 5-year denominators, so the year-to-year trend is not like-for-like.
 - NIOCCS coding confidence and the "insufficient information" results are not examined.
 
-To reuse for the project: take the numerator from 2020 to 2024 (Guardian yearly datasets or NCHS annual), with X60-X84, Y87.0 and U03 spelled correctly, NE residents, age 16+ by age unit, one row per certificate; code industry and occupation either through NIOCCS on `IndustryLit`/`OccupationLIt` (as here and as Massachusetts did) or by crosswalking `IndustryCode`/`OccupationCode` to NAICS sector and SOC major group; keep non-worker, not-coded and military as explicit rows; swap in ACS employed workers from one 5-year vintage; pool years; add Poisson 95% CIs, rate ratios and suppression; replace the K: paths. The join-and-rate skeleton (sector labels, the 31-33/44-45/48-49 collapse, count-by-group then left-join to the denominator, zero fill) is worth keeping.
+To reuse for the project: take the numerator from 2020 to 2024 (Guardian yearly datasets or NCHS annual), with X60-X84, Y87.0 and U03 spelled correctly, NE residents, age 16+ by age unit, one row per certificate; code industry and occupation either through NIOCCS on `IndustryLit`/`OccupationLIt` (as here and as Massachusetts did) or by crosswalking `IndustryCode`/`OccupationCode` to NAICS sector and SOC major group; keep non-worker, not-coded and military as explicit rows; swap in ACS employed workers from one 5-year vintage; pool years; add Poisson 95% CIs and rate ratios (no suppression during analysis; the DHHS floor is applied once, at public release); replace the K: paths. The join-and-rate skeleton (sector labels, the 31-33/44-45/48-49 collapse, count-by-group then left-join to the denominator, zero fill) is worth keeping.
 
 ### `suicide/suicide.sas`: suicides by county
 

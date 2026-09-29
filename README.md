@@ -1,6 +1,8 @@
 # NE-IndOcc-Deaths
 
-Nebraska opioid-related (possibly wider drug overdose) deaths and suicides, by industry and occupation, using SUDORS and NVDRS/NEVDRS data, with Nebraska death certificate data to be added later for comparison.
+Nebraska suicide and drug overdose deaths by industry and occupation, from Nebraska death certificates (NCHS annual files dth20 to dth24 on K:), coded with CDC NIOCCS, with ACS PUMS 2020-2024 5-year denominators (persons and FTE). Results are compared with the NEVDRS sector sheet and with Chris and Jean's earlier suicide-by-industry table.
+
+Current release scripts: scripts/io_death_rates_v8.R (residents 16 to 64) and scripts/io_death_rates_v9.R (v8 with ages 16 and over). Real-run results: docs/v5-changes.md and docs/three-way-comparison.md. Scripts are never edited after they are sent; fixes go in a new version.
 
 Start with docs/project-brief.md for context, the people involved, what the collected materials show, and the questions for the NEVDRS team.
 
@@ -9,18 +11,26 @@ Start with docs/project-brief.md for context, the people involved, what the coll
 | Path | Contents |
 |---|---|
 | docs/project-brief.md | Project context, open questions, meeting prep |
-| docs/web-captures/ | Verbatim saves of NE DHHS, CDC, WISQARS, and Census web pages (one file per page, duplicates removed, source URL and capture date at top) |
+| docs/web-captures/ | Verbatim saves of NE DHHS, CDC, WISQARS, Census and HRSA web pages, the DHHS TRIX course list and the Lancaster coroner MOU (one file per page, duplicates removed, source URL and capture date at top) |
 | docs/meetings/ | Meeting transcripts |
 | docs/nevdrs-sectors-factsheet-review.md | Review of Can's unpublished suicide-by-sector fact sheet (population denominators, unstated sector method, tract maps) |
-| docs/analysis-plan.md | The plan: inputs, ten steps, decisions needed, quality checks, effort |
+| docs/analysis-plan.md | The original plan (2026-09-28); see its status note for what v8 changed |
 | docs/provenance-comparison.md | Provenance of all ten suicide and overdose analyses in view, side-by-side table, what is most common, and the shared pipeline for the OHIs sub-indicator and the NEVDRS check |
-| docs/acs-denominator-spec.md | Denominator decision (likely ACS employed workers): tables, years, rate arithmetic, numerator rules, FTE option |
-| scripts/io_death_rates.R | The analysis, one short R script (about 200 lines). Outcomes are rows in a table at the top; add a row to add an indicator. Needs scripts/acs_group_map.csv next to it |
-| scripts/io_death_rates_extras.R | Optional add-ons run after the main script: NEVDRS 2020-2021 reconciliation, certificate-code cross-check, review list |
-| scripts/acs_group_map.csv | ACS C24030 and C24010 category names mapped to NAICS sectors and SOC major groups |
-| scripts/old/ | The first, long version of the script, kept for reference |
-| docs/script-audit.md | Audit findings on the R script: what was wrong, what changed, what is unverified, decisions still needed |
-| tests/synthetic_run.R | Offline test: fake Guardian rows with planted answers, fake NIOCCS cache and ACS tables; runs every section with no network |
+| docs/acs-denominator-spec.md | Early denominator spec (ACS published tables, used by v3 to v7); v8 and v9 use PUMS persons and FTE instead |
+| scripts/io_death_rates_v8.R | Release script: NCHS annual files dth20 to dth24, residents 16 to 64, NIOCCS, PUMS 2020-2024 persons and FTE, suicide and overdose, by sex and age band |
+| scripts/io_death_rates_v9.R | v8 with ages 16 and over (like-for-like check against the earlier occupational health table) |
+| scripts/io_death_rates_v7.R | Earlier release: suicide only, Guardian exports, ACS C24030 and C24010 denominators. Needs scripts/acs_group_map.csv next to it |
+| scripts/io_death_rates_v3.R to v6.R | Earlier steps (Guardian exports, ACS table denominators, suicide and overdose). Change notes in docs/v5-changes.md |
+| scripts/io_death_rates.R, scripts/io_death_rates_extras_v3.R | Pre-versioning copy of v3 (differs only in the cache file name) and its optional add-ons |
+| scripts/acs_group_map.csv | ACS C24030 and C24010 category names mapped to NAICS sectors and SOC major groups (used by v3 to v7) |
+| scripts/drafts/, scripts/old/ | The simple sketch that became v5, and the first long version |
+| docs/script-audit.md | Audit of the first long script (historical; see its status note) |
+| docs/correctness-audit-v4.md, docs/provenance-audit-v4.md, docs/simplicity-review-v4.md, docs/v5-verification.md | Reviews of v4 and v5 (historical) |
+| docs/v5-changes.md | v5 change notes plus the real-run log for v6, v7, v8 and v9 |
+| docs/three-way-comparison.md | NEVDRS sheet vs the earlier occupational health table vs v8 and v9 |
+| docs/people-nevdrs-sudors.md | Who runs NEVDRS and SUDORS, from public pages |
+| docs/repo-audit-2026-09-29.md | Repository consistency audit |
+| tests/synthetic_run.R | Offline test of scripts/io_death_rates_v6.R on fake data (no test exists for v7, v8 or v9); tests/synthetic_run_v4.R tests v4 |
 | scripts/fetch_acs_denominators.py | Pulls Nebraska ACS C24030 and C24010 into data/denominators/ (needs api.census.gov access) |
 | docs/death-cert-data-notes.md | What the team's death certificate repos (DC-HDD-Surveillance, OHIs, NE-Heat-Excess-Mortality, Mother-Repo) hold: DC pipelines, I/O fields, case-finding patterns, denominators, suppression rules, and the plan for the DC side of the comparison |
 | source-docs/INVENTORY.md | Table of every PDF with description and years, every industry/occupation mention with page numbers, dashboard screenshot descriptions, and the Massachusetts report methodology |

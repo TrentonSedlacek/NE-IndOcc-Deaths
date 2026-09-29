@@ -11,7 +11,9 @@ Written 2026-09-28. Sources: the NEVDRS sector fact sheet (Can, 2020-2021); the 
 | Not in workforce | 84, 2.1 | not tabulated | 62, no rate |
 | All coded sectors | | 440 | 365 |
 
-Reading: the earlier occ health table and v8 are the same deaths, the same coder and the same denominator tool; the difference is the age cut (16 and over vs 16 to 64). The 440 coded-sector suicides in the earlier table equals the 440 that v7 found at 16 and over from the Guardian exports, so the two death sources also agree. The NEVDRS rates divide by the whole population and cannot be compared with per-worker rates.
+Reading: the earlier occ health table and v8 are the same deaths, the same coder and the same denominator tool; the difference is the age cut (16 and over vs 16 to 64). The 440 coded-sector suicides in the earlier table equals the 440 all-worker total found at 16 and over from the Guardian exports (first recorded for v4 in docs/nevdrs-sectors-factsheet-review.md; v6 and v7 gave the same counts), so the two death sources also agree. The NEVDRS rates divide by the whole population and cannot be compared with per-worker rates.
+
+Why NEVDRS counts 72 construction suicides where the certificates give 65 (16 and over): the NE DHHS dashboard page (docs/web-captures/ne-dhhs-about-nebraska-suicide-deaths-dashboard-data.md, lines 14 to 16) gives two reasons NEVDRS counts can differ from vital statistics: deaths are reclassified after investigation (a death not first reported as a suicide may later be one), and NEVDRS includes Nebraska residents who died out of state. The statewide totals point the same way: NEVDRS fact sheets give 289 (2020) and 284 (2021) suicides, against 269 and 277 from the Guardian exports (docs/death-cert-data-notes.md). Age (the sheet includes under-16s, at least in the not-in-workforce panel) and sector assignment are the other candidates. Whether the NCHS annual files carry residents who died out of state is not documented here (docs/death-cert-data-notes.md calls them occurrence files); the 440 match with the Guardian exports suggests any gap is small.
 
 ## Suicides, 2020-2023 (the four years both tables cover)
 
@@ -41,4 +43,4 @@ v9 = v8 with the upper age limit removed; same NCHS file, same NIOCCS cache, sam
 | Retail | 27, 13.7 | 27, 12.6 / 14.0 |
 | All coded sectors | 440 | 440 |
 
-Every sector count matches exactly. FTE rates match within a few percent (the earlier table used a different PUMS vintage for each year). v8 (16 to 64) is therefore the same pipeline with one age setting changed.
+Every sector count matches exactly. FTE rates match within a few percent (the earlier table used a different PUMS vintage for each year, and its denominator files do not share one age range: FTE_2020_PUMS_5y_naics2.csv comes from a script that keeps AGEP <= 64, per team-archive/denominators/README.md, while v9 counts workers 16 and over). v8 (16 to 64) is therefore the same pipeline with one age setting changed.

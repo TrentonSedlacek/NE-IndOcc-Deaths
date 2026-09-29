@@ -1,6 +1,6 @@
 # Nebraska death certificate data: what the team's repos already hold
 
-Written 2026-09-24 after cloning the occupational health team's mortality repos into this session. Purpose: know exactly what death certificate (DC) machinery exists before building the DC side of the industry and occupation (I/O) comparison against NEVDRS and SUDORS.
+Written 2026-09-24 after cloning the occupational health team's mortality repos into this session. Purpose: know exactly what death certificate (DC) machinery exists before building the DC side of the industry and occupation (I/O) comparison against NEVDRS and SUDORS. Status (2026-09-29): the plan in "What this means for the two projects" was overtaken by the scripts; the release scripts v8 and v9 read the NCHS annual files (pipeline 2 below) and use ACS PUMS persons and FTE denominators.
 
 Repos cloned (read only, sibling folders under /home/user/):
 
@@ -82,7 +82,7 @@ The occupational health team can produce, from the death certificate alone, the 
 
 1. Numerator: suicides (X60-X84, resident, age 16+) and overdoses (SUDORS definition, plus an opioid-specific T40 subset), 2020 to 2024 from the Guardian yearly datasets, pooled, by DC usual industry code mapped to NAICS sector and by usual occupation code mapped to SOC major group. Report non-worker and not-coded groups as separate rows, never folded into a sector.
 2. Denominator: QCEW sector employment (already in fact_qcew.csv) for a first pass; ACS employed workers by industry and occupation for the Massachusetts-comparable version; FTE only if the hours data can be sourced.
-3. Output: crude rate per 100,000 workers with 95 percent CIs, rate ratio against all workers, suppression applied, one row per sector, with the numerator counts shown so the NEVDRS figure can be reconciled cell by cell.
+3. Output: crude rate per 100,000 workers with 95 percent CIs, rate ratio against all workers, full counts with no suppression (the DHHS floor is applied only at public release), one row per sector, with the numerator counts shown so the NEVDRS figure can be reconciled cell by cell.
 
 Then the meeting with Can and Mamie becomes a reconciliation of two tables built from the same certificates, instead of an argument about one number.
 

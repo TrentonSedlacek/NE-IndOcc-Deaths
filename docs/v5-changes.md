@@ -1,4 +1,6 @@
-# io_death_rates_v5.R: what changed from v4
+# io_death_rates_v5.R: what changed from v4, and the real-run log for v6 to v9
+
+The first part records the v5 changes. The sections from "First real run of v6" on record each later real run. The current release scripts are v8 (16 to 64) and v9 (16 and over).
 
 Script: `/home/user/NE-IndOcc-Deaths/scripts/io_death_rates_v5.R` (169 lines). It started from `/home/user/NE-IndOcc-Deaths/scripts/drafts/io_death_rates_simple_sketch.R` and applies the fixes from `/home/user/NE-IndOcc-Deaths/docs/correctness-audit-v4.md` and `/home/user/NE-IndOcc-Deaths/docs/provenance-audit-v4.md`. Test: `/home/user/NE-IndOcc-Deaths/tests/synthetic_run.R` (61 checks, 0 failures). The v4 test is now `/home/user/NE-IndOcc-Deaths/tests/synthetic_run_v4.R`, unchanged, and still passes. Nothing in v5 suppresses any count.
 
@@ -57,7 +59,7 @@ Ran clean; every check passed. Versus v4 on the same exports: suicide 1,362 (unc
 
 ## First real run of v7 (2026-09-28)
 
-Suicide only, readable rewrite. Ran clean; every count and rate identical to v6: 1,362 suicides, 66 overlap copies dropped, 18 Military, 159 Not in workforce, 53 Not coded, construction 174 (48.0 per 100,000 worker-years), all workers 1,132 (22.1), 2020-2021 cut 65 / 60 / 66 against 72 / 55 / 84. Output: C:\Users\tsedlac\Downloads\Output\suicide_io_rates_20260928.csv. v7 is the release script.
+Suicide only, readable rewrite. Ran clean; every count and rate identical to v6: 1,362 suicides, 66 overlap copies dropped, 18 Military, 159 Not in workforce, 53 Not coded, construction 174 (48.0 per 100,000 worker-years), all workers 1,132 (22.1), 2020-2021 cut 65 / 60 / 66 against 72 / 55 / 84. Output: C:\Users\tsedlac\Downloads\Output\suicide_io_rates_20260928.csv. v7 was the release script until v8 replaced it the same day.
 
 ## First real run of v8 (2026-09-28): Derry's settings
 
@@ -71,4 +73,8 @@ NCHS annual files dth20 to dth24, residents 16 to 64, NIOCCS, PUMS 2020-2024 5-y
 | All workers | 921 | 19.3 | 19.4 |
 | Construction trades (SOC 47) | 143 | 60.8 | 57.5 |
 
-Suicides 16-64 by year: 219 / 223 / 233 / 227 / 221 (1,123). Overdose 710, opioid 389. 2020-2021 cut: construction 56, manufacturing 51, not in workforce 62 against the sheet's 72 / 55 / 84 (the sheet is all ages; ours is 16-64). Output: C:\Users\tsedlac\Downloads\Output\io_death_rates_v8_20260928.csv.
+Suicides 16-64 by year: 219 / 223 / 233 / 227 / 221 (1,123). Overdose 710, opioid 389. 2020-2021 cut: construction 56, manufacturing 51, not in workforce 62 against the sheet's 72 / 55 / 84 (the sheet is all ages; ours is 16-64. The NEVDRS dashboard page also says NEVDRS reclassifies deaths after investigation and includes residents who died out of state; either can move sheet counts away from certificate counts). Output: C:\Users\tsedlac\Downloads\Output\io_death_rates_v8_20260928.csv.
+
+## First real run of v9 (2026-09-28)
+
+v8 with the upper age limit removed (ages 16 and over); nothing else changed. Suicides by sector for 2020-2021 match the earlier occupational health table (Chris and Jean's suicide_agg.R outputs in team-archive/analyses/suicide/outputs/) exactly: all 20 sectors, 440 in total; construction 65, manufacturing 59. NCHS (v9) and Guardian (v7) suicide totals at 16 and over differ by 10 over 2020-2024 (reported by Trenton; the two totals are not recorded here). Details and rates: docs/three-way-comparison.md.

@@ -1,6 +1,6 @@
 # Denominator spec: American Community Survey (ACS) employed workers
 
-Decision recorded 2026-09-26: the denominator for both projects is likely ACS employed workers, matching the Massachusetts method. Not yet signed off by Derry.
+Decision recorded 2026-09-26: the denominator for both projects is likely ACS employed workers, matching the Massachusetts method. Status (2026-09-29): superseded for the release scripts. scripts/io_death_rates_v3.R to v7.R used the published tables below; scripts/io_death_rates_v8.R and v9.R, with settings agreed with Derry, use ACS PUMS 2020-2024 5-year persons (sum of PWGTP) and FTE (sum of PWGTP x WKHP / 40, the team's hours/40 rule, not the hours x weeks / 2,000 formula in the FTE section below), with NIOCCS NAICS and SOC groups rather than Census-code roll-ups.
 
 ## Why ACS fits this project
 
