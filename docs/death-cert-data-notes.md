@@ -1,6 +1,6 @@
 # Nebraska death certificate data: what the team's repos already hold
 
-Written 2026-09-24 after cloning the occupational health team's mortality repos into this session. Purpose: know exactly what death certificate (DC) machinery exists before building the DC side of the industry and occupation (I/O) comparison against NEVDRS and SUDORS.
+Written 2026-09-24 after cloning the occupational health team's mortality repos into this session. Purpose: know exactly what death certificate (DC) machinery exists before building the DC side of the industry and occupation (I/O) comparison against NEVDRS and SUDORS. Status (2026-09-29): the plan in "What this means for the two projects" was overtaken by the scripts; the release scripts v8 and v9 read the NCHS annual files (pipeline 2 below) and use ACS PUMS persons and FTE denominators.
 
 Repos cloned (read only, sibling folders under /home/user/):
 
@@ -82,8 +82,23 @@ The occupational health team can produce, from the death certificate alone, the 
 
 1. Numerator: suicides (X60-X84, resident, age 16+) and overdoses (SUDORS definition, plus an opioid-specific T40 subset), 2020 to 2024 from the Guardian yearly datasets, pooled, by DC usual industry code mapped to NAICS sector and by usual occupation code mapped to SOC major group. Report non-worker and not-coded groups as separate rows, never folded into a sector.
 2. Denominator: QCEW sector employment (already in fact_qcew.csv) for a first pass; ACS employed workers by industry and occupation for the Massachusetts-comparable version; FTE only if the hours data can be sourced.
-3. Output: crude rate per 100,000 workers with 95 percent CIs, rate ratio against all workers, suppression applied, one row per sector, with the numerator counts shown so the NEVDRS figure can be reconciled cell by cell.
+3. Output: crude rate per 100,000 workers with 95 percent CIs, rate ratio against all workers, full counts with no suppression (the DHHS floor is applied only at public release), one row per sector, with the numerator counts shown so the NEVDRS figure can be reconciled cell by cell.
 
 Then the meeting with Can and Mamie becomes a reconciliation of two tables built from the same certificates, instead of an argument about one number.
 
 Open items to settle before writing the SAS: the industry code list on the DC file (Census 2012 or 2018 codes, 3 or 4 digits) and its crosswalk to NAICS sectors; whether to use MannerDeath or the ICD range for suicide; and which denominator Derry wants to stand behind.
+
+## Facts learned from the first real runs (2026-09-28, Guardian exports 2020 to 2024 as read by R)
+
+- EventYear is 0 on every one of the 96,551 rows. Year of death must come from DateOfDeath.
+- NchsAge is 0 on every row. NchsAgeUnit looks normal (1 = years on 94,861 rows) but the age itself is not there. Age must come from DateOfBirth and DateOfDeath.
+- DateOfDeath and DateOfBirth are Excel serial numbers (for example 45291.0 = 2023-12-31) in the xlsx exports; the 2021 CSV has text dates. Birth dates go back before 1954, so serials from 1 upward must be accepted.
+- Yearly exports overlap by about 53 late-registered prior-year deaths, as the DC-HDD notes say.
+- 91,386 of 96,498 deaths in 2020 to 2024 are Nebraska residents; 90,347 of those are aged 16 and over.
+- Suicides by ICD (X60-X84, Y87.0, U03), all ages, residents: 269, 277, 297, 274, 282 for 2020 to 2024. Manner of death and ICD agree on 1,393 of 1,406 suicides.
+- SUDORS-definition overdoses, all ages: 186, 201, 198, 139, 126. The 2021-2022 total (399) is above the published SUDORS 366; 68 of the 16+ cases come from cause-of-death text only and are on the review list.
+- The SAS programs in DC-HDD-Surveillance and OHIs filter on EventYear and compute age from NchsAge. On these exports both give zero rows. Check whether the SAS runs read a different export.
+
+## NIOCCS special codes (seen in the real v3 cache, 2026-09-28)
+
+NIOCCS returns placeholder codes instead of blanks when the text is not an industry or occupation. Industry 009670 (Army), 009680 (Air Force), 009690 (Navy), 009770 (Marines), 009790 (military, branch unknown) with occupation 00-9830, 00-9840, 00-9850 mean armed forces. Industry 009890 with occupation 00-9010 (homemaker) or 00-9100 (never worked) means not in the workforce. Industry 009990 with occupation 00-9900 means insufficient information. v3 only recognised NAICS 928110 and SOC 55 as military, so about 20 military suicides fell into Not coded; io_death_rates_v4.R reads these codes.

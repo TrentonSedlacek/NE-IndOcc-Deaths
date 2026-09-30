@@ -1,0 +1,164 @@
+Slide text extracted from APHA2021_poster_presentation_CMA.pptx with python-pptx (text frames, grouped shapes, tables, speaker notes). Images and charts are not captured.
+
+=== Slide 1 ===
+Distribution of COVID-19 Cases by Industry Sector, Nebraska, 2020
+Christopher Austin, MS (Presenter)University of Nebraska Medical Center College of Public Health
+Derry Stover, MPHNebraska Dept of Health and Human Services
+Division of Public Health
+October 2021
+--- Speaker notes ---
+Hello, thank you for attending my poster session. I’m Chris Austin and I am an MPH student at the University of Nebraska Medical Center and Graduate Assistant at Nebraska Department of Health and Human Services in the Division of Public Health. Today I am going to present preliminary data describing the distribution of Nebraska’s COVID-19 Cases by Industry Sector, in 2020.
+
+=== Slide 2 ===
+Main findings
+COVID-19 impacted all industry sectors of Nebraska’s workforce in 2020. 
+Certain sectors such as manufacturing, public administration, and educational services experienced higher case rates compared to other sectors. 
+Majority of employed cases (83%) worked outside of home in the past 14 days prior to their symptom onset or positive test date. 
+--- Speaker notes ---
+What we found was that…
+
+COVID-19 impacted all industry sectors of Nebraska’s workforce in 2020. 
+
+Certain sectors such as manufacturing, public administration, and educational services experienced higher case rates compared to other sectors.  
+
+We wanted to know if positive cases for COVID-19 attended work while possibly being contagious. Therefore, when conducting COVID-19 case investigations, investigators asked whether the person worked outside of their home in the past 14 days before any onset of symptoms, or their positive test results date. What we found was that majority of cases of employed workers (83%) indicated that they did work outside of the home in the past 14 days before any onset of symptoms or their positive test results date. Possibly indicating work played an important role in the transmission of SARS-Cov2.
+
+=== Slide 3 ===
+Intro and Methods
+Occupational outbreaks of COVID-19 have been described during the pandemic1,2. However, epidemiology of COVID-19 across a larger workforce population is currently not well characterized in the United States.
+We describe COVID-19 cases by industry sector to better understand how the pandemic has affected Nebraska’s workforce.
+120,000 working age COVID-19 cases 
+56,878 (47%) employed cases coded
+Discarded 63,474 (53%) cases with insufficient employer data, retired, unemployed, or military. 
+--- Speaker notes ---
+Occupational outbreaks of COVID-19 have been described during the pandemic. However, epidemiology of COVID-19 across a larger workforce population is currently not well characterized in the United States. We describe COVID-19 cases by industry sector to better understand how the pandemic has affected Nebraska’s workforce.
+
+With just over 120,000 working age COVID-19 cases in NE during 2020, only 47% are cases with codable employer data. 
+
+53% of these cases had insufficient employer data, were retired, unemployed, or military and was not used in our analysis. 
+
+Methods: 
+
+Information was obtained through contact tracing and case investigation of positive/probable cases through phone based interviews. During these interviews, employment information was collected.
+
+Employment data was coded using NIOSH NIOCCS mapped to standard North American Industry Classification System. ACS (American Community Survey) PUMS data was used for industry sector dominators and to calculate Nebraska's overall workforce total.    
+
+Data was analyzed using both SAS and R statistical software to determine distribution of cases and case rates
+
+=== Slide 4 ===
+Results
+--- Speaker notes ---
+Our Results. 
+
+This is a chart that shows the distribution of cases by industry sectors. On the left side of the chart, in yellow, represents the percentage of cases by industry sector from the total codable employed cases. On the right side of the chart, in dark blue, is the percentage of each industry sector of the total workforce. For example, manufacturing sector made up the highest percentage of codable employed cases with 19%; however, manufacturing only made up 11% of the overall workforce in Nebraska. Cases in manufacturing were almost 2x higher than what manufacturing represent in the overall workforce. 
+
+Moreover, highlighted by the green star, shows that Health Care and Social Assistance sector makes up 12% of cases despite the highest percentage of the overall workforce, with 16%. This might be due higher PPE compliancy among health care workers while at work and better training in PPE use.
+
+=== Slide 5 ===
+Results
+--- Speaker notes ---
+This chart shows sector-based rates of cases, per 100,000 employed workers, and sector-based rates of those that worked outside of the home in the past 14 days prior to symptom onset or their positive test date, and the rate of those workers who did not work outside of the home during those 14 days.
+ 
+Given that manufacturing had the highest proportion of cases of all the sectors it is not surprising that manufacturing had the highest case rate with 9800 cases per 100,000 employed workers.  Followed by Pub admin and Educational Services with the next highest case rates. We also found construction to have a relatively high case rate, which was surprising given that a lot of most construction happens outdoors. These cases could be related to certain construction jobs such like plumbing or electrical work, that are mostly done indoors. 
+
+With 83% of cases working outside the home in the past 14 days, we saw worked outside of home rates correspond closely with their case rates. Thus, sectors with high case rates also saw higher rates of working outside the home. 
+
+Lastly, the green stars, indicate industries that showed higher rates of not working outside of the home past 14 days, compared to other sectors. Financial & Insurance sector along with Professional, Scientific, and Technical had the highest rates of not working outside of the home while possibly contagious. This could be that these are sectors that have occupations that are more easily able to transition to working from home, thus possibly contributing to their lower case rates for these sectors.
+
+=== Slide 6 ===
+MPH Graduate Student
+University of Nebraska Medical Center / Nebraska Dept of Health and Human Services
+Christopher.Austin@Nebraska.gov
+Christopher Austin, MS
+THANK YOU!
+References:
+1. Herstein, J. J., Degarege, A., Stover, D., Austin, C., Schwedhelm, M. M., Lawler, J. V....Donahue, M. (2021). Characteristics of SARS-CoV-2 Transmission among Meat Processing Workers in Nebraska, USA, and Effectiveness of Risk Mitigation Measures. Emerging Infectious Diseases, 27(4), 1032-1038. https://doi.org/10.3201/eid2704.204800. 
+2. Koh D. (2020). Occupational risks for COVID-19 infection. Occupational medicine (Oxford, England), 70(1), 3–5. https://doi.org/10.1093/occmed/kqaa036 
+3. Centers for Disease Control and Prevention. (2021, February 9). Collecting and Using Industry and Occupation Data. The National Institute for Occupational Safety and Health (NIOSH). Retrieved from https://www.cdc.gov/niosh/topics/coding/code.html. 
+Acknowledgements
+NIOCCS Team (CDC-NIOSH)
+Staff at Nebraska Local Health Departments
+Contact Tracers and Case Investigators
+Matthew Donahue, MD (Interim State Epidemiologist)
+--- Speaker notes ---
+This concludes my poster presentation. I would like to acknowledge that this work could not have been done without the hard work of our contact tracers and case investigators. Also, NIOCCS Team at CDC with assisting us in industry and occupation coding, and provided valuable insight to help guide our analysis and approach. With that I thank you for your time and attention. [I would be happy to answer any questions]
+
+=== Embedded chart data (read from the chart XML with python-pptx) ===
+--- Slide 4 chart: Percentage of Cases by Industry Sector, Nebraska, 2020  ---
+Series: 
+  Administrative & Support & Waste Management & Remediation Services: 3.4054703310393752
+  Agriculture, Forestry, Fishing and Hunting: 4.366171016643866
+  Other Services (except Public Administration): 4.662130410895757
+  Professional, Scientific, and Technical Services: 5.0
+  Transportation and Warehousing: 4.303581416651019
+  Finance and Insurance: 6.560880307821614
+  Public Administration: 4.065542239535366
+  Accommodation and Food Services: 5.598788742217281
+  Construction: 7.171476627751831
+  Retail Trade: 10.357684661673408
+  Health Care and Social Assistance: 15.588983038218402
+  Educational Services: 10.2122383531186
+  Manufacturing: 10.752694581628264
+Series: 
+  Administrative & Support & Waste Management & Remediation Services: -2.8446851155103907
+  Agriculture, Forestry, Fishing and Hunting: -2.9079784802559865
+  Other Services (except Public Administration): -3.9611097436618725
+  Professional, Scientific, and Technical Services: -4.070114982945954
+  Transportation and Warehousing: -4.701290481381202
+  Finance and Insurance: -5.160167375786771
+  Public Administration: -5.28147965821583
+  Accommodation and Food Services: -6.088470058722177
+  Construction: -7.746404585252646
+  Retail Trade: -9.46411617848729
+  Health Care and Social Assistance: -11.754984352473716
+  Educational Services: -11.937831850627658
+  Manufacturing: -18.660993705826506
+--- Slide 5 chart: COVID-19 Industry Sector Based Rates ---
+Series: 
+  Manufacturing: 9806.711508611132
+  Public Administration: 7340.794682566834
+  Educational Services: 6605.572418087011
+  Transportation and Warehousing: 6172.953506625421
+  Accommodation and Food Services: 6144.973826634726
+  Construction: 6103.761169217982
+  Total Workforce: 5650.748045068485
+  Retail Trade: 5163.251995089012
+  Professional, Scientific, and Technical Services: 4863.44537815126
+  Other Services (except Public Administration): 4801.0740085664975
+  Administrative & Support & Waste Management & Remediation Services: 4720.228718128245
+  Finance and Insurance: 4444.343493995972
+  Health Care and Social Assistance: 4260.987050066279
+  Agriculture, Forestry, Fishing and Hunting: 3763.5387275871485
+  Information: 3529.4117647058824
+Series: Worked outside of home
+  Manufacturing: 8382.0
+  Public Administration: 6449.0
+  Educational Services: 5493.0
+  Transportation and Warehousing: 5381.0
+  Accommodation and Food Services: 5382.0
+  Construction: 5059.0
+  Total Workforce: 4674.946376608577
+  Retail Trade: 4487.0
+  Professional, Scientific, and Technical Services: 3128.0
+  Other Services (except Public Administration): 3996.0
+  Administrative & Support & Waste Management & Remediation Services: 3758.0
+  Finance and Insurance: 2845.0
+  Health Care and Social Assistance: 3622.0
+  Agriculture, Forestry, Fishing and Hunting: 3017.0
+  Information: 2499.0
+Series: Did not work outside of home
+  Manufacturing: 844.0
+  Public Administration: 770.0
+  Educational Services: 973.0
+  Transportation and Warehousing: 697.0
+  Accommodation and Food Services: 671.0
+  Construction: 953.0
+  Total Workforce: 831.4481941906915
+  Retail Trade: 565.0
+  Professional, Scientific, and Technical Services: 1685.0
+  Other Services (except Public Administration): 731.0
+  Administrative & Support & Waste Management & Remediation Services: 869.0
+  Finance and Insurance: 1558.0
+  Health Care and Social Assistance: 540.0
+  Agriculture, Forestry, Fishing and Hunting: 671.0
+  Information: 995.0

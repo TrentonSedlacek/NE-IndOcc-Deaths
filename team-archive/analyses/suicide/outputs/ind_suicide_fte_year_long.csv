@@ -1,0 +1,201 @@
+Ind_sector.x,year,Count,suicide_per_1000_fte
+"Agriculture, Forestry, Fishing and Hunting",2014,25,0.469
+"Agriculture, Forestry, Fishing and Hunting",2015,14,0.264
+"Agriculture, Forestry, Fishing and Hunting",2016,10,0.196
+"Agriculture, Forestry, Fishing and Hunting",2017,14,0.274
+"Agriculture, Forestry, Fishing and Hunting",2018,21,0.378
+"Agriculture, Forestry, Fishing and Hunting",2019,20,0.434
+"Agriculture, Forestry, Fishing and Hunting",2020,19,0.349
+"Agriculture, Forestry, Fishing and Hunting",2021,22,0.475
+"Agriculture, Forestry, Fishing and Hunting",2022,22,0.408
+"Agriculture, Forestry, Fishing and Hunting",2023,15,0.284
+"Mining, Quarrying, and Oil and Gas Extraction",2014,1,0.667
+"Mining, Quarrying, and Oil and Gas Extraction",2015,2,1.059
+"Mining, Quarrying, and Oil and Gas Extraction",2016,1,0.494
+"Mining, Quarrying, and Oil and Gas Extraction",2017,0,0
+"Mining, Quarrying, and Oil and Gas Extraction",2018,0,0
+"Mining, Quarrying, and Oil and Gas Extraction",2019,0,0
+"Mining, Quarrying, and Oil and Gas Extraction",2020,1,0.515
+"Mining, Quarrying, and Oil and Gas Extraction",2021,0,0
+"Mining, Quarrying, and Oil and Gas Extraction",2022,0,0
+"Mining, Quarrying, and Oil and Gas Extraction",2023,0,0
+Utilities,2014,0,0
+Utilities,2015,1,0.08
+Utilities,2016,6,0.511
+Utilities,2017,5,0.426
+Utilities,2018,0,0
+Utilities,2019,7,0.663
+Utilities,2020,5,0.472
+Utilities,2021,4,0.425
+Utilities,2022,6,0.506
+Utilities,2023,2,0.154
+Construction,2014,33,0.491
+Construction,2015,24,0.334
+Construction,2016,35,0.477
+Construction,2017,41,0.55
+Construction,2018,36,0.473
+Construction,2019,41,0.562
+Construction,2020,28,0.377
+Construction,2021,37,0.499
+Construction,2022,33,0.423
+Construction,2023,35,0.444
+Manufacturing,2014,30,0.271
+Manufacturing,2015,25,0.22
+Manufacturing,2016,18,0.158
+Manufacturing,2017,30,0.263
+Manufacturing,2018,25,0.26
+Manufacturing,2019,30,0.28
+Manufacturing,2020,27,0.238
+Manufacturing,2021,32,0.275
+Manufacturing,2022,30,0.261
+Manufacturing,2023,30,0.253
+Wholesale Trade,2014,2,0.075
+Wholesale Trade,2015,6,0.212
+Wholesale Trade,2016,5,0.175
+Wholesale Trade,2017,3,0.102
+Wholesale Trade,2018,5,0.17
+Wholesale Trade,2019,6,0.209
+Wholesale Trade,2020,1,0.035
+Wholesale Trade,2021,4,0.175
+Wholesale Trade,2022,5,0.191
+Wholesale Trade,2023,10,0.396
+Retail Trade,2014,12,0.122
+Retail Trade,2015,14,0.139
+Retail Trade,2016,17,0.169
+Retail Trade,2017,14,0.136
+Retail Trade,2018,19,0.195
+Retail Trade,2019,23,0.247
+Retail Trade,2020,14,0.143
+Retail Trade,2021,13,0.131
+Retail Trade,2022,18,0.184
+Retail Trade,2023,12,0.124
+Transportation and Warehousing,2014,19,0.383
+Transportation and Warehousing,2015,18,0.364
+Transportation and Warehousing,2016,18,0.354
+Transportation and Warehousing,2017,21,0.41
+Transportation and Warehousing,2018,22,0.368
+Transportation and Warehousing,2019,16,0.318
+Transportation and Warehousing,2020,19,0.345
+Transportation and Warehousing,2021,15,0.249
+Transportation and Warehousing,2022,11,0.198
+Transportation and Warehousing,2023,31,0.572
+Information,2014,4,0.22
+Information,2015,4,0.218
+Information,2016,6,0.332
+Information,2017,2,0.113
+Information,2018,2,0.101
+Information,2019,7,0.419
+Information,2020,9,0.527
+Information,2021,3,0.226
+Information,2022,4,0.267
+Information,2023,5,0.359
+Finance and Insurance,2014,5,0.081
+Finance and Insurance,2015,5,0.08
+Finance and Insurance,2016,9,0.145
+Finance and Insurance,2017,7,0.109
+Finance and Insurance,2018,9,0.13
+Finance and Insurance,2019,8,0.126
+Finance and Insurance,2020,7,0.105
+Finance and Insurance,2021,10,0.149
+Finance and Insurance,2022,10,0.145
+Finance and Insurance,2023,5,0.073
+Real Estate and Rental and Leasing,2014,0,0
+Real Estate and Rental and Leasing,2015,1,0.086
+Real Estate and Rental and Leasing,2016,1,0.084
+Real Estate and Rental and Leasing,2017,2,0.171
+Real Estate and Rental and Leasing,2018,0,0
+Real Estate and Rental and Leasing,2019,3,0.292
+Real Estate and Rental and Leasing,2020,2,0.175
+Real Estate and Rental and Leasing,2021,6,0.471
+Real Estate and Rental and Leasing,2022,2,0.179
+Real Estate and Rental and Leasing,2023,4,0.344
+"Professional, Scientific, and Technical Services",2014,8,0.173
+"Professional, Scientific, and Technical Services",2015,2,0.043
+"Professional, Scientific, and Technical Services",2016,5,0.105
+"Professional, Scientific, and Technical Services",2017,8,0.164
+"Professional, Scientific, and Technical Services",2018,8,0.141
+"Professional, Scientific, and Technical Services",2019,8,0.165
+"Professional, Scientific, and Technical Services",2020,10,0.19
+"Professional, Scientific, and Technical Services",2021,11,0.175
+"Professional, Scientific, and Technical Services",2022,13,0.227
+"Professional, Scientific, and Technical Services",2023,9,0.152
+Management of Companies and Enterprises,2014,0,0
+Management of Companies and Enterprises,2015,0,0
+Management of Companies and Enterprises,2016,0,0
+Management of Companies and Enterprises,2017,0,0
+Management of Companies and Enterprises,2018,0,0
+Management of Companies and Enterprises,2019,0,0
+Management of Companies and Enterprises,2020,1,0.749
+Management of Companies and Enterprises,2021,0,0
+Management of Companies and Enterprises,2022,1,0.923
+Management of Companies and Enterprises,2023,0,0
+Administrative and Support and Waste Management and Remediation Services,2014,8,0.259
+Administrative and Support and Waste Management and Remediation Services,2015,10,0.317
+Administrative and Support and Waste Management and Remediation Services,2016,4,0.127
+Administrative and Support and Waste Management and Remediation Services,2017,12,0.364
+Administrative and Support and Waste Management and Remediation Services,2018,7,0.211
+Administrative and Support and Waste Management and Remediation Services,2019,7,0.217
+Administrative and Support and Waste Management and Remediation Services,2020,10,0.296
+Administrative and Support and Waste Management and Remediation Services,2021,5,0.145
+Administrative and Support and Waste Management and Remediation Services,2022,6,0.172
+Administrative and Support and Waste Management and Remediation Services,2023,8,0.232
+Educational Services,2014,5,0.058
+Educational Services,2015,6,0.069
+Educational Services,2016,4,0.044
+Educational Services,2017,6,0.066
+Educational Services,2018,7,0.075
+Educational Services,2019,7,0.08
+Educational Services,2020,10,0.105
+Educational Services,2021,7,0.067
+Educational Services,2022,7,0.073
+Educational Services,2023,5,0.053
+Health Care and Social Assistance,2014,15,0.116
+Health Care and Social Assistance,2015,18,0.138
+Health Care and Social Assistance,2016,17,0.129
+Health Care and Social Assistance,2017,16,0.121
+Health Care and Social Assistance,2018,12,0.084
+Health Care and Social Assistance,2019,9,0.069
+Health Care and Social Assistance,2020,14,0.102
+Health Care and Social Assistance,2021,19,0.135
+Health Care and Social Assistance,2022,10,0.071
+Health Care and Social Assistance,2023,19,0.133
+"Arts, Entertainment, and Recreation",2014,4,0.299
+"Arts, Entertainment, and Recreation",2015,4,0.287
+"Arts, Entertainment, and Recreation",2016,5,0.372
+"Arts, Entertainment, and Recreation",2017,4,0.3
+"Arts, Entertainment, and Recreation",2018,3,0.207
+"Arts, Entertainment, and Recreation",2019,13,1.011
+"Arts, Entertainment, and Recreation",2020,4,0.312
+"Arts, Entertainment, and Recreation",2021,4,0.311
+"Arts, Entertainment, and Recreation",2022,4,0.33
+"Arts, Entertainment, and Recreation",2023,3,0.224
+Accommodation and Food Services,2014,8,0.161
+Accommodation and Food Services,2015,13,0.262
+Accommodation and Food Services,2016,7,0.144
+Accommodation and Food Services,2017,12,0.252
+Accommodation and Food Services,2018,9,0.194
+Accommodation and Food Services,2019,9,0.201
+Accommodation and Food Services,2020,14,0.315
+Accommodation and Food Services,2021,8,0.181
+Accommodation and Food Services,2022,18,0.399
+Accommodation and Food Services,2023,11,0.249
+Other Services (except Public Administration),2014,13,0.351
+Other Services (except Public Administration),2015,10,0.279
+Other Services (except Public Administration),2016,10,0.271
+Other Services (except Public Administration),2017,12,0.32
+Other Services (except Public Administration),2018,15,0.366
+Other Services (except Public Administration),2019,15,0.411
+Other Services (except Public Administration),2020,17,0.407
+Other Services (except Public Administration),2021,11,0.287
+Other Services (except Public Administration),2022,15,0.365
+Other Services (except Public Administration),2023,10,0.241
+Public Administration,2014,4,0.091
+Public Administration,2015,5,0.116
+Public Administration,2016,7,0.164
+Public Administration,2017,5,0.123
+Public Administration,2018,8,0.174
+Public Administration,2019,11,0.28
+Public Administration,2020,11,0.264
+Public Administration,2021,6,0.114
+Public Administration,2022,10,0.22
+Public Administration,2023,5,0.111

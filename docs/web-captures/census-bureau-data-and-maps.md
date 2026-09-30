@@ -1,7 +1,7 @@
 # U.S. Census Bureau: Data and Maps page
 
 Source: https://www.census.gov/data.html
-Captured: 2026-09-24 (pasted verbatim from browser). Relevant to this project as the landing page for Population Estimates (rate denominators); see also the American Community Survey for industry/occupation employment denominators.
+Captured: 2026-09-24 (pasted verbatim from browser). Relevant to this project as the landing page for Population Estimates (rate denominators); see also the American Community Survey for industry/occupation employment denominators. Em dashes replaced with hyphens (repo rule, 2026-09-29).
 
 ---
 
@@ -118,7 +118,7 @@ America Counts: Stories Behind the Numbers
 * [America Counts Story](https://www.census.gov/library/stories/2026/09/hispanic-poverty.html)
 [Hispanic Poverty Rate Reached Historic Low in 2025](https://www.census.gov/library/stories/2026/09/hispanic-poverty.html)
 [September 15, 2026](https://www.census.gov/library/stories/2026/09/hispanic-poverty.html)
-[The Hispanic population’s poverty rate fell to 13.9%, down 1.2 percentage points from 2024 — still disproportionately high despite being the lowest on record.](https://www.census.gov/library/stories/2026/09/hispanic-poverty.html)
+[The Hispanic population’s poverty rate fell to 13.9%, down 1.2 percentage points from 2024 - still disproportionately high despite being the lowest on record.](https://www.census.gov/library/stories/2026/09/hispanic-poverty.html)
 * [America Counts Story](https://www.census.gov/library/stories/2026/09/comparing-opm-spm.html)
 [Supplemental Poverty Rate Tops Official Rate in 26 States, DC](https://www.census.gov/library/stories/2026/09/comparing-opm-spm.html)
 [September 15, 2026](https://www.census.gov/library/stories/2026/09/comparing-opm-spm.html)

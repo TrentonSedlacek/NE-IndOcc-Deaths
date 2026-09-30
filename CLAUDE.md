@@ -1,0 +1,9 @@
+# Rules for this repo
+
+- No suppression during analysis. Ever. Do not blank, flag, floor, or hide small counts or their rates in any script, table, test, or document. Every count is shown as is. Suppression (the DHHS floor) is a separate step applied once to a final table at the moment it is released to the public, and only when Trenton asks for it. Past sessions that built suppression into analyses caused real confusion; do not reintroduce it.
+- No em dashes anywhere.
+- No secrets in files. Census key and any credentials come from environment variables.
+- Scripts read K: and run only on a DHHS machine; nothing here runs in the cloud.
+- Always give full file paths when telling Trenton where a file is or what to run. On his machine the working folder is C:\Users\tsedlac\Downloads. Death certificates are under K:\Occupational Health Grant\data\dc\{YYYY}\. Never say "the script" or "that file" without the path.
+- NIOCCS use is approved (Trenton, 2026-09-29): sending industry and occupation text to the CDC NIOCCS web service is fine.
+- Version every script Trenton runs: io_death_rates_v3.R, v4, ... Never send a file with the same name as one already sent. Say the full path of the new file and of any file it must sit next to.

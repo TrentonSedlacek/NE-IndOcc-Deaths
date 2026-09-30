@@ -1,0 +1,167 @@
+Slide text extracted from DSTT Nebraska.pptx with python-pptx (text frames, grouped shapes, tables, speaker notes). Images and charts are not captured.
+
+=== Slide 1 ===
+Using Natural Language Processing (NLP) to Identify Reportability of Cancer Reports
+Nebraska Department of Health and Human Services
+December 14th, 2022
+Lifeng Li:        Epidemiology Surveillance Coordinator
+Bhavana Srinivas: ELR Informatics Specialist
+Qianru Wu:        Cancer Registry Informatician
+Remy Poudel:      DHHS Statistician
+Yi Du:            Healthcare Epidemiologist
+
+=== Slide 2 ===
+Project Background
+Data Science Problem:
+Pathology laboratory may not have an effective filter to avoid non-reportable reports being sent.
+ About 1/3 of pathology reports received by the cancer registry were non-reportable.
+Certified Tumor Registrar (CTR) needs to manually identify reportability for all reports received.
+Project Goal:
+Automate the identification process as much as possible 
+Align with Data Modernization Initiative (DMI):
+Pursue innovation and explore new methods to strengthen data reporting, management, and analytics across public health, as well as to increase efficiency and accuracy
+
+=== Slide 3 ===
+Project Summary
+Evaluated project goal and explored potential solutions to achieve this goal.
+What we already have: data
+What is the current solution: manual review 
+What needs to be employed: knowledge of NLP and python programming 
+Where to get the resources: online courses and coach from CSTE 
+Took online courses to learn necessary data science skills.
+The coach, Mr. Patric Prado, provided useful insights and suggestions for this project.
+Communicated with other teams during the DSTT monthly meeting.
+Invited CTR to introduce their current method of identifying reportability.
+
+=== Slide 4 ===
+Data
+Standard electronic pathology reports in HL7 format from 4 pathology laboratories, 4295 reports in total.
+Only diagnostic text in OBX-5 was analyzed 
+All reports were de-identified 
+CTRs in the Nebraska Cancer Registry manually reviewed all reports and filtered out non-reportable reports. Then we compared the resulted and original datasets to encode each report. 
+	0 – non-reportable	1 – reportable  
+
+=== Slide 5 ===
+Current Solutions
+Use case-finding ICD-10 code list:
+Surveillance, Epidemiology, and End Results Program (SEER) case-finding ICD-10 code list: https://seer.cancer.gov/tools/casefinding/
+Note: this list includes more codes than those in the reportable list so as not to miss any reportable cases.
+Analyze ambiguous terms manually:
+Apparent(ly)	
+Appears
+Comparable with                              Compatible with
+Consistent with                                 Favors
+Malignant appearing                         Most likely
+Presumed                                           Probable
+Suspect(ed)                                        Suspicious (for)     
+Typical of
+Tumor
+Neoplasm
+……
+
+=== Slide 6 ===
+Results: ICD-10 Codes Summary
+Number of reports contains:
+One ICD-10 code: 2301
+Multiple codes:      812
+No code:               1182
+Among reports with one code:
+One reportable code:          880
+One non-reportable code:  1421
+Among reports with multiple codes:
+Different codes, all reportable:                      50
+Different codes, all non-reportable:              492
+Both reportable and non-reportable codes:  270
+Hypothesis: a report is reportable if it contains reportable ICD-10 code(s). 
+Include only the reports containing at least one ICD-10 code (3113 reports in total – 72% of all reports).   
+Accuracy: 58%
+
+=== Slide 7 ===
+NLP Solution
+Text preprocess:
+Vectorization:
+Frequency vector / Count vector
+Term frequency-Inverse Document Frequency (TF-IDF) vector
+Model selection for text classification:
+Naïve Bayes 
+Logistic Regression
+Linear Support Vector Machine
+Tokenization
+Remove Stop Words
+Remove Punctuations
+Assign Part-Of-Speech Tags
+Lemmatization
+A dog ran away.
+['A', 'dog', 'ran’, 'away', '.']
+['A', 'dog', 'ran', 'away', '.']
+['dog', ‘ran', 'away', '.']
+['dog', ‘ran', 'away', '.']
+['dog', ‘ran', 'away']
+('dog', 'NN'), ('ran', 'VBD'), ('away', 'RB’)
+         NN: noun, singular 
+         VBD: verb, past tense
+         RB: adverb 
+dog  dog
+ran  run
+away  away
+
+=== Slide 8 ===
+Challenges and Solutions
+Lack of technical knowledge: only one team member has experience in NLP
+Solutions: 
+Shared NLP knowledge internally
+Took online courses and utilized recourses provided by the coach
+Lack of domain knowledge: only two team members have experience in cancer data
+Solutions: 
+Shared domain knowledge internally
+Invited CTRs to introduce the current methods 
+Data is not labeled
+Solution: 
+Invited CTRs to filter out non-reportable
+Compared the filtered data with the original
+
+=== Slide 9 ===
+Results
+Naïve Bayes Model:
+Accuracy:
+Count vector: 79%
+TF-IDF: 86%
+
+=== Slide 10 ===
+Results
+Logistic Regression using TF-IDF vector:
+Accuracy: 82%
+Linear Support Vector Machine using TF-IDF vector:
+Accuracy: 87%
+              precision    recall  f1-score   support
+-----------------------------------------------------
+Reportable         0.74      0.81      0.77       231
+Non-reportable     0.93      0.89      0.91       628
+accuracy                               0.87       859
+macro avg          0.83      0.85      0.84       859
+weighted avg       0.88      0.87      0.87       859
+
+=== Slide 11 ===
+Future work
+Continue exploring more NLP models and data science methods to optimize the results
+Combine multiple models 
+Divide the dataset and apply different models to different subsets 
+Present the results from DSTT to other public health programs to broaden the scope of NLP applications
+Team members will continue to collaborate to solve data science problems in our department
+
+=== Slide 12 ===
+Thank you!
+Acknowledgement
+We would like to take this opportunity to express our gratitude to the following professionals of whom contributed to the success of this program.
+01
+Coach
+Patric Prado
+02
+CTR from Westat
+Elaine Flores
+Raquel Brown
+03
+DHHS Administrator
+Dr. Ming Qu
+--- Speaker notes ---
+Thank you for listening and I will take questions.

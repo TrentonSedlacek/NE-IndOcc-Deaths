@@ -1,0 +1,152 @@
+Chris Austin Knowledge Transfer Questionnaire: full text
+Source: team-archive/knowledge-transfer/Chris Austin Knowledge Transfer Questionnaire.pdf (5 pages, fillable PDF form).
+Method: this is a verbatim extraction, not a transcription. The printed form text was extracted with pypdf and the typed answers
+were read from the PDF's AcroForm field values (124 fields, 21 filled). Answers are reproduced exactly as typed, including the
+author's own spelling and punctuation. Line breaks inside answers follow the form's carriage returns. Blank fields are shown as
+[blank]. Access fields (Q10, Q11) are all blank in the PDF; no PINs, usernames or passwords were present.
+
+==============================================================================
+PAGE 1
+==============================================================================
+KNOWLEDGE TRANSFER QUESTIONNAIRE
+Purpose: When teammates depart from State of Nebraska, they often carry institutional knowledge that helped them be successful. This tool helps the State of Nebraska retain this knowledge for business continuity.
+How-to: Help us capture information about your job that might not be written down elsewhere. Please follow the prompts below. Attach additional pages or materials if needed.
+
+TEAMMATE NAME: Christopher Austin
+AGENCY & DIVISION: DHHS Public Health - Epidemiology
+JOB TITLE: Occupational Health Epidemiologist
+SUPERVISOR: Derry Stover
+
+1: MANY TIMES, WE DEVELOP “TRICKS OF THE TRADE” TO MAKE US MORE ACCURATE AND EFFICIENT. WHAT ARE THE TOP 5 (OR MORE) LESSONS OR “TRICKS OF THE TRADE” THAT YOU’VE LEARNED IN YOUR PRESENT POSITION?
+
+1) Automating Data Retrieval for Efficiency: one  'trick' I've learned is automating data retrieval using APIs. For example, I developed to pull work fatality data from the Bureau of Labor Statistics (BLS) API saves considerable time by batching requests, handling large data sets, and efficiently querying fatality information. By structuring the code to handle multiple queries and split datasets automatically, I reduced the manual effort involved in retrieving data, ensuring the process is both scalable and efficient. This approach can be applied to any API-based data retrieval.
+
+2) Using Web-Based Tools for I/O Standardization: Using web-based tools like the NIOCCS auto-coder for translating free-text industry and occupation data into standardized codes (NAICS, SOC, Census) is an essential trick for ensuring consistency. Automating this process through API calls not only eliminates manual coding errors but also allows large datasets to be processed quickly. This technique is particularly useful when working with occupational health surveillance data, ensuring that data analysis is based on consistent classifications.
+
+3) Applying Natural Language Processing (NLP) for Text Data: Processing and analyzing unstructured text data using NLP techniques has been crucial in improving the accuracy of work-related injury classifications. Techniques like tokenization, stop word removal, and lemmatization help clean and standardize the text data. Additionally, feature extraction using methods like TF-IDF or Count Vectorization feeds the processed text into machine learning models, ensuring that even free-text fields are handled in a structured, reproducible manner. This makes analyzing large volumes of text data more manageable and yields more accurate insights.
+
+4) Utilizing Machine Learning for Accurate Classification: machine learning models such as Logistic Regression, Naïve Bayes, and Support Vector Machines (SVM) have proven to be invaluable for classifying work-related injuries. One trick I’ve learned is to use pipelines in R or Python to automate the preprocessing steps (NLP), feature extraction, and model fitting. This makes the process faster and more reliable, particularly when working with large datasets. Regularly monitoring model performance through metrics like accuracy, precision, and recall ensures that the models remain robust over time.
+
+5) Optimizing Data Processing with Tidyverse: developing strong skills and knowledge of Tidyverse in R has been essential for making data manipulation faster and more efficient. Whether it’s reshaping datasets, filtering, or summarizing data, the Tidyverse suite of tools (like dplyr and purrr) streamlines many repetitive tasks. For example, in the development of the Workforce Estimates Calculation Tool, I used Tidyverse functions to process ACS PUMS data, ensuring that FTE calculations were automated and scalable for various industries. Using srvyr to account for survey weights adds another layer of precision in the calculations.
+
+6) Documenting Workflows for Reproducibility: one of the key lessons I’ve learned is the importance of clear and thorough documentation. Whether it’s a coding workflow for processing syndromic surveillance data or a guide for interacting with APIs like the BLS or NIOCCS, having documentation makes it easier to onboard new team members and ensures continuity. Keeping everything organized—whether in RMarkdown reports, code comments, or detailed workflow documents—has been invaluable for both troubleshooting and collaborating with others.
+
+7) Error Handling and Validation: when working with large datasets and APIs, one essential trick is to build in error-handling mechanisms and data validation checks. Whether it’s handling missing data in NLP preprocessing or validating API responses to ensure the data is complete, these steps are critical in preventing issues later in the analysis. Automating these checks within the code saves time and ensures the accuracy of results before moving forward with analysis.
+
+2: WHICH PROCEDURES (EXAMPLES: NAMES OF MANUALS, REFERENCES, ETC.) DO YOU TURN TO THE MOST TO DO YOUR JOB?
+
+Most procedures I turned to are one I created or developed for my work (see document for these details). 
+
+However, things I have turned to that helped me are R package cheat sheets (see Q3), occupational health for syndromic surveillance white paper, NAICS information (https://www.census.gov/naics/), NIOCCS material (https://www.cdc.gov/niosh/topics/coding/nioccs/support.html), and NIOCCS auotcoder (https://csams.cdc.gov/nioccs/About.aspx). 
+
+I also refer to OSHA codes and relations to help understand employer expectations to provide a safe working environment, https://www.osha.gov/laws-regs, and how injuries might be recorded per OSHA regulations.
+
+[Footer] This form is internally created for State of Nebraska Human Resources Shared Services (“HRSS”) and is intended for HRSS Customer Agencies only. No State of Nebraska Agency is required to use this form unless otherwise instructed.
+
+==============================================================================
+PAGE 2
+==============================================================================
+3: IF YOU HAD JUST ONE DAY TO TRAIN OR BRIEF YOUR REPLACEMENT, WHAT 5 (OR MORE) THINGS WOULD BE MOST IMPORTANT TO SHARE?
+
+1) NIOCCS Auto-Coding: Another critical tool is the NIOCCS Auto-coder, which I developed to streamline the process of converting free-text industry and occupation data into standardized codes using the NIOSH Industry and Occupation Computerized Coding System (NIOCCS). This tool automates the web API calls to NIOCCS, processes large datasets efficiently, and returns standardized NAICS and SOC codes. It’s vital to know how to properly structure the API queries and handle the responses to ensure accurate coding of occupational data, which is essential for occupational health studies and surveillance.
+
+2) Workforce Estimates Calculations: One of the key tools I developed is the Workforce Estimates Calculation Tool, which automates the process of extracting and calculating employment estimates from ACS PUMS data. This tool also adjusts for Full-Time Equivalency (FTE) by considering the hours worked per week, providing a more accurate representation of workforce sizes in various industries. It’s essential to understand how to extract the relevant variables, process the data using srvyr, and calculate employment estimates while handling survey weights. I would walk through how to ensure precision in the results by calculating margins of error (MOE), relative MOE, and coefficients of variation (CV), which are critical for ensuring data quality and reliability.
+
+3) Data Processing Workflow: A step-by-step guide on how to preprocess and analyze syndromic surveillance data, particularly for occupational injuries. This includes running scripts in R for data cleaning and quality checks, as well as ensuring accurate categorization of work-related incidents.
+
+4) Key Machine Learning Models: How to use and interpret the machine learning models I've developed, particularly the Logistic Regression model, which has been the most effective for classifying work-related injuries. I would provide documentation on model parameters, data preprocessing, and troubleshooting tips.
+
+5) Ongoing Projects and Priorities: Details on any ongoing occupational health projects (e.g., syndromic surveillance occupation health query and occupational health tribal guidance document), including deadlines, key goals, and next steps. This ensures that they can hit the ground running on important work.  
+
+6) Documentation and Resources: Where to find key documentation, and cheat sheets. This would include access to shared folders with important reference materials and guides.
+
+7) Communication: An overview of key contacts both within the department and externally (e.g., other state health departments, and collaborators). This includes background on past collaborations, i.e. who's involved and where they are located. 
+
+8) Informatics and Electronic Case Reporting (ECR): A walk through of the informatics tools used for electronic case reporting. This includes how to manage and who to work with to update these systems, troubleshoot issues, and how they can help integrate into broader occupational health surveillance. This is still a work in progress and still in development stages.  Kaniska FNU is DHHS' ECR epidemiologist that will help coordinate a lot of the ECR work.
+
+4: WHERE DO YOU KEEP OR STORE THE FOLLOWING ITEMS?
+Electronic files, records, and/or data for team use: K:\Occupational Health Grant\Chris Austin
+Electronic files, records, and/or data for your use: K:\Occupational Health Grant\Chris Austin
+Hardcopies, paper files, and other physical records: In file cabinet in cubicle 125
+Anything else? [blank]
+
+==============================================================================
+PAGE 3
+==============================================================================
+5: DESCRIBE ANY TOOLS THAT YOU CREATED TO HELP YOU PERFORM YOUR JOB MORE EFFICIENTLY. EXAMPLES COULD INCLUDE HOW-TO’S, “CHEAT SHEETS,” JOB AIDS, WORKFLOWS, CHECKLISTS, CALENDARS, AND THE LIKE.
+
+NIOCCS Auto-Coder: I developed an automated tool in R to convert free-text industry and occupation (I/O) data into standardized codes using the NIOSH Industry and Occupation Computerized Coding System (NIOCCS). This tool leverages the NIOCCS Web API to automatically code raw text into standardized NAICS, SOC, and Census codes, eliminating the need for manual coding. This is especially useful for large datasets, such as COVID-19 surveillance data that includes industry and occupation information. The tool not only speeds up the process but also ensures coding accuracy and consistency across datasets. It integrates seamlessly into data processing pipelines and has proven to be essential in occupational health surveillance.
+
+Workforce Estimates (FTE) Calculation Tool: I developed an R-based tool to calculate workforce estimates from the American Community Survey (ACS) Public Use Microdata Sample (PUMS) data and convert these estimates to Full-Time Equivalent (FTE) rates. This tool automates the extraction of relevant variables from the ACS PUMS data (e.g., employment status, industry codes, hours worked per week) and applies statistical methods to calculate employment estimates by industry. Additionally, the tool adjusts for full-time equivalency by standardizing work hours to a 40-hour workweek and multiplying person weights accordingly. It includes functions to calculate margins of error (MOE), relative MOE, and coefficients of variation (CV) to assess the precision of the estimates. This tool is crucial for accurate workforce analysis and for adjusting raw estimates to reflect FTE rates, which is essential for public health and occupational surveillance projects.
+
+Occupational Health Data Processing Checklist: A step-by-step guide for cleaning and processing syndromic surveillance data. This checklist ensures that each data preprocessing task (e.g., handling missing values, categorizing injuries) is completed consistently and accurately.
+
+Machine Learning Workflow Documentation: Detailed instructions for running and maintaining the machine learning models used to classify work-related injuries. This includes model parameters, data preprocessing steps, and tips for interpreting model results.
+
+RMarkdown Reporting Templates: Automated templates in RMarkdown for generating summary reports and visualizations of occupational health data. These templates save time by streamlining the process of creating reports and allow for consistent formatting across different projects.
+
+I rely heavily on tidyverse packages such as dplyr, ggplot2, tidyr, and readr for a variety of tasks:
+
+Data Wrangling: I use dplyr for filtering, selecting, and summarizing large datasets from syndromic surveillance and occupational health sources. It streamlines processes like merging datasets, calculating key statistics, and restructuring data for analysis.
+
+Data Visualization: ggplot2 is my go-to for creating high-quality, customizable visualizations. I frequently create plots to track trends in work-related injuries, syndromic surveillance, and vaccination data. Using ggplot2, I can easily convey insights through bar charts, line graphs, and density plots.
+
+Data Tidying: With tidyr, I ensure that data is in a clean and usable format. Whether it’s pivoting data, separating or combining columns, or handling missing values, tidyr simplifies these tasks.
+
+Data Import: readr makes importing large CSV files efficient, allowing me to quickly load and analyze new data. The fast reading and writing functions are crucial when working with large surveillance datasets.
+
+Cheat Sheets: The tidyverse cheat sheets are excellent resources that provide quick access to function references and examples. They helped me to efficiently apply the most appropriate tidyverse functions for data manipulation, visualization, or reporting tasks. Cheat sheets can be found here: https://www.tidyverse.org/packages/
+
+6: LIST ANY JOB FUNCTION(S) WHERE YOU ARE THE ONLY PERSON WHO KNOWS HOW TO GET IT DONE.
+
+If someone is proficient in R they should be able to understand and run the scripts I created during my job as Occ Health Epi.
+
+Performing NLP and machine learning to identify work-related injuries in syndromic data might be an area that not many people are familiar.  But notes and documentation is provided to help guide anyone interesting in pursuing this further.
+
+7: WHO ARE THE PEOPLE YOU INTERACT WITH THE MOST WITHIN YOUR ORGANIZATION IN RELATION TO YOUR JOB DUTIES?
+(Table columns: Name | Position | Contact Info | Reason | Frequency)
+Name: Derry Stover | Position: Epidemiology Surveillance Coordinator | Contact Info: derry.stover@nebraska.gov | Reason: Supervisor | Frequency: Weekly
+
+8: WHO ARE THE PEOPLE YOU INTERACT WITH THE MOST OUTSIDE YOUR ORGANIZATION? THESE COULD INCLUDE CONTACTS AT LOCAL, STATE, OR FEDERAL LEVELS.
+(Table columns: Name | Position | Contact Info | Reason | Frequency)
+[all rows blank]
+
+==============================================================================
+PAGE 4
+==============================================================================
+9: DO YOU HAVE ANY ONGOING PROJECTS THAT SOMEONE ELSE SHOULD TAKE ON?
+(Table columns: Project/Activity | Project Teammates | Is Anything Due Soon? | Project Due Date | Who else could take this on?)
+[all rows blank]
+
+10: PROVIDE THE FOLLOWING ACCESS INFORMATION. WHERE NECESSARY, USE DISCRETION AND PROVIDE TO AUTHORIZED PERSONNEL ONLY.
+Desk phone PIN for voicemail: [blank]
+State cellphone PIN(s) and passwords for voicemail and/or to unlock phone: [blank]
+Combination to safe, locker, etc.: [blank]
+Access information for other devices (list device with access information): [blank]
+
+11: WHERE PERMISSIBLE, PROVIDE LOGIN INFORMATION FOR ONLINE ACCOUNTS FOR OUTSIDE VENDORS AND SYSTEMS NOT MANAGED BY OCIO (EXAMPLES: ENVIRONMENTAL MONITORING SYSTEM; FEDERAL REPORTING/TRACKING SYSTEM; ONLINE COMMUNITY FOR COLLABORATION).
+(Table columns: Vendor/Website/System | Username | Password | Who knows how to use it?)
+[all rows blank]
+
+12: IF YOU ARE RESPONSIBLE FOR CONFIDENTIAL MATERIALS OR INFORMATION, ARRANGE FOR THE PROPER TRANSFER OR DISPOSITION OF THESE MATERIALS BEFORE YOUR DEPARTURE. WHERE ALLOWABLE, PROVIDE INSTRUCTIONS, LOCATIONS, OR RELATED INFORMATION BELOW.
+
+Any confidential material will stay securely on internal drives and folders controlled by NDHHS. Relevant folder locations and files are provided above.
+
+==============================================================================
+PAGE 5
+==============================================================================
+13: IF YOU HAVE AN ONLINE VENDOR ACCOUNT WITH OFFICE DEPOT, FISHER SCIENTIFIC, GRAINGER, MSC, FASTENAL, CARDINAL PHARMACEUTICAL, VWR, ETC., WHO WILL CONTINUE PLACING AND/OR APPROVING ORDERS AFTER YOU LEAVE.
+
+Not Applicable
+
+14. ARE THERE ANY FUNCTIONS, WITH UPCOMING OR RECURRING DEADLINES, THAT WE NEED TO BE AWARE OF? (EXAMPLES: GRANT RENEWALS, PROGRESS REPORTS, SERVICE CONTRACT RENEWALS, PROFESSIONAL MEMBERSHIPS, ANNUAL REGISTRATION RENEWALS, ETC.)
+(Table columns: What will become due? | Due date)
+[all rows blank]
+
+15: IS THERE OTHER INFORMATION ABOUT YOUR WORK/POSITION THAT IS IMPORTANT TO CAPTURE FOR THE PURPOSE OF ONBOARDING A SUCCESSOR OR MAINTAINING ORGANIZATIONAL KNOWLEDGE?
+
+Data Management and Access: A significant part of this role involves managing multiple data sources, including syndromic surveillance data, ACS PUMS data, and occupation/industry coding techniques, BLS data, Workers Compensation. It’s important to ensure continued access to these datasets by maintaining any necessary credentials for tools for API access, tidycensus for PUMS data, and any secured databases within the state health department. Documentation on how to access these resources and the protocols for securely handling sensitive data should be well-maintained and shared with the successor.
+
+Additional Thoughts on Workforce Estimates and FTE Calculations: The workforce estimates and FTE adjustment protocols I developed is a core resource for occupational health surveillance. This method requires an understanding of how to use survey weights from ACS PUMS data and how to interpret employment estimates both in their raw form and when adjusted for FTE for accurate and consistent workforce analysis.
+
+Thank you for sharing your knowledge and expertise! Your contributions here will help us continue to Grow Nebraska!

@@ -1,6 +1,8 @@
 # Project brief: Nebraska opioid/drug overdose deaths and suicides by industry and occupation
 
-Last updated: 2026-09-24
+Last updated: 2026-09-24 (factual corrections 2026-09-29)
+
+Status (2026-09-29): the release scripts are scripts/io_death_rates_v8.R (NCHS annual files dth20 to dth24, residents 16 to 64, NIOCCS, ACS PUMS 2020-2024 persons and FTE, suicide and overdose) and scripts/io_death_rates_v9.R (v8 with ages 16 and over). Real-run results are in docs/v5-changes.md and docs/three-way-comparison.md. Sections below dated before 2026-09-28 describe the state of knowledge at that time.
 
 ## The ask
 
@@ -11,7 +13,7 @@ Two last-minute projects, both rates by industry and occupation (I/O):
 
 Data sources to examine first: SUDORS (overdose) and NVDRS/NEVDRS (suicide), as published and held by the NE DHHS Office of Injury Surveillance. Nebraska death certificate data by I/O will be compared against them. The team's death certificate repos were reviewed on 2026-09-24; see docs/death-cert-data-notes.md for what they hold and the plan.
 
-The README describes the rates as "by FTE." Note that the Massachusetts report the team is using as a model does not use FTE; it uses employed workers from the American Community Survey (ACS) as the denominator (deaths per 100,000 workers). See source-docs/INVENTORY.md, Massachusetts section. Whether to use FTE (hours-adjusted) or employed-worker denominators is an open decision. As of 2026-09-26 the likely choice is ACS employed workers (per Trenton), matching Massachusetts; see docs/acs-denominator-spec.md. ACS PUMS can also supply an FTE denominator if needed.
+The README describes the rates as "by FTE." Note that the Massachusetts report the team is using as a model does not use FTE; it uses employed workers from the American Community Survey (ACS) as the denominator (deaths per 100,000 workers). See source-docs/INVENTORY.md, Massachusetts section. Whether to use FTE (hours-adjusted) or employed-worker denominators is an open decision. As of 2026-09-26 the likely choice was ACS employed workers (per Trenton), matching Massachusetts; see docs/acs-denominator-spec.md. Since v8 (settings agreed with Derry) both are reported side by side from ACS PUMS: rate per 100,000 persons and per 100,000 FTE.
 
 ## People
 
@@ -46,6 +48,18 @@ Derry forwarded the original one-page sheet, "CDC NEVDRS - Suicide Deaths by Sec
 
 Things the three-panel design leaves open: how "non-worker" was defined and what its denominator was (not in labor force, unemployed, or everyone without a coded occupation), why construction and manufacturing were singled out, and whether the 70 to 72 figure is suicide, overdose, or combined.
 
+## What the team archive adds (2026-09-28 upload, see team-archive/README.md)
+
+The occupational health team already has most of the machinery, built by Chris Austin and adapted by Jean Kwizerimana:
+
+- An FTE denominator tool on ACS PUMS: FTE = person weight x usual hours per week / 40, civilian employed (ESR 1 or 2), grouped by NAICSP or SOCP cut to 2 or 3 digits, with replicate-weight margins of error. Outputs exist for NAICS 2-digit 2013 to 2023 and SOC 2-digit 2014 to 2023 (mostly 5-year PUMS, some 1-year). 2024 and the 2020-2024 5-year window were missing from the archive; v8 pulls the 2020-2024 5-year PUMS itself through tidycensus. Details and file-level caveats in team-archive/denominators/README.md.
+- A NIOCCS coding pipeline: the death certificate industry and occupation text (INDUSTL, OCCUPL) is sent record by record to the CDC NIOCCS web service and comes back with NAICS, SOC, and Census codes. team-archive/io-coding/nioccs/README.md.
+- A suicide-by-industry precedent: suicide_agg.R and nioccs_suicide.R take NCHS suicides 2014 to 2023, age 16+, code them with NIOCCS, cut to NAICS sectors and SOC major groups, and divide by PUMS FTE per 1,000. Neither script runs as saved; nioccs_suicide.R divides ten years of deaths by one year of FTE, while suicide_agg.R divides each year's deaths by that year's FTE (mixed 1-year and 5-year PUMS vintages); neither has Poisson confidence intervals; and non-workers are dropped silently. v9 (ages 16 and over) reproduces the saved suicide_agg.R sector counts for 2020-2021 exactly (all 20 sectors, 440 in total; docs/three-way-comparison.md). Still, this is very likely where Can and Chris's "FTE-based" revision of the sector sheet came from. team-archive/analyses/README.md.
+
+Two corrections to docs/acs-denominator-spec.md follow from this. First, the team's FTE definition is hours/40 with no weeks-worked term, not hours x weeks / 2,000; the project should pick one and say so. Second, the team codes the text through NIOCCS to NAICS and SOC rather than rolling up the death certificate Census codes, so the denominator groups are NAICSP and SOCP, not the published C24030 and C24010 categories. Either route works; they should not be mixed.
+
+The BLS folder has no FTE-by-industry denominators, so ACS PUMS remains the only in-house FTE source.
+
 ## Questions to bring to Can and Mamie
 
 1. Which fields did you use for industry and occupation: the death certificate coded fields, the text fields, or the NVDRS current occupation free text?
@@ -56,7 +70,8 @@ Things the three-panel design leaves open: how "non-worker" was defined and what
 6. Which years, and are the numbers resident or occurrent deaths?
 7. For the three-panel figure (non-workers, construction, manufacturing): what outcome and years does the 70 to 72 per 100,000 construction figure cover, what is the numerator count, and how was the non-worker group defined?
 8. Which version of the sector sheet is current, what FTE source and sector assignment did the revision use, how was "not in workforce" defined, can we see the all-sector counts, and were the tract maps checked for small-number disclosure? (Details in docs/nevdrs-sectors-factsheet-review.md.)
-9. Can we get the case-level extract (or at least the I/O crosstab) so the occupational health team can reproduce the figures?
+9. Did the FTE revision use Chris's PUMS FTE files and nioccs_suicide.R (or suicide_agg.R)? If so, which FTE file and years, and was the multi-year numerator divided by multi-year FTE?
+10. Can we get the case-level extract (or at least the I/O crosstab) so the occupational health team can reproduce the figures?
 
 ## Repo layout
 

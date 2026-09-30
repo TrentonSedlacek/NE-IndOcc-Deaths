@@ -1,0 +1,46 @@
+table,leaf_name,group
+C24030,"Agriculture, forestry, fishing and hunting",11
+C24030,"Mining, quarrying, and oil and gas extraction",21
+C24030,Construction,23
+C24030,Manufacturing,31-33
+C24030,Wholesale trade,42
+C24030,Retail trade,44-45
+C24030,Transportation and warehousing,48-49
+C24030,Utilities,22
+C24030,Information,51
+C24030,Finance and insurance,52
+C24030,Real estate and rental and leasing,53
+C24030,"Professional, scientific, and technical services",54
+C24030,Management of companies and enterprises,55
+C24030,Administrative and support and waste management services,56
+C24030,Educational services,61
+C24030,Health care and social assistance,62
+C24030,"Arts, entertainment, and recreation",71
+C24030,Accommodation and food services,72
+C24030,"Other services, except public administration",81
+C24030,Public administration,92
+C24010,Management occupations,11
+C24010,Business and financial operations occupations,13
+C24010,Computer and mathematical occupations,15
+C24010,Architecture and engineering occupations,17
+C24010,"Life, physical, and social science occupations",19
+C24010,Community and social service occupations,21
+C24010,Legal occupations,23
+C24010,"Educational instruction, and library occupations",25
+C24010,"Arts, design, entertainment, sports, and media occupations",27
+C24010,Health diagnosing and treating practitioners and other technical occupations,29
+C24010,Health technologists and technicians,29
+C24010,Healthcare support occupations,31
+C24010,"Firefighting and prevention, and other protective service workers including supervisors",33
+C24010,Law enforcement workers including supervisors,33
+C24010,Food preparation and serving related occupations,35
+C24010,Building and grounds cleaning and maintenance occupations,37
+C24010,Personal care and service occupations,39
+C24010,Sales and related occupations,41
+C24010,Office and administrative support occupations,43
+C24010,"Farming, fishing, and forestry occupations",45
+C24010,Construction and extraction occupations,47
+C24010,"Installation, maintenance, and repair occupations",49
+C24010,Production occupations,51
+C24010,Transportation occupations,53
+C24010,Material moving occupations,53
